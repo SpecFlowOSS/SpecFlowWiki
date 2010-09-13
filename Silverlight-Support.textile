@@ -4,7 +4,7 @@ It comes with the  SL Unit Test Framework (http://code.msdn.microsoft.com/silver
 In your solution add a "silverlight unit test application" project. This adds a test project and a web project. The latter hosts the test runner which is executed in the prowser.
 
 Add an app.config to the project (even if it's not supported by SL), with the contents of
-"<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
  <configSections>
    <section name="specFlow"
@@ -15,6 +15,7 @@ TechTalk.SpecFlow"/>
  <specFlow>
    <unitTestProvider name="MsTest.Silverlight" />
  </specFlow>
-</configuration>"
-this'll get the generator to create MsTest + silverlight-compatible c#
+</configuration>
+
+This'll get the generator to create MsTest + silverlight-compatible c#
 files for every feature file you add.
