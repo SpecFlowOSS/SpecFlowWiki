@@ -1,11 +1,5 @@
-VisualStudio 2008 highlighting:
+"VisualStudio 2008 highlighting":http://github.com/henritersteeg/cuke4vs
 
-http://github.com/henritersteeg/cuke4vs
+"VisualStudio 2010 syntax highlighting":http://groups.google.com/group/specflow/browse_thread/thread/10a528516bff27f2/058fccdb0009248b?hl=en_US&lnk=gst&q=cuke4vs+2010#058fccdb0009248b
 
-VisualStudio 2010 syntax highlighting:
-
-http://groups.google.com/group/specflow/browse_thread/thread/10a528516bff27f2/058fccdb0009248b?hl=en_US&lnk=gst&q=cuke4vs+2010#058fccdb0009248b
-
-Scenario Setup:
-
-http://groups.google.com/group/specflow/browse_thread/thread/e9bce097d2d83852/ccbe19fd3a0216d6?lnk=gst&q=scenario+setup#ccbe19fd3a0216d6
+"Scenario Setup":http://groups.google.com/group/specflow/browse_thread/thread/e9bce097d2d83852/ccbe19fd3a0216d6?lnk=gst&q=scenario+setup#ccbe19fd3a0216d6
