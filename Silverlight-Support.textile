@@ -9,7 +9,7 @@ It comes with the  SL Unit Test Framework (http://code.msdn.microsoft.com/silver
 
 This'll get the generator to create MsTest + silverlight-compatible c# files for every feature file you add.
 
-* Add a reference to TechTalk.Specfloe.Silverlight.dll to the test project.
+* Add a reference to TechTalk.Specflow.Silverlight.dll to the test project.
 
 * Add feature files and step definitions to the test project. You can use the templates in "Add -> New Item..." for that.
 
