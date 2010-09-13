@@ -2,7 +2,6 @@ Currently we are building SpecFlow with VisualStudio 2008.
 All components except the VsIntegration can also be built with VisualStudio 2010.
 
 To build SpecFlow you need to install:
-
 - "WiX Installer 3.5":http://wix.sourceforge.net/
 - "Visual Studio 2008 SDK 1.1":http://www.microsoft.com/downloads/details.aspx?familyid=59EC6EC3-4273-48A3-BA25-DC925A45584D&displaylang=en
-- "Silverlight 3 SDK": http://www.microsoft.com/downloads/details.aspx?FamilyID=1ea49236-0de7-41b1-81c8-a126ff39975b&displaylang=en
+- "Silverlight 3 SDK":http://www.microsoft.com/downloads/details.aspx?FamilyID=1ea49236-0de7-41b1-81c8-a126ff39975b&displaylang=en
