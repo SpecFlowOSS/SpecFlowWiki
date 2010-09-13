@@ -1,1 +1,20 @@
-TODO
+Install "Silverlight Toolkit":http://silverlight.codeplex.com/
+It comes with the  SL Unit Test Framework (http://code.msdn.microsoft.com/silverlightut)
+
+In your solution add a "silverlight unit test application" project. This adds a test project and a web project. The latter hosts the test runner which is executed in the prowser.
+
+Add an app.config to the project (even if it's not supported by SL), with the contents of
+"<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+ <configSections>
+   <section name="specFlow"
+type="TechTalk.SpecFlow.Configuration.ConfigurationSectionHandler,
+TechTalk.SpecFlow"/>
+ </configSections>
+
+ <specFlow>
+   <unitTestProvider name="MsTest.Silverlight" />
+ </specFlow>
+</configuration>"
+this'll get the generator to create MsTest + silverlight-compatible c#
+files for every feature file you add.
