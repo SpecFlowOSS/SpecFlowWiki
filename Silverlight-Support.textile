@@ -1,9 +1,9 @@
-Install "Silverlight Toolkit":http://silverlight.codeplex.com/
+* Install "Silverlight Toolkit":http://silverlight.codeplex.com/
 It comes with the  SL Unit Test Framework (http://code.msdn.microsoft.com/silverlightut)
 
-In your solution add a "Silverlight Unit Test Application" project. This adds a Silverlight Application project with the tests and a web project to the solution. The latter hosts the test application to execute it in the browser.
+* In your solution add a "Silverlight Unit Test Application" project. This adds a Silverlight Application project with the tests and a web project to the solution. The latter hosts the test application to execute it in the browser.
 
-Add an app.config to the project (even if it's not supported by SL), with the following content:
+* Add an app.config to the project (even if it's not supported by SL), with the following content:
 
 <script src="http://gist.github.com/457878.js?file=gistfile1.xml"></script>
 
