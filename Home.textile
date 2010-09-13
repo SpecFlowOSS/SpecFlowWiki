@@ -1,1 +1,19 @@
-Welcome to the SpecFlow wiki!
+!http://code.google.com/p/specflow/logo?logo_id=1256244346!
+
+SpecFlow aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation.
+
+Our mission is to provide a pragmatic and frictionless approach to Acceptance Test Driven Development and Behavior Driven Development for .NET projects today.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+The official website of the SpecFlow project is: "www.specflow.org":http://www.specflow.org
+
+Source code is hosted here on GitHub.
+
+Wiki and issue tracking is hosted on Google Code: "specflow":http://code.google.com/p/specflow/
+
+Discussions are on Google Groups: "SpecFlow":http://groups.google.com/group/specflow/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+!http://lh5.ggpht.com/_X3kaawac_g4/SuDMbddPyNI/AAAAAAAAAqs/dpjkOHSKidw/techtalk.jpg?imgmax=800!
+
+SpecFlow is sponsored by "TechTalk":http://www.techtalk.at.
