@@ -2,4 +2,4 @@ VisualStudio 2008 highlighting: "Cuke4Vs":http://github.com/henritersteeg/cuke4v
 
 VisualStudio 2010 syntax highlighting: See "this thread on Google Group":http://groups.google.com/group/specflow/browse_thread/thread/10a528516bff27f2/058fccdb0009248b?hl=en_US&lnk=gst&q=cuke4vs+2010#058fccdb0009248b for a build of Cuke4Vs for VS2010
 
- "Scenario Setup":http://groups.google.com/group/specflow/browse_thread/thread/e9bce097d2d83852/ccbe19fd3a0216d6?lnk=gst&q=scenario+setup#ccbe19fd3a0216d6
+Looking for complex feature-level setup or for a "Feature Background"? Have look at Gaspars solution on "this thread on Google Group":http://groups.google.com/group/specflow/browse_thread/thread/e9bce097d2d83852/ccbe19fd3a0216d6?lnk=gst&q=scenario+setup#ccbe19fd3a0216d6
