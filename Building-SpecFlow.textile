@@ -1,0 +1,5 @@
+To build SpecFlow you need to install:
+
+- Wix Installer
+- Visual Studio SDK
+- Silverlight 3 SDK
