@@ -3,3 +3,7 @@ VisualStudio 2008 highlighting: "Cuke4Vs":http://github.com/henritersteeg/cuke4v
 VisualStudio 2010 syntax highlighting: SpecFlow v1.3.3 or later have a built-in editor integration for VS2010
 
 Looking for complex feature-level setup or for a "Feature Background"? Have look at Gaspars solution on "this thread on Google Group":http://groups.google.com/group/specflow/browse_thread/thread/e9bce097d2d83852/ccbe19fd3a0216d6?lnk=gst&q=scenario+setup#ccbe19fd3a0216d6
+
+To make bindings to domain objects easier have a look at:
+* [[SpecFlowAssist|http://github.com/darrencauthon/SpecFlowAssist]], here is a [[screencast|http://www.youtube.com/watch?v=Dsk0EE43Tg4]] 
+* [[Steckbrett.SpecsSupport|http://bitbucket.org/rstuven/steckbrett.specssupport/src]], here is a [[blog post|http://ricardo-stuven.blogspot.com/2010/05/specflow-automapper-autopoco.html]]
