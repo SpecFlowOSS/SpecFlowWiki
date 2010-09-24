@@ -117,3 +117,11 @@ Here is a list of code structuring conventions that we follow:
           * you can push local tags with "git push --tags" 
   10. publish the zip to the website (how?)
   11. announce the new release (how?) 
+
+## Versioning Policy
+
+Bugfix releases: increase the 3rd number (like 1.0.1 -> 1.1.2)
+
+Minor feature releases: increase the 2nd number (like 1.0.2 -> 1.1.0)
+
+Major feature releases: increase the 1st number (like 1.1.2 -> 2.0.0) 
