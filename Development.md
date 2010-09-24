@@ -98,4 +98,22 @@ Here is a list of code structuring conventions that we follow:
    6. Add a new "step definition" from the VS "add new item" dialog
           * project should compile 
    7. Run the unit tests
-          * test should pass 
+          * test should pass
+
+## Release Process
+
+ The following steps has to be done to release SpecFlow:
+
+   1. make sure that the solution compiles and all unit tests pass
+   2. define a new version number based on the VersioningPolicy
+   3. review/update the changelog.txt file with the version number and the date
+   4. update the VersionInfo?.cs file
+   5. set the new version number in the SpecFlowSetup project properties
+          * will ask to generate a new product code, allow it (required for upgrade install) 
+   6. compile the SpecFlowSetup? project
+   7. apply some SmokeTests for the created release
+   8. compress the msi + setup.exe together to a zip file named like: SpecFlowSetup_v1.0.2.zip
+   9. tag the master branch with a tag like "v1.0.2"
+          * you can push local tags with "git push --tags" 
+  10. publish the zip to the website (how?)
+  11. announce the new release (how?) 
