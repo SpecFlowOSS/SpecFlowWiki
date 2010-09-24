@@ -46,3 +46,56 @@ Here is a list of code structuring conventions that we follow:
 * All external dependency (like nunit.framework) is located in the "lib" folder.
 * All project includes (as a link) the VersionInfo.cs file from the root folder (to make the version changes easier).
 * If you have finished working on a branch (that has been pushed at least once), you should delete it after merging back. Here is a description how: [[Remove a remote branch|http://github.com/guides/remove-a-remote-branch]] 
+
+## Smoke Test
+
+**installer tests**
+
+   1. Run the installer on a machine where one of the previous versions were installed
+          * it should upgrade 
+
+**basic tests with NUnit**
+
+   1. Create a new solution with a new class library project
+   2. Add references to TechTalk.SpecFlow.dll and nunit.framework.dll
+   3. Add a new feature file from the VS "add new item" dialog
+          * the generated classes should compile 
+   4. Run the unit tests
+          * there should be one test (AddTwoNumbers)
+          * it should result in a pending state (no binding for steps) 
+   5. Add a new "step definition" from the VS "add new item" dialog
+          * project should compile 
+   6. Comment out "pending" steps in the step definition file
+   7. Run the unit tests
+          * test should pass 
+   8. Add a new "event definition" from the VS "add new item" dialog
+          * project should compile 
+   9. Run the unit tests
+          * test should succeed 
+
+**basic tests with MsTest**
+
+   1. Add a test project to the solution (remove default items)
+   2. Add references to TechTalk.SpecFlow.dll
+   3. Add an App.config file to the project with the following settings
+
+      <?xml version="1.0" encoding="utf-8" ?>
+      <configuration>
+        <configSections>
+          <section name="specFlow" type="TechTalk.SpecFlow.Configuration.ConfigurationSectionHandler, TechTalk.SpecFlow"/>
+        </configSections>
+
+        <specFlow>
+          <unitTestProvider name="MsTest" />
+        </specFlow>
+      </configuration>
+
+   4. Add a new feature file from the VS "add new item" dialog
+          * the generated classes should compile 
+   5. Run the unit tests (Test/Run/All Tests in Solution)
+          * there should be one test (AddTwoNumbers)
+          * it should result in a pending state (no binding for steps) 
+   6. Add a new "step definition" from the VS "add new item" dialog
+          * project should compile 
+   7. Run the unit tests
+          * test should pass 
