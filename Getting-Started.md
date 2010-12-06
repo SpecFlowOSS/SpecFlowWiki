@@ -4,6 +4,10 @@ SpecFlow Guide (Draft): [[http://github.com/downloads/techtalk/SpecFlow/SpecFlow
 
 MSDN Magazine: Behavior-Driven Development with SpecFlow and WatiN: [[http://msdn.microsoft.com/en-us/magazine/gg490346.aspx]]
 
+Behavior Driven Development (BDD) with SpecFlow and ASP.NET MVC: [[http://blog.stevensanderson.com/2010/03/03/behavior-driven-development-bdd-with-specflow-and-aspnet-mvc/]]
+
+BDD using SpecFlow on ASP.NET MVC Application [[http://www.codeproject.com/KB/architecture/BddWithSpecFlow.aspx]]
+
 ## Screencasts
 
 **TekPub** Screencast: 
