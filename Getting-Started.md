@@ -25,5 +25,8 @@ SpecFlow Anti-Pattern: Using Private Members to Retain State Between Steps (Darr
 SpecFlow Assist Demo (Darren Caulthon):
 [[http://www.youtube.com/watch?v=Dsk0EE43Tg4]]
 
+SpecFlowAssist Comparison Helper Methods Demo (Darren Caulthon):
+[[http://www.youtube.com/watch?v=nu5tJIuB62s]]
+
 SkillsMatter: Patterns and Practices of building Gherkin based living documentations (Christian Hassa, Gapar Nagy): 
 [[http://skillsmatter.com/podcast/open-source-dot-net/patterns-and-practices-of-building-gherkin-based-living-documentations]]
