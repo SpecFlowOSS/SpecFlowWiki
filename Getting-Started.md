@@ -2,6 +2,8 @@
 
 SpecFlow Guide (Draft): [[http://github.com/downloads/techtalk/SpecFlow/SpecFlow%20Guide.pdf]]
 
+MSDN Magazine: Behavior-Driven Development with SpecFlow and WatiN: [[http://msdn.microsoft.com/en-us/magazine/gg490346.aspx]]
+
 ## Screencasts
 
 **TekPub** Screencast: 
