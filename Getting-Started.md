@@ -19,5 +19,5 @@ SpecFlow Anti-Pattern: Using Private Members to Retain State Between Steps:
 [[http://www.youtube.com/watch?v=IGvxMPX55vE]]
 
 SpecFlow Assist Demo:
-http://www.youtube.com/watch?v=Dsk0EE43Tg4
+[[http://www.youtube.com/watch?v=Dsk0EE43Tg4]]
 
