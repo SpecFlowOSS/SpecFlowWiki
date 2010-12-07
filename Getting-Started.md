@@ -30,3 +30,6 @@ SpecFlow Anti-Pattern: **Using Private Members to Retain State Between Steps** (
 
 SkillsMatter: **Patterns and Practices of building Gherkin based living documentations** (Christian Hassa, Gapar Nagy): 
 [[http://skillsmatter.com/podcast/open-source-dot-net/patterns-and-practices-of-building-gherkin-based-living-documentations]]
+
+**BDD and SpecFlow** (Darren Cauthon)
+[[http://www.vimeo.com/17040913]]
