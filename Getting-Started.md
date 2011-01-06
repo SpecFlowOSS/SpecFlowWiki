@@ -8,7 +8,7 @@ MSDN Magazine: **Behavior-Driven Development with SpecFlow and WatiN**: [[http:/
 
 **BDD using SpecFlow on ASP.NET MVC Application** (CodeProject) [[http://www.codeproject.com/KB/architecture/BddWithSpecFlow.aspx]]
 
-** Also check out the examples: [[https://github.com/techtalk/SpecFlow/wiki/Examples]]
+**Also check out the examples: [[https://github.com/techtalk/SpecFlow/wiki/Examples]]
 
 ## Screencasts
 
