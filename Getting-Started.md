@@ -11,7 +11,7 @@ MSDN Magazine: **Behavior-Driven Development with SpecFlow and WatiN**: [[http:/
 ## Screencasts
 
 **TekPub** Screencast: 
-[[http://tekpub.com/view/dotnet-oss/specflow]]
+[[http://tekpub.com/view/dotnet-oss/3]]
 
 Using ASP.NET MVC with community tools: **SpecFlow and WatiN** (Part 1) (Brandon Satrom):
 [[http://www.screencast.com/users/BSatrom/folders/Mvc%20Screencasts/media/25558ab1-b475-4d60-86b7-67e0241aab8e]]
