@@ -20,7 +20,7 @@ You can convert the data in the table to an instance of an object like so:
 
 The CreateInstance<T> method will create the Account object and fill the values according to any matching names it finds.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
 
-CreateSet<T> ex
+CreateSet<T>
 ---
 **CreateSet<T>** is an extension method off of the Table object that will convert the table data to a set of objects.  For example, if you have the following step:
 
