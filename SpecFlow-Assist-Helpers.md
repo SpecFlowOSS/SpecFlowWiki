@@ -46,7 +46,7 @@ The CreateSet<T> method will return an IEnumerable<T> based on the data that mat
 
 CompareToInstance<T>
 ---
-This method makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
+**CompareToInstance<T>** makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
 
     public class Person {
       public string FirstName { get; set;}  
@@ -76,3 +76,32 @@ If FirstName does not match "John", LastName does not match "Galt", or YearsOld 
 
 If they do match, no exception will be thrown and SpecFlow will continue to process your scenario.
 
+***
+
+CompareToSet<T> extension methods off of SpecFlow.Table
+---
+**CompareToSet<T>** makes it easy to compare the values in a table to a set of objects.  For example, say you have a class like this:
+    public class Account {
+      public string Id { get; set;}
+      public string FirstName { get; set;}
+      public string LastName { get; set;}
+      public string MiddleName { get; set;}
+    }
+
+And you want to test that your system returns a specific set of accounts, like so:
+
+    Then I get back the following accounts
+    | Id     | FirstName | LastName |
+    | 1      | John      | Galt     |
+    | 2      | Howard    | Roark    |
+
+You can test you results with one call to CompareToSet<T>, like so:
+
+    [Then("I get back the following accounts")]
+    public void x(Table table){
+      var accounts = ScenarioContext.Current.Get<IEnumerable<Account>>();
+      
+      accounts.CompareToSet<Account>(accounts)
+    }
+
+In this example, CompareToSet<T> will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
