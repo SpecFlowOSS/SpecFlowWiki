@@ -18,7 +18,9 @@ You can convert the data in the table to an instance of an object like so:
 		// ...
 	}
 
-The CreateInstance<T> method will create the Account object and fill the values according to any matching names it finds.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
+The **CreateInstance<T>** method will create the Account object and fill the values according to any matching names it finds.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
+
+**Note: The headers on the table must be "Field" and "Value".**
 
 ***
 
@@ -40,7 +42,7 @@ You can convert the data in the table to a set of objects like so:
 		// ...
 	}
 
-The CreateSet<T> method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
+The **CreateSet<T>** method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
 
 ***
 
@@ -75,6 +77,8 @@ You can assert that the properties match with this simple step definition:
 If FirstName does not match "John", LastName does not match "Galt", or YearsOld does not match 54, a descriptive error showing the differences will be thrown.
 
 If they do match, no exception will be thrown and SpecFlow will continue to process your scenario.
+
+**Note: The headers on the table must be "Field" and "Value".**
 
 ***
 
