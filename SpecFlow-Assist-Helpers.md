@@ -41,3 +41,38 @@ You can convert the data in the table to a set of objects like so:
 	}
 
 The CreateSet<T> method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
+
+***
+
+CompareToInstance<T>
+---
+This method makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
+
+    public class Person {
+      public string FirstName { get; set;}  
+      public string LastName { get; set; }
+      public int YearsOld { get; set; }
+    }
+
+and you want to compare it to a table in a step like this:
+
+    Then the person should have the following values
+    | Field     | Value |
+    | FirstName | John  |
+    | LastName  | Galt  |
+    | YearsOld  | 54    |
+  
+You can assert that the properties match with this simple step definition:
+  
+    [Then("the person should have the following values")]
+    public void x(Table table){
+      // you don't have to get person this way, this is just for demo
+      var person = ScenarioContext.Current.Get<Person>(); 
+      
+      table.CompareToInstance<Person>(person);
+    }
+
+If FirstName does not match "John", LastName does not match "Galt", or YearsOld does not match 54, a descriptive error showing the differences will be thrown.
+
+If they do match, no exception will be thrown and SpecFlow will continue to process your scenario.
+
