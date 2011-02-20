@@ -2,6 +2,8 @@
 
 * MvcConf2: [[BDD in ASP.NET MVC using SpecFlow, WatiN and WatiN Test Helpers by Brandon Satrom | http://channel9.msdn.com/Series/mvcConf/mvcConf-2-Brandom-Satrom-BDD-in-ASPNET-MVC-using-SpecFlow-WatiN-and-WatiN-Test-Helpers]] by Brandon Satron ([[slides and code | https://bitbucket.org/bsatrom/presentations/src/tip/BDDWithSpecFlow/]])
 
+* [[Specification by example with SpecFlow | http://www.slideshare.net/marcusoftnet/specification-by-example-with-specflow-110217?from=embed]] by Marcus Hamarberg
+
 * [["BDD and SpecFlow", Presentation|https://docs.google.com/fileview?id=0B_zwMmx15DL8MmQyODhiYzMtMTNhMi00Mzk1LThhYWItZDIyODMwMzEwZWM5&hl=en&authkey=CLKKsusB]] by Darren Cauthon
 
 * Iowa Code Camp: BDD and SpecFlow (Darren Cauthon) [[http://www.vimeo.com/17040913]]
