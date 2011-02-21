@@ -27,3 +27,6 @@
 3. Kanbanboards III–putting on the web [[http://www.marcusoft.net/2011/01/kanbanboards-iiiputting-on-web.html]]
 4. Kanbanboards IV–shaping stuff up [[http://www.marcusoft.net/2011/01/kanbanboards-ivshaping-stuff-up.html]]
 5. Kanbanboards V–creating new boards [[http://www.marcusoft.net/2011/02/kanbanboards-vcreating-new-boards.html]]
+
+###Other
+* Alister Scott wrote up a nice [[blog post|http://watirmelon.com/2011/02/18/c-sharp-atdd-on-a-shoestring/]] on getting SpecFlow working with VS2010 Express edition 
