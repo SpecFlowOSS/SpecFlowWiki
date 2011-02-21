@@ -20,3 +20,10 @@
 * SpecFlow.exe and MsTest (Marcus Hammarberg): [[http://www.marcusoft.net/2010/12/specflowexe-and-mstest.html]]
 
 * Generate a step definition report with SpecFlow (Marcus Hammarberg): [[http://www.marcusoft.net/2010/12/know-where-you-stepgenerate-step.html]]
+
+###Marcus Hammarberg has a series of post using SpecFlow - KanbanBoards
+1. Developing in .Net–a new era has begun [[http://www.marcusoft.net/2011/01/developing-in-neta-new-era-has-begun.html]]
+2. KanbanBoards part II–two step forward and one back [[http://www.marcusoft.net/2011/01/kanbanboards-part-iitwo-step-forward.html]]
+3. Kanbanboards III–putting on the web [[http://www.marcusoft.net/2011/01/kanbanboards-iiiputting-on-web.html]]
+4. Kanbanboards IV–shaping stuff up [[http://www.marcusoft.net/2011/01/kanbanboards-ivshaping-stuff-up.html]]
+5. Kanbanboards V–creating new boards [[http://www.marcusoft.net/2011/02/kanbanboards-vcreating-new-boards.html]]
