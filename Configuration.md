@@ -32,7 +32,9 @@ configuration.
   </specFlow>
 </configuration>
 ```
+
 The following example shows all possible configuration option with their default values.
+
 
 ```xml
 <specFlow>
