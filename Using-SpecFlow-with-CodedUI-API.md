@@ -24,11 +24,11 @@ namespace My.SpecFlow
         public override void SetTestFixture(System.CodeDom.CodeTypeDeclaration typeDeclaration, string title, string description)
         {
             base.SetTestFixture(typeDeclaration, title, description);
-            foreach (CodeAttributeDeclaration customAttrbute in typeDeclaration.CustomAttributes)
+            foreach (CodeAttributeDeclaration customAttribute in typeDeclaration.CustomAttributes)
             {
-                if (customAttrbute.Name == "Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute")
+                if (customAttribute.Name == "Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute")
                 {
-                    typeDeclaration.CustomAttributes.Remove(customAttrbute);
+                    typeDeclaration.CustomAttributes.Remove(customAttribute);
                     break;
                 }
             }
