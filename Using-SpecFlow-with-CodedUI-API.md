@@ -11,7 +11,7 @@ You need to ensure SpecFlow generates this attribute, and ensure that any SpecFl
 ### Getting SpecFlow to generate the [CodedUITest] attribute with VS2010 and MSTest
 
 1. Create a new VS project to generate an assembly that contains the following class.
-This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.dll' in the SpecFlow directory.
+This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.dll` in the SpecFlow directory.
 2. Add the following class to your new VS project
 ```csharp
 namespace My.SpecFlow
