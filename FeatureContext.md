@@ -8,19 +8,19 @@ FeatureContext also have a Current property which holds a Dictionary. But I work
 ##FeatureContext.FeatureInfo
 
 The FeatureInfo is a bit more elaborative than the ScenarioInfo, but it works in the same manner:
-`
 
-Scenario: Showing information of the feature
-	When I execute any scenario in the feature
-	Then the FeatureInfo contains the following information
+In the .feature file:
+        Scenario: Showing information of the feature
+	  When I execute any scenario in the feature
+	  Then the FeatureInfo contains the following information
 		| Field          | Value                               |
 		| Tags           | showUpInScenarioInfo, andThisToo    |
 		| Title          | FeatureContext features             |
 		| TargetLanguage | CSharp                              |
 		| Language       | en-US                               |
 		| Description    | In order to                         |
-'
-'
+
+and in the step definition:
         private class FeatureInformation
         {
             public string Title { get; set; }
