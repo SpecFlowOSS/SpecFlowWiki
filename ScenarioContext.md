@@ -28,7 +28,7 @@ There are some type safe extension methods that helps you to get values in and o
 
 [[https://github.com/techtalk/SpecFlow/wiki/ScenarioContext.Current]]
 
-###ScenarioContext.ScenarioInfo
+##ScenarioContext.ScenarioInfo
 
 You can also get hold of some information about the scenario you’re executing right now. For example the title and the tags of it:
 
