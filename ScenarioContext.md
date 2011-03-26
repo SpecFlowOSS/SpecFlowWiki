@@ -6,7 +6,12 @@ But there are some other interesting stuff you can do with and get from that obj
 
 Well – this method is known to most of us, as I said. This is default behavior for a missing step definition, but you can also use it directly if (why?) you want to. Like this:
 
+in the .feature:
+        Scenario: Pending step
+	    When I set the ScenarioContext.Current to pending
+	    Then this step will not even be executed
 
+and the step definition:
         [When("I set the ScenarioContext.Current to pending")]
         public void WhenIHaveAPendingStep()
         {
@@ -22,17 +27,24 @@ Well – this method is known to most of us, as I said. This is default behavior
 
 ##ScenarioContext.Current
 
-This is a very useful feature of the ScenarioContext that helps you to store values in a Dictionary between the steps. This helps you to organize your step definitions better that if you would use private variables in the step definition class.
+This is a very useful feature of the [[ScenarioContext.Current]] that helps you to store values in a Dictionary between the steps. This helps you to organize your step definitions better that if you would use private variables in the step definition class.
 
-There are some type safe extension methods that helps you to get values in and out of the dictionary in a safer way. To get that you need to include the namespace TechTalk.SpecFlow.Assist, since they are extension methods on the ScenarioContext.
-
-[[https://github.com/techtalk/SpecFlow/wiki/ScenarioContext.Current]]
+There are some type safe extension methods that helps you to get values in and out of the dictionary in a safer way. To get that you need to include the namespace TechTalk.SpecFlow.Assist, since they are extension methods on the [[ScenarioContext.Current]].
 
 ##ScenarioContext.ScenarioInfo
 
 You can also get hold of some information about the scenario you’re executing right now. For example the title and the tags of it:
 
+In the .feature file:
+        @showUpInScenarioInfo @andThisToo
+        Scenario: Showing information of the scenario
+	  When I execute any scenario
+	  Then the ScenarioInfo contains the following information
+		| Field | Value                               |
+		| Tags  | showUpInScenarioInfo, andThisToo    |
+		| Title | Showing information of the scenario |
 
+and in the step definition:
         private class ScenarioInformation
         {
             public string Title { get; set; }
@@ -64,7 +76,13 @@ More interesting maybe is the ability to check if an error has occurred. That’
 
 You can use that to do some interesting “error handling” as I told you above. Here is an un-interesting version:
 
+in the .feature file:
+         #This is not so easy to write a scenario for but I've created an AfterScenario-hook
+         @showingErrorHandling 
+         Scenario: Display error information in AfterScenario
+	    When an error occurs in a step
 
+and the step definition:
         [When("an error occurs in a step")]
         public void AnErrorOccurs()
         {
@@ -100,8 +118,15 @@ Here I am using MvcContrib to capture the screen of the failing test, and naming
 ##ScenarioContext.Current.CurrentScenarioBlock
 
 You can also get hold of the “type” of step your on (Given, When or Then) which is pretty cool, but I cannot see and immediate use of it.
-`
 
+in the .feature file:
+        Scenario: Show the type of step we're currently on
+	     Given I have a Given step
+		  And I have another Given step
+	     When I have a When step
+	     Then I have a Then step
+
+and the step definition:
         [Given("I have a (.*) step")]
         [Given("I have another (.*) step")]
         [When("I have a (.*) step")]
@@ -111,5 +136,3 @@ You can also get hold of the “type” of step your on (Given, When or Then) wh
             var stepType = ScenarioContext.Current.CurrentScenarioBlock.ToString();
             stepType.Should().Equal(expectedStepType);
         }
-`
-
