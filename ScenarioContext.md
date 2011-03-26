@@ -86,7 +86,7 @@ This is another example, that might be more useful:
 
 
        [AfterScenario]
-``        public void AfterScenario()
+       public void AfterScenario()
         {
             if(ScenarioContext.Current.TestError != null)
             {
