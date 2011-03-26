@@ -52,6 +52,6 @@ and in the step definition:
                 fi.Tags[i].Should().Equal(fromStep.Tags[i]);
             }
         }
-`
+
 
 Also I should mention here that FeatureContext exposes a Binding Culture property that simply points to the culture the feature is written in (en-US in our example).
