@@ -19,6 +19,7 @@ TBD
 
 - Add an app.config to the project (even if it’s not supported by WP7), with the following content:
 
+```
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <configSections>
@@ -26,9 +27,10 @@ TBD
       </configSections>
 
       <specFlow>
-        <unitTestProvider name="MsTest.Silverlight"/>
+        <unitTestProvider name="MsTest.WindowsPhone7"/>
       </specFlow>
     </configuration>
+```
 
 ### Start writing specs
 
