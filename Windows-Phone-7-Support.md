@@ -26,7 +26,7 @@ TBD
       </configSections>
 
       <specFlow>
-        <unitTestProvider name="MsTestWP7"/>
+        <unitTestProvider name="MsTest.Silverlight"/>
       </specFlow>
     </configuration>
 
