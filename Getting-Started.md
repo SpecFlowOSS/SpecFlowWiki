@@ -35,3 +35,9 @@ SkillsMatter: **Patterns and Practices of building Gherkin based living document
 
 **BDD and SpecFlow** (Darren Cauthon)
 [[http://www.vimeo.com/17040913]]
+
+** mvcConf 2 (February 2011): Brandon Satrom: BDD in ASP.NET MVC using SpecFlow, WatiN and WatiN Test Helpers **
+[[http://channel9.msdn.com/Series/mvcConf/mvcConf-2-Brandom-Satrom-BDD-in-ASPNET-MVC-using-SpecFlow-WatiN-and-WatiN-Test-Helpers]]
+
+** CukeUp! (March 2011): Gaspar Nagy on SpecFlow: The simplest way to marry Gherkin with .NET **
+[[http://skillsmatter.com/podcast/agile-scrum/gherkin-dot-net]]
