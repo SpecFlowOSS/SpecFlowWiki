@@ -9,3 +9,4 @@ You can help the community with improving SpecFlow. Feel free to provide fixes o
 
 * General notes about the development: [[Development]]
 * [[Developing VS2010 Integration]]
+* CI build server: [[http://build.specflow.org]]
