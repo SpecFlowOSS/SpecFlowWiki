@@ -2,6 +2,8 @@
 
 Quickly jump to [[getting started | https://github.com/techtalk/SpecFlow/wiki/Getting-Started]].
 
+If you are interested in contributing, there are some useful information on the [[Contributing]] page.
+
 [[See all pages on this wiki | https://github.com/techtalk/SpecFlow/wiki/_pages]].
 
 <br/>
