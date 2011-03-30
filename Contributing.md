@@ -5,3 +5,7 @@ You can help the community with improving SpecFlow. Feel free to provide fixes o
 1. Make your feature addition or bugfix. Please also update the [[changelog|https://github.com/techtalk/SpecFlow/blob/master/changelog.txt]].
 1. Send us a pull request via GitHub and maybe a short note on the Google Group (groups.google.com/group/specflow/)
 
+###Useful information for development
+
+* General notes about the development: [[Development]]
+* [[Developing VS2010 Integration]]
