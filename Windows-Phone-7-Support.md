@@ -5,15 +5,16 @@ You can use SpecFlow for developing Windows Phone 7 applications. Just do these 
 ### Install prerequisites
 
 - [[Windows Phone Developer Tools RTW|http://www.microsoft.com/downloads/en/details.aspx?FamilyID=04704acf-a63a-4f97-952c-8b51b34b00ce&displaylang=en]]
-- [[Windows Phone Developer Tools January 2011 Update|http://www.microsoft.com/downloads/en/details.aspx?FamilyID=49b9d0c5-6597-4313-912a-f0cca9c7d277&displaylang=en]]
+- [[Windows Phone Developer Tools January 2011 Update|http://www.microsoft.com/downloads/en/details.aspx?FamilyID=49b9d0c5-6597-4313-912a-f0cca9c7d277&displaylang=en]] (optional)
+- [[Silverlight Unit Test Framework |http://code.msdn.microsoft.com/silverlightut]]
 
 ### Create unit test project
-
-You can find a good description about this at [[http://www.smartypantscoding.com/a-cheat-sheet-for-unit-testing-silverlight-apps-on-windows-phone-7]]
+- You can find a good description about this at [[http://www.smartypantscoding.com/a-cheat-sheet-for-unit-testing-silverlight-apps-on-windows-phone-7]]
 
 ### SpecFlow runtime for WP7
 
 - Add a reference to `TechTalk.Specflow.WindowsPhone7.dll` to the test project.
+- **TBD:** Need to make a decision whether we include `ExpressionCompilerWP7.dll` into msi, provide as a link or merge with `TechTalk.Specflow.WindowsPhone7.dll` into one file. This lib is required to run `TechTalk.Specflow.WindowsPhone7.dll`
 
 ### Configure SpecFlow
 
@@ -38,4 +39,4 @@ Add feature files and step definitions to the test project. You can use the temp
 
 ### Run your tests
 
-TBD
+Set the project as a startup one and execute it. If you use a device, unlock the screen before starting tests. You should see the result of the test execution displayed on the screen of your device or simulator.
