@@ -20,6 +20,10 @@ This'll get the generator to create MsTest + silverlight-compatible c# files for
 
 * Add a reference to TechTalk.Specflow.Silverlight3.dll to the test project.
 
+* Add the following command to the Pre-build event commands of the project found in "Project Properties -> Build Events".
+
+"%ProgramFiles(x86)%\TechTalk\SpecFlow\SpecFlow.exe" generateAll $(ProjectName) /force /verbose
+
 * Add feature files and step definitions to the test project. You can use the templates in "Add -> New Item..." for that.
 
 * Set the web project as your startup project. Execute it. You should see the result of the test execution displayed in the browser.
