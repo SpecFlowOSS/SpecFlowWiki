@@ -40,3 +40,8 @@ Add feature files and step definitions to the test project. You can use the temp
 ### Run your tests
 
 Set the project as a startup one and execute it. If you use a device, unlock the screen before starting tests. You should see the result of the test execution displayed on the screen of your device or simulator.
+
+### SpecFlow WP7 sample
+
+**TBD** See BowlingKata-WindowsPhone7-MsTest
+
