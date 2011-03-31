@@ -9,7 +9,7 @@ You can use SpecFlow for developing Windows Phone 7 applications. Just do these 
 
 ### Create unit test project
 
-TBD
+You can find a good description about this at [[http://www.smartypantscoding.com/a-cheat-sheet-for-unit-testing-silverlight-apps-on-windows-phone-7]]
 
 ### SpecFlow runtime for WP7
 
