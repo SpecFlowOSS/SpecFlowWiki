@@ -42,4 +42,4 @@ Set the project as a startup one and execute it. If you use a device, unlock the
 
 ### SpecFlow WP7 sample
 
-See [[BowlingKata-WindowsPhone7-MsTest project|https://github.com/techtalk/SpecFlow-Examples]]  as a Windows Phone 7 example
+See [[BowlingKata-WindowsPhone7-MsTest project|https://github.com/techtalk/SpecFlow-Examples]]  as a Windows Phone 7 example.
