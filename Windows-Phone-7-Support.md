@@ -14,7 +14,6 @@ You can use SpecFlow for developing Windows Phone 7 applications. Just do these 
 ### SpecFlow runtime for WP7
 
 - Add a reference to `TechTalk.Specflow.WindowsPhone7.dll` to the test project.
-- **TBD:** Need to make a decision whether we include `ExpressionCompilerWP7.dll` into msi, provide as a link or merge with `TechTalk.Specflow.WindowsPhone7.dll` into one file. This lib is required to run `TechTalk.Specflow.WindowsPhone7.dll`
 
 ### Configure SpecFlow
 
@@ -43,5 +42,4 @@ Set the project as a startup one and execute it. If you use a device, unlock the
 
 ### SpecFlow WP7 sample
 
-**TBD** See BowlingKata-WindowsPhone7-MsTest
-
+See [[BowlingKata-WindowsPhone7-MsTest project|https://github.com/techtalk/SpecFlow-Examples]]  as a Windows Phone 7 example
