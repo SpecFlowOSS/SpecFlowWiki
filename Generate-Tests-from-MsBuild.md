@@ -18,3 +18,23 @@ In order to be able to build your application in any environment independent of 
 ```
 
 The TechTalk.SpecFlow.targets file can be investigated for further possibilities of calling this command from MsBuild.
+
+See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow)
+
+If the feature files are not only edited, but also added, renamed or deleted outside of Visual Studio, you can include them into the project dynamically. For this, you have to again change the project file directly once an include the following lines:
+
+```xml
+<ItemGroup>
+  <!-- include all feature files from the folder "FeatureFiles" -->
+  <None Include="FeatureFiles\**\*.feature" /> 
+</ItemGroup>
+<ItemGroup>
+  <!-- include the generated test classes -->
+  <Compile Include="FeatureFiles\**\*.cs">
+    <Visible>false</Visible> <!-- the generated files can be hidden in Visual Studio -->
+  </Compile>
+</ItemGroup>
+```
+
+See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow.)
+
