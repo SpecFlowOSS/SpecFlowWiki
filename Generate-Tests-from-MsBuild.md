@@ -6,8 +6,8 @@ In order to enable this in your project, you have to modify the project file con
   ...
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import 
-    Project="$(ProgramFiles)\TechTalk\SpecFlow\TechTalk.SpecFlow.targets"/>
+  <Import Project="$(ProgramFiles)\TechTalk\SpecFlow\TechTalk.SpecFlow.targets"/>
+  ...
 </Project>
 ```
 
