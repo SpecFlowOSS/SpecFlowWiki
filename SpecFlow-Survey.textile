@@ -1,5 +1,7 @@
-As the SpecFlow project team
-we would like to have more information about the users and usage scenarios of SpecFlow in the real world
-so that we can prioritize future actions.
+_As the SpecFlow project team_
+_we would like to have more information about the users and usage scenarios of SpecFlow in the real world_
+_so that we can prioritize future actions._
 
-We would appreciate If you would "fill out our survey":https://spreadsheets.google.com/viewform?formkey=dGJlZ2ZXZHIycDBMTDdKZTZwRDdtdmc6MQ. Thanks!
+There is a **new survey** since the release of SpecFlow 1.6. 
+We would appreciate your feedback, even when you already participated in previous surveys. Thanks!
+"Take the survey now...":https://spreadsheets.google.com/viewform?formkey=dFdsY0xWNVZqcHVEV21vRnhrYXF1YUE6MA#gid=0
