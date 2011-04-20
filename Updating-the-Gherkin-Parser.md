@@ -5,7 +5,7 @@ The Gherkin project publishes a .NET dll of the parser as part of their release 
 Some steps are necessary to import this dll into the SpecFlow project. This is the process:
 
 0. compile SpecFlow
-1. download dll from gherkin github to lib/gherkin
+1. [download gherkin-x.y.z.dll from gherkin github](https://github.com/aslakhellesoy/gherkin/downloads) to lib/gherkin
 2. in a command prompt, go to: Installer\ImportGherkinParser\bin\Debug
 3. run import.cmd gherkin-2.3.6.dll
 4. run tests
