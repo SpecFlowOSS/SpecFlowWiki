@@ -176,4 +176,40 @@ This section can be used to specify various test execution options.
 
 #### `<trace>`
 
+This section can be used to configure how and what should SpecFlow trace out to the unit test output.
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>traceSuccessfulSteps</td>
+        <td>true/false</td>
+        <td>Specifies whether SpecFlow should trace successful step binding executions. <br/>
+            Default: true</td>
+    </tr>
+    <tr>
+        <td>traceTimings</td>
+        <td>true/false</td>
+        <td>Specifies whether SpecFlow should trace execution time of the binding methods (only if the execution time is longer than the minTracedDuration value).<br/>
+            Default: false</td>
+    </tr>
+    <tr>
+        <td>minTracedDuration</td>
+        <td>TimeSpan (0:0:0.1)</td>
+        <td>Specifies a threshold for tracing the binding execution times.<br/>
+            Default: 0:0:0.1 (100 ms)</td>
+    </tr>
+    <tr>
+        <td>Listener</td>
+        <td>class name</td>
+        <td>An assembly qualified class name of a class that implements 
+<code>TechTalk.SpecFlow.Tracing.ITraceListener</code> interface. SpecFlow provides DefaultListener and NullListener as default implementations.
+<br/>
+            Default: <code>TechTalk.SpecFlow.Tracing.DefaultListener, TechTalk.SpecFlow</code></td>
+    </tr>
+</table>
+
 #### `<stepAssemblies>`
