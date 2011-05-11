@@ -14,7 +14,7 @@
  * [[NuGet Integration]]
  * [[SpecLog Integration]]
 * [[Tools]]
- * [[Generate All Tool]]
+ * [[Generate All Tool|Tools]]
 * [[Reporting]]
  * [[Test Execution Report]]
  * [[Step Usage Report]]
