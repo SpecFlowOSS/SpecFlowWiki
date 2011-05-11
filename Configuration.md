@@ -85,5 +85,14 @@ settings. Read more about the language settings in the [[Feature Language]] page
     </tr>
 </table>
 
+#### `<bindingCulture>`
 
+#### `<unitTestProvider>`
 
+#### `<generator>`
+
+#### `<runtime>`
+
+#### `<trace>`
+
+#### `<stepAssemblies>`
