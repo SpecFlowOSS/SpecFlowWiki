@@ -10,4 +10,4 @@ Funktionalität: Addition
 
 SpecFlow uses the feature file language to use the right set of keywords when parsing the file, but the language setting is also used as a default when any parameter conversion has to be done by the SpecFlow runtime. The culture for binding execution and parameter conversion can be specified explicitly, see [[&lt;bindingCulture&gt; element|Configuration]].
 
-As data conversion can only be done using a specific culture in the .NET Framework it is recommended to use the specific culture name (en-US) instead of the neutral culture names (en). If a neutral culture is used, SpecFlow uses a default specific culture for data conversions (e.g. uses the en-US for conversion if the en language was used).
+As data conversion can only be done using a specific culture in the .NET Framework it is recommended to use the specific culture name (`en-US`) instead of the neutral culture names (`en`). If a neutral culture is used, SpecFlow uses a default specific culture for data conversions (e.g. uses the `en-US` for conversion if the `en` language was used).
