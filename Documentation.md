@@ -11,6 +11,7 @@
  * [[Visual Studio 2010 Integration]]
  * [[MonoDevelop Integration]]
  * [[MSBuild Integration]]
+ * [[NuGet Integration]]
  * [[SpecLog Integration]]
 * [[Reporting]]
  * [[Test Execution Report]]
