@@ -21,7 +21,7 @@
 * [[Build Server Integrations]]
  * [[TFS 2010 Integration]]
  * [[TeamCity Integration]]
-* [[Runtime Support]]
+* [[Platfrom Support]]
  * [[.NET Support]]
  * [[Mono Support]]
  * [[Silverlight Support]]
