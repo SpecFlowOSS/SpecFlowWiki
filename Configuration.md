@@ -153,7 +153,7 @@ This section can be used to specify various unit-test generation options.
     <tr>
         <td>allowRowTests</td>
         <td>true/false</td>
-        <td>Specifies if "row tests" should be generated for [[scenario outlines|Scenario Outline]]. This setting is ignored if the [[unit test framework|Unit Test Providers]] does not support row based testing.<br/>
+        <td>Specifies if "row tests" should be generated for [[scenario outlines|Using Gherkin Language in SpecFlow]]. This setting is ignored if the [[unit test framework|Unit Test Providers]] does not support row based testing.<br/>
             Default: true</td>
     </tr>
 </table>
@@ -183,7 +183,7 @@ This section can be used to specify various test execution options.
     <tr>
         <td>missingOrPendingStepsOutcome</td>
         <td>Inconclusive/Ignore/Error</td>
-        <td>Specifies how SpecFlow should behave if a step binding is not implemented or pending. See [[Missing, Pending or Improperly Configured Bindings]].<br/>
+        <td>Specifies how SpecFlow should behave if a step binding is not implemented or pending. See [[Missing, Pending or Improperly Configured Bindings|Test Result]].<br/>
             Default: Inconclusive</td>
     </tr>
 </table>
