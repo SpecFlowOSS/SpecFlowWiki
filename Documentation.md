@@ -7,6 +7,7 @@
  * [[Event Bindings]]
  * [[Step Argument Conversions]]
  * [[Sharing Data in Bindings]]
+* [[Unit Test Providers]]
 * [[Tool Integrations]]
  * [[Visual Studio 2008 Integration]]
  * [[Visual Studio 2010 Integration]]
