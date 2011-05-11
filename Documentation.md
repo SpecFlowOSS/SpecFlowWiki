@@ -13,6 +13,8 @@
  * [[MSBuild Integration]]
  * [[NuGet Integration]]
  * [[SpecLog Integration]]
+* [[Tools]
+ * [[Generate All Tool]]
 * [[Reporting]]
  * [[Test Execution Report]]
  * [[Step Usage Report]]
