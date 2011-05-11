@@ -68,19 +68,19 @@ settings. Read more about the language settings in the [[Feature Language]] page
         <th>Description</th>
     </tr>
     <tr>
-        <td>Feature</td>
+        <td>feature</td>
         <td>culture name (“en-US”)</td>
         <td>The default language of the feature files added to the project.
             It is recommended to use specific culture names (e.g.: “en-
-            US”) and not generic (neutral) cultures (e.g.: “en”).
+            US”) and not generic (neutral) cultures (e.g.: “en”). <br/>
             Default: en-US</td>
     </tr>
     <tr>
-        <td>Tool</td>
+        <td>tool</td>
         <td>empty or culture name</td>
         <td>Specifies the language that SpecFlow uses for messages and
-            tracing. Uses the default feature language if empty. (Currently
-            only English is used for messages.)
+            tracing. Uses the default feature language if empty if supported otherwise 
+            the messages are displayed in English. (Currently only English is supported.)<br/>
             Default: empty</td>
     </tr>
 </table>
