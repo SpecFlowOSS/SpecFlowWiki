@@ -2,14 +2,14 @@
 
 The behavior of SpecFlow can be extensively configured through .NET configuration files. SpecFlow
 processes the configuration file of the acceptance test projects (the projects that contain the feature
-files). The configuration has to be placed in a file called “App.Config” (the standard configuration file
+files). The configuration has to be placed in a file called “App.config” (the standard configuration file
 convention for .NET).
 
 Unlike other runtime-only tools, SpecFlow processes the configuration file also while it generates the
 unit-tests from the feature files (this happens usually when you save the feature file). This means
 that after you have changed the configuration file, you might need to force re-generation of the unit
-test (if the configuration change affects the generated tests). See Regenerate Unit Tests for details
-about how this can be done.
+test (if the configuration change affects the generated tests). The [[Visual Studio 2010 Integration]] can 
+detect the change of the configuration file and offers re-generation.
 
 ## Default Configuration
 
@@ -24,8 +24,7 @@ configuration.
 <configuration>
   <configSections>
     <section name="specFlow"
-      type="TechTalk.SpecFlow.Configuration.ConfigurationSectionHandler,
-      TechTalk.SpecFlow"/>
+      type="TechTalk.SpecFlow.Configuration.ConfigurationSectionHandler, TechTalk.SpecFlow"/>
   </configSections>
   <specFlow>
     <unitTestProvider name="MsTest" />
@@ -33,22 +32,28 @@ configuration.
 </configuration>
 ```
 
-The following example shows all possible configuration option with their default values.
-
+The following example shows all possible configuration option with their default values (the config section definition has been omitted for better readability).
 
 ```xml
 <specFlow>
-<language feature="en-US" tool="" />
-<unitTestProvider name="NUnit" />
-<generator allowDebugGeneratedFiles="false" />
-<runtime detectAmbiguousMatches="true"
-stopAtFirstError="false"
-missingOrPendingStepsOutcome="Inconclusive" />
-<trace traceSuccessfulSteps="true"
-traceTimings="false"
-minTracedDuration="0:0:0.1"
-listener="TechTalk.SpecFlow.Tracing.DefaultListener,
-TechTalk.SpecFlow" />
+  <language feature="en-US" tool="{not-specified}" />
+  <bindingCulture name="{not-specified}" />
+  <unitTestProvider name="NUnit" />
+  <generator 
+      allowDebugGeneratedFiles="false" 
+      allowRowTests="true" />
+  <runtime 
+      detectAmbiguousMatches="true"
+      stopAtFirstError="false"
+      missingOrPendingStepsOutcome="Inconclusive" />
+  <trace 
+      traceSuccessfulSteps="true"
+      traceTimings="false"
+      minTracedDuration="0:0:0.1"
+      listener="TechTalk.SpecFlow.Tracing.DefaultListener, TechTalk.SpecFlow" />
+  <stepAssemblies>
+    <!-- <stepAssembly assembly="{name-of-assembly-containing-bindgins}" /> -->
+  </stepAssemblies>
 </specFlow>
 ```
 ### Configuration Elements
