@@ -11,6 +11,7 @@
  * [[Event Bindings]]
  * [[Step Argument Conversions]]
  * [[Sharing Data in Bindings]]
+ * [[Scoped Step Bindings]]
  * [[SpecFlow Assist Helpers]]
 * [[Unit Test Providers]]
 * [[Tool Integrations]]
