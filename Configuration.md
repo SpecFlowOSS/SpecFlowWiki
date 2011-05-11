@@ -227,3 +227,28 @@ This section can be used to configure how and what should SpecFlow trace out to 
 </table>
 
 #### `<stepAssemblies>`
+
+This section can be used to configure additional assemblies that contain bindings. The assembly of the SpecFlow project (the project with the the feature files) is automatically included. The binding assemblies have to be placed in the output folder (e.g. bin/Debug) of the SpecFlow project, for example by adding a reference to the assembly from the project too. The following example registers an additional binding assembly (MySharedBindings.dll). 
+
+```xml
+<specFlow>
+  <stepAssemblies>
+    <stepAssembly assembly="MySharedBindings" />
+  </stepAssemblies>
+</specFlow>
+```
+
+The `<stepAssemblies>` can contain multiple `<stepAssembly>` elements (one for each assembly), with the following attributes.
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>assembly</td>
+        <td>assembly name</td>
+        <td>The name of the assembly containing bindings.</td>
+    </tr>
+</table>
