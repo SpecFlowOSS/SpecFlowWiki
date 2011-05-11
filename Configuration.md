@@ -87,6 +87,20 @@ settings. Read more about the language settings in the [[Feature Language]] page
 
 #### `<bindingCulture>`
 
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>culture name (“en-US”)</td>
+        <td>Specifies a culture to be used to execute binding methods and convert step arguments. If not specified, the feature language is used.<br/>
+            Default: not specified</td>
+    </tr>
+</table>
+
 #### `<unitTestProvider>`
 
 This section can be used to specify the unit-test framework SpecFlow uses to execute the acceptance criteria. You can either use one of the built-in unit-test providers or you can specify the classes that implement the custom unit test providers.
