@@ -46,7 +46,7 @@ The [[FeatureContext]] is created when the first scenario is executed from a fea
 
 SpecFlow supports a very simple dependency framework that is able to instantiate and inject class instances for the scenarios. With this feature you can group the shared state to context-classes, and inject them into every binding class that is interested in that shared state.
 
-The life-time of these classes are limited to a scenario execution.
+The life-time of these classes are limited to a scenario execution. The injection is resolved recursively, i.e. the injected class can also have dependencies. The resolution is done using the public constructors only. If there are multiple public constructors, SpecFlow takes the first one.
 
 The following example defines a context class to store referred books. The context class is injected to a binding class.
 
