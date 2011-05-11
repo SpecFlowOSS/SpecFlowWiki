@@ -12,7 +12,7 @@
     * [[Event Bindings]]
     * [[Step Argument Conversions]]
         * [[SpecFlow Assist Helpers]]
-    * [[Sharing Data in Bindings]]
+    * [[Sharing Data between Bindings]]
         * [[FeatureContext]]
         * [[ScenarioContext]]
 * [[Unit Test Providers]]
