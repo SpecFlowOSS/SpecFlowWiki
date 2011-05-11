@@ -1,6 +1,6 @@
 !http://code.google.com/p/specflow/logo?logo_id=1256244346!
 
-Quickly jump to [[getting started | https://github.com/techtalk/SpecFlow/wiki/Getting-Started]].
+Quickly jump to [[getting started | https://github.com/techtalk/SpecFlow/wiki/Getting-Started]] or to the [[Documentation]].
 
 If you are interested in contributing, there are some useful information on the [[Contributing]] page.
 
