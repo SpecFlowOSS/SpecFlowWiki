@@ -1,6 +1,7 @@
 * [[Getting Started]]
 * [[Configuration]]
 * [[Using Gherkin Language in SpecFlow]]
+ * [[Feature Language]]
 * [[Bindings]]
  * [[Step Bindings]]
  * [[Event Bindings]]
