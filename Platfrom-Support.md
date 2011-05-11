@@ -11,7 +11,7 @@ The following table contains the supported platforms.
     <tr>
         <td>.NET 3.5<br/>.NET 4.0<br/>Mono</td>
         <td>TechTalk.SpecFlow.dll</td>
-        <td>This is the primary target platform of SpecFlow.</td>
+        <td>This is the primary target platform of SpecFlow. See [[.NET Support]] and [[Mono Support]].</td>
     </tr>
     <tr>
         <td>Silverlight 3<br/>Silverlight 4</td>
