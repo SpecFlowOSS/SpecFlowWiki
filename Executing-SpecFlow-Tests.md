@@ -14,3 +14,5 @@ For example for MsTest unit test provider, all acceptance tests in the project c
 2.	Select command from the main menu: Test / Run / Tests in Current Context (Ctrl R,T)
 
 For executing a single scenario, the test explorer can be used. Alternatively the generated test method can be executed from the generated code-behind file.
+
+See also [[Test Result]] and [[Debugging Tests]].
