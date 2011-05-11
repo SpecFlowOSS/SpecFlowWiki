@@ -16,7 +16,7 @@
         * [[FeatureContext]]
         * [[ScenarioContext]]
 * [[Unit Test Providers]]
-* [[Tool Integrations]]
+* Tool Integrations
     * [[Visual Studio 2008 Integration]]
     * [[Visual Studio 2010 Integration]]
     * [[MonoDevelop Integration]]
@@ -28,7 +28,7 @@
 * [[Reporting]]
     * [[Test Execution Report|Reporting]]
     * [[Step Usage Report|Reporting]]
-* [[Build Server Integrations]]
+* Build Server Integrations
     * [[TFS 2010 Integration]]
     * [[TeamCity Integration]]
 * [[Platfrom Support]]
