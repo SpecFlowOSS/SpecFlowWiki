@@ -85,6 +85,8 @@ settings. Read more about the language settings in the [[Feature Language]] page
 
 #### `<bindingCulture>`
 
+This section can be used to define the culture for executing binding methods and for converting step arguments. Read more about the language settings in the [[Feature Language]] page.
+
 <table>
     <tr>
         <th>Attribute</th>
