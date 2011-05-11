@@ -89,6 +89,37 @@ settings. Read more about the language settings in the [[Feature Language]] page
 
 #### `<unitTestProvider>`
 
+This section can be used to specify the unit-test framework SpecFlow uses to execute the acceptance criteria. You can either use one of the built-in unit-test providers or you can specify the classes that implement the custom unit test providers.
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>Name of the unit test provider. See [[Unit Test Providers]].</td>
+        <td>The name of the built-in unit test provider. If you specify this attribute, 
+            you don’t have to specify the other two.<br/>
+            Default: NUnit</td>
+    </tr>
+    <tr>
+        <td>generatorProvider</td>
+        <td>class name</td>
+        <td>An assembly qualified class name of a class that implements 
+            `TechTalk.SpecFlow.Generator.UnitTestProvider.IUnitTestGeneratorProvider` 
+            interface.</td>
+    </tr>
+    <tr>
+        <td>runtimeProvider</td>
+        <td>class name</td>
+        <td>An assembly qualified class name of a class that implements 
+            `TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider` 
+            interface.</td>
+    </tr>
+</table>
+
 #### `<generator>`
 
 #### `<runtime>`
