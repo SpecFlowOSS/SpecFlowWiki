@@ -13,6 +13,7 @@
     * [[Step Argument Conversions]]
         * [[SpecFlow Assist Helpers]]
     * [[Sharing Data in Bindings]]
+        * [[FeatureContext]]
         * [[ScenarioContext]]
 * [[Unit Test Providers]]
 * [[Tool Integrations]]
