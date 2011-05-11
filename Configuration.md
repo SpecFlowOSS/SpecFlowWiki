@@ -57,9 +57,9 @@ The following example shows all possible configuration option with their default
 </specFlow>
 ```
 ### Configuration Elements
-`<language>`
-This section can be used to define the default language for the feature files and other languagerelated
-settings. Learn more about the language settings in the Feature Language section.
+#### `<language>`
+This section can be used to define the default language for the feature files and other language-related
+settings. Read more about the language settings in the [[Feature Language]] page.
 
 <table>
     <tr>
