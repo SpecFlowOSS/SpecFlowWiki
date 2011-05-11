@@ -108,14 +108,14 @@ This section can be used to specify the unit-test framework SpecFlow uses to exe
         <td>generatorProvider</td>
         <td>class name</td>
         <td>An assembly qualified class name of a class that implements 
-            `TechTalk.SpecFlow.Generator.UnitTestProvider.IUnitTestGeneratorProvider` 
+            <code>TechTalk.SpecFlow.Generator.UnitTestProvider.IUnitTestGeneratorProvider</code>
             interface.</td>
     </tr>
     <tr>
         <td>runtimeProvider</td>
         <td>class name</td>
         <td>An assembly qualified class name of a class that implements 
-            `TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider` 
+            <code>TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider</code>
             interface.</td>
     </tr>
 </table>
