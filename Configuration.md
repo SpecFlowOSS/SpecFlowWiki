@@ -122,7 +122,57 @@ This section can be used to specify the unit-test framework SpecFlow uses to exe
 
 #### `<generator>`
 
+This section can be used to specify various unit-test generation options.
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>allowDebugGeneratedFiles</td>
+        <td>true/false</td>
+        <td>The debugger is by default configured to step through the generated code. This helps to debug from the feature files directly to the bindings (see [[Debugging Tests]]). This feature can be disabled by setting this attribute to “true”.<br/>
+            Default: false</td>
+    </tr>
+    <tr>
+        <td>allowRowTests</td>
+        <td>true/false</td>
+        <td>Specifies if "row tests" should be generated for [[scenario outlines|Scenario Outline]]. This setting is ignored if the [[unit test framework|Unit Test Providers]] does not support row based testing.<br/>
+            Default: true</td>
+    </tr>
+</table>
+
 #### `<runtime>`
+
+This section can be used to specify various test execution options.
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>detectAmbiguousMatches</td>
+        <td>true/false</td>
+        <td>Specifies whether SpecFlow should report an error if there is an ambiguous match of step binding or just use the first one that matches.<br/>
+            Default: true</td>
+    </tr>
+    <tr>
+        <td>stopAtFirstError</td>
+        <td>true/false</td>
+        <td>Specifies whether the execution should stop at the first error or should continue to try matching the subsequent steps (in order to detect missing steps).<br/>
+            Default: false</td>
+    </tr>
+    <tr>
+        <td>missingOrPendingStepsOutcome</td>
+        <td>Inconclusive/Ignore/Error</td>
+        <td>Specifies how SpecFlow should behave if a step binding is not implemented or pending. See [[Missing, Pending or Improperly Configured Bindings]].<br/>
+            Default: Inconclusive</td>
+    </tr>
+</table>
 
 #### `<trace>`
 
