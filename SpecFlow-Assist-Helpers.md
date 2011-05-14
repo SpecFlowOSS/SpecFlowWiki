@@ -1,6 +1,6 @@
 CreateInstance<T>
 ---
-**CreateInstance<T>** is an extension method off of the Table object that will convert the table data to an object.  For example, if you have the following step:
+**CreateInstance<T>** is an extension method off of the Table object that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
 
 	Given I entered the following data into the new account form:
 	| Field              | Value      |
@@ -9,18 +9,25 @@ CreateInstance<T>
 	| HeightInInches     | 72         |
 	| BankAccountBalance | 1234.56    |
 
+or in a horizontal table like this:
+
+	Given I entered the following data into the new account form:
+	| Name      | Birthdate | HeightInInches | BankAccountBalance |
+	| John Galt | 2/2/1902  | 72             | 1234.56            |
+
 You can convert the data in the table to an instance of an object like so:
 
 	[Given(@"Given I entered the following data into the new account form:")]
 	public void x(Table table)
 	{
 		var account = table.CreateInstance<Account>();
-		// ...
+		// account.Name will equal "John Galt", HeightInInches will equal 72, etc.
 	}
 
-The **CreateInstance<T>** method will create the Account object and fill the values according to any matching names it finds.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
+The **CreateInstance<T>** method will create the Account object and set properties according to what can be read from teh table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
 
-**Note: The headers on the table must be "Field" and "Value".**
+~~**Note: The headers on the table must be "Field" and "Value".**~~
+In the next version of SpecFlow, you can name the headers on vertical tables whatever you wish, not just Field/Value.  What matters now is that the first column has the property name and the second column has the value.  
 
 ***
 
@@ -78,7 +85,7 @@ If FirstName does not match "John", LastName does not match "Galt", or YearsOld 
 
 If they do match, no exception will be thrown and SpecFlow will continue to process your scenario.
 
-**Note: The headers on the table must be "Field" and "Value".**
+~~**Note: The headers on the table must be "Field" and "Value".**~~ Like mentioned above, Field/Value can be replaced with any words.  Plus, your values can be listened horizontally in a table.
 
 ***
 
@@ -109,3 +116,15 @@ You can test you results with one call to CompareToSet<T>, like so:
     }
 
 In this example, CompareToSet<T> will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
+
+Column naming
+---
+The SpecFlow Assist helpers use the values found in your table to determine what properties to set on your object.  However, the names on the column do not have to be an exact match.  For example, this table:
+
+    | FirstName | LastName | DateOfBirth | HappinessRating |
+
+... will be evaluated the same as this table:
+
+    | First name | Last name | Date of birth | HAPPINESS rating |
+
+Matches against properties on your object are case-insensitive and ignore spaces.  This allows you to make your tables more readable to others.
