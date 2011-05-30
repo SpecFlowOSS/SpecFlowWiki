@@ -3,7 +3,7 @@ This page will discuss some features of **Specflow 1.6.1** that is integrated wi
 Features like
 
 * Visual Studio Intellisense (auto-completion)
-* Auto formating
+* Auto formatting
 * Goto Definition
 * Debugging
 * Resharper, AgUnit and Silverlight
@@ -19,7 +19,7 @@ _Figure 1: Specflow Integrated with Visual Studio and IntelliSense (click the im
 
 As you can see from the Figure 1, the IntelliSense feature pop up (shown with Red Rectangle) in the **Given** step and it suggests existing (the first two from the IntelliSense pop up) steps from "GetProducts.feature" and "AddProducts.feature". The step has already C# code definition that is why it also specified in the pop-up with "**-->**" characters
 
-## Auto formating
+## Auto formatting
 VS2010 "Edit-->Outlining" menu item works well with Specflow feature file. Even most of the items on "Edit" menu.
 The "table" in Specflow is also formatted in a nice way with as you type for the column names and values, it automatically expands (shown in figure 3). 
 
