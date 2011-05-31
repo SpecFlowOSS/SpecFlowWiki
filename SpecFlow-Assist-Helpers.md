@@ -24,7 +24,7 @@ You can convert the data in the table to an instance of an object like so:
 		// account.Name will equal "John Galt", HeightInInches will equal 72, etc.
 	}
 
-The **CreateInstance<T>** method will create the Account object and set properties according to what can be read from teh table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
+The **CreateInstance<T>** method will create the Account object and set properties according to what can be read from the table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
 
 ~~**Note: The headers on the table must be "Field" and "Value".**~~
 In the next version of SpecFlow, you can name the headers on vertical tables whatever you wish, not just Field/Value.  What matters now is that the first column has the property name and the second column has the value.  
