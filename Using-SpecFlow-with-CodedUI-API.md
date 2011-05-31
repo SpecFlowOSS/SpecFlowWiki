@@ -65,3 +65,6 @@ If you want to use any of the SpecFlow Hooks as steps such as [BeforeTestRun],[B
 `Microsoft.VisualStudio.TestTools.UITest.Extension.TechnologyNotSupportedException: The browser  is currently not supported`
 
 This is resolved by adding a `Playback.Initialize();` call in your [BeforeTestRun] step, and a `            Playback.Cleanup();` in your [AfterTestRun] step.
+
+## Other Information
+[Blog series on using Specflow with Coded UI Test API] (http://rburnham.wordpress.com/2011/03/15/bdd-ui-automation-with-specflow-and-coded-ui-tests/)
