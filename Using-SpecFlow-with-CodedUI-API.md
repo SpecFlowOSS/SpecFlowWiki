@@ -38,7 +38,7 @@ namespace My.SpecFlow
     } 
 }
 ```
-3. Build the project to generate an assembly (.dll) file - and copy this file into your SpecFlow directory on your path.
+3. Build the project to generate an assembly (.dll) file, make sure this is built against the same version of .net that SpecFlow is which is currently 3.5 - and copy this file into your SpecFlow installation directory.
 4. Add a config item to your CodedUI project's `App.Config` file
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
