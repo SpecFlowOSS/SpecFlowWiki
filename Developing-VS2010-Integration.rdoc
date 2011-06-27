@@ -12,5 +12,5 @@ You have to do the following steps to setup your environment:
 Steps to compile & test VS2010 integration changes
 1. Open the SpecFlow solution
 1. Select the "VS2010IntegrationTest" solution configuration
-1. Apply cnahges in the VS2010 integration & build the solution - this will register the VS2010 integration for the experimental instance
+1. Apply changes in the VS2010 integration & build the solution - this will register the VS2010 integration for the experimental instance
 1. Start VS2010 Experimental instance and test/debug your changes
