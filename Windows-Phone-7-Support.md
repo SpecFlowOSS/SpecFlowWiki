@@ -1,5 +1,7 @@
 You can use SpecFlow for developing Windows Phone 7 applications. Just do these simple steps.
 
+*Note: there are some issues reported when using Windows Phone Developer Tools 7.1 Beta, see [[SpecFlow forum|http://groups.google.com/group/specflow/browse_thread/thread/f77381f01df1ea93/b2041de12091496d?show_docid=b2041de12091496d]] for details*
+
 *(Windows Phone 7 support for SpecFlow was done by Max Paulousky [[http://www.maxpaulousky.com]])*
 
 ### Install prerequisites
