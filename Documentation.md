@@ -35,4 +35,5 @@
     * [[.NET Support]]
     * [[Mono Support]]
     * [[Silverlight Support]]
+        * [[Testing Silverlight Asynchronous Code]]
     * [[Windows Phone 7 Support]]
