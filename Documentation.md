@@ -1,6 +1,6 @@
 * [[Getting Started]]
 * [[Installation]]
-    * [[Setup Projects to use SpecFlow]]
+    * [[Setup SpecFlow Projects]]
 * [[Configuration]]
 * [[Using Gherkin Language in SpecFlow]]
     * [[Feature Language]]
