@@ -23,6 +23,7 @@
     * [[MSBuild Integration|Generate Tests from MsBuild]]
     * [[NuGet Integration]]
     * [[SpecLog Integration]]
+    * [[SharpDevelop Integration]]
 * [[Tools]]
     * [[Generate All Tool|Tools]]
 * [[Reporting]]
