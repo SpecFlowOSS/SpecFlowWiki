@@ -9,7 +9,7 @@ Since SpecFlow can use different unit testing frameworks to execute the SpecFlow
 SpecFlow projects need the `TechTalk.SpecFlow.dll` in order to compile. You need to add a reference to this assembly in one of the following ways:
 
 * Add the reference with NuGet: `Install-Package SpecFlow`. This is the easiest and the recommended way. See [[NuGet Integration]] for details.
-* Copy the content of the SpecFlow install folder to a folder inside your project structure and add a reference to the copied `TechTalk.SpecFlow.dll`. (Although the other assemblies are not directly used by the project, but they provide better tool and upgrade options, therefore it is a good practice to copy them too.)
+* Copy the content of the SpecFlow install folder to a folder inside your project structure and add a reference to the copied `TechTalk.SpecFlow.dll`. (Although the other assemblies are not directly used by the project, but they provide better tool and upgrade options, therefore it is a good practice to copy them too.) See detailed list of assemblies to be copied at the and of this page.
 
 ### 3. Configure SpecFlow project
 In the most simple case (using NUnit provider) you don't need to configure anything. If you are using another unit test provider or want to fine tune SpecFlow, see [[Configuration]].
@@ -35,3 +35,18 @@ The IDE  integration checks the generator in the following paths:
 5. generator obtained through NuGet (`..\..\tools`, relative to the runtime)
 
 If SpecFlow cannot find the generator or it is older than v1.6.0, the installed SpecFlow generator is used. If you use any custom plugins (e.g. unit test generator), this has to be in the same folder as the generator currently.
+
+## Detailed list of assemblies that are required for the project
+
+SpecFlow is also distributed as a binary package at [[GitHub|https://github.com/techtalk/SpecFlow/downloads]]. This package contains the assemblies that should be placed to the project folder. Here is a detailed list though:
+
+* `TechTalk.SpecFlow.dll`
+* `TechTalk.SpecFlow.Generator.dll`
+* `TechTalk.SpecFlow.Parser.dll`
+* `TechTalk.SpecFlow.Utils.dll`
+* `Gherkin.dll`
+* `IKVM.*.dll` (5 assemblies)
+* `specflow.exe` (optional)
+* `TechTalk.SpecFlow.Reporting.dll` (optional)
+* `TechTalk.SpecFlow.targets` (optional)
+* `TechTalk.SpecFlow.tasks` (optional)
