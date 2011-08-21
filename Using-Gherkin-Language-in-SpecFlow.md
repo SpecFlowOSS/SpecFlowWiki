@@ -1,16 +1,16 @@
 The feature files that are used by SpecFlow to store the acceptance criteria of the features (use cases, user stories) of your application are described in a format that is called Gherkin. The Gherkin language defines the structure and a basic syntax for describing the tests. The Gherkin format was introduced by [[Cucumber|http://cukes.info/]] is also used by other tools. 
 
-The Gherkin language is maintained as a separate project on GitHub: [[https://github.com/aslakhellesoy/gherkin]]. A detailed description of the language can be found at [[https://github.com/aslakhellesoy/cucumber/wiki/Gherkin]].
+The Gherkin language is maintained as a separate project on GitHub: [[https://github.com/cucumber/gherkin]]. A detailed description of the language can be found at [[https://github.com/cucumber/cucumber/wiki/Gherkin]].
 
 In this page we focus on the how SpecFlow handles the different Gherkin language elements. 
 
 ##Features
-The feature element provides the header or frame for the feature file. The feature has a title and a free-text high level description of the feature of your application that is detailed in the file. See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/Feature-Introduction]].
+The feature element provides the header or frame for the feature file. The feature has a title and a free-text high level description of the feature of your application that is detailed in the file. See more details at [[https://github.com/cucumber/cucumber/wiki/Feature-Introduction]].
 
 SpecFlow generates a unit-test class for the feature element. The class name will be derived from the title of the feature.
 
 ##Scenarios
-The feature file may contain multiple scenarios. The scenarios can be used to describe the acceptance tests of the feature. The scenario has a title and multiple scenario steps. See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/Feature-Introduction]].
+The feature file may contain multiple scenarios. The scenarios can be used to describe the acceptance tests of the feature. The scenario has a title and multiple scenario steps. See more details at [[https://github.com/cucumber/cucumber/wiki/Feature-Introduction]].
 
 SpecFlow generates a unit test method for each scenario. The method name will be derived from the title of the scenario.
 
@@ -21,7 +21,7 @@ The Gherkin syntax allows any combination or mixture of these three concepts, bu
 
 The scenario steps are defined with a step text and can have additional table or multi-line text arguments.
 
-See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/Given-When-Then]].
+See more details at [[https://github.com/cucumber/cucumber/wiki/Given-When-Then]].
 
 SpecFlow generates a call inside the unit test method for each scenario step. The call is performed by the SpecFlow runtime that will execute the binding matching to the scenario step. The matching is done at runtime, so the generated tests can be compiled and executed even if the binding is not yet implemented. Read more about execution of test before the binding has been implemented in the page [[Missing, Pending or Improperly Configured Bindings]].
 
@@ -30,10 +30,10 @@ The scenario steps are primary way to execute any custom code to automate the ap
 ##Table and multi-line text arguments
 The scenario steps can have table or multi-line text arguments additionally to the step text (that can also contain arguments for the bindings, see [[Step Bindings]]). These are described in the subsequent lines of the scenario step and passed as additional Table and string arguments to the step bindings.
 
-See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/multiline-step-arguments]]
+See more details at [[https://github.com/cucumber/cucumber/wiki/multiline-step-arguments]]
 
 ##Tags
-Tags are markers that can be applied to features and scenarios. Applying a tag on a feature is equivalent to apply the tag to all scenarios in the feature file. See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/Tags]].
+Tags are markers that can be applied to features and scenarios. Applying a tag on a feature is equivalent to apply the tag to all scenarios in the feature file. See more details at [[https://github.com/cucumber/cucumber/wiki/Tags]].
 
 If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates categories from the tags. The generated category name is the tag name, without the leading `@` sign. With the generated unit test categories you can filter or group the tests being executed. For example by marking crucial test with the `@important` tag, you can execute these tests more frequently.
 
@@ -42,12 +42,12 @@ Even if the unit test framework does not support categories, you can use the tag
 The `@ignore` tag is handled specially by SpecFlow. From the scenarios marked with this tag SpecFlow generates an ignored unit test method. See [[Ignored Tests]].
 
 ##Background
-The background language element allows specifying a common precondition for all scenarios in a feature file. The background part of the file can contain one or more scenario steps that are executed before any other steps of the scenarios. See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/Background]]
+The background language element allows specifying a common precondition for all scenarios in a feature file. The background part of the file can contain one or more scenario steps that are executed before any other steps of the scenarios. See more details at [[https://github.com/cucumber/cucumber/wiki/Background]]
 
 SpecFlow generates a method from the background elements that is invoked from all unit tests generated for the scenarios.
 
 ##Scenario Outlines
-Scenario outlines can be used to define data-driven acceptance tests. They can be also seen as scenario templates. The scenario outline is always consisting of a scenario template specification (a scenario with data placeholders using the `<placeholder>` syntax) and a set of examples that provide values for the placeholders. See more details at [[https://github.com/aslakhellesoy/cucumber/wiki/Scenario-outlines]].
+Scenario outlines can be used to define data-driven acceptance tests. They can be also seen as scenario templates. The scenario outline is always consisting of a scenario template specification (a scenario with data placeholders using the `<placeholder>` syntax) and a set of examples that provide values for the placeholders. See more details at [[https://github.com/cucumber/cucumber/wiki/Scenario-outlines]].
 
 If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise a it generates a parametrized unit test logic method for a scenario outline and an individual unit test method for each example set. 
 
