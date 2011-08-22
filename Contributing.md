@@ -14,3 +14,5 @@ Important! Please use autocrlf when committing to the SpecFlow repository. See d
 * General notes about the development: [[Development]]
 * [[Developing VS2010 Integration]]
 * CI build server: [[http://build.specflow.org]]
+
+And finally the [[Release Process]] in case we forget it.
