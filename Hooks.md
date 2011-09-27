@@ -68,7 +68,7 @@ For more complex filtering the [[ScenarioContext]] class can be used. The follow
 [BeforeScenario("web")]
 public static void BeforeWebScenario()
 {
-    if(ScenarioContext.Current.ScenarioInfo.Tags.Contains("automated))
+    if(ScenarioContext.Current.ScenarioInfo.Tags.Contains("automated"))
         StartSelenium();
 }
 ```
