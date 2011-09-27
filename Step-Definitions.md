@@ -1,4 +1,4 @@
-The bindings ([[step definitions]], [[hooks]]) provide the connection between the free-text specification and the application interfaces (see [[Bindings]]). For better reusability, the step definitions can be parametrized. This means that it is not necessary to define a new step definition for each step that just differs in a small portion.  E.g. the steps `When I perform a simple search on 'Domain'` and `When I perform a simple search on 'Communication'` can be automated with a single step definition. 
+The bindings ([[step definitions]], [[hooks]], etc.) provide the connection between the free-text specification and the application interfaces (see [[Bindings]]). For better reusability, the step definitions can be parametrized. This means that it is not necessary to define a new step definition for each step that just differs in a small portion.  E.g. the steps `When I perform a simple search on 'Domain'` and `When I perform a simple search on 'Communication'` can be automated with a single step definition. 
 
 The following example shows a simple step definition that matches to the step `When I perform a simple search on 'Domain'` mentioned earlier. 
 
