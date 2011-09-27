@@ -18,6 +18,7 @@ Here the method is annotated with the `[When]` attribute, providing the regular 
 * `[Given(regex)]` - `TechTalk.SpecFlow.GivenAttribute`
 * `[When(regex)]` - `TechTalk.SpecFlow.WhenAttribute`
 * `[Then(regex)]` - `TechTalk.SpecFlow.ThenAttribute`
+* `[StepDefinition(regex)]` - `TechTalk.SpecFlow.StepDefinitionAttribute`, matches for given, when or then attributes (from v1.8)
 
 You can annotate a single method with multiple attributes in order to support different phrasings in the feature file for the same automation logic.
 
