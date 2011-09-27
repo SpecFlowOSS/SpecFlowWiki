@@ -10,7 +10,7 @@
 * [[Bindings]]
     * [[Step Bindings]]
         * [[Scoped Step Bindings]]
-    * [[Event Bindings]]
+    * [[Hooks]]
     * [[Step Argument Conversions]]
         * [[SpecFlow Assist Helpers]]
     * [[Sharing Data between Bindings]]
