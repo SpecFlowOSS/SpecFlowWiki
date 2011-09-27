@@ -55,8 +55,21 @@ public static void BeforeWebScenario()
 ```
 
 For the scenario, scenarioblock or step events, the following tags are considered:
+
 * tag on the feature
 * tag on the scenario
 * tag on the scenario outline
 * tag on the scenario outline example set (`Examples:`)
+
+For more complex filtering the [[ScenarioContext]] class can be used. The following example starts selenium if the scenario is tagged with `@web` _and_ `@automated`.
+
+
+```c#
+[BeforeScenario("web")]
+public static void BeforeWebScenario()
+{
+    if(ScenarioContext.Current.ScenarioInfo.Tags.Contains("automated))
+        StartSelenium();
+}
+```
 
