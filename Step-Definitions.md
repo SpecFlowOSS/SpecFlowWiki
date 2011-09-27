@@ -1,6 +1,6 @@
-The bindings provide the connection between the free-text specification and the application interfaces (see [[Bindings]]). For better reusability, the step bindings can be parametrized. This means that it is not necessary to define a new binding for each step that just differs in a small portion.  E.g. the steps `When I perform a simple search on 'Domain'` and `When I perform a simple search on 'Communication'` can be automated with a single binding. 
+The bindings ([[step definitions]], [[hooks]]) provide the connection between the free-text specification and the application interfaces (see [[Bindings]]). For better reusability, the step definitions can be parametrized. This means that it is not necessary to define a new step definition for each step that just differs in a small portion.  E.g. the steps `When I perform a simple search on 'Domain'` and `When I perform a simple search on 'Communication'` can be automated with a single step definition. 
 
-The following example shows a simple step binding that matches to the step `When I perform a simple search on 'Domain'` mentioned earlier. 
+The following example shows a simple step definition that matches to the step `When I perform a simple search on 'Domain'` mentioned earlier. 
 
 ```c#
 [When(@"I perform a simple search on '(.*)'")]
@@ -13,7 +13,7 @@ public void WhenIPerformASimpleSearchOn(string searchTerm)
 
 Here the method is annotated with the `[When]` attribute, providing the regular expression to be used to match the step text. The match groups (`(…)`) of the regular expression define the parameters for the method.
 
-##Supported Step Binding Attributes
+##Supported Step Definition Attributes
 
 * `[Given(regex)]` - `TechTalk.SpecFlow.GivenAttribute`
 * `[When(regex)]` - `TechTalk.SpecFlow.WhenAttribute`
@@ -21,7 +21,7 @@ Here the method is annotated with the `[When]` attribute, providing the regular 
 
 You can annotate a single method with multiple attributes in order to support different phrasings in the feature file for the same automation logic.
 
-##Rules for the Step Binding Method
+##Rules for the Step Definition Method
 
 * Must be in a public class, marked with the `[Binding]` attribute.
 * Must be a public method.
@@ -37,7 +37,7 @@ You can annotate a single method with multiple attributes in order to support di
 
 ##Table or Multi-line Text Arguments
 
-If the step binding method should match for steps having [[table or multi-line text arguments|Using Gherkin Language in SpecFlow]], additional `Table` and/or `string` parameters have to be defined in the method signature to be able to receive the these arguments. If both table and multi-line text argument is used for the step, the multi-line text argument is provided first.
+If the step definition method should match for steps having [[table or multi-line text arguments|Using Gherkin Language in SpecFlow]], additional `Table` and/or `string` parameters have to be defined in the method signature to be able to receive the these arguments. If both table and multi-line text argument is used for the step, the multi-line text argument is provided first.
 
 ```
 Given the following books
@@ -57,5 +57,5 @@ public void GivenTheFollowingBooks(Table table)
 ##See also
 
 * [[Step Argument Conversions]]
-* [[Scoped Step Bindings]]
+* [[Scoped Bindings]]
 
