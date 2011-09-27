@@ -8,7 +8,7 @@
     * [[Test Result]]
     * [[Debugging Tests]]
 * [[Bindings]]
-    * [[Step Bindings]]
+    * [[Step Definitions]]
     * [[Hooks]]
     * [[Scoped Bindings]]
     * [[Step Argument Conversions]]
