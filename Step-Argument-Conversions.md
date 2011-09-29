@@ -5,6 +5,7 @@ To avoid cumbersome conversions in the step binding methods, SpecFlow can do aut
 All conversions are performed with the culture of the feature file, unless the [[&lt;bindingCulture&gt; element|Configuration]] is used in the configuration. See [[Feature Language]] for details.
 
 The following conversions can be performed by SpecFlow (in the following precedence):
+
 * no conversion, if the argument is an instance of the parameter type (e.g. the parameter type is `object` or `string`)
 * step argument transformation
 * standard conversion
