@@ -13,6 +13,7 @@ The following conversions can be performed by SpecFlow (in the following precede
 ##Standard Conversion
 
 A standard conversion is performed by SpecFlow in the following cases:
+
 * the argument can be converted to the parameter type with `Convert.ChangeType()`
 * the parameter type is an `enum` type and the (string) argument is an enum value
 
