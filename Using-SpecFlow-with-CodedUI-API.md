@@ -11,8 +11,10 @@ You need to ensure SpecFlow generates this attribute, and ensure that any SpecFl
 ### Getting SpecFlow to generate the [CodedUITest] attribute with VS2010 and MSTest
 
 1. Create a new VS project to generate an assembly that contains the following class.
-This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.dll` in the SpecFlow directory.
+This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.dll` in the SpecFlow directory. If you are using version 1.7 or higher you will also need to add a reference to `TechTalk.SpecFlow.Utils.dll`
 2. Add the following class to your new VS project
+
+**Specflow version 1.6**
 ```csharp
 namespace My.SpecFlow
 {
@@ -37,6 +39,33 @@ namespace My.SpecFlow
         }
     } 
 }
+```
+**Specflow version 1.7**
+```csharp
+   using System.CodeDom;
+using TechTalk.SpecFlow.Generator.UnitTestProvider;
+
+namespace SpecflowCodedUIGenerator
+{
+    public class MsTest2010CodedUiGeneratorProvider : MsTest2010GeneratorProvider
+    {
+        public override void SetTestClass(TechTalk.SpecFlow.Generator.TestClassGenerationContext generationContext, string featureTitle, string featureDescription)
+        {
+            base.SetTestClass(generationContext, featureTitle, featureDescription);
+
+            foreach (CodeAttributeDeclaration customAttribute in generationContext.TestClass.CustomAttributes)
+            {
+                if (customAttribute.Name == "Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute")
+                {
+                    generationContext.TestClass.CustomAttributes.Remove(customAttribute);
+                    break;
+                }
+            }
+
+            generationContext.TestClass.CustomAttributes.Add(new CodeAttributeDeclaration(new CodeTypeReference("Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute")));
+        }
+    }
+} 
 ```
 3. Build the project to generate an assembly (.dll) file, make sure this is built against the same version of .net that SpecFlow is which is currently 3.5 - and copy this file into your SpecFlow installation directory.
 4. Add a config item to your CodedUI project's `App.Config` file
