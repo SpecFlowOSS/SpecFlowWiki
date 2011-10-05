@@ -14,7 +14,7 @@ You need to ensure SpecFlow generates this attribute, and ensure that any SpecFl
 This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.dll` in the SpecFlow directory. If you are using version 1.7 or higher you will also need to add a reference to `TechTalk.SpecFlow.Utils.dll`
 2. Add the following class to your new VS project
 
-**Specflow version 1.6**
+**SpecFlow version 1.6**
 ```csharp
 namespace My.SpecFlow
 {
@@ -40,7 +40,7 @@ namespace My.SpecFlow
     } 
 }
 ```
-**Specflow version 1.7**
+**SpecFlow version 1.7**
 ```csharp
    using System.CodeDom;
 using TechTalk.SpecFlow.Generator.UnitTestProvider;
