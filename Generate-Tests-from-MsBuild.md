@@ -11,7 +11,7 @@ In order to enable this in your project, you have to modify the project file con
 </Project>
 ```
 
-In order to be able to build your application in any environment independent of the SpecFlow installation it is recommended to store the SpecFlow tools together with your sources and use a relative path for the import.
+In order to be able to build your application in any environment independent of the SpecFlow installation it is recommended to store the SpecFlow tools together with your sources and use a relative path for the import. The [[SpecFlow NuGet package|NuGet Integration]] also contains all necessary files to support MsBuild generation (`tools` folder).
 
 ```xml
 <Import Project="..\lib\SpecFlow\TechTalk.SpecFlow.targets"/>
@@ -38,3 +38,15 @@ If the feature files are not only edited, but also added, renamed or deleted out
 
 See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow.DynamicallyIncludedFeatureFiles)
 
+It is also possible (from v1.8) to further process the generated files. The `TechTalk.SpecFlow.targets` file defines two targets (`BeforeUpdateFeatureFilesInProject` and `AfterUpdateFeatureFilesInProject`) that can be overridden. Furthermore it populates the list of generated files to the MsBuild item `@(SpecFlowGeneratedFiles)`.
+
+The following example shows an overridden `AfterUpdateFeatureFilesInProject` target that moves the generated files to a separate folder.
+
+```xml
+<Target Name="AfterUpdateFeatureFilesInProject">
+  <Move 
+    SourceFiles="@(SpecFlowGeneratedFiles)" 
+    DestinationFolder="MyGeneratedFiles" 
+    OverwriteReadOnlyFiles="true" />
+</Target>
+```
