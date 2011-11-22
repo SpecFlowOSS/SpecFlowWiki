@@ -1,4 +1,4 @@
-The [[Gherkin feature files|Using Gherkin Language in SpecFlow]] are more close to free-text than to code – they cannot be executed as they are. The automation that connects the specification to the application interface has to be developed first. This automation is also called _binding_ in general. There are several kind of bindings in SpecFlow. 
+The [[Gherkin feature files|Using Gherkin Language in SpecFlow]] are more close to free-text than to code – they cannot be executed as they are. The automation that connects the specification to the application interface has to be developed first. This automation is also called _binding_ in general. There are several kinds of bindings in SpecFlow. 
 
 The most important one is the [[step definition|Step Definitions]] that automates the scenario at step-level. This means that instead of providing the automation for the entire scenario, this has to be done for each different step. The benefit of this model is that the step definitions can be reused in other scenarios, so it is possible to construct further scenarios partly from existing steps with less (or no) automation effort. See [[Step Definitions]] for details.
 
