@@ -50,8 +50,6 @@ The `continueUntil` predicate that must return true before the work queue is con
 
 For accessing these API methods, you have two options currently.
 
-1. Derive your step binding class from `TechTalk.SpecFlow.Async.AsyncTests` and use the methods inherited from the base class.
+1. Derive your step binding class from `TechTalk.SpecFlow.Async.AsyncSteps` and use the methods inherited from the base class.
 2. Use `AsyncContext.Current` to access the API methods.
 
-
-NOTE: The class TechTalk.SpecFlow.Async.AsyncTests doesn't exist in neither 1.7.1 nor 1.8.1.
