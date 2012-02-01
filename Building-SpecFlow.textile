@@ -7,6 +7,7 @@ To build SpecFlow you need to install:
 - "Silverlight 4 for Developers":http://download.microsoft.com/download/C/5/8/C5877489-8022-42A6-8456-D05C2A6C8DFB/runtime/Silverlight_Developer.exe
 - "Windows Phone Developer Tools RTW":http://www.microsoft.com/download/en/details.aspx?id=13890
 - "Windows Phone Developer Tools January 2011 Update":http://www.microsoft.com/downloads/en/details.aspx?FamilyID=49b9d0c5-6597-4313-912a-f0cca9c7d277&displaylang=en
+- "Silverlight 4 Toolkit - April 2010":http://silverlight.codeplex.com/releases/view/43528
 
 Other notes:
 - The Vs2008Integration package builds but it does not register automatically the integration component for the VS2008 experimental hive. For debugging the VS2008 integration component, you have to register this component manually.
