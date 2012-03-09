@@ -60,13 +60,13 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>+</td>
         <td>+</td>
-        <td>See [[http://www.mbunit.org]].</td>    
+        <td>See [[http://www.mbunit.com]].</td>    
     </tr>    
     <tr>
         <td>mbUnitv3</td>
         <td>+</td>
         <td>+</td>
         <td>+</td>
-        <td>See [[http://www.mbunit.org]].</td>    
+        <td>See [[http://www.mbunit.com]].</td>    
     </tr>
 </table>
