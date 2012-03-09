@@ -7,7 +7,7 @@ You can help the community with improving SpecFlow. Feel free to provide fixes o
 
 If you are new to Github: A good description about creating pull request can be found here: [[http://help.github.com/pull-requests/]]
 
-Important! Please use autocrlf when committing to the SpecFlow repository. See deatils [[here|http://help.github.com/dealing-with-lineendings/]].
+Important! Please use autocrlf when committing to the SpecFlow repository. See details [[here|http://help.github.com/dealing-with-lineendings/]].
 
 ###Useful information for development
 
