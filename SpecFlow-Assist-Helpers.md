@@ -1,3 +1,5 @@
+To use these helpers, we need to add the TechTalk.SpecFlow.Assist namespace to the project.
+
 CreateInstance<T>
 ---
 **CreateInstance<T>** is an extension method off of the Table object that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
