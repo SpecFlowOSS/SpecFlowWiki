@@ -42,8 +42,9 @@ namespace My.SpecFlow
 }
 ```
 **SpecFlow version 1.7**
+
 ```csharp
-   using System.CodeDom;
+using System.CodeDom;
 using TechTalk.SpecFlow.Generator.UnitTestProvider;
 
 namespace SpecflowCodedUIGenerator
@@ -68,8 +69,11 @@ namespace SpecflowCodedUIGenerator
     }
 } 
 ```
+
 3. Build the project to generate an assembly (.dll) file, make sure this is built against the same version of .net that SpecFlow is which is currently 3.5 - and copy this file into your SpecFlow installation directory.
+
 4. Add a config item to your CodedUI project's `App.Config` file
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
@@ -87,6 +91,7 @@ TechTalk.SpecFlow"/>
   </specFlow>
 </configuration>
 ```
+
 5. Now when you generate a new feature file, it will add the appropriate attributes.
 
 ### Ensuring the SpecFlow hooks can use the CodedUI API
