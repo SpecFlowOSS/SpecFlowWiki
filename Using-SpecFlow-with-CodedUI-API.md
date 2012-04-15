@@ -16,7 +16,8 @@ This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.
 
 **SpecFlow version 1.6**
 
-``namespace My.SpecFlow
+```csharp
+namespace My.SpecFlow
 {
     using System.CodeDom;
     using TechTalk.SpecFlow.Generator.UnitTestProvider;
@@ -39,8 +40,7 @@ This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.
         }
     } 
 }
-``
-
+```
 **SpecFlow version 1.7**
 ```csharp
    using System.CodeDom;
