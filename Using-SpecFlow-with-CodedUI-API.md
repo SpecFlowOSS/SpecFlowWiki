@@ -15,8 +15,8 @@ This will need to have the have a reference to the `TechTalk.SpecFlow.Generator.
 2. Add the following class to your new VS project
 
 **SpecFlow version 1.6**
-```csharp
-namespace My.SpecFlow
+
+``namespace My.SpecFlow
 {
     using System.CodeDom;
     using TechTalk.SpecFlow.Generator.UnitTestProvider;
@@ -39,7 +39,8 @@ namespace My.SpecFlow
         }
     } 
 }
-```
+``
+
 **SpecFlow version 1.7**
 ```csharp
    using System.CodeDom;
