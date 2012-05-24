@@ -6,3 +6,8 @@ You can add SpecFlow to your project with the NuGet Package Management Console w
 ```
 Install-Package SpecFlow -ProjectName myproject
 ```
+
+For setting up SpecFlow with NUnit in one step, there are two additional packages
+
+* `SpecFlow.NUnit` - installs SpecFlow and NUnit for running with arbitrary test runners (e.g. ReSharper)
+* `SpecFlow.NUnit.Runners` - this is a specialized package, if you want to run SpecFlow tests with the nunit test runners together with [AfterTestRun] hooks. (see https://github.com/techtalk/SpecFlow/issues/26)
