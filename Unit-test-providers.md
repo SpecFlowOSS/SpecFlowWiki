@@ -18,7 +18,7 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>+</td>
         <td>+</td>
-        <td>See [[http://www.nunit.org]].</td>
+        <td>See [[http://www.nunit.org]]. Specialized [[NuGet packages|NuGet Integration]] available for easy setup.</td>
     </tr>
     <tr>
         <td>MsTest</td>
