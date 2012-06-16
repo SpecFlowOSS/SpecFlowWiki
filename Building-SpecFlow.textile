@@ -2,7 +2,7 @@ Currently we are building SpecFlow with VisualStudio 2010.
 
 To build SpecFlow you need to install:
 - "WiX Installer 3.5":http://wix.sourceforge.net/
-- "Visual Studio 2010 SDK":http://www.microsoft.com/downloads/details.aspx?FamilyID=47305cf4-2bea-43c0-91cd-1b853602dcc5&displaylang=en
+- "Visual Studio 2010 SDK":http://www.microsoft.com/downloads/details.aspx?FamilyID=47305cf4-2bea-43c0-91cd-1b853602dcc5&displaylang=en or "Visual Studio 2010 SP1 SDK":http://www.microsoft.com/en-us/download/details.aspx?id=21835
 - "Silverlight 3 SDK":http://www.microsoft.com/downloads/details.aspx?FamilyID=1ea49236-0de7-41b1-81c8-a126ff39975b&displaylang=en (TODO: verify if this is really needed)
 - "Silverlight 4 for Developers":http://download.microsoft.com/download/C/5/8/C5877489-8022-42A6-8456-D05C2A6C8DFB/runtime/Silverlight_Developer.exe
 - "Windows Phone Developer Tools RTW":http://www.microsoft.com/download/en/details.aspx?id=13890
