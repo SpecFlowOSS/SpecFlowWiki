@@ -228,7 +228,8 @@ This section can be used to configure how and what should SpecFlow trace out to 
 
 #### `<stepAssemblies>`
 
-This section can be used to configure additional assemblies that contain bindings. The assembly of the SpecFlow project (the project with the the feature files) is automatically included. The binding assemblies have to be placed in the output folder (e.g. bin/Debug) of the SpecFlow project, for example by adding a reference to the assembly from the project too. 
+This section can be used to configure additional assemblies that contain bindings ([[external binding assemblies|
+Use Bindings from External Assemblies]]). The assembly of the SpecFlow project (the project with the the feature files) is automatically included. The binding assemblies have to be placed in the output folder (e.g. bin/Debug) of the SpecFlow project, for example by adding a reference to the assembly from the project too. 
 
 The following example registers an additional binding assembly (MySharedBindings.dll). 
 
