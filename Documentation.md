@@ -8,6 +8,7 @@
     * [[Test Result]]
     * [[Debugging Tests]]
 * [[Bindings]]
+    * [[Use Bindings from External Assemblies]]
     * [[Step Definitions]]
     * [[Hooks]]
     * [[Scoped Bindings]]
