@@ -10,6 +10,7 @@
 * [[Bindings]]
     * [[Use Bindings from External Assemblies]]
     * [[Step Definitions]]
+        * [[Step Definition Styles]]
     * [[Hooks]]
     * [[Scoped Bindings]]
     * [[Step Argument Conversions]]
@@ -17,6 +18,7 @@
     * [[Sharing Data between Bindings]]
         * [[FeatureContext]]
         * [[ScenarioContext]]
+    * [[F# Support|FSharp Support]]
 * [[Unit Test Providers]]
 * Tool Integrations
     * [[Visual Studio 2008 Integration]]
@@ -28,6 +30,7 @@
     * [[SharpDevelop Integration]]
 * [[Tools]]
     * [[Generate All Tool|Tools]]
+    * [[Plugins]]
 * [[Reporting]]
     * [[Test Execution Report|Reporting]]
     * [[Step Usage Report|Reporting]]
