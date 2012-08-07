@@ -11,16 +11,25 @@ public void WhenIPerformASimpleSearchOn(string searchTerm)
 }
 ```
 
-Here the method is annotated with the `[When]` attribute, providing the regular expression to be used to match the step text. The match groups (`(…)`) of the regular expression define the parameters for the method.
+Here the method is annotated with the `[When]` attribute, providing the regular expression to be used to match the step text. The match groups (`(…)`) of the regular expression define the parameters for the method. From SpecFlow v1.9 the step definitions can be also specified without regular expressions. Check the [[step definition styles]] page for details.
 
 ##Supported Step Definition Attributes
 
-* `[Given(regex)]` - `TechTalk.SpecFlow.GivenAttribute`
-* `[When(regex)]` - `TechTalk.SpecFlow.WhenAttribute`
-* `[Then(regex)]` - `TechTalk.SpecFlow.ThenAttribute`
-* `[StepDefinition(regex)]` - `TechTalk.SpecFlow.StepDefinitionAttribute`, matches for given, when or then attributes (from v1.8)
+* `[Given(regex)]` or `[Given]` - `TechTalk.SpecFlow.GivenAttribute`
+* `[When(regex)]` or `[When]` - `TechTalk.SpecFlow.WhenAttribute`
+* `[Then(regex)]` or `[Then]` - `TechTalk.SpecFlow.ThenAttribute`
+* `[StepDefinition(regex)]` or `[StepDefinition]` - `TechTalk.SpecFlow.StepDefinitionAttribute`, matches for given, when or then attributes (from v1.8)
 
 You can annotate a single method with multiple attributes in order to support different phrasings in the feature file for the same automation logic.
+
+```c#
+[When(@"I perform a simple search on '(.*)'")]
+[When(@"I search for '(.*)'")]
+public void WhenIPerformASimpleSearchOn(string searchTerm)
+{
+  ...
+}
+```
 
 ##Rules for the Step Definition Method
 
@@ -30,11 +39,17 @@ You can annotate a single method with multiple attributes in order to support di
 * Cannot have `out` or `ref` parameters.
 * Cannot have a return type. 
 
-##Regular Expression Matching Rules
+##Step Matching Rules
+* The rules depend on the step definition style you use. Check the [[step definition styles]] page for the exact rules.
 
-* The regular expressions are always matching to the entire step text even if you not use the `^` and `$` markers.
-* The match groups (`(…)`) of the regular expression define the arguments for the method based on the order (the match result of the first group becomes the first argument, etc.).
-* You can use non-capturing groups `(?:regex)` in order to use groups without a method argument.
+##Parameter Matching Rules
+
+* Step definitions can specify parameters. These will match to the parameters of the step definition method.
+* With regular expressions
+  * The match groups (`(…)`) of the regular expression define the arguments for the method based on the order (the match result of the first group becomes the first argument, etc.).
+  * You can use non-capturing groups `(?:regex)` in order to use groups without a method argument.
+* With method name matching
+  * You can refer to the method parameters with either the parameter name (ALL-CAPS) or the parameter index (zero-based) with the `P` prefix, e.g. `P0`.
 
 ##Table or Multi-line Text Arguments
 
@@ -57,6 +72,7 @@ public void GivenTheFollowingBooks(Table table)
 
 ##See also
 
+* [[Step Definition Styles]]
 * [[Step Argument Conversions]]
 * [[Scoped Bindings]]
 
