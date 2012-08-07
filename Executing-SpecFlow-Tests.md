@@ -9,10 +9,8 @@ The execution of the tests depends on the [[unit test provider|Unit Test Provide
 </specFlow>
 ```
 
-For example for MsTest unit test provider, all acceptance tests in the project can be executed with the following steps:
-1.	Select the acceptance test project (e.g. `BookShop.AcceptanceTests`) in solution explorer.
-2.	Select command from the main menu: Test / Run / Tests in Current Context (Ctrl R,T)
+For example for MsTest unit test provider the tests can be executed from the Visual Studio test explorer window.
 
-For executing a single scenario, the test explorer can be used. Alternatively the generated test method can be executed from the generated code-behind file.
+SpecFlow Visual Studio integration provides a simplified way to execute tests regardless of the provider. Use the "Run SpecFlow Scenarios" or "Debug SpecFlow Scenarios" commands from the context menu of the feature file editor or on the solution explorer nodes (project, folder, feature file).
 
 See also [[Test Result]] and [[Debugging Tests]].
