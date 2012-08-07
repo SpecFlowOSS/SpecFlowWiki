@@ -18,21 +18,21 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>+</td>
         <td>+</td>
-        <td>See [[http://www.nunit.org]]. Specialized [[NuGet packages|NuGet Integration]] available for easy setup.</td>
+        <td>See [[http://www.nunit.org]]. Specialized [[NuGet packages|NuGet Integration]] available for easy setup: SpecFlow.NUnit, SpecFlow.NUnit.Runners.</td>
     </tr>
     <tr>
-        <td>MsTest</td>
+        <td>MsTest.2008</td>
         <td>-</td>
         <td>-</td>
         <td>+</td>
-        <td>MsTest provider for .Net 3.5</td>
+        <td>MsTest provider for .NET 3.5</td>
     </tr>
     <tr>
-        <td>MsTest.2010</td>
+        <td>MsTest <br/> MsTest.2010</td>
         <td>-</td>
         <td>+</td>
         <td>+</td>
-        <td>MsTest provider for .Net 4.0. Supporting test-categories.</td>
+        <td>MsTest provider for .NET 4.0. Supporting test-categories. (Note:  before SpecFlow v1.9, MsTest was referring to the .NET 3.5 provider.)</td>
     </tr>
     <tr>
         <td>MsTest.Silverlight <br/> MsTest.Silverlight3 <br/> MsTest.Silverlight4</td>
@@ -53,7 +53,7 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>-</td>
         <td>-</td>
-        <td>See [[http://www.xunit.net]].</td>    
+        <td>See [[http://www.xunit.net]]. Specialized [[NuGet package|NuGet Integration]] available for easy setup: SpecFlow.xUnit.</td>    
     </tr>
     <tr>
         <td>mbUnit</td>
@@ -68,5 +68,12 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>+</td>
         <td>MbUnit Version 3 provider. See [[http://www.mbunit.com]].</td>    
+    </tr>
+    <tr>
+        <td>SpecRun <br/> SpecRun+NUnit <br/> SpecRun+MsTest</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+        <td>SpecRun provider. See [[http://www.specrun.com]]. Requires SpecRun plugin NuGet package: SpecRun.SpecFlow</td>    
     </tr>
 </table>
