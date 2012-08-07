@@ -23,6 +23,7 @@
 * Tool Integrations
     * [[Visual Studio 2008 Integration]]
     * [[Visual Studio 2010 Integration]]
+    * [[Visual Studio 2012 Integration]]
     * [[MonoDevelop Integration]]
     * [[MSBuild Integration|Generate Tests from MsBuild]]
     * [[NuGet Integration]]
