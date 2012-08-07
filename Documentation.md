@@ -27,6 +27,7 @@
     * [[MonoDevelop Integration]]
     * [[MSBuild Integration|Generate Tests from MsBuild]]
     * [[NuGet Integration]]
+    * [[SpecRun Integration]]
     * [[SpecLog Integration]]
     * [[SharpDevelop Integration]]
 * [[Tools]]
