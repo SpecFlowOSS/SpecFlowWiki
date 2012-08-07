@@ -6,8 +6,7 @@ convention for .NET).
 Unlike other runtime-only tools, SpecFlow processes the configuration file also while it generates the
 unit-tests from the feature files (this happens usually when you save the feature file). This means
 that after you have changed the configuration file, you might need to force re-generation of the unit
-test (if the configuration change affects the generated tests). The [[Visual Studio 2010 Integration]] can 
-detect the change of the configuration file and offers re-generation.
+test (if the configuration change affects the generated tests). The [[Visual Studio integration|Visual Studio 2010 Integration]] can detect the change of the configuration file and offers re-generation. In Visual Studio you can also force re-generation from the context menu of the project node in the solution explorer.
 
 ## Default Configuration
 
@@ -39,19 +38,23 @@ The following example shows all possible configuration option with their default
   <unitTestProvider name="NUnit" />
   <generator 
       allowDebugGeneratedFiles="false" 
-      allowRowTests="true" />
+      allowRowTests="true"
+      generateAsyncTests="false"
+      path="{not-specified}" />
   <runtime 
-      detectAmbiguousMatches="true"
       stopAtFirstError="false"
       missingOrPendingStepsOutcome="Inconclusive" />
   <trace 
       traceSuccessfulSteps="true"
       traceTimings="false"
       minTracedDuration="0:0:0.1"
-      listener="TechTalk.SpecFlow.Tracing.DefaultListener, TechTalk.SpecFlow" />
+      stepDefinitionSkeletonStyle="RegexAttribute" />
   <stepAssemblies>
     <!-- <stepAssembly assembly="{name-of-assembly-containing-bindgins}" /> -->
   </stepAssemblies>
+  <plugins>
+    <!-- <add name="{plugin-name}" /> -->
+  </plugins>
 </specFlow>
 ```
 ### Configuration Elements
@@ -121,16 +124,12 @@ This section can be used to specify the unit-test framework SpecFlow uses to exe
     <tr>
         <td>generatorProvider</td>
         <td>class name</td>
-        <td>An assembly qualified class name of a class that implements 
-            <code>TechTalk.SpecFlow.Generator.UnitTestProvider.IUnitTestGeneratorProvider</code>
-            interface.</td>
+        <td>Obsolete, will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
     <tr>
         <td>runtimeProvider</td>
         <td>class name</td>
-        <td>An assembly qualified class name of a class that implements 
-            <code>TechTalk.SpecFlow.UnitTestProvider.IUnitTestRuntimeProvider</code>
-            interface.</td>
+        <td>Obsolete, will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
 </table>
 
@@ -146,15 +145,33 @@ This section can be used to specify various unit-test generation options.
     </tr>
     <tr>
         <td>allowDebugGeneratedFiles</td>
-        <td>true/false</td>
+        <td>true|false</td>
         <td>The debugger is by default configured to step through the generated code. This helps to debug from the feature files directly to the bindings (see [[Debugging Tests]]). This feature can be disabled by setting this attribute to “true”.<br/>
             Default: false</td>
     </tr>
     <tr>
         <td>allowRowTests</td>
-        <td>true/false</td>
+        <td>true|false</td>
         <td>Specifies if "row tests" should be generated for [[scenario outlines|Using Gherkin Language in SpecFlow]]. This setting is ignored if the [[unit test framework|Unit Test Providers]] does not support row based testing.<br/>
             Default: true</td>
+    </tr>
+    <tr>
+        <td>generateAsyncTests</td>
+        <td>true|false</td>
+        <td>Specifies if the generated tests should support [[testing asynchronous code|Testing Silverlight Asynchronous Code]]. This setting is currently supported only for the Silverlight platform.<br/>
+            Default: false</td>
+    </tr>
+    <tr>
+        <td>path</td>
+        <td>path relative to the project folder</td>
+        <td>Specifies the custom folder of the SpecFlow generator to be used if it is not in the standard path search list. See [[Setup SpecFlow Projects]] for details.<br/>
+            Default: not specified</td>
+    </tr>
+    <tr>
+        <td>dependencies</td>
+        <td>custom dependencies</td>
+        <td>Specifies the custom dependencies SpecFlow generator. See [[Plugins]] for details.<br/>
+            Default: not specified</td>
     </tr>
 </table>
 
@@ -170,21 +187,27 @@ This section can be used to specify various test execution options.
     </tr>
     <tr>
         <td>detectAmbiguousMatches</td>
-        <td>true/false</td>
-        <td>Specifies whether SpecFlow should report an error if there is an ambiguous match of step binding or just use the first one that matches.<br/>
+        <td>true|false</td>
+        <td>Obsolete, will be removed in v2.0.<br/>
             Default: true</td>
     </tr>
     <tr>
         <td>stopAtFirstError</td>
-        <td>true/false</td>
+        <td>true|false</td>
         <td>Specifies whether the execution should stop at the first error or should continue to try matching the subsequent steps (in order to detect missing steps).<br/>
             Default: false</td>
     </tr>
     <tr>
         <td>missingOrPendingStepsOutcome</td>
-        <td>Inconclusive/Ignore/Error</td>
+        <td>Inconclusive|<br/>Ignore|<br/>Error</td>
         <td>Specifies how SpecFlow should behave if a step binding is not implemented or pending. See [[Missing, Pending or Improperly Configured Bindings|Test Result]].<br/>
             Default: Inconclusive</td>
+    </tr>
+    <tr>
+        <td>dependencies</td>
+        <td>custom dependencies</td>
+        <td>Specifies the custom dependencies SpecFlow runtime. See [[Plugins]] for details.<br/>
+            Default: not specified</td>
     </tr>
 </table>
 
@@ -200,13 +223,13 @@ This section can be used to configure how and what should SpecFlow trace out to 
     </tr>
     <tr>
         <td>traceSuccessfulSteps</td>
-        <td>true/false</td>
+        <td>true|false</td>
         <td>Specifies whether SpecFlow should trace successful step binding executions. <br/>
             Default: true</td>
     </tr>
     <tr>
         <td>traceTimings</td>
-        <td>true/false</td>
+        <td>true|false</td>
         <td>Specifies whether SpecFlow should trace execution time of the binding methods (only if the execution time is longer than the minTracedDuration value).<br/>
             Default: false</td>
     </tr>
@@ -217,12 +240,15 @@ This section can be used to configure how and what should SpecFlow trace out to 
             Default: 0:0:0.1 (100 ms)</td>
     </tr>
     <tr>
+        <td>stepDefinitionSkeletonStyle</td>
+        <td>RegexAttribute|<br/>MethodNameUnderscores|<br/>MethodNamePascalCase|<br/>MethodNameRegex</td>
+        <td>Specifies the default [[step definition style|Step Definition Styles]].<br/>
+            Default: RegexAttribute</td>
+    </tr>
+    <tr>
         <td>Listener</td>
         <td>class name</td>
-        <td>An assembly qualified class name of a class that implements 
-<code>TechTalk.SpecFlow.Tracing.ITraceListener</code> interface. SpecFlow provides DefaultListener and NullListener as default implementations.
-<br/>
-            Default: <code>TechTalk.SpecFlow.Tracing.DefaultListener, TechTalk.SpecFlow</code></td>
+        <td>Obsolete, will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
 </table>
 
@@ -255,3 +281,43 @@ The `<stepAssemblies>` can contain multiple `<stepAssembly>` elements (one for e
         <td>The name of the assembly containing bindings.</td>
     </tr>
 </table>
+
+#### `<plugins>`
+
+This section can be used to configure plugins that contain customizations. See [[Plugins]] page for details.
+
+```xml
+<specFlow>
+  <plugins>
+    <add name="MyPlugin" />
+  </plugins>
+</specFlow>
+```
+
+The `<plugins>` can contain multiple `<add>` elements (one for each plugin), with the following attributes.
+
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>plugins name</td>
+        <td>The name of the plugin containing customizations.</td>
+    </tr>
+    <tr>
+        <td>path</td>
+        <td>path relative to the project folder</td>
+        <td>Specifies the custom folder of the SpecFlow plugin to be used if it is not in the standard path search list. See [[Plugins]] for details.<br/>
+            Default: not specified</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>Generator|<br/>Runtime|<br/>GeneratorAndRuntime</td>
+        <td>Specifies whether the plugin customizes the generator, the runtime or both.<br/>
+            Default: GeneratorAndRuntime</td>
+    </tr>
+</table>
+
