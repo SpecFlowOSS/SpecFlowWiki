@@ -45,6 +45,7 @@ public void WhenIPerformASimpleSearchOn(string searchTerm)
 ##Parameter Matching Rules
 
 * Step definitions can specify parameters. These will match to the parameters of the step definition method.
+* The method parameter type can be `string` or other .NET type. In the later case [[configurable conversion|Step Argument Conversions]] is applied.
 * With regular expressions
   * The match groups (`(…)`) of the regular expression define the arguments for the method based on the order (the match result of the first group becomes the first argument, etc.).
   * You can use non-capturing groups `(?:regex)` in order to use groups without a method argument.
