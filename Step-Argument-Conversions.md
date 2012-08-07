@@ -16,6 +16,7 @@ A standard conversion is performed by SpecFlow in the following cases:
 
 * the argument can be converted to the parameter type with `Convert.ChangeType()`
 * the parameter type is an `enum` type and the (string) argument is an enum value
+* the parameter type is `Guid` and the argument contains a full GUID string or a GUID string prefix. In the later case the value will be filled with trailing zeroes.
 
 ##Step Argument Transformation
 
