@@ -1,5 +1,7 @@
 SpecFlow Visual Studio 2010 integration provides many useful features to make the usage of SpecFlow easier.
 
+The Visual Studio 2010 support can be installed from [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] or from the online search in Visual Studio / Tools / Extensions and Updates. (You have to search for "SpecFlow" :).
+
 The integration provides the following features:
 
 * Editor
