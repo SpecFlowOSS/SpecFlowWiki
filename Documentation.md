@@ -1,5 +1,5 @@
 * [[Getting Started]]
-    * [[Installation]]
+    * [[Install IDE Installation]]
     * [[Setup SpecFlow Projects]]
     * [[Resources for Getting Started]]
 * [[Configuration]]
