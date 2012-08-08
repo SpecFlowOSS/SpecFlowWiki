@@ -30,6 +30,7 @@
     * [[SpecRun Integration]]
     * [[SpecLog Integration]]
     * [[SharpDevelop Integration]]
+    * [[Visual Studio Express Integration]]
 * [[Tools]]
     * [[Generate All Tool|Tools]]
     * [[Plugins]]
