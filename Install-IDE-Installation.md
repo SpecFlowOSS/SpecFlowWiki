@@ -1,6 +1,4 @@
-# New Installation options in v1.9!
-
-SpecFlow IDE integration installation has been changed!
+SpecFlow IDE integration installation has been changed in SpecFlow v1.9!
 
 Download IDE integration packages depending on the IDE:
 
