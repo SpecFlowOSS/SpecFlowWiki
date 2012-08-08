@@ -26,7 +26,7 @@ Your project is ready to use SpecFlow. You can add the first feature files (with
 
 ## Advanced setup options
 
-For a manual project setup (without [[NuGet packages|NuGet Integration]]), you should copy all SpecFlow assemblies to the project's folder structure to have better upgrade and tool support. You can [[download the binary package|http://go.speclow.org/download-bin]] that contains all the necessary files.
+For a manual project setup (without [[NuGet packages|NuGet Integration]]), you should copy all SpecFlow assemblies to the project's folder structure to have better upgrade and tool support. You can [[download the binary package|http://go.specflow.org/download-bin]] that contains all the necessary files.
 
 ### Setting up the runtime
 
@@ -50,7 +50,7 @@ If SpecFlow cannot find the generator or it is older than v1.6.0, the installed 
 
 ### Detailed list of assemblies that are required for the project
 
-SpecFlow is also distributed as a [[binary package|http://go.speclow.org/download-bin]]. This package contains the assemblies that should be placed to the project folder. Here is a detailed list though:
+SpecFlow is also distributed as a [[binary package|http://go.specflow.org/download-bin]]. This package contains the assemblies that should be placed to the project folder. Here is a detailed list though:
 
 * `TechTalk.SpecFlow.dll`
 * `TechTalk.SpecFlow.Generator.dll`
