@@ -2,7 +2,7 @@ SpecFlow IDE integration installation has been changed in SpecFlow v1.9!
 
 Install IDE integration packages depending on the IDE:
 
-* Visual Studio 2012 and 2010: [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] (You can also install it directly from Visual Studio from the extension manager online search.)
+* **Visual Studio 2012 and 2010**: [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] (You can also install it directly from Visual Studio from the extension manager online search.)
 * MonoDevelop: [[MonoDevelop Add-in Repository|http://go.specflow.org/monodevelop-addin]]
 * SharpDevelop: [[download addin and install it from SharpDevelop AddIn Manager|http://go.specflow.org/download-sdaddin]]
 * Visual Studio 2008: [[download installer|http://go.specflow.org/download-vs2008msi]]
