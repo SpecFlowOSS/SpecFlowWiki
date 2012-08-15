@@ -17,6 +17,7 @@
     * [[Step Argument Conversions]]
         * [[SpecFlow Assist Helpers]]
     * [[Sharing Data between Bindings]]
+        * [[Context Injection]]
         * [[FeatureContext]]
         * [[ScenarioContext]]
     * [[F# Support|FSharp Support]]
