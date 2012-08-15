@@ -101,7 +101,7 @@ public class BookSteps
 
 The container used by SpecFlow can be customized, e.g. you can include object instances created already or modify the resolution rules. 
 
-The customization of the container can be done from a [plugin] or a before scenario [hook|hooks]. The class, that wants to customize the injection rules has to obtain an instance of the scenario execution container (an instance of `BoDi.IObjectContainer`). This can be done through constructor injection (see example below) or by calling `ScenarioContext.Current.GetBindingInstance(typeof(BoDi.IObjectContainer))`.
+The customization of the container can be done from a [[plugin|Plugins]] or a before scenario [[hook|hooks]]. The class, that wants to customize the injection rules has to obtain an instance of the scenario execution container (an instance of `BoDi.IObjectContainer`). This can be done through constructor injection (see example below) or by calling `ScenarioContext.Current.GetBindingInstance(typeof(BoDi.IObjectContainer))`.
 
 The following example adds the Selenium web driver to the container, so that binding classes can specify `IWebDriver` dependencies (a constructor argument of type `IWebDriver`).
 
