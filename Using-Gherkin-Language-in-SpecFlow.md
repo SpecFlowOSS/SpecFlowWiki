@@ -56,6 +56,6 @@ For better traceability, the generated unit test method names are derived from t
 SpecFlow performs the placeholder substitution as a separate phase before the step binding match would be applied. Therefore the implementation and the parameters of the step bindings are independent of whether they are executed through a direct scenario or a scenario outline. This leaves the option to specify further examples to the acceptance tests later without changing the step bindings.
 
 ##Comments
-You can add comment lines to the feature files at any place staring the line with the `#` sign. Be careful however, as comments in the specification are often signs of wrongly specified acceptance criteria. 
+You can add comment lines to the feature files at any place starting the line with the `#` sign. Be careful however, as comments in the specification are often signs of wrongly specified acceptance criteria. 
 
 The comment lines are ignored by SpecFlow.
