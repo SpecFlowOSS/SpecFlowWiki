@@ -44,11 +44,11 @@ Scenario: View last incidents
   When I go to the incident page
 </pre>
 
-h2. Calling steps with multiline step arguments 
+## Calling steps with multiline step arguments 
 
 Sometimes you want to call a step that has been designed to take [[Multiline Step Arguments|Using Gherkin Language in SpecFlow]], for example:
 
-h3. Tables
+### Tables
 
 <pre>
 [Given(@"an expense report for (.*) with the following posts:")]
