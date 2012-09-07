@@ -1,6 +1,6 @@
 It is possible to call steps from [[Step Definitions]]:
 
-<pre>
+```c#
 [Binding]
 public class CallingStepsFromStepDefinitionSteps : Steps
 {
@@ -23,7 +23,7 @@ public class CallingStepsFromStepDefinitionSteps : Steps
 		Given(string.Format("I log in as {0}", name));
 	}
 }	
-</pre>
+```
 
 Invoking steps from step definitions is practical if you have several common steps that you want to perform in several scenarios. -Or simply if you want to make your scenarios shorter and more declarative. This allows you to do this in a Scenario:
 
@@ -50,13 +50,13 @@ Sometimes you want to call a step that has been designed to take [[Multiline Ste
 
 ### Tables
 
-<pre>
+```c#
 [Given(@"an expense report for (.*) with the following posts:")]
 public void GivenAnExpenseReportForWithTheFollowingPosts(string date, Table postTable)
 {
 	// ...
 }
-</pre>
+```
 
 This can easily be called from a plain text step like this:
 
@@ -70,7 +70,7 @@ Given an expense report for Jan 2009 with the following posts:
 
 But what if you want to call this from a step definition? There are a couple of ways to do this:
 
-<pre>
+```c#
 [Given(@"A simple expense report")]
 public void GivenASimpleExpenseReport()
 {
@@ -82,4 +82,4 @@ public void GivenASimpleExpenseReport()
     t.AddRow(row2);
     Given("an expense report for Jan 2009 with the following posts:", t);
 }
-</pre>
+```
