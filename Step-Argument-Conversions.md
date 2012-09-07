@@ -31,32 +31,43 @@ A step argument transformation is selected for converting an argument when
 The following example defines a transformation to a `DateTime` structure from relative day specifications, like `in 3 days`.
 
 ```c#
-[StepArgumentTransformation(@"in (\d+) days?")]
-public DateTime InXDaysTransform(int days)
+[Binding]
+public class Transforms
 {
-  return DateTime.Today.AddDays(days);
+    [StepArgumentTransformation(@"in (\d+) days?")]
+    public DateTime InXDaysTransform(int days)
+   {
+      return DateTime.Today.AddDays(days);
+   }
 }
 ```
 
 The following example defines a transformation from any string input (no regex provided) to an `XmlDocument`.
 
 ```c#
-[StepArgumentTransformation]
-public XmlDocument XmlTransform(string xml)
+[Binding]
+public class Transforms
 {
-  XmlDocument result = new XmlDocument();
-  result.LoadXml(xml);
-  return result;
+    [StepArgumentTransformation]
+    public XmlDocument XmlTransform(string xml)
+    {
+       XmlDocument result = new XmlDocument();
+       result.LoadXml(xml);
+       return result;
+    }
 }
 ```
 
 The following example defines a transformation from a table argument to a list of `Book` entities (using the [[SpecFlow Assist Helpers]]). 
 
 ```c#
-[StepArgumentTransformation]
-public IEnumerable<Book> BooksTransform(Table booksTable)
+[Binding]
+public class Transforms
 {
-  return table.CreateSet<Books>();
+    [StepArgumentTransformation]
+    public IEnumerable<Book> BooksTransform(Table booksTable)
+    {
+       return table.CreateSet<Books>();
+    }
 }
 ```
-
