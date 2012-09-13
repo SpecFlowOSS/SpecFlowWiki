@@ -54,7 +54,7 @@ public void WhenIPerformASimpleSearchOn(string searchTerm)
 
 ##Table or Multi-line Text Arguments
 
-If the step definition method should match for steps having [[table or multi-line text arguments|Using Gherkin Language in SpecFlow]], additional `Table` and/or `string` parameters have to be defined in the method signature to be able to receive the these arguments. If both table and multi-line text argument is used for the step, the multi-line text argument is provided first.
+If the step definition method should match for steps having [[table or multi-line text arguments|Using Gherkin Language in SpecFlow]], additional `Table` and/or `string` parameters have to be defined in the method signature to be able to receive these arguments. If both table and multi-line text argument is used for the step, the multi-line text argument is provided first.
 
 ```
 Given the following books
