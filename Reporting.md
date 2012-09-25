@@ -104,7 +104,11 @@ The following table contains the possible arguments for this command.
 
 ##Step Definition Report
 
-This report shows the usage and binding status of the steps for the entire project. 
+This report shows the usage and binding status of the steps for the entire project. You can use this report to find both unused code in the automation layer and scenario steps that have no definition yet.
+
+* Steps with a red background are steps that exist in the automation layer but are not used in any feature files.
+* Steps with a yellow background are steps that exist in a feature file but do not have a corresponding definition.
+* Steps without a special backgrounds are steps that exist both in feature files and the automation layer.  Ideally, all your steps are like this.
 
 ```
 specflow.exe stepdefinitionreport BookShop.AcceptanceTests.csproj
