@@ -1,4 +1,4 @@
-SpecFlow supports several unit test framework to execute the acceptance tests. Use can use one of the built-in unit test providers or create a custom provider. The unit test provider to be used can be configured through the [[&lt;unitTestProvider&gt;|Configuration]] configuration element.
+SpecFlow supports several unit test framework to execute the acceptance tests. You can use one of the built-in unit test providers or create a custom provider. The unit test provider to be used can be configured through the [[&lt;unitTestProvider&gt;|Configuration]] configuration element.
 
 The following table contains the built-in unit test providers.
 
