@@ -13,7 +13,9 @@ The hooks are global but can be restricted to run only for features or scenarios
     <tr>
         <td>[BeforeTestRun]<br/>[AfterTestRun]</td>
         <td>-</td>
-        <td>automation logic that has to run before/after the entire test run</td>
+        <td>automation logic that has to run before/after the entire test run<br/>
+<i>Note: As the most of the unit test runners does not provide a hook for executing logic after the test execution has been finished, the [AfterTestRun] event is triggered by the test assembly unload event. The exact timing and thread of this execution might be different for each test runner.</i>
+</td>
     </tr>
     <tr>
         <td>[BeforeFeature]<br/>[AfterFeature]</td>
