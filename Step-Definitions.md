@@ -13,6 +13,8 @@ public void WhenIPerformASimpleSearchOn(string searchTerm)
 
 Here the method is annotated with the `[When]` attribute, providing the regular expression to be used to match the step text. The match groups (`(…)`) of the regular expression define the parameters for the method. From SpecFlow v1.9 the step definitions can be also specified without regular expressions. Check the [[step definition styles]] page for details.
 
+Although the step definitions are usually invoked by the SpecFlow runtime, you can also call steps from other step definitions. Check the [[Calling Steps from Step Definitions]] page for details.
+
 ##Supported Step Definition Attributes
 
 * `[Given(regex)]` or `[Given]` - `TechTalk.SpecFlow.GivenAttribute`
