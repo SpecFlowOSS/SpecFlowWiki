@@ -12,6 +12,7 @@
     * [[Use Bindings from External Assemblies]]
     * [[Step Definitions]]
         * [[Step Definition Styles]]
+        * [[Calling Steps from Step Definitions]]
     * [[Hooks]]
     * [[Scoped Bindings]]
     * [[Step Argument Conversions]]
