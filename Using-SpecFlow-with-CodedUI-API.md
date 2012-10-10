@@ -77,13 +77,13 @@ using TechTalk.SpecFlow.Generator.UnitTestProvider;
 
 namespace SpecflowCodedUIGenerator
 {
-    public MsTest2010CodedUiGeneratorProvider(CodeDomHelper codeDomHelper)
-      : base(codeDomHelper)
+     public class MsTest2010CodedUiGeneratorProvider : MsTest2010GeneratorProvider
     {
-    }
+        public MsTest2010CodedUiGeneratorProvider(CodeDomHelper codeDomHelper)
+            : base(codeDomHelper)
+        {
+        }
 
-    public class MsTest2010CodedUiGeneratorProvider : MsTest2010GeneratorProvider
-    {
         public override void SetTestClass(TechTalk.SpecFlow.Generator.TestClassGenerationContext generationContext, string featureTitle, string featureDescription)
         {
             base.SetTestClass(generationContext, featureTitle, featureDescription);
