@@ -10,6 +10,7 @@ FeatureContext also have a Current property which holds a Dictionary. But I work
 The FeatureInfo is a bit more elaborative than the ScenarioInfo, but it works in the same manner:
 
 In the .feature file:
+
         Scenario: Showing information of the feature
 	  When I execute any scenario in the feature
 	  Then the FeatureInfo contains the following information
@@ -21,6 +22,7 @@ In the .feature file:
 		| Description    | In order to                         |
 
 and in the step definition:
+
         private class FeatureInformation
         {
             public string Title { get; set; }
