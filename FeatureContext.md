@@ -2,7 +2,7 @@ There is a FeatureContext as well as the more commonly used [[ScenarioContext]].
 
 ##FeatureContext.Current
 
-FeatureContext also have a Current property which holds a Dictionary. But I works in exactly the same way as the [[ScenarioContext.Current]] so I won’t go into details of it. It’s actually implemented with the same class SpecFlowContext so it IS the same behavior.
+FeatureContext also have a Current property which holds a Dictionary. But it works in exactly the same way as the [[ScenarioContext.Current]] so I won’t go into details of it. It’s actually implemented with the same class SpecFlowContext so it IS the same behavior.
 
 
 ##FeatureContext.FeatureInfo
