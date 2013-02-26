@@ -20,7 +20,7 @@ A standard conversion is performed by SpecFlow in the following cases:
 
 ##Step Argument Transformation
 
-The step argument transformations can be used to apply a custom conversion step for the arguments of the step definitions. The step argument transformation is a method that provides a conversion from text (specified by a regular expression) or form a `Table` instance to an arbitrary .NET type. 
+The step argument transformations can be used to apply a custom conversion step for the arguments of the step definitions. The step argument transformation is a method that provides a conversion from text (specified by a regular expression) or from a `Table` instance to an arbitrary .NET type. 
 
 A step argument transformation is selected for converting an argument when
 
