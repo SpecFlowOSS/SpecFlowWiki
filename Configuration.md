@@ -10,7 +10,7 @@ test (if the configuration change affects the generated tests). The [[Visual Stu
 
 ## Default Configuration
 
-In SpecFlow all configuration option has a default setting, so in an extreme case you don’t need to
+In SpecFlow every configuration option has a default setting, so in an extreme case you don’t need to
 specify any configuration file.
 Commonly the most important thing to configure is the unit test provider. Therefore simple
 SpecFlow projects configure only this aspect. The following example shows such a simple
