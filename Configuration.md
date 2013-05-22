@@ -29,7 +29,7 @@ configuration.
 </configuration>
 ```
 
-The following example shows all possible configuration option with their default values (the config section definition has been omitted for better readability).
+The following example shows all possible configuration options with their default values (the config section definition has been omitted for better readability).
 
 ```xml
 <specFlow>
