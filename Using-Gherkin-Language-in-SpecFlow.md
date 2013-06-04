@@ -49,11 +49,13 @@ SpecFlow generates a method from the background elements that is invoked from al
 ##Scenario Outlines
 Scenario outlines can be used to define data-driven acceptance tests. They can be also seen as scenario templates. The scenario outline is always consisting of a scenario template specification (a scenario with data placeholders using the `<placeholder>` syntax) and a set of examples that provide values for the placeholders. See more details at [[https://github.com/cucumber/cucumber/wiki/Scenario-outlines]].
 
-If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise a it generates a parametrized unit test logic method for a scenario outline and an individual unit test method for each example set. 
+If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise it generates a parametrized unit test logic method for a scenario outline and an individual unit test method for each example set. 
 
-For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). Therefore it is a good practice to choose a unique and descriptive parameter as the first column of the example set. As the Gherkin syntax does not enforce that all example columns have the matching placeholder in the scenario outline, you can even introduce an arbitrary column in the example sets for better test method name readability.
+For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). Therefore it is a good practice to choose a unique and descriptive parameter as the first column of the example set. As the Gherkin syntax does not enforce that all example columns have the matching placeholder in the scenario outline, you can even introduce an arbitrary column in the example sets for better test method name readability. 
 
 SpecFlow performs the placeholder substitution as a separate phase before the step binding match would be applied. Therefore the implementation and the parameters of the step bindings are independent of whether they are executed through a direct scenario or a scenario outline. This leaves the option to specify further examples to the acceptance tests later without changing the step bindings.
+
+Hint: In certain cases, when using the regular expression method of generating method names, SpecFlow is unable to generate the correct parameter signatures for unit test logic methods without a little help. Placing single quotation marks `'` around placeholders (eg. `'<placeholder>'`)improves SpecFlow's ability to parse the scenario outline and generate a more accurate regular expression and test method signature.
 
 ##Comments
 You can add comment lines to the feature files at any place starting the line with the `#` sign. Be careful however, as comments in the specification are often signs of wrongly specified acceptance criteria. 
