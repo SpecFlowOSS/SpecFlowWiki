@@ -5,7 +5,7 @@ Bindings (step definitions, hooks) are global for the entire SpecFlow project. T
 
 In some cases however, it is necessary to restrict the appliance of a step definition or hook based on certain conditions. This feature of SpecFlow can be used for this purpose.
 
-*Be careful!* Coupling your step definitions to the features is an anti-pattern. Read more about it on the Cucumber Wiki
+*Be careful!* Coupling your step definitions to the features is an anti-pattern. [Read more about it on the Cucumber Wiki](https://github.com/cucumber/cucumber/wiki/Feature-Coupled-Step-Definitions-(Antipattern))
 
 The scoped bindings can restrict the execution for
 
