@@ -47,9 +47,9 @@ The background language element allows specifying a common precondition for all 
 SpecFlow generates a method from the background elements that is invoked from all unit tests generated for the scenarios.
 
 ##Scenario Outlines
-Scenario outlines can be used to define data-driven acceptance tests. They can be also seen as scenario templates. The scenario outline is always consisting of a scenario template specification (a scenario with data placeholders using the `<placeholder>` syntax) and a set of examples that provide values for the placeholders. See more details at [[https://github.com/cucumber/cucumber/wiki/Scenario-outlines]].
+Scenario outlines can be used to define data-driven acceptance tests. They can be also seen as scenario templates. The scenario outline always consists of a scenario template specification (a scenario with data placeholders using the `<placeholder>` syntax) and a set of examples that provide values for the placeholders. See more details at [[https://github.com/cucumber/cucumber/wiki/Scenario-outlines]].
 
-If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise it generates a parametrized unit test logic method for a scenario outline and an individual unit test method for each example set. 
+If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise it generates a parameterized unit test logic method for a scenario outline and an individual unit test method for each example set. 
 
 For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). Therefore it is a good practice to choose a unique and descriptive parameter as the first column of the example set. As the Gherkin syntax does not enforce that all example columns have the matching placeholder in the scenario outline, you can even introduce an arbitrary column in the example sets for better test method name readability. 
 
