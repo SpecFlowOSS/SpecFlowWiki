@@ -17,7 +17,7 @@ The installation of the IDE Intergation packages depends on the IDE you use. For
 The generator and the runtime is usually installed together per project. The easiest and most convenient way to install these is to use our NuGet package: `[[SpecFlow|http://www.nuget.org/packages/SpecFlow]]` or one of the specific helper packages, like `[[SpecFlow.NUnit|http://www.nuget.org/packages/SpecFlow.NUnit]]` or `[[SpecRun.SpecFlow|http://www.nuget.org/packages/SpecRun.SpecFlow]]`. 
 
 ```
-Install-Package SpecFlow -ProjectName myproject
+Install-Package SpecFlow -ProjectName MyApp.Specs
 ```
 
 For the full list of supported NuGet packages, check the [[NuGet Integration]] page. You can find more details about the project setup on the [[Setup SpecFlow Projects]] page.
