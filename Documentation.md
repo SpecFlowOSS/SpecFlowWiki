@@ -1,4 +1,4 @@
-* [[Installation & Setup]]
+* [[Installation]]
     * [[Install IDE Installation]]
     * [[Setup SpecFlow Projects]]
     * [[Advanced Project Setup]]
