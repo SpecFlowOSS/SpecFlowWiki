@@ -1,3 +1,5 @@
+_Note:_ If you are new to SpecFlow, we recommend checking the [[quick introduction guide|http://go.specflow.org/getting-started]] first. 
+
 SpecFlow consists of three components:
 
 * The **IDE Integration** that provides customized editor and test generation functions in your development environment, like Visual Studio 2012.
