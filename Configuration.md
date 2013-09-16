@@ -1,7 +1,7 @@
 The behavior of SpecFlow can be extensively configured through .NET configuration files. SpecFlow
 processes the configuration file of the acceptance test projects (the projects that contain the feature
 files). The configuration has to be placed in a file called “App.config” (the standard configuration file
-convention for .NET).
+convention for .NET) and added to the project.
 
 Unlike other runtime-only tools, SpecFlow processes the configuration file also while it generates the
 unit-tests from the feature files (this happens usually when you save the feature file). This means
