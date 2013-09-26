@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Sharing-Data-between-Bindings]]. We use the GitHub wiki for authoring the documentation pages._
+
 In many cases the different bindings have to exchange data during execution. SpecFlow provides several ways of sharing data between bindings.
 
 ##Instance Fields
