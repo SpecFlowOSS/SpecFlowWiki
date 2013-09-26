@@ -43,6 +43,7 @@
     * [[Step Usage Report|Reporting]]
 * Build Server Integrations
     * [[TFS 2010 Integration]]
+    * [[TFS 2012 Integration]]
     * [[TeamCity Integration]]
 * Platform Support
     * [[.NET Support]]
