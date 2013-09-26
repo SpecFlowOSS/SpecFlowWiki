@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Calling-Steps-from-Step-Definitions]]. We use the GitHub wiki for authoring the documentation pages._
+
 It is possible to call steps from [[Step Definitions]]:
 
 ```c#
