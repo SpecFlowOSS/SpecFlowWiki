@@ -1,4 +1,4 @@
-_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Visual-Studio-2013-Integration]]. We use the GitHub wiki for authoring the documentation pages._
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Installation]]. We use the GitHub wiki for authoring the documentation pages._
 
 _Note:_ If you are new to SpecFlow, we recommend checking the [[quick introduction guide|http://go.specflow.org/getting-started]] first. 
 
