@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Visual-Studio-2010-Integration]]. We use the GitHub wiki for authoring the documentation pages._
+
 SpecFlow Visual Studio 2010 integration provides many useful features to make the usage of SpecFlow easier.
 
 The Visual Studio 2010 support can be installed from [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] or from the online search in Visual Studio / Tools / Extension Manager. (You have to search for "SpecFlow" :).
