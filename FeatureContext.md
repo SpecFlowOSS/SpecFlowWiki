@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/FeatureContext]]. We use the GitHub wiki for authoring the documentation pages._
+
 There is a FeatureContext as well as the more commonly used [[ScenarioContext]]. The difference of course is that the FeatureContext exists during the execution of the complete feature while the ScenarioContext only exists during a scenario.
 
 ##FeatureContext.Current
