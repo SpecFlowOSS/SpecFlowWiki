@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Setup-SpecFlow-Projects]]. We use the GitHub wiki for authoring the documentation pages._
+
 The SpecFlow tests are usually placed into one or more separate project in the solution: the "SpecFlow Projects". 
 
 The [[quick introduction guide|http://go.specflow.org/getting-started]] on our website provides a basic introduction to SpecFlow. This page contains a detailed description of the possibilities.
