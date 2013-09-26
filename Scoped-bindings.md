@@ -1,6 +1,5 @@
-# Scoped Bindings
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Scoped-bindings]]. We use the GitHub wiki for authoring the documentation pages._
 
-## Page History
 Bindings (step definitions, hooks) are global for the entire SpecFlow project. This means that a step definition that is bound to a very generic step text, like When I save the changes becomes challenging to implement. The general solution for this problem is to phrase the scenarios in a way that the steps are phrased in a way that the usage context can be extracted from them (e.g. When I save the book details).
 
 In some cases however, it is necessary to restrict the appliance of a step definition or hook based on certain conditions. This feature of SpecFlow can be used for this purpose.
