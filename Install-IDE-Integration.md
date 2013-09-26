@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Visual-Studio-2013-Integration]]. We use the GitHub wiki for authoring the documentation pages._
+
 For using SpecFlow in the most continent way, we recommend installing the IDE Integration component to your environment.
 
 _Note:_ Although the IDE integrations can make the SpecFlow usage much easier, it is also possible to use SpecFlow **without IDE integration**. See the [[MsBuild Integration|Generate Tests from MsBuild]] page for details. 
