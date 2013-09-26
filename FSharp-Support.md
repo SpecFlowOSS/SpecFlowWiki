@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/FSharp-Support]]. We use the GitHub wiki for authoring the documentation pages._
+
 [[Bindings]] for SpecFlow can be written also in F#. Doing so you can take the advantages of the F# language for writing step definitions: you can define regex-named F# functions for your steps. Simply put the regex between double backticks.
 
 ```F#
