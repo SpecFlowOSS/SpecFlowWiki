@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Visual-Studio-2012-Integration]]. We use the GitHub wiki for authoring the documentation pages._
+
 SpecFlow v1.9 adds support for Visual Studio 2012 integration.
 
 The Visual Studio 2012 support can be installed from [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] or from the online search in Visual Studio / Tools / Extensions and Updates. (You have to search for "SpecFlow" :).
