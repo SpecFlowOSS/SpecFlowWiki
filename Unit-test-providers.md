@@ -14,6 +14,13 @@ The following table contains the built-in unit test providers.
         <th>inconclusive</th>
     </tr>
     <tr>
+        <td>[[SpecRun|http://www.specrun.com]]</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+        <td>[[SpecRun|http://www.specrun.com]] is a test execution framework specialized for SpecFlow. Install it with the SpecRun.SpecFlow NuGet package. See [[SpecRun Integration]] for details.</td>
+    </tr>
+    <tr>
         <td>NUnit</td>
         <td>+</td>
         <td>+</td>
