@@ -14,7 +14,7 @@ The following table contains the built-in unit test providers.
         <th>inconclusive</th>
     </tr>
     <tr>
-        <td>[[SpecRun|http://www.specrun.com]]</td>
+        <td>SpecRun</td>
         <td>+</td>
         <td>+</td>
         <td>+</td>
