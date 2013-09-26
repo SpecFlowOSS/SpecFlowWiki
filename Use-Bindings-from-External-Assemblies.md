@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Use-Bindings-from-External-Assemblies]]. We use the GitHub wiki for authoring the documentation pages._
+
 [[Bindings]] can be defined in the main SpecFlow project or in other assemblies (_external binding assemblies_). If the bindings are used from external binding assemblies, the following notes have to be considered:
 
 * The external binding assembly can be another project in the solution or an compiled library (dll).
