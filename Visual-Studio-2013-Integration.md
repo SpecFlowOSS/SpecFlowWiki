@@ -28,4 +28,4 @@ The Visual Studio integration supports executing the SpecFlow scenarios from the
 
 See the short [[introduction video|http://go.specflow.org/specrun-vs2013]] or grab more details on the [[SpecRun website|http://www.specrun.com]].
 
-_(*) You might need to install additional Visual Studio connectors, depending on the unit test framework._
+_(*) For unit test providers other than SpecRun, you might need to install additional Visual Studio connectors, depending on the unit test framework._
