@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Executing-SpecFlow-Tests]]. We use the GitHub wiki for authoring the documentation pages._
+
 With SpecFlow you can define the acceptance criteria in feature files that can be executed. These tests are usually placed in a separate project in the solution (e.g. "BookShop.AcceptanceTests" in the [[BookShop sample|Examples]]).
 
 SpecFlow generates executable unit tests from the defined acceptance criteria (called [[scenarios|Using Gherkin Language in SpecFlow]]). The generated unit tests are in a code-behind file of the feature files (e.g. `US01_BookSearch.feature.cs`).
