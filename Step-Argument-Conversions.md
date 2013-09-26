@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Step-Argument-Conversions]]. We use the GitHub wiki for authoring the documentation pages._
+
 The [[step bindings]] can define parameters for better reusability. The arguments to execute the step bindings are calculated from the step text (with the regular expression groups) or the additional multi-line text or table arguments. These original arguments are provided as strings or `TechTalk.SpecFlow.Table` instances.
 
 To avoid cumbersome conversions in the step binding methods, SpecFlow can do automatic conversion from the original argument to the parameter type of the method. 
