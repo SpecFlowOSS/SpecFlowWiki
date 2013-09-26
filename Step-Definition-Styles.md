@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Step-Definition-Styles]]. We use the GitHub wiki for authoring the documentation pages._
+
 [[Step definitions]] provide the connection between the free-text specification steps and the application interfaces. Step definitions are .NET methods that match to certain scenario steps.
 
 The classic way of providing the match rules is to annotate the method with regular expressions. From SpecFlow 1.9 however, you can also create the step definitions without regex.
