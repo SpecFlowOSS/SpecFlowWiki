@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecRun-Integration]]. We use the GitHub wiki for authoring the documentation pages._
+
 [[SpecRun|http://www.specrun.com]] is a test execution framework specialized for SpecFlow and provides easy integration to the Visual Studio testing infrastructure and to the Team Foundation Server (TFS) Build. Grab more details on the [[SpecRun website|http://www.specrun.com]].
 
 ##Installation
