@@ -76,11 +76,4 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>MbUnit Version 3 provider. See [[http://www.mbunit.com]].</td>    
     </tr>
-    <tr>
-        <td>SpecRun <br/> SpecRun+NUnit <br/> SpecRun+MsTest</td>
-        <td>+</td>
-        <td>+</td>
-        <td>+</td>
-        <td>SpecRun provider. See [[http://www.specrun.com]]. Requires SpecRun plugin NuGet package: SpecRun.SpecFlow</td>    
-    </tr>
 </table>
