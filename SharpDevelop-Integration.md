@@ -1,4 +1,4 @@
-*This feature is available from version 1.7*
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SharpDevelop-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
 SpecFlow can integrate to SharpDevelop 4.2 to provide support for the test code generation. 
 
