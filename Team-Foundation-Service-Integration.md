@@ -1,0 +1,1 @@
+SpecFlow integrates well with the hosted Team Foundation Service ([[http://tfs.visualstudio.com/]]). All the integration features that are mentioned in the [[TFS 2012 Integration]] page also work for TFS Service.
