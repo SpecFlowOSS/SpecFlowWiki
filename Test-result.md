@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Test-result]]. We use the GitHub wiki for authoring the documentation pages._
+
 When SpecFlow tests are executed the execution engine processes the test steps, executes the necessary test logic and either finish successfully or fails with some reason. 
 
 ##Test Passes
