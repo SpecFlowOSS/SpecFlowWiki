@@ -1,4 +1,4 @@
-_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Visual-Studio-2013-Integration]]. We use the GitHub wiki for authoring the documentation pages._
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Install-IDE-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
 For using SpecFlow in the most continent way, we recommend installing the IDE Integration component to your environment.
 
