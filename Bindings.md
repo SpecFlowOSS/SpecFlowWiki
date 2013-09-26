@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Bindings]]. We use the GitHub wiki for authoring the documentation pages._
+
 The [[Gherkin feature files|Using Gherkin Language in SpecFlow]] are closer to free-text than to code – they cannot be executed as they are. The automation that connects the specification to the application interface has to be developed first. This automation is also called _binding_ in general. The binding classes and methods can be defined in the SpecFlow project or in [[external binding assemblies|
 Use Bindings from External Assemblies]].
 
