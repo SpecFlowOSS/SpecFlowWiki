@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Hooks]]. We use the GitHub wiki for authoring the documentation pages._
+
 The hooks (event bindings) can be used to perform additional automation logic on specific events, like before the execution of a scenario.
 
 The hooks are global but can be restricted to run only for features or scenarios with a specific [[tag]] (see below). The execution order of hooks for the same event is undefined.
