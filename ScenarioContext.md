@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/ScenarioContext]]. We use the GitHub wiki for authoring the documentation pages._
+
 Most of us have at least seen the ScenarioContext from the the code that SpecFlow generates when a missing step definition is found: ScenarioContext.Current.Pending();
 
 But there is some other interesting stuff you can do with and get from that object. I’ve tried to write scenarios that show that off. You can find the code here.
