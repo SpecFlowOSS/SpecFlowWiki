@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Configuration]]. We use the GitHub wiki for authoring the documentation pages._
+
 The behavior of SpecFlow can be extensively configured through .NET configuration files. SpecFlow
 processes the configuration file of the acceptance test projects (the projects that contain the feature
 files). The configuration has to be placed in a file called “App.config” (the standard configuration file
