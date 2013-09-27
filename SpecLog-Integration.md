@@ -2,6 +2,8 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 [[SpecLog|http://www.speclog.net/]] is a collaborative tool by TechTalk for agile requirement engineering with strong integration to SpecFlow and ALM tools (currently for TFS 2010, TFS 2012 and JIRA).
 
-SpecLog can visualize the Gherkin acceptance criteria to enhance business readability. It can synchronize the feature files from the source-control repository of the project and present them in context of the other specification artifacts, like user stories or business goals. 
+Feature files are linked from source-control repositories to context of the other specification artifacts, like user stories or business goals. 
 
-SpecLog is optimized for occasionally connected scenarios, therefore is allows your business to access the feature files also offline. 
+SpecLog allows visualizing and structuring Gherkin feature files in maps (e.g. Story Maps, Impact Maps, functional tree) and to extend feature files with further documentation artifacts like pictures, links and additional documents. This helps providing a more comprehensive living documentation and enhances readability of Gherkin scenarios.
+
+This [[documentation can be also exported to HTML|http://www.speclog.net/wp-content/uploads/2013/09/BookShop.html#US1]], which makes it easier to share with stakeholders, and allows linking Gherkin scenarios with other documentation systems (e.g. operations manual, user reference, etc.). SpecLog also allows working offline to support users that are only occasionally connected to a network.
