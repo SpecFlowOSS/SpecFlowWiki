@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecRun-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
-[[SpecRun|http://www.specrun.com]] is a test execution framework specialized for SpecFlow and provides easy integration to the Visual Studio testing infrastructure and to the Team Foundation Server (TFS) Build. Grab more details on the [[SpecRun website|http://www.specrun.com]].
+[[SpecRun|http://www.specrun.com]] is a test execution framework specialized for SpecFlow that provides enhanced integration to the Visual Studio testing infrastructure and to the Team Foundation Server (TFS) Build. Find out more on the [[SpecRun website|http://www.specrun.com]].
 
 ##Installation
 
@@ -12,7 +12,7 @@ With [[SpecRun|http://www.specrun.com]], you can run and debug your scenarios as
 
 * You can run or debug individual scenarios or scenario outline examples from the feature file editor (choose "Run/Debug SpecFlow Scenarios" from the context menu)
 * The scenarios are displayed int the test window with the scenario title
-* Fro the test window, you can 
+* From the test window, you can 
   * group the scenarios by tags (choose "Traits" grouping) and features (choose "Class")
   * filter scenarios by different criteria
   * run or debug selected or all scenarios
