@@ -18,7 +18,7 @@ The Visual Studio integration supports executing the SpecFlow scenarios from the
 
 * You can run or debug individual scenarios or scenario outline examples from the feature file editor (choose "Run/Debug SpecFlow Scenarios" from the context menu)
 * The scenarios are displayed int the test window with the scenario title
-* Fro the test window, you can 
+* From the test window, you can 
   * group the scenarios by tags (choose "Traits" grouping) and features (choose "Class")
   * filter scenarios by different criteria
   * run or debug selected or all scenarios
