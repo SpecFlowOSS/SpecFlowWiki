@@ -4,4 +4,4 @@ SpecFlow Visual Studio integration also supports debugging the execution of the 
 
 Also when the execution of a SpecFlow test is stopped at a certain point of the binding (because of an exception for instance), you can navigate to the currently executed step of the feature file from the “Call Stack” tool window of Visual Studio.
 
-This feature can be disabled with the [[&lt;generator allowDebugGeneratedFiles="true"&gt;|Configuration]] setting.
+By default, you cannot debug inside of the generated .feature.cs files. You can enable debugging of those files by setting [[&lt;generator allowDebugGeneratedFiles="true"&gt;|Configuration]] setting.
