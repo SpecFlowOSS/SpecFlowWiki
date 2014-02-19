@@ -47,4 +47,4 @@ And retrieving values from ScenarioContext can be done like so:
     var anotherComplexObject = ScenarioContext.Current.Get<AnotherComplexObject>();
     var special = ScenarioContext.Current.Get<AnotherComplexObject>("special id");
 ```
-Notably, a call to Get() when the type  doesn't exist e.g. ```Get<BogusType>()``` or when the id doesn't exist e.g. ```Get<RealType>("bogusid")``` will result in the following exception being thrown:  _System.Collections.Generic.KeyNotFoundException_
+Notably, a call to Get() when the type  doesn't exist e.g. ```Get<BogusType>()``` or when the id doesn't exist e.g. ```Get<RealType>("bogusid")``` will result in the following exception being thrown:  _System.Collections.Generic.KeyNotFoundException_. TryGetValue() can be used if this is not desirable.
