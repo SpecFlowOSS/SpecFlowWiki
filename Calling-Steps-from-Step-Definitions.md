@@ -46,6 +46,15 @@ Scenario: View last incidents
   When I go to the incident page
 </pre>
 
+NOTE: When using this approach to remove duplication from your feature files, the console output will contain both the master step and the delegated steps as follows:
+
+<pre>
+  Given Linda is logged in
+  Given the user Linda exists
+  And I log in as Linda
+  When I go to the incident page
+</pre>
+
 ## Calling steps with multiline step arguments 
 
 Sometimes you want to call a step that has been designed to take [[Multiline Step Arguments|Using Gherkin Language in SpecFlow]], for example:
