@@ -8,6 +8,11 @@ SpecFlow is open source and provided under a [[BSD license|http://go.specflow.or
 
 ***
 
+![SpecFlow Logo](http://specflow.org/media/specflowplus_logo.png)  
+[SpecFlow+](http://www.specflow.org/plus) is an initiative to commercially support the open source project SpecFlow, ensuring its further growth and sustainability. If you enjoy using SpecFlow and want to support it commercially, you can buy a SpecFlow+ license. In return we provide you with additional tools that further enhance your productivity when working with SpecFlow.
+
+***
+
 SpecFlow aims at **bridging the communication gap between domain experts and developers** by binding **business readable behavior specifications and examples** to the underlying implementation.
 
 Our mission is to provide a pragmatic and frictionless approach to [[Specification-By-Example|http://www.specificationbyexample.com]] for .NET projects. 
