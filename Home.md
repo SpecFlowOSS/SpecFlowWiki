@@ -1,4 +1,4 @@
-![SpecFlow Logo](https://raw.github.com/techtalk/SpecFlow/master/Installer/Resources/logo.png)
+![SpecFlow Logo](http://specflow.org/media/specflow_logo.png)
 
 For a quick introduction and recently added new features, check out the SpecFlow website first: <br/>**[[http://www.specflow.org]]**
 
