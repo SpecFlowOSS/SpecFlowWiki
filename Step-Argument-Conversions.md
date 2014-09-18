@@ -69,7 +69,7 @@ public class Transforms
     [StepArgumentTransformation]
     public IEnumerable<Book> BooksTransform(Table booksTable)
     {
-       return table.CreateSet<Books>();
+       return booksTable.CreateSet<Books>();
     }
 }
 ```
