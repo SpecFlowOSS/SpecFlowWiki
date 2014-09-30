@@ -64,7 +64,7 @@ You can add comment lines to the feature files at any place starting the line wi
 
 The comment lines are ignored by SpecFlow.
 
-To comment blocks you can user triple quotes (") to start and to finish the block comment.
+To comment blocks you can use triple quotes (") to start and to finish the block comment.
 
 """
 Given I wnat to comment this line
