@@ -68,6 +68,6 @@ To comment blocks you can use triple quotes (") to start and to finish the block
 
 """
 Given I want to comment this line
-#even this comment keep commented
+#  even this comment keeps commented
 Given I want to comment this line
 """
