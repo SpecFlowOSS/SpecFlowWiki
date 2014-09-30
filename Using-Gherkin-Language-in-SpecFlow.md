@@ -67,7 +67,11 @@ The comment lines are ignored by SpecFlow.
 To comment blocks you can use triple quotes (") to start and to finish the block comment.
 
 """
+
 Given I want to comment this line
+
 Given I want to comment this line
+
 Given I want to comment this line
+
 """
