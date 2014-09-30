@@ -63,3 +63,9 @@ Hint: In certain cases, when using the regular expression method of generating m
 You can add comment lines to the feature files at any place starting the line with the `#` sign. Be careful however, as comments in the specification are often signs of wrongly specified acceptance criteria. 
 
 The comment lines are ignored by SpecFlow.
+
+To comment blocks you can user triple quotes (") to start and to finish the block comment.
+
+"""
+Given I wnat to comment this line
+"""
