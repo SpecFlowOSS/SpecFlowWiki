@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Visual-Studio-2013-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
-SpecFlow v1.9.3 provides integration for Visual Studio 2013 (Professional, Premium and Ultimate editions).
+SpecFlow v1.9.3 provides integration for Visual Studio 2013 (Community, Professional, Premium and Ultimate editions).
 
 The Visual Studio 2013 support can be installed from [[Visual Studio Gallery|http://go.specflow.org/vsgallery2013]] or from the online search in Visual Studio / Tools / Extensions and Updates. (You have to search for "SpecFlow" :).
 
