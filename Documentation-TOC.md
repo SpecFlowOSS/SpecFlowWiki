@@ -41,6 +41,7 @@
 * [[Reporting]]
     * [[Test Execution Report|Reporting]]
     * [[Step Usage Report|Reporting]]
+    * [[Pickle your features to get human readable documentation]]
 * Build Server Integrations
     * [[TFS 2010 Integration]]
     * [[TFS 2012 Integration]]
