@@ -1,7 +1,7 @@
 # Pickles - the fast route to human readable documentation
 So you have a folder of [SpecFlow](http://www.specflow.org) features and but your end-users and stakeholders doesn't really like the text-only format. You want to create some dazzling documentation in no time. No problem - [Pickles](http://www.picklesdoc.com/) is here to help - and it's free too. 
 
-Pickles has a lot of other ways and parameters - below is the simplest way to get started. We made a few [[assumptions|Assumptions]] on your environment though.
+Pickles has a lot of other ways and parameters - below is the simplest way to get started. We made a few assumptions on your environment though, see below.
 
 # Four (or three really) simple steps to dazzling documentation
 1. Install the Pickles Console NuGet package: ``` Install-Package Pickles.CommandLine ``` in the [Package Manager Console](https://docs.nuget.org/consume/package-manager-console) for example
