@@ -1,3 +1,5 @@
+_Note:_ This description is quite outdated. 
+
 ### Release Build
 
 * make sure that all test pass (also on the build server)
