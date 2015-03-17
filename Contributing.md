@@ -14,8 +14,6 @@ Important! Please use autocrlf when committing to the SpecFlow repository. See d
 ###Useful information for development
 
 * How to build: [[Building SpecFlow]]
-* General notes about the development: [[Development]]
-* [[Developing VS2010 Integration]]
 * CI build server: [[https://ci.appveyor.com/project/SpecFlow/specflow]]
 * [[Updating Gherkin Keywords]]
 
