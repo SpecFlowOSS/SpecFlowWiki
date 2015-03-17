@@ -1,3 +1,5 @@
+_Note:_ This description is quite outdated. 
+
 ## Structure
 
 The source code of SpecFlow is included in a single Visual Studio 2008 solution (TechTalk.SpecFlow.sln), located in the main folder.
