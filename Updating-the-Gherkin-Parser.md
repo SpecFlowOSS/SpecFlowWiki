@@ -1,3 +1,7 @@
+_Important:_ There is a new Gherkin parser in a preparation phase currently: [Gherkin3 GitHib repo](https://github.com/cucumber/gherkin3). The new parser will allow changing the keywords without creating a new release. 
+
+The description below is valid for the old Gherkin parser used by SpecFlow 1.9.
+
 Under the hood SpecFlow uses the parser of the [Gherkin project](https://github.com/aslakhellesoy/gherkin) for parsing feature files.
 
 The Gherkin project publishes a .NET dll of the parser as part of their release process.
