@@ -24,3 +24,4 @@
   - [ ] Use `throw new PendingException()` instead of ScenarioContext.Pending()
   - [ ] Should be able to inject ScenarioContext to binding classese
   - [ ] Should be able to inject ScenarioContext to hook methods as parameter
+  - [ ] ScenarioContext.Embed -- embeds related files, images as assets?
