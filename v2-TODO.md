@@ -13,6 +13,7 @@
   - [x] Renew CI build infrastructure
   - [x] Enable build for Pull Requests
   - [ ] Review pending Pull Requests to `master`
+  - [ ] [GitLink](https://github.com/catenalogic/gitlink) support (?)
 
 - Features
   - [ ] Support for ordering hooks
