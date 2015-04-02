@@ -12,7 +12,7 @@
   - [ ] Integrate Gherkin3
   - [x] Renew CI build infrastructure
   - [x] Enable build for Pull Requests
-  - [ ] Enable beta nuget package generation on v2 branch builds
+  - [x] Enable beta nuget package generation on v2 branch builds
   - [ ] Review pending Pull Requests to `master`
   - [ ] [GitLink](https://github.com/catenalogic/gitlink) support (?)
 
