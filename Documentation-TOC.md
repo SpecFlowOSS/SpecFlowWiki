@@ -28,6 +28,7 @@
     * [[Visual Studio 2010 Integration]]
     * [[Visual Studio 2012 Integration]]
     * [[Visual Studio 2013 Integration]]
+    * [[Visual Studio 2015 Integration]]
     * [[MonoDevelop Integration]]
     * [[MSBuild Integration|Generate Tests from MsBuild]]
     * [[NuGet Integration]]
