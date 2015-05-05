@@ -14,6 +14,8 @@ Currently the Visual Studio 2015 integration provides the same feature set as [[
 
 ## Troubleshooting
 
+_See also: [[Troubleshooting Visual Studio Integration]]_
+
 1. **Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner**
 
    It seems that VS2015 handles solution-level NuGet packages differently (these packages were registered in the `.nuget\packages.config` file of the solution). Now the solution-level NuGet packages have to be listed at the projects that use them, otherwise the Test Explorer will not recognize the test runner.
