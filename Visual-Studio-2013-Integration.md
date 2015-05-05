@@ -8,6 +8,8 @@ The Visual Studio 2013 support is provided as a different Visual Studio Gallery 
 
 **Please help us and the other users by rating the package on the [[Visual Studio Gallery|http://go.specflow.org/vsgallery2013]] page!**
 
+_See also: [[Troubleshooting Visual Studio Integration]]_
+
 ## Supported Features
 
 The Visual Studio 2013 integration provides all functionality provided by the [[earlier integrations|Visual Studio 2012 integration]], including feature file editor, step and keyword intellisense, navigation between feature files and step definitions. 
