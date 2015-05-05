@@ -2,6 +2,7 @@
     * [[Install IDE Integration]]
     * [[Setup SpecFlow Projects]]
     * [[Advanced Project Setup]]
+    * [[Troubleshooting Visual Studio Integration]]
 * [[Configuration]]
 * [[Using Gherkin Language in SpecFlow]]
     * [[Feature Language]]
