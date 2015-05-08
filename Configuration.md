@@ -120,8 +120,62 @@ This section can be used to specify the unit-test framework SpecFlow uses to exe
         <td>name</td>
         <td>Name of the unit test provider. See [[Unit Test Providers]].</td>
         <td>The name of the built-in unit test provider. If you specify this attribute, 
-            you don’t have to specify the other two.<br/>
-            Default: NUnit</td>
+            you don’t have to specify the other two.<br/><br />
+            <strong>Default: nunit</strong>
+<br /><br />
+Following the list of supported providers with respective names and Generator Provider class name that implements.
+
+<table>
+ <tr>
+  <th>Name</th>
+  <th>Runtime Provider</th>
+ </tr>
+ <tr>
+  <td>nunit</td>
+  <td>NUnitTestGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mbunit</td>
+  <td>MbUnitTestGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mbunit.3</td>
+  <td>MbUnit3TestGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>xunit</td>
+  <td>XUnitGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest.2008</td>
+  <td>MsTestGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest.2010</td>
+  <td>MsTest2010GeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest</td>
+  <td>MsTest2010GeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest.silverlight</td>
+  <td>MsTestSilverlightGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest.silverlight3</td>
+  <td>MsTestSilverlightGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest.silverlight4</td>
+  <td>MsTestSilverlightGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>mstest.windowsphone7</td>
+  <td>MsTestSilverlightGeneratorProvider</td>
+ </tr>
+</table>
+</td>
     </tr>
     <tr>
         <td>generatorProvider</td>
@@ -134,6 +188,8 @@ This section can be used to specify the unit-test framework SpecFlow uses to exe
         <td>Obsolete, will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
 </table>
+
+
 
 #### `<generator>`
 
@@ -322,4 +378,3 @@ The `<plugins>` can contain multiple `<add>` elements (one for each plugin), wit
             Default: GeneratorAndRuntime</td>
     </tr>
 </table>
-
