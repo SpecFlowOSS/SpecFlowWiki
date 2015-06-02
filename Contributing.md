@@ -1,20 +1,24 @@
-You can help the community with improving SpecFlow. Feel free to provide fixes or new features by following the steps below. For bigger changes or new feature areas, we recommend discussing the idea first on the [[Forum|http://groups.google.com/group/specflow]].
+SpecFlow is open source, meaning you can help the community in improving SpecFlow by contributing fixes and new features. If you feel you can contribute to SpecFlow's development, a good place to start is to check out the [[To-Do list |https://github.com/techtalk/SpecFlow/wiki/v2-TODO]] for open tasks and follow the discussions on the [[forum|https://groups.google.com/forum/?_escaped_fragment_=topic/specflow/#!forum/specflow]]. Remember that you need to be willing to invest your own blood, sweat and tears into writing code, as the list of pending features is long and development resources are limited.
 
-1. Get a Github account
-1. Fork the project
-1. Make your feature addition or bugfix. Please also update the [[changelog|https://github.com/techtalk/SpecFlow/blob/master/changelog.txt]].
-1. Send us a pull request via GitHub and maybe a short note on the [[Forum|http://groups.google.com/group/specflow]]
+If you want to contribute a larger change or new features, please first discuss your ideas with the community on the [[forum|http://groups.google.com/group/specflow]] to clear up any potential issues. This also ensures that you don't take on a task that someone else is working on. If you have an idea for improvements that are not in the To-Do list, please discuss your proposal first; you don't want to invest a lot of work into something that will not be merged with the release version.
 
-_Note:_ We currently use the `v2` branch for development.
+To contribute to SpecFlow:
 
-If you are new to Github: A good description about creating pull request can be found here: [[http://help.github.com/pull-requests/]]
+1. Create a [[Github account|https://github.com/join]].
+1. Fork the project.
+1. Implement your feature or bugfix, and update the [[changelog|https://github.com/techtalk/SpecFlow/blob/master/changelog.txt]].
+1. Send us a pull request via GitHub and maybe leave a short note on the [[forum|http://groups.google.com/group/specflow]]
 
-Important! Please use autocrlf when committing to the SpecFlow repository. See details [[here|http://help.github.com/dealing-with-lineendings/]].
+_Note:_ We are currently using the `v2` branch for development.
 
-###Useful information for development
+If you are new to Github, a good description of how to create pull requests can be found here: [[http://help.github.com/pull-requests/]]
 
-* How to build: [[Building SpecFlow]]
+**Important!** Please use autocrlf when committing to the SpecFlow repository (more details available [[here|http://help.github.com/dealing-with-lineendings/]]).
+
+###Useful information for contributors
+
+* [[Building SpecFlow]]
 * CI build server: [[https://ci.appveyor.com/project/SpecFlow/specflow]]
 * [[Updating Gherkin Keywords]]
 
-And finally the [[Release Process]] in case we forget it.
+And finally, here is an overview of the [[Release Process]] (in case we forget it).
