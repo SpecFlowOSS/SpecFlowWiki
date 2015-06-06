@@ -20,5 +20,6 @@ If you are new to Github, a good description of how to create pull requests can 
 * [[Building SpecFlow]]
 * CI build server: [[https://ci.appveyor.com/project/SpecFlow/specflow]]
 * [[Updating Gherkin Keywords]]
+* [[Overview of contributors and contributions|https://github.com/techtalk/SpecFlow/graphs/contributors]]
 
 And finally, here is an overview of the [[Release Process]] (in case we forget it).
