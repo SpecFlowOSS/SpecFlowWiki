@@ -1,8 +1,8 @@
 ![SpecFlow Logo](http://specflow.org/media/specflow_logo.png)
 
-For a quick introduction and recently added new features, check out the SpecFlow website first: <br/>**[[http://www.specflow.org]]**
+For a quick introduction and an overview of recently added features, check out the SpecFlow website: <br/>**[[http://www.specflow.org]]**
 
-Quickly jump to **[[getting started]]** or to the **[[Documentation|http://www.specflow.org/documentation/]]**.
+Quickly jump to **[[getting started]]** or to the **[[Documentation|http://www.specflow.org/documentation/]]**. You may also want to read the **[[FAQ]]**.
 
 SpecFlow is open source and provided under a [[BSD license|http://go.specflow.org/license]]. If you are interested in contributing, there are some useful information on the [[Contributing]] page.
 
