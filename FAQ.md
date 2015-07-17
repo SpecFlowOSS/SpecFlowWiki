@@ -41,5 +41,12 @@ We currently have a long list of features awaiting implementation and are theref
 
 If you require a specific feature but are unable to develop it yourself, you can also sponsor the feature for the benefit of the community or pay outright for development services provided by [[TechTalk|http://www.techtalk.at]].
 
+##I have found an issue with SpecFlow. How can I get support? 
+SpecFlow is an open source project, and you can get free support from the SpecFlow community by submitting an issue on [[GitHub|https://github.com/techtalk/SpecFlow/issues]]. When submitting an issue, please provide as much information and context as possible, and ideally a code sample that allows the issue to be reproduced. The easier you make it for contributors to diagnose and fix your issue, the more likely you are to see results. 
+
+Once you have submitted an issue relating to a bug, a contributor needs to take on the issue and provide a pull request containing a fix. Depending on the nature of your issue, how well it is described and how easy it is to reproduce, a fix may be delivered quickly or take a long time. 
+
+If time is of the essence, TechTalk can offer paid support and deliver fixes for a fee invoiced either by effort or per incident. Details on the associated costs are available [[here|http://www.specflow.org/professional-support/]].
+
 ##Who are the developers behind SpecFlow?
 SpecFlow was originally created by Gáspár Nagy and used internally by [[TechTalk|http://www.techtalk.at]] in various software development projects. Since then developers from around the world have contributed to the open source project; an overview can be found [[here|https://github.com/techtalk/SpecFlow/graphs/contributors]].
