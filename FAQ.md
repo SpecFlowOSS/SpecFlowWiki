@@ -6,7 +6,7 @@ SpecFlow aims to bridge the communication gap between domain experts and develop
 
 SpecFlow integrates with Visual Studio, but can be also used from the command line (e.g. on a build server). 
 
-SpecFlow+ adds additional functionality to SpecFlow, such as a stand-alone IDE for Gherkin specifications, advanced reporting and [[much more|http://www.specflow.org/plus/]].
+[[SpecFlow+|http://www.specflow.org/plus/]] adds additional functionality to SpecFlow, such as a stand-alone IDE for Gherkin specifications, advanced reporting and much more.
 
 ##How do I install SpecFlow?
 To install SpecFlow and SpecFlow+, you first need to [[install the SpecFlow Visual Studio integration|Install-IDE-Integration]]. Once you have done this, you can then add SpecFlow to each of your projects using NuGet.  For more details, see the [[Getting Started|http://www.specflow.org/plus/runner/getting-started/]] article.
