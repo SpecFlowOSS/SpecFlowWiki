@@ -50,3 +50,12 @@ If time is of the essence, TechTalk can offer paid support and deliver fixes for
 
 ##Who are the developers behind SpecFlow?
 SpecFlow was originally created by Gáspár Nagy and used internally by [[TechTalk|http://www.techtalk.at]] in various software development projects. Since then developers from around the world have contributed to the open source project; an overview can be found [[here|https://github.com/techtalk/SpecFlow/graphs/contributors]].
+
+##Can I use the SpecFlow name for my own projects based on SpecFlow? 
+We are always happy to see projects that extend SpecFlow’s feature set, and SpecFlow is open source to specifically encourage such contributions from the community. We have however reserved the rights to the name “SpecFlow” as well as the official SpecFlow logo. We need to retain control over this aspect of the project, as we share responsibility for supporting and maintaining SpecFlow, along with all other contributors in the community. 
+
+When naming your project, one of our primary concerns is therefore that the name of your project avoids any confusion concerning project ownership and avoids creating the impression that your project is officially supported by us. Of course this is benefits you as well - we surely both want to ensure that feedback concerning your project is directed to the right place, and prevent users from submitting support issues to the SpecFlow community that concern third-party projects. 
+
+If you want to use “SpecFlow” in the name of your project, we would suggest naming your project something along the lines of “XXX for SpecFlow”. Please avoid names that start with “SpecFlow” as this suggests an official affiliation with the SpecFlow project (similar to SpecFlow, SpecFlow+, SpecFlow+ Runner etc.). 
+
+If you are unsure as to whether your preferred project name meets these guidelines, you can always contact us to make sure. We are always happy to hear about new projects that benefit the SpecFlow community, and if your project is well received and proves popular, we may approach you about the possibility of integrating your project within the official SpecFlow project.
