@@ -24,7 +24,7 @@
         * [[ScenarioContext]]
     * [[F# Support|FSharp Support]]
 * [[Unit Test Providers]]
-* Tool Integrations
+* Tool Integration
     * [[Visual Studio 2008 Integration]]
     * [[Visual Studio 2010 Integration]]
     * [[Visual Studio 2012 Integration]]
@@ -44,7 +44,7 @@
     * [[Test Execution Report|Reporting]]
     * [[Step Usage Report|Reporting]]
     * [[Pickle your features to get human readable documentation]]
-* Build Server Integrations
+* Build Server Integration
     * [[TFS 2010 Integration]]
     * [[TFS 2012 Integration]]
     * [[Team Foundation Service Integration]]
@@ -55,3 +55,4 @@
     * [[Silverlight Support]]
         * [[Testing Silverlight Asynchronous Code]]
     * [[Windows Phone 7 Support]]
+* [[FAQ]]
