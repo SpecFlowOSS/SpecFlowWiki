@@ -10,9 +10,9 @@ SpecFlow consists of three parts:
 
 ## Installation
 
-The installation of the **IDE Intergation** packages depends on the IDE you use. For **Visual Studio 2012 and 2010**, the easiest way is to search for "SpecFlow" in the extension manager (_Extensions and Updates_ in VS2012) online search. For other IDE integrations and for the direct download links, check the [[Install IDE Installation]] page.
+The installation of the **IDE Intergation** packages depends on the IDE you use. For **Visual Studio 2012 and 2010**, the easiest way is to search for "SpecFlow" in the extension manager (_Extensions and Updates_ in VS2012) online search. For other IDE integrations and for the direct download links, check the [[Install IDE Integration]] page.
 
-The **generator** and the **runtime** is usually installed together per project. The easiest and most convenient way to install these is to use our [[NuGet package|NuGet Integration]]: `[[SpecFlow|http://www.nuget.org/packages/SpecFlow]]` or one of the specific [[helper packages|NuGet Integration]]. For a detailed project setup guide, check the [[Setup SpecFlow Projects]] page.
+The **generator** and the **runtime** is usually installed together per project. The easiest and most convenient way to install these is to use our [[NuGet package|NuGet Integration]]: [[SpecFlow|http://www.nuget.org/packages/SpecFlow]] or one of the specific [[helper packages|NuGet Integration]]. For a detailed project setup guide, check the [[Setup SpecFlow Projects]] page.
 
 ## First Steps
 
@@ -24,7 +24,7 @@ Finally you can check the [[Documentation]] for detailed concepts and reference.
 
 ## Stay in Touch
 
-* [[Subscribe to our newsletter|http://go.specflow.org/subscribe-newsletter] (occasional mails with interviews, feature reviews and events)
+* [[Subscribe to our newsletter|http://go.specflow.org/subscribe-newsletter]] (occasional mails with interviews, feature reviews and events)
 * [[Follow us on twitter|http://twitter.com/specflow]] (new releases, important news are tweeted)
 * Discuss your ideas in the [[forum|http://groups.google.com/group/specflow]]
 * Read about the most important updated in the [[SpecFlow Announcements|http://groups.google.com/group/specflow-announcements]] board
