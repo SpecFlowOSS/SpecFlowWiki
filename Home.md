@@ -1,19 +1,19 @@
 ![SpecFlow Logo](http://specflow.org/media/specflow_logo.png)
 
-For a quick introduction and an overview of recently added features, check out the SpecFlow website: <br/>**[[http://www.specflow.org]]**
+For a quick introduction and an overview of recently added features, check out the [[SpecFlow website|http://www.specflow.org]].
 
-Quickly jump to **[[getting started]]** or to the **[[Documentation|http://www.specflow.org/documentation/]]**. You may also want to read the **[[FAQ]]**.
+If you are new to SpecFlow, you may want to follow our **[[Getting Started|http://www.specflow.org/getting-started/]]** tutorial. You can find in-depth information on SpecFlow in the **[[Documentation|http://www.specflow.org/documentation/]]**. You may also want to read the **[[FAQ]]**.
 
-SpecFlow is open source and provided under a [[BSD license|http://go.specflow.org/license]]. If you are interested in contributing, there are some useful information on the [[Contributing]] page.
+SpecFlow is open source and provided under a [[BSD license|http://go.specflow.org/license]]. If you are interested in contributing, you can find useful information on the [[Contributing]] page.
 
 ***
 
 ![SpecFlow Logo](http://specflow.org/media/specflowplus_logo.png)  
-[SpecFlow+](http://www.specflow.org/plus) is an initiative to commercially support the open source project SpecFlow, ensuring its further growth and sustainability. If you enjoy using SpecFlow and want to support it commercially, you can buy a SpecFlow+ license. In return we provide you with additional tools that further enhance your productivity when working with SpecFlow.
+[SpecFlow+](http://www.specflow.org/plus) is an initiative to commercially support the SpecFlow open source project, ensuring its further growth and sustainability. If you enjoy using SpecFlow and want to support it commercially, you can buy a SpecFlow+ license. In return we will provide you with additional tools that further enhance your productivity when working with SpecFlow.
 
 ***
 
-SpecFlow aims at **bridging the communication gap between domain experts and developers** by binding **business readable behavior specifications and examples** to the underlying implementation.
+SpecFlow aims to **bridge the communication gap between domain experts and developers** by binding **business readable behavior specifications and examples** to the underlying implementation.
 
 Our mission is to provide a pragmatic and frictionless approach to [[Specification-By-Example|http://www.specificationbyexample.com]] for .NET projects. 
 
