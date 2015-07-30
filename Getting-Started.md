@@ -1,4 +1,4 @@
-For a basic introduction to SpecFlow, information on new features, and help [[getting started|http://www.specflow.org/getting-started/]] visit the [[SpecFlow website|http://www.specflow.org]].
+For a basic introduction to SpecFlow, information on new features, and more help [[getting started|http://www.specflow.org/getting-started/]] visit the [[SpecFlow website|http://www.specflow.org]].
 
 SpecFlow consists of three parts:
 
