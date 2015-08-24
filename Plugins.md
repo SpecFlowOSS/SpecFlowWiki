@@ -35,7 +35,7 @@ As an example, if you are writing a plugin that will act as unit test generator 
 ```csharp
 public void RegisterCustomizations(ObjectContainer container, SpecFlowProjectConfiguration generatorConfiguration)
 {
-	container.RegisterTypeAs<NyNewGeneratorProvider, IUnitTestGeneratorProvider>();
+	container.RegisterTypeAs<MyNewGeneratorProvider, IUnitTestGeneratorProvider>();
 }
 ```
 
@@ -44,7 +44,7 @@ In order for your new library to be picked up by SpecFlow plugin loader, you nee
 [assembly: GeneratorPlugin(typeof(MyNewPlugin))]
 ```
 
-Aside of this there is another think that you need to take care of. Your assembly name needs to follow a convention, that is, it needs to have a suffix ".SpecFlowPlugin".
+Aside of this there is another thing that you need to take care of. Your assembly name needs to follow a convention, that is, it needs to have a suffix ".SpecFlowPlugin".
 
 ##Configuration details##
 
