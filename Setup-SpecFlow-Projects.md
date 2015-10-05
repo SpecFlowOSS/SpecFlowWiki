@@ -1,28 +1,30 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Setup-SpecFlow-Projects]]. We use the GitHub wiki for authoring the documentation pages._
 
-The SpecFlow tests are usually placed into one or more separate project in the solution: the "SpecFlow Projects". 
+The SpecFlow tests are usually placed into one or more separate project in your solution: these are referred to as "SpecFlow projects". 
 
-The [[quick introduction guide|http://go.specflow.org/getting-started]] on our website provides a basic introduction to SpecFlow. This page contains a detailed description of the possibilities.
+The [[quick introduction guide|http://go.specflow.org/getting-started]] on our website provides a basic introduction to SpecFlow, including installing SpecFlow and setting up your first project. This page covers the available options in greater depth.
 
-## Setup SpecFlow projects step-by-step using NuGet
+## Step-by-Step Guide to Setting Up SpecFlow Projects Using NuGet
 
-This list describes the recommended setup options. For alternatives check the [[Advanced Project Setup]] page.
+This following outlines the recommended setup options. For alternatives, see the [[Advanced Project Setup]] page.
 
 ### 1. Create a project
-Since SpecFlow can use different unit testing frameworks to execute the SpecFlow tests, the SpecFlow projects have to be either _Test Projects_ (in case of MsTest) or a simple _Class Libraries_. Just like for unit tests, it makes sense to keep a consistent naming convention for these projects (usual project name postfixes are _Specs_ or _AcceptanceTests_).
+Since SpecFlow supports various unit testing frameworks that can be used to execute the SpecFlow tests, SpecFlow projects must be either *Test Projects* (in case of MsTest) or simple *Class Libraries*. As with unit tests, it makes sense to adopt a consistent naming convention for these projects (usual project name postfixes are *Specs* or *AcceptanceTests*).
 
-### 2. Add reference for the SpecFlow runtime
-SpecFlow projects need the `TechTalk.SpecFlow.dll` in order to compile. You can setup this by installing our [[NuGet package|NuGet Integration]]: `[[SpecFlow|http://www.nuget.org/packages/SpecFlow]]` or one of the specific [[helper packages|NuGet Integration]], like `[[SpecFlow.NUnit|http://www.nuget.org/packages/SpecFlow.NUnit]]` or `[[SpecRun.SpecFlow|http://www.nuget.org/packages/SpecRun.SpecFlow]]`. The helper packages group all necessary dependencies and apply the necessary [[configuration]].
+### 2. Add a reference for the SpecFlow runtime
+SpecFlow projects require the `TechTalk.SpecFlow.dll` in order to compile. This DLL is deployed when installing the `[[SpecFlow|http://www.nuget.org/packages/SpecFlow]]` [[NuGet package|NuGet Integration]] or one of the specific [[helper packages|NuGet Integration]], such as `[[SpecFlow.NUnit|http://www.nuget.org/packages/SpecFlow.NUnit]]` or `[[SpecRun.SpecFlow|http://www.nuget.org/packages/SpecRun.SpecFlow]]`. The helper packages group all necessary dependencies and apply the necessary [[configuration]].
+
+Install the NuGet packages by either right-clicking on your solution and selecting **Manage NuGet Packages for Solution** or from the Packet Manager console:
 
 ```
 PM> Install-Package SpecFlow -ProjectName MyApp.Specs
 ```
 
-### 3. Configure SpecFlow project
+### 3. Configure your SpecFlow project
 
-If you have used one of the [[helper NuGet packages|NuGet Integration]] you don't need to configure anything. If you have used the `SpecFlow` package or want to fine tune SpecFlow, you need to change the settings in the App.config file. See [[Configuration]] page for details.
+If you used one of the [[helper NuGet packages|NuGet Integration]] to install SpecFlow, you don't need to configure anything. If you used the `SpecFlow` package or want to finetune SpecFlow, you need to change the settings in the App.config file. For details, refer to [[Configuration]].
 
 ### 4. Add your first feature file
 
-Your project is ready to use SpecFlow. You can add the first [[feature files|Using Gherkin Language In SpecFlow]] (with _Add / New Item_ in Visual Studio for example) and implement your applications in [[Specification by Example|http://www.specificationbyexample.com]] ([[Behavior Driven Development (BDD)|http://behaviour-driven.org/]], [[Acceptance Test Driven Development (ATDD)|http://en.wikipedia.org/wiki/Test-driven_development]]) style. 
+Your project is now ready to use SpecFlow. You can add your first [[feature files|Using Gherkin Language In SpecFlow]] in Visual Studio be selecting *Add | New Item* and develop your applications according to the [[Specification by Example|http://www.specificationbyexample.com]] ([[Behavior Driven Development (BDD)|http://behaviour-driven.org/]] or [[Acceptance Test Driven Development (ATDD)|http://en.wikipedia.org/wiki/Test-driven_development]]) paradigms. 
 
