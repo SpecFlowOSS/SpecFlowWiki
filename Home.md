@@ -13,7 +13,7 @@ SpecFlow is open source and provided under a [[BSD license|http://go.specflow.or
 
 ***
 
-SpecFlow aims to **bridge the communication gap between domain experts and developers** by binding **business readable behavior specifications and examples** to the underlying implementation.
+SpecFlow **bridges the communication gap between domain experts and developers** by binding **business readable behavior specifications and examples** to the underlying source code.
 
 Our mission is to provide a pragmatic and frictionless approach to [[Specification-By-Example|http://www.specificationbyexample.com]] for .NET projects. 
 
@@ -21,9 +21,9 @@ SpecFlow also supports the concepts of Acceptance Test Driven Development (ATDD)
 
 The official website of the SpecFlow project is: [[http://www.specflow.org]]
 
-Source code, wiki and issue tracking is hosted here on GitHub.
+Source code, wiki and issue tracking are hosted here on GitHub.
 
-Discussions are on Google Groups: [[http://groups.google.com/group/specflow/]]
+Discussions concerning SpecFlow are hosted on Google Groups: [[http://groups.google.com/group/specflow/]]
 
 ***
 
