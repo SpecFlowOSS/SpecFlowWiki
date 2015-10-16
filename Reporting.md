@@ -16,7 +16,7 @@ In order to generate this report you have to execute the acceptance tests with t
 nunit-console.exe /labels /out=TestResult.txt /xml=TestResult.xml bin\Debug\BookShop.AcceptanceTests.dll
 ```
 
-The two generated file can be used to invoke the SpecFlow report generation. If you use the output file names shown above it is enough to specify the project file path containing the feature files.
+The two generated files can be used to invoke the SpecFlow report generation. If you use the output file names shown above it is enough to specify the project file path containing the feature files.
 
 ```
 specflow.exe nunitexecutionreport BookShop.AcceptanceTests.csproj /out:MyResult.html
