@@ -30,18 +30,18 @@ SpecFlow generates a call inside the unit test method for each scenario step. Th
 The scenario steps are primary way to execute any custom code to automate the application. You can read more about the different bindings in the [[Bindings]] page.
 
 ##Table and multi-line text arguments
-The scenario steps can have table or multi-line text arguments additionally to the step text (that can also contain arguments for the bindings, see [[Step Bindings]]). These are described in the subsequent lines of the scenario step and passed as additional Table and string arguments to the step bindings.
+You can include tables and multi-line arguments in scenario steps. These are used by the [[step binding|step bindings]] and are either passed as additional table or string arguments.
 
-See more details at [[https://cucumber.io/docs/reference#step-arguments]]
+For more details, see [[https://cucumber.io/docs/reference#step-arguments]]
 
 ##Tags
-Tags are markers that can be applied to features and scenarios. Applying a tag on a feature is equivalent to apply the tag to all scenarios in the feature file. See more details at [[https://github.com/cucumber/cucumber/wiki/Tags]].
+Tags are markers that can be assigned to features and scenarios. Assigning a tag to a feature is equivalent to assigning the tag to all scenarios in the feature file. For more details, see [[https://github.com/cucumber/cucumber/wiki/Tags]].
 
-If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates categories from the tags. The generated category name is the tag name, without the leading `@` sign. With the generated unit test categories you can filter or group the tests being executed. For example by marking crucial test with the `@important` tag, you can execute these tests more frequently.
+If supported by the [[unit test framework|Unit Test Providers]], SpecFlow generates categories from the tags. The generated category name is the same as the tag's name, but without the leading `@`. You can filter and group the tests to be executed using these unit test categories. For example, you can tag crucial tests with `@important`, and then execute these tests more frequently.
 
-Even if the unit test framework does not support categories, you can use the tags to execute special logic for the tagged scenarios in [[event bindings]], [[scoped bindings]] or in the step bindings by investigating the `ScenarioContext.Current.ScenarioInfo.Tags` property. 
+If your unit test framework does not support categories, you can still use tags to implement special logic for tagged scenarios in the [[event bindings]], [[scoped bindings]] or step bindings by querying the `ScenarioContext.Current.ScenarioInfo.Tags` property.
 
-The `@ignore` tag is handled specially by SpecFlow. From the scenarios marked with this tag SpecFlow generates an ignored unit test method. See [[Ignored Tests|Test Result]].
+SpecFlow treats the `@ignore` tag as a special tag. SpecFlow generates an [[ignored unit test|Test-result#ignored-tests]] method from scenarios with this tag.
 
 ##Background
 The background language element allows specifying a common precondition for all scenarios in a feature file. The background part of the file can contain one or more scenario steps that are executed before any other steps of the scenarios. See more details at [[https://github.com/cucumber/cucumber/wiki/Background]]
