@@ -53,18 +53,18 @@ Scenario outlines can be used to define data-driven acceptance tests. They can b
 
 If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise it generates a parameterized unit test logic method for a scenario outline and an individual unit test method for each example set. 
 
-For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). Therefore it is a good practice to choose a unique and descriptive parameter as the first column of the example set. As the Gherkin syntax does not enforce that all example columns have the matching placeholder in the scenario outline, you can even introduce an arbitrary column in the example sets for better test method name readability. 
+For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). It is therefore good practice to choose a unique and descriptive parameter as the first column in the example set. As the Gherkin syntax does require all example columns to have matching placeholders in the scenario outline, you can even introduce an arbitrary column in the example sets used to name tests with more readability. 
 
-SpecFlow performs the placeholder substitution as a separate phase before the step binding match would be applied. Therefore the implementation and the parameters of the step bindings are independent of whether they are executed through a direct scenario or a scenario outline. This leaves the option to specify further examples to the acceptance tests later without changing the step bindings.
+SpecFlow performs the placeholder substitution as a separate phase before matching the step bindings. The implementation and the parameters in the step bindings are thus independent of whether they are executed through a direct scenario or a scenario outline. This allows you to later specify further examples in the acceptance tests without changing the step bindings.
 
-Hint: In certain cases, when using the regular expression method of generating method names, SpecFlow is unable to generate the correct parameter signatures for unit test logic methods without a little help. Placing single quotation marks `'` around placeholders (eg. `'<placeholder>'`)improves SpecFlow's ability to parse the scenario outline and generate a more accurate regular expression and test method signature.
+**Hint:** In certain cases, when generating method names using the regular expression method, SpecFlow is unable to generate the correct parameter signatures for unit test logic methods without a little help. Placing single quotation marks (`'`) around placeholders (eg. `'<placeholder>'`)improves SpecFlow's ability to parse the scenario outline and generate more accurate regular expressions and test method signatures.
 
 ##Comments
-You can add comment lines to the feature files at any place starting the line with the `#` sign. Be careful however, as comments in the specification are often signs of wrongly specified acceptance criteria. 
+You can add comment lines to the feature files at any place by starting the line with `#`. Be careful however, as comments in your specification can be a sign that acceptance criteria have been specified wrongly. 
 
-The comment lines are ignored by SpecFlow.
+Comment lines are ignored by SpecFlow.
 
-To comment blocks you can use triple quotes (") to start and to finish the block comment.
+To comment out blocks, use triple quotes (") to start and to end the block comment.
 
 """
 
