@@ -32,7 +32,7 @@ The scenario steps are primary way to execute any custom code to automate the ap
 ##Table and multi-line text arguments
 The scenario steps can have table or multi-line text arguments additionally to the step text (that can also contain arguments for the bindings, see [[Step Bindings]]). These are described in the subsequent lines of the scenario step and passed as additional Table and string arguments to the step bindings.
 
-See more details at [[https://github.com/cucumber/cucumber/wiki/multiline-step-arguments]]
+See more details at [[https://cucumber.io/docs/reference#step-arguments]]
 
 ##Tags
 Tags are markers that can be applied to features and scenarios. Applying a tag on a feature is equivalent to apply the tag to all scenarios in the feature file. See more details at [[https://github.com/cucumber/cucumber/wiki/Tags]].
