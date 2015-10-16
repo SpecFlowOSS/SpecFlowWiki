@@ -9,7 +9,7 @@
   - [x] Upgrade "generateall" command to support new MsBuild infrastructure [Pull Request #411](https://github.com/techtalk/SpecFlow/pull/411)
   - [ ] Cleanup NuGet package generation (eliminate SpecFlowBinPackage) - In progress (Sam Holder)
   - [ ] Remove SpecFlow.Reporting from the main repo
-  - [ ] Integrate Gherkin3
+  - [ ] Integrate Gherkin3 - In progress (gasparnagy, on branch integrate_gherkin3)
   - [x] Renew CI build infrastructure
   - [x] Enable build for Pull Requests
   - [x] Enable beta nuget package generation on v2 branch builds
