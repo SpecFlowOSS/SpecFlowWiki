@@ -33,6 +33,9 @@ We’ve listed the most important resources [[here|http://www.specflow.org/resou
 
 We also run regular training classes, which are listed [[here|http://www.specflow.org/training/]]
 
+##Does SpecFlow support coded UI tests?
+Coded UI tests include special coded UI attributes that can only be interpreted by MS Test. If you are using coded UI tests, you can only execute them using the MS Test test runner. For more details on getting coded UI working with SpecFlow, see [[this blog post|http://blog.majcica.com/2015/05/07/getting-started-with-specflow-and-codedui/]] (thanks to Mario Majčica).
+
 ##How can I contribute to SpecFlow's development?
 Details on how you can contribute to SpecFlow's development can be found [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]].
 
