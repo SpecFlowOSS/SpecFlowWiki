@@ -18,9 +18,9 @@ _See also: [[Troubleshooting Visual Studio Integration]]_
 
 1. **Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner**
 
-   It seems that VS2015 handles solution-level NuGet packages differently (these packages were registered in the `.nuget\packages.config` file of the solution). Now the solution-level NuGet packages have to be listed at the projects that use them, otherwise the Test Explorer will not recognize the test runner.
+   VS2015 appears to handles solution-level NuGet packages differently from previous versions (these packages were registered in the solution's `.nuget\packages.config` file). Solution-level NuGet packages now have to be listed at the project level, otherwise the Test Explorer will not recognise the test runner.
 
-   To fix this issue, you have to either re-install the SpecFlow+ Runner NuGet packages, or simply add the dependency to the `SpecRun.Runner` package (`<package id="SpecRun.Runner" version="1.2.0" />`) to the packages.config file of the SpecFlow projects. You might need to restart Visual Studio to see the tests.
+   To fix this issue, either re-install the SpecFlow+ Runner NuGet packages, or simply add the dependency on the `SpecRun.Runner` package (`<package id="SpecRun.Runner" version="1.2.0" />`) to the packages.config file of yourSpecFlow projects. You may need to restart Visual Studio to see your tests.
 
 2. **Tests turn to grayish green in the Test Explorer window when using SpecFlow+ Runner after test execution has been completed**
 
