@@ -1,7 +1,7 @@
 <a href="#General">General</a>  
 <a href="#Licensing>Licensing</a>
 
-<h2 id=General>General</h2>
+<h2 id="General">General</h2>
 
 ##What is SpecFlow?
 
