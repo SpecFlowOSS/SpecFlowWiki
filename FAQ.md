@@ -1,12 +1,3 @@
-<a href="#General">General</a> 
- 
-<a href="#Licensing">Licensing</a>
-
-
-fsdfds
-
-<h2 id="General">General</h2>
-
 ##What is SpecFlow?
 
 SpecFlow allows .NET development teams to define, manage and execute automated acceptance tests as business readable specifications. It is based on [[Gherkin|https://github.com/cucumber/gherkin/wiki]] and part of the [[Cucumber|https://cucumber.io/]] eco system.  
