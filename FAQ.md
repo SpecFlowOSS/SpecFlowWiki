@@ -1,3 +1,8 @@
+<a href="#General">General</a>  
+<a href="#Licensing>Licensing</a>
+
+<h2 id=General>General</h2>
+
 ##What is SpecFlow?
 
 SpecFlow allows .NET development teams to define, manage and execute automated acceptance tests as business readable specifications. It is based on [[Gherkin|https://github.com/cucumber/gherkin/wiki]] and part of the [[Cucumber|https://cucumber.io/]] eco system.  
@@ -20,6 +25,7 @@ SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.c
 
 For an overview of the differences between SpecFlow and SpecFlow+, see the [[comparison of features|http://www.specflow.org/plus/]].
 
+<h2 id="Licensing">Licensing</h2>
 ##How is SpecFlow+ licensed?
 A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). The license is a perpetual license valid for the current release of SpecFlow+ at the time of purchase, and entitles you to free updates for a period of one year. 
 
