@@ -1,3 +1,4 @@
+<h1 id="General">General</h1>
 ##What is SpecFlow?
 
 SpecFlow allows .NET development teams to define, manage and execute automated acceptance tests as business readable specifications. It is based on [[Gherkin|https://github.com/cucumber/gherkin/wiki]] and part of the [[Cucumber|https://cucumber.io/]] eco system.  
@@ -20,7 +21,7 @@ SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.c
 
 For an overview of the differences between SpecFlow and SpecFlow+, see the [[comparison of features|http://www.specflow.org/plus/]].
 
-<h2 id="Licensing">Licensing</h2>
+<h1 id="Licensing">Licensing</h1>
 ##How is SpecFlow+ licensed?
 A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). The license is a perpetual license valid for the current release of SpecFlow+ at the time of purchase, and entitles you to free updates for a period of one year. 
 
@@ -29,16 +30,12 @@ More details on SpecFlow+ licensing can be found [[here|http://www.specflow.org/
 ##How do I register my license for SpecFlow+?
 You need to register your license key once per machine (after adding SpecFlow+ to your first project). More information is available [[here|http://www.specflow.org/plus/evaluation/]] and [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Command-Line-Tool-Reference/]].
 
+
+<h1 id="Support">Support</h1>
 ##Where can I find training material online?
 We’ve listed the most important resources [[here|http://www.specflow.org/resources/]]. Many of them are free or inexpensive.
 
 We also run regular training classes, which are listed [[here|http://www.specflow.org/training/]]
-
-##Does SpecFlow support coded UI tests?
-Coded UI tests include special coded UI attributes that can only be interpreted by MS Test. If you are using coded UI tests, you can only execute them using the MS Test test runner. For more details on getting coded UI working with SpecFlow, see [[this blog post|http://blog.majcica.com/2015/05/07/getting-started-with-specflow-and-codedui/]] (thanks to Mario Majčica).
-
-##How can I contribute to SpecFlow's development?
-Details on how you can contribute to SpecFlow's development can be found [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]].
 
 ##I have a feature request; how can I submit it?
 We currently have a long list of features awaiting implementation and are therefore limited in our capacity to implement feature requests. However, as SpecFlow is open source, you can implement new features yourself (more information available [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]]).
@@ -52,14 +49,23 @@ Once you have submitted an issue relating to a bug, a contributor needs to take 
 
 If time is of the essence, TechTalk can offer paid support and deliver fixes for a fee invoiced either by effort or per incident. Details on the associated costs are available [[here|http://www.specflow.org/professional-support/]].
 
+<h1 id="Support">Development</h1>
+##How can I contribute to SpecFlow's development?
+Details on how you can contribute to SpecFlow's development can be found [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]].
+
 ##Who are the developers behind SpecFlow?
 SpecFlow was originally created by Gáspár Nagy and used internally by [[TechTalk|http://www.techtalk.at]] in various software development projects. Since then developers from around the world have contributed to the open source project; an overview can be found [[here|https://github.com/techtalk/SpecFlow/graphs/contributors]].
 
 ##Can I use the SpecFlow name for my own projects based on SpecFlow? 
 We are always happy to see projects that extend SpecFlow’s feature set, and SpecFlow is open source to specifically encourage such contributions from the community. We have however reserved the rights to the name “SpecFlow” as well as the official SpecFlow logo. We need to retain control over this aspect of the project, as we share responsibility for supporting and maintaining SpecFlow, along with all other contributors in the community. 
 
-When naming your project, one of our primary concerns is therefore that the name of your project avoids any confusion concerning project ownership and avoids creating the impression that your project is officially supported by us. Of course this is benefits you as well - we surely both want to ensure that feedback concerning your project is directed to the right place, and prevent users from submitting support issues to the SpecFlow community that concern third-party projects. 
+When naming your project, one of our primary concerns is therefore that the name of your project avoids any confusion concerning project ownership and avoids creating the impression that your project is officially supported by us. Of course this is benefits you as well - we surely both want to ensure that feedback concerning your project is directed to the right place, and prevent users from submitting support issues to the SpecFlow community that concern third-party projects.
 
 If you want to use “SpecFlow” in the name of your project, we would suggest naming your project something along the lines of “XXX for SpecFlow”. Please avoid names that start with “SpecFlow” as this suggests an official affiliation with the SpecFlow project (similar to SpecFlow, SpecFlow+, SpecFlow+ Runner etc.). 
 
 If you are unsure as to whether your preferred project name meets these guidelines, you can always contact us to make sure. We are always happy to hear about new projects that benefit the SpecFlow community, and if your project is well received and proves popular, we may approach you about the possibility of integrating your project within the official SpecFlow project.
+
+<h1 id="Features">Features</h1>
+
+##Does SpecFlow support coded UI tests?
+Coded UI tests include special coded UI attributes that can only be interpreted by MS Test. If you are using coded UI tests, you can only execute them using the MS Test test runner. For more details on getting coded UI working with SpecFlow, see [[this blog post|http://blog.majcica.com/2015/05/07/getting-started-with-specflow-and-codedui/]] (thanks to Mario Majčica).
