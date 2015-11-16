@@ -17,7 +17,7 @@ SpecFlow is open source and free of charge. It covers all your basic needs for m
 
 SpecFlow+ is a series of extensions that introduce additional features, such as a stand-alone IDE for Gherkin specifications, advanced reporting, specify and execute Gherkin in Excel, execute tests in multiple threads, and define complex filters to determine which tests to run.  
 
-SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.cgi?s=138662&p=138662-1&v=0&d=0&q=1&t=remove%20extended%20download%20service%20from%20baske]]. For more information on licensing, see below and [[here|http://www.specflow.org/plus/licensing/]].
+SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.cgi?s=138662&p=138662-1&v=0&d=0&q=1&t=remove%20extended%20download%20service%20from%20baske]]. For more information on licensing, see the [[Licensing section in the SpecFlow+ FAQ|http://www.specflow.org/plus/documentation/FAQ/]] and [[here|http://www.specflow.org/plus/licensing/]].
 
 For an overview of the differences between SpecFlow and SpecFlow+, see the [[comparison of features|http://www.specflow.org/plus/]].
 
