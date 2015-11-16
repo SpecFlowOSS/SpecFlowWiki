@@ -21,16 +21,6 @@ SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.c
 
 For an overview of the differences between SpecFlow and SpecFlow+, see the [[comparison of features|http://www.specflow.org/plus/]].
 
-<h1 id="Licensing">Licensing</h1>
-##How is SpecFlow+ licensed?
-A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). The license is a perpetual license valid for the current release of SpecFlow+ at the time of purchase, and entitles you to free updates for a period of one year. 
-
-More details on SpecFlow+ licensing can be found [[here|http://www.specflow.org/plus/licensing/]].
-
-##How do I register my license for SpecFlow+?
-You need to register your license key once per machine (after adding SpecFlow+ to your first project). More information is available [[here|http://www.specflow.org/plus/evaluation/]] and [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Command-Line-Tool-Reference/]].
-
-
 <h1 id="Support">Support</h1>
 ##Where can I find training material online?
 We’ve listed the most important resources [[here|http://www.specflow.org/resources/]]. Many of them are free or inexpensive.
