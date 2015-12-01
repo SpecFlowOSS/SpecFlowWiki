@@ -1,4 +1,4 @@
-Currently we are building SpecFlow with VisualStudio 2013.
+We are currently building SpecFlow with VisualStudio 2013.
 
 Use the `v2` branch to build SpecFlow. For building the Visual Studio integration, use the 
 [SpecFlow.VisualStudio GitHub repo](https://github.com/techtalk/SpecFlow.VisualStudio)
