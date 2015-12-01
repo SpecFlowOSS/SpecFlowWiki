@@ -27,7 +27,7 @@ public class CallingStepsFromStepDefinitionSteps : Steps
 }	
 ```
 
-Invoking steps from step definitions is practical if you have several common steps that you want to perform in several scenarios. -Or simply if you want to make your scenarios shorter and more declarative. This allows you to do this in a Scenario:
+Invoking steps from step definitions is practical if you have several common steps that you want to perform in several scenarios, or simply if you want to make your scenarios shorter and more declarative. This allows you to do the following in a Scenario:
 
 <pre>
 # feature
@@ -46,7 +46,7 @@ Scenario: View last incidents
   When I go to the incident page
 </pre>
 
-NOTE: When using this approach to remove duplication from your feature files, the console output will contain both the master step and the delegated steps as follows:
+**Note:** When using this approach to remove duplications from your feature files, the console output will contain both the master step and the delegated steps as follows:
 
 <pre>
   Given Linda is logged in
