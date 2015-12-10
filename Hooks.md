@@ -2,7 +2,7 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 The hooks (event bindings) can be used to perform additional automation logic on specific events, such as before executing a scenario.
 
-Hooks are global, but can be restricted to run only for features or scenarios with a specific [[tag]] (see below). The execution order of hooks for the same event is undefined.
+Hooks are global, but can be restricted to run only for features or scenarios with a specific tag (see below). The execution order of hooks for the same event is undefined.
 
 ##Supported Hook Attributes
 
