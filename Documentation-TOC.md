@@ -9,6 +9,7 @@
 * [[Executing SpecFlow Tests]]
     * [[Test Result]]
     * [[Debugging Tests]]
+    * [[Parallel Execution]]
 * [[Bindings]]
     * [[Use Bindings from External Assemblies]]
     * [[Step Definitions]]
