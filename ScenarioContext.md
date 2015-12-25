@@ -125,7 +125,7 @@ Here I am using MvcContrib to capture the screen of the failing test, and naming
 
 ##ScenarioContext.Current.CurrentScenarioBlock
 
-You can also get hold of the “type” of step your on (Given, When or Then) which is pretty cool, but I cannot see an immediate use of it.
+You can also get hold of the “type” of step your on (Given, When or Then) which is pretty cool and, for example, can be used to execute additional setup/cleanup right before or after Given, When or Then block.
 
 in the .feature file:
 
