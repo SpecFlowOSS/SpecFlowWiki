@@ -1,4 +1,4 @@
-_Note: The Windows Phone 7 support has not been migrated to SpecFlow v2. Silverlight projects needs to be tested with SpecFlow 1.9._
+_Note: Windows Phone 7 support has not been migrated to SpecFlow v2. Silverlight projects needs to be tested with SpecFlow 1.9._
 
 You can use SpecFlow for developing Windows Phone 7 applications. Just do these simple steps.
 
