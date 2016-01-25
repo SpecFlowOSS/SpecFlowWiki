@@ -149,11 +149,11 @@ and the step definition:
 
 ##ScenarioContext.Current.StepContext
 
-Sometimes you need to access the currently executed step. This might be needed to improve tracing. For these cases the `ScenarioContext.Current.StepContext` property can be used.
+Sometimes you need to access the currently executed step, e.g. to improve tracing. Use the `ScenarioContext.Current.StepContext` property for this purpose.
 
 ##Injecting ScenarioContext
 
-Using the static `ScenarioContext.Current` accessor might cause test automation code that is hard to follow and it does not work for [[parallel execution]]. In these cases, you can let SpecFlow injecting the current scenario context into your binding class using the [[context injection]] mechanizm by declaring a `ScenarioContext` parameter for the constructor.
+Using the static `ScenarioContext.Current` accessor may result in test automation code that is hard to follow, and does not work with [[parallel execution]]. In such cases, you can let SpecFlow inject the current scenario context into your binding class using the [[context injection]] mechanism by declaring a `ScenarioContext` parameter in the constructor, e.g.:
 
 ```c#
 public class MyBindingClass
