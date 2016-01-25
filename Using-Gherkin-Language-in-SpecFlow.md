@@ -39,7 +39,7 @@ Tags are markers that can be assigned to features and scenarios. Assigning a tag
 
 If supported by the [[unit test framework|Unit Test Providers]], SpecFlow generates categories from the tags. The generated category name is the same as the tag's name, but without the leading `@`. You can filter and group the tests to be executed using these unit test categories. For example, you can tag crucial tests with `@important`, and then execute these tests more frequently.
 
-If your unit test framework does not support categories, you can still use tags to implement special logic for tagged scenarios in the [[hooks|event bindings]], [[scoped bindings]] or step definitions by querying the `ScenarioContext.Current.ScenarioInfo.Tags` property.
+If your unit test framework does not support categories, you can still use tags to implement special logic for tagged scenarios in [[hooks]], [[scoped bindings]] or step definitions by querying the `ScenarioContext.Current.ScenarioInfo.Tags` property.
 
 SpecFlow treats the `@ignore` tag as a special tag. SpecFlow generates an [[ignored unit test|Test-result#ignored-tests]] method from scenarios with this tag.
 
