@@ -1,3 +1,5 @@
+_Note: The Silverlight Support has not been migrated yet to SpecFlow v2. Silverlight projects needs to be tested with SpecFlow 1.9 currently._
+
 * Install [Silverlight Toolkit](http://silverlight.codeplex.com/).
 It comes with the  SL Unit Test Framework (http://code.msdn.microsoft.com/silverlightut)
 * In your solution add a "Silverlight Unit Test Application" project. This adds a Silverlight Application project with the tests and a web project to the solution. The former is the test project, where the feature files and step definitions should be added. The latter hosts the test project to execute it in the browser.
