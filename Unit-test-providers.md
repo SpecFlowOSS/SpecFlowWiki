@@ -41,7 +41,7 @@ The following table contains the built-in unit test providers.
         <td>-</td>
         <td>+</td>
         <td>+</td>
-        <td>MsTest provider for .NET 4.0. Supporting test-categories. (Note:  before SpecFlow v1.9, MsTest was referring to the .NET 3.5 provider.)</td>
+        <td>MsTest provider for .NET 4.0. Supporting test-categories. Specialized [[NuGet package|NuGet Integration]] available for easy setup: SpecFlow.MsTest.</td>
     </tr>
     <tr>
         <td>MsTest.Silverlight <br/> MsTest.Silverlight3 <br/> MsTest.Silverlight4</td>
