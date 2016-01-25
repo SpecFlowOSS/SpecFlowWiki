@@ -146,3 +146,29 @@ and the step definition:
             var stepType = ScenarioContext.Current.CurrentScenarioBlock.ToString();
             stepType.Should().Equal(expectedStepType);
         }
+
+##ScenarioContext.Current.StepContext
+
+Sometimes you need to access the currently executed step. This might be needed to improve tracing. For these cases the `ScenarioContext.Current.StepContext` property can be used.
+
+##Injecting ScenarioContext
+
+Using the static `ScenarioContext.Current` accessor might cause test automation code that is hard to follow and it does not work for [[parallel execution]]. In these cases, you can let SpecFlow injecting the current scenario context into your binding class using the [[context injection]] mechanizm by declaring a `ScenarioContext` parameter for the constructor.
+
+```c#
+public class MyBindingClass
+{
+  private ScenarioContext scenarioContext;
+
+  public MyBindingClass(ScenarioContext scenarioContext)
+  {
+    this.scenarioContext = scenarioContext;
+  }
+
+  [When("I say hello to ScenarioContext")]
+  public void WhenISayHello()
+  {
+    scenarioContext["say"] = "hello";
+  }
+}
+```
