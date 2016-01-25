@@ -21,16 +21,16 @@ Scenarios can contain multiple scenario steps. There are three types of steps th
 
 The Gherkin syntax allows any combination of these three types of steps, but a scenario usually has distinct blocks of `Given`, `When` and `Then` statements.
 
-Scenario steps are defined using text and can have additional table or multi-line text arguments.
+Scenario steps are defined using text and can have additional table (called `DataTable`) or multi-line text (called `DocString`) arguments.
 
 For more details, see [[https://github.com/cucumber/cucumber/wiki/Given-When-Then]].
 
-SpecFlow generates a call inside the unit test method for each scenario step. The call is performed by the SpecFlow runtime that will execute the binding matching to the scenario step. The matching is done at runtime, so the generated tests can be compiled and executed even if the binding is not yet implemented. Read more about execution of test before the binding has been implemented: [[Missing, Pending or Improperly Configured Bindings|Test Result]].
+SpecFlow generates a call inside the unit test method for each scenario step. The call is performed by the SpecFlow runtime that will execute the step definition matching to the scenario step. The matching is done at runtime, so the generated tests can be compiled and executed even if the binding is not yet implemented. Read more about execution of test before the binding has been implemented: [[Missing, Pending or Improperly Configured Bindings|Test Result]].
 
 The scenario steps are primary way to execute any custom code to automate the application. You can read more about the different bindings in the [[Bindings]] page.
 
 ##Table and multi-line text arguments
-You can include tables and multi-line arguments in scenario steps. These are used by the [[step binding|step bindings]] and are either passed as additional table or string arguments.
+You can include tables and multi-line arguments in scenario steps. These are used by the [[step definitions|step bindings]] and are either passed as additional `Table` or `string` arguments.
 
 For more details, see [[https://cucumber.io/docs/reference#step-arguments]]
 
@@ -39,7 +39,7 @@ Tags are markers that can be assigned to features and scenarios. Assigning a tag
 
 If supported by the [[unit test framework|Unit Test Providers]], SpecFlow generates categories from the tags. The generated category name is the same as the tag's name, but without the leading `@`. You can filter and group the tests to be executed using these unit test categories. For example, you can tag crucial tests with `@important`, and then execute these tests more frequently.
 
-If your unit test framework does not support categories, you can still use tags to implement special logic for tagged scenarios in the [[event bindings]], [[scoped bindings]] or step bindings by querying the `ScenarioContext.Current.ScenarioInfo.Tags` property.
+If your unit test framework does not support categories, you can still use tags to implement special logic for tagged scenarios in the [[hooks|event bindings]], [[scoped bindings]] or step definitions by querying the `ScenarioContext.Current.ScenarioInfo.Tags` property.
 
 SpecFlow treats the `@ignore` tag as a special tag. SpecFlow generates an [[ignored unit test|Test-result#ignored-tests]] method from scenarios with this tag.
 
