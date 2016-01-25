@@ -16,18 +16,18 @@ The following table contains the built-in unit test providers.
         <th>inconclusive</th>
     </tr>
     <tr>
-        <td>SpecRun</td>
+        <td>SpecFlow+ Runner (fka SpecRun)</td>
         <td>+</td>
         <td>+</td>
         <td>+</td>
-        <td>[[SpecRun|http://www.specrun.com]] is a test execution framework specialized for SpecFlow. Install it with the SpecRun.SpecFlow NuGet package. See [[SpecRun Integration]] for details.</td>
+        <td>[[SpecFlow+ Runner|http://www.specflow.org/plus/runner/]] is a test execution framework specialized for SpecFlow. Install it with the SpecRun.SpecFlow NuGet package. See [[SpecRun Integration]] for details.</td>
     </tr>
     <tr>
         <td>NUnit</td>
         <td>+</td>
         <td>+</td>
         <td>+</td>
-        <td>See [[http://www.nunit.org]]. Specialized [[NuGet packages|NuGet Integration]] available for easy setup: SpecFlow.NUnit, SpecFlow.NUnit.Runners.</td>
+        <td>See [[http://www.nunit.org]]. Specialized [[NuGet packages|NuGet Integration]] available for easy setup: SpecFlow.NUnit, SpecFlow.NUnit.Runners. Supports parallel execution with NUnit v3. </td>
     </tr>
     <tr>
         <td>MsTest.2008</td>
@@ -62,7 +62,7 @@ The following table contains the built-in unit test providers.
         <td>+</td>
         <td>-</td>
         <td>-</td>
-        <td>See [[http://www.xunit.net]]. Specialized [[NuGet package|NuGet Integration]] available for easy setup: SpecFlow.xUnit.</td>    
+        <td>See [[http://www.xunit.net]]. Specialized [[NuGet package|NuGet Integration]] available for easy setup: SpecFlow.xUnit. Supports parallel execution with xUnit v2.</td>    
     </tr>
     <tr>
         <td>mbUnit</td>
