@@ -1,4 +1,4 @@
-_Note: The Silverlight Support has not been migrated yet to SpecFlow v2. Silverlight projects needs to be tested with SpecFlow 1.9 currently._
+_Note: Silverlight support has not been migrated yet to SpecFlow v2. Silverlight projects needs to be tested with SpecFlow 1.9 currently._
 
 * Install [Silverlight Toolkit](http://silverlight.codeplex.com/).
 It comes with the  SL Unit Test Framework (http://code.msdn.microsoft.com/silverlightut)
