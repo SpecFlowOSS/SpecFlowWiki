@@ -46,6 +46,28 @@ The method it is applied to must be static.</td>
 
 You can annotate a single method with multiple attributes.
 
+##Hook Execution Order
+
+By default the hooks of the same type (e.g. two `[BeforeScenario]` hook) are executed in an unpredictable order. If you need to ensure a specific execution order, you can specify the `Order` property for the hook attributes.
+
+```c#
+[BeforeScenario(Order = 0)]
+public void CleanDatabase()
+{
+    // we need to run this first
+}
+
+[BeforeScenario(Order = 100)]
+public void LoginUser()
+{
+    // we can perform login based on a clean database
+}
+```
+
+The value provided for the order attribute specifies the order, not the priority, ie. the hook with the lower number always executed earlier both for before and after hooks.
+
+If no order is specified, the default order of 1000 is used. It is not recommended to depend on this default value though.
+
 ##Tag Filtering
 
 Most of the hooks support tag filtering. This means that they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[Scoped Bindings]] (from v1.8).
