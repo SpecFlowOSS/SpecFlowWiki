@@ -4,7 +4,7 @@ SpecFlow is mainly used to drive integration test that have external dependencie
 
 ## Parallel Execution with Memory (AppDomain) Isolation
 
-If there are no external dependencies or can be cloned for parallel execution, but the application architecture depends on a static state (e.g. a caches etc.), the best way is to execute tests in parallel isolated by AppDomain. This ensures that every test execution thread is hosted in a separate AppDomain and that each thread's memory (e.g. static fields) is isolated. In such scenarios, SpecFlow can be used to execute tests in parallel without any extra considerations. SpecFlow+ Runner supports parallel execution with both AppDomain and Process isolation.
+If there are no external dependencies or they can be cloned for parallel execution, but the application architecture depends on a static state (e.g. a caches etc.), the best way is to execute tests in parallel isolated by AppDomain. This ensures that every test execution thread is hosted in a separate AppDomain and that each thread's memory (e.g. static fields) is isolated. In such scenarios, SpecFlow can be used to execute tests in parallel without any extra considerations. SpecFlow+ Runner supports parallel execution with both AppDomain and Process isolation.
 
 **Note:** The `[BeforeTestRun]` and `[AfterTestRun]` hooks are executed for each individual test execution thread (AppDomain), so you can use them to initialize/reset shared memory. 
 
