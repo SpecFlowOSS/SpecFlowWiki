@@ -1,43 +1,43 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Parallel-Execution]]. We use the GitHub wiki for authoring the documentation pages._
 
-SpecFlow is mainly used to drive integration test that have external dependencies and driving applications with complex internal architecture. Because of this, it is generally not easy to execute these tests parallel.
+SpecFlow is mainly used to drive integration test that have external dependencies and applications with complex internal architecture. Because of this, it is generally not easy to execute these tests in parallel.
 
-## Parallel Execution with memory (AppDomain) isolation
+## Parallel Execution with Memory (AppDomain) Isolation
 
-If there are no external dependencies or can be cloned for parallel execution, but the application architecture depends on static state (caches, etc.), the best way is to execute them in parallel in AppDomain isolation. This way every test execution thread will be hosted in a separate AppDomain, so the memory (e.g. static fields) are isolated. SpecFlow can be used for such cases without extra consideration. SpecFlow+ Runner supports such parallel execution with AppDomain or Process isolation.
+If there are no external dependencies or can be cloned for parallel execution, but the application architecture depends on a static state (e.g. a caches etc.), the best way is to execute tests in parallel isolated by AppDomain. This ensures that every test execution thread is hosted in a separate AppDomain and that each thread's memory (e.g. static fields) is isolated. In such scenarios, SpecFlow can be used to execute tests in parallel without any extra considerations. SpecFlow+ Runner supports parallel execution with both AppDomain and Process isolation.
 
-_Note:_ The `[BeforeTestRun]` and `[AfterTestRun]` hooks are executed for each individual test execution thread (AppDomain), so you can use them to initialize/reset shared memory. 
+**Note:** The `[BeforeTestRun]` and `[AfterTestRun]` hooks are executed for each individual test execution thread (AppDomain), so you can use them to initialize/reset shared memory. 
 
-## Parallel Execution without memory isolation
+## Parallel Execution Without Memory Isolation
 
-If the tests do not depend on any static state (ie. do not store any test-specific information in static fields), you can run the tests parallel without AppDomain isolation. The memory and the initialization footprint of this kind of execution is smaller.
+If your tests do not depend on any static states (ie. do not store any test-specific information in static fields), you can run the tests in parallel without AppDomain isolation. Executing tests this way has a smaller initialization footprint and lower memory requirements.
 
-To run SpecFlow tests parallel without memory isolation you
+To run SpecFlow tests in parallel without memory isolation, the following requirements must be met:
 
-- need a test runner that has such feature (currently NUnit v3 (`nunit`), xUnit v2 (`xunit`) and SpecFlow+ Runner v2 (`specrun`) can be used)
-- must not use the static context properties: `ScenarioContext.Current`, `FeatureContext.Current` or `ScenarioStepContext.Current` (see examples below).
+* You must be using a test runner that supports this feature (currently NUnit v3 (`nunit`), xUnit v2 (`xunit`) and SpecFlow+ Runner v2 (`specrun`) can be used)
+* You may not be using the static context properties `ScenarioContext.Current`, `FeatureContext.Current` or `ScenarioStepContext.Current` (see examples below).
  
-### Execution Behavior
+### Execution Behaviour
 
--	`[BeforeTestRun]` and `[AfterTestRun]` hooks (events) are executed only once, on the first thread that initializes the framework first. The test execution on the other threads are blocked until the hoods fully executed on the first thread.
--	Each thread manages its own enter/exit feature execution workflow. The `[BeforeFeature]` and `[AfterFeature]` hooks might be executed multiple times on different threads, if the different threads run scenarios from the same feature file. The execution of these hooks do not block each-other, but within a single thread the Before/After feature hooks are running in pairs (the `[BeforeFeature]` hook of the next scenario never executed earlier than the `[AfterFeature]` hook of the previous one). Each thread has a separate (and isolated) `FeatureContext`.
--	The execution of the scenarios with the related hooks (Before/After scenario, scenario block, step) are running isolated in the different threads and do not block each-other. Each thread has a separate (and isolated) `ScenarioContext`.
--	The test trace listener (that emits scenario execution trace to console by default) is invoked asynchronously from the multiple threads and the trace messages are queued and passed to the listener serialized. If the test trace listener implements `TechTalk.SpecFlow.Tracing.IThreadSafeTraceListener`, the messages are sent directly from the threads. 
--	The binding registry (that holds the step definitions, hooks, etc.) and some other core services are shared across test threads.
+* `[BeforeTestRun]` and `[AfterTestRun]` hooks (events) are only executed once, on the first thread that initializes the framework. Executing tests in the other threads is blocked until the hooks have been fully executed on the first thread.
+* Each thread manages its own enter/exit feature execution workflow. The `[BeforeFeature]` and `[AfterFeature]` hooks may be executed multiple times for different threads if the different threads run scenarios from the same feature file. The execution of these hooks does not block each-other, but the Before/After feature hooks are rung in pairs within a single thread (the `[BeforeFeature]` hook of the next scenario is only executed after the `[AfterFeature]` hook of the previous one). Each thread has a separate (and isolated) `FeatureContext`.
+* Scenarios and their related hooks (Before/After scenario, scenario block, step) are isolated in the different threads during execution and do not block each other. Each thread has a separate (and isolated) `ScenarioContext`.
+* The test trace listener (that outputs the scenario execution trace to the console by default) is invoked asynchronously from the multiple threads and the trace messages are queued and passed to the listener in serialized form. If the test trace listener implements `TechTalk.SpecFlow.Tracing.IThreadSafeTraceListener`, the messages are sent directly from the threads. 
+* The binding registry (that holds the step definitions, hooks, etc.) and some other core services are shared across test threads.
 
 ### Notes for NUnit v3 Support
 
-Currently the NUnit v3 unit test provider (`nunit`) does not generate `[Parallelizable]` attributes on feature classes or scenario methods. The parallelization has to be configured by setting an assembly-level attribute in the SpecFlow project.
+The NUnit v3 unit test provider (`nunit`) does not currently generate `[Parallelizable]` attributes on feature classes or scenario methods. Parallelisation must be configured by setting an assembly-level attribute in the SpecFlow project.
 
 ```c#
 [assembly: Parallelizable(ParallelScope.Fixtures)]
 ```
 
-### Using ScenarioContext, FeatureContext and ScenarioStepContext in a thread-safe way
+### Thread-safe ScenarioContext, FeatureContext and ScenarioStepContext
 
-Context injection is a type safe state sharing method, that is thread-safe, so it is recommended to use that also in non-parallel execution scenarios. 
+Context injection is a type safe state sharing method that is thread-safe, and is also recommended for non-parallel execution scenarios. 
 
-In parallel execution, if the generic contexts has to be used, instead of accessing the  `ScenarioContext.Current`, `FeatureContext.Current` or `ScenarioStepContext.Current` static properties, the context classes have to be injected to the binding class, or the instance properties of the `Steps` base class can be used. Accessing the static properties during parallel execution throws a `SpecFlowException`.
+When using parallel execution with generic contexts, the context classes have to be injected to the binding class instead of accessing the `ScenarioContext.Current`, `FeatureContext.Current` or `ScenarioStepContext.Current` static properties, or the instance properties of the `Steps` base class can be used. Accessing the static properties during parallel execution throws a `SpecFlowException`.
 
 #### Injecting ScenarioContext to the binding class
 
@@ -61,9 +61,9 @@ public class StepsWithScenarioContext
 }
 ```
 
-Injecting `FeatureContext` can be done similarly, and for accessing the `ScenarioStepContext` the `StepContext` property of the injected `ScenarioContext` can be used.
+You can inject `FeatureContext` in a similar manner, and use the `StepContext` property of the injected `ScenarioContext` to access the `ScenarioStepContext`.
 
-#### Using ScenarioContext from the Steps base class
+#### Using ScenarioContext from the Steps Base Class
 
 ```c#
 [Binding]
