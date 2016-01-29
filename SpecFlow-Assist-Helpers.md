@@ -146,7 +146,7 @@ In this example, ```CompareToSet<T>``` will test that two accounts were returned
 The SpecFlow Assist helpers use the values found in your table to determine what properties to set on your object.  However, the names on the column do not have to be an exact match.  For example, this table:
 
 ```gherkin
-    | FirstName | LastName | DateOfBirth | HappinessRating |
+| FirstName | LastName | DateOfBirth | HappinessRating |
 ```
 
 ... will be evaluated the same as this table:
