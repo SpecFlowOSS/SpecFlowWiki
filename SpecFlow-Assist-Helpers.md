@@ -6,8 +6,8 @@ To use these helpers, we need to add the ```TechTalk.SpecFlow.Assist``` namespac
 using TechTalk.SpecFlow.Assist;
 ```
 
-CreateInstance<T>
----
+##CreateInstance<T>
+
 **CreateInstance<T>** is an extension method off of ```Table``` that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
 
 ```gherkin
@@ -44,8 +44,8 @@ The headers in this table can be "Field" and "Value," or anything that you want.
 
 ***
 
-CreateSet<T>
----
+##CreateSet<T>
+
 **CreateSet<T>** is an extension method off of ```Table``` that will convert the table data to a set of objects.  For example, if you have the following step:
 
 ```gherkin
@@ -70,8 +70,8 @@ The **CreateSet<T>** method will return an IEnumerable<T> based on the data that
 
 ***
 
-CompareToInstance<T>
----
+##CompareToInstance<T>
+
 **CompareToInstance<T>** makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
 
 ```c#
@@ -111,8 +111,8 @@ If they do match, no exception will be thrown and SpecFlow will continue to proc
 
 ***
 
-CompareToSet<T>
----
+##CompareToSet<T>
+
 **CompareToSet<T>** makes it easy to compare the values in a table to a set of objects.  For example, say you have a class like this:
 
 ```c#
@@ -147,8 +147,8 @@ public void x(Table table){
 
 In this example, CompareToSet<T> will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
 
-Column naming
----
+##Column naming
+
 The SpecFlow Assist helpers use the values found in your table to determine what properties to set on your object.  However, the names on the column do not have to be an exact match.  For example, this table:
 
 ```gherkin
@@ -162,3 +162,6 @@ The SpecFlow Assist helpers use the values found in your table to determine what
 ```
 
 Matches against properties on your object are case-insensitive and ignore spaces.  This allows you to make your tables more readable to others.
+
+##Extensions
+
