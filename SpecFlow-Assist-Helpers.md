@@ -21,18 +21,22 @@ Given I entered the following data into the new account form:
 
 or in a horizontal table like this:
 
-	Given I entered the following data into the new account form:
-	| Name      | Birthdate | HeightInInches | BankAccountBalance |
-	| John Galt | 2/2/1902  | 72             | 1234.56            |
+```gherkin
+Given I entered the following data into the new account form:
+| Name      | Birthdate | HeightInInches | BankAccountBalance |
+| John Galt | 2/2/1902  | 72             | 1234.56            |
+```
 
 You can convert the data in the table to an instance of an object like so:
 
-	[Given(@"Given I entered the following data into the new account form:")]
-	public void x(Table table)
-	{
-		var account = table.CreateInstance<Account>();
-		// account.Name will equal "John Galt", HeightInInches will equal 72, etc.
-	}
+```c#
+[Given(@"Given I entered the following data into the new account form:")]
+public void x(Table table)
+{
+    var account = table.CreateInstance<Account>();
+    // account.Name will equal "John Galt", HeightInInches will equal 72, etc.
+}
+```
 
 The **CreateInstance<T>** method will create the Account object and set properties according to what can be read from the table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
 
