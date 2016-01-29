@@ -1,6 +1,10 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecFlow-Assist-Helpers]]. We use the GitHub wiki for authoring the documentation pages._
 
-To use these helpers, we need to add the ```TechTalk.SpecFlow.Assist``` namespace to the project.
+To use these helpers, we need to add the ```TechTalk.SpecFlow.Assist``` namespace to the top of your file.
+
+```c#
+using TechTalk.SpecFlow.Assist;
+```
 
 CreateInstance<T>
 ---
