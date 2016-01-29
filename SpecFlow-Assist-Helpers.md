@@ -4,7 +4,7 @@ To use these helpers, we need to add the ```TechTalk.SpecFlow.Assist``` namespac
 
 CreateInstance<T>
 ---
-**CreateInstance<T>** is an extension method off of the Table object that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
+**CreateInstance<T>** is an extension method off of ```Table``` that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
 
 	Given I entered the following data into the new account form:
 	| Field              | Value      |
@@ -36,7 +36,7 @@ The headers in this table can be "Field" and "Value," or anything that you want.
 
 CreateSet<T>
 ---
-**CreateSet<T>** is an extension method off of the Table object that will convert the table data to a set of objects.  For example, if you have the following step:
+**CreateSet<T>** is an extension method off of ```Table``` that will convert the table data to a set of objects.  For example, if you have the following step:
 
 	Given these products exist
 	| Sku              | Name             | Price |
