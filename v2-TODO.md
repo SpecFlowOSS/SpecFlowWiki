@@ -7,22 +7,20 @@
   - [x] Upgrade all projects to .NET 4.5 and VS2013
   - [x] Replace lib references with NuGet wherever it was possible
   - [x] Upgrade "generateall" command to support new MsBuild infrastructure [Pull Request #411](https://github.com/techtalk/SpecFlow/pull/411)
-  - [ ] Cleanup NuGet package generation (eliminate SpecFlowBinPackage) - In progress (Sam Holder)
-  - [ ] Remove SpecFlow.Reporting from the main repo
-  - [ ] Integrate Gherkin3 - In progress (gasparnagy, on branch integrate_gherkin3)
+  - [x] Cleanup NuGet package generation (eliminate SpecFlowBinPackage)
+  - [x] Integrate Gherkin3
   - [x] Renew CI build infrastructure
   - [x] Enable build for Pull Requests
   - [x] Enable beta nuget package generation on v2 branch builds
-  - [ ] Review pending Pull Requests to `master`
-  - [ ] [GitLink](https://github.com/catenalogic/gitlink) support (?)
+  - [x] Review pending Pull Requests to `master`
 
 - Features
   - [x] Support for ordering hooks - [Pull Request #414](https://github.com/techtalk/SpecFlow/pull/414)
-  - [ ] Assist table helpers should use `[StepArgumentTransformation]` extensions
+  - [ ] Assist table helpers should use `[StepArgumentTransformation]` extensions  - In progress (Darren)
 
 - To be decided
-  - [ ] `[Binding]` attribute should not be necessary
+  - [ ] [GitLink](https://github.com/catenalogic/gitlink) support (?)
   - [ ] Use `throw new PendingException()` instead of ScenarioContext.Pending()
-  - [ ] Should be able to inject ScenarioContext to binding classes
+  - [x] Should be able to inject ScenarioContext to binding classes
   - [ ] Should be able to inject ScenarioContext to hook methods as parameter
   - [ ] ScenarioContext.Embed -- embeds related files, images as assets?
