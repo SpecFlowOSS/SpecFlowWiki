@@ -161,3 +161,39 @@ Matches against properties on your object are case-insensitive and ignore spaces
 
 Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like ```String```, ```Bool```, ```Enum```, ```Int```, ```Decimal```, ```DateTime```, etc. are all covered. All of the covered types can be found [https://github.com/techtalk/SpecFlow/tree/master/Runtime/Assist/ValueRetrievers](here). But if you want to cover more types, including your own custom types, you can by registering your own instances of ```IValueRetriever``` and ```IValueComparer```.
 
+For example, if you have a complex object like this:
+
+```c#
+    public class Shirt
+    {
+        public string Name { get; set; }
+        public Color Color { get; set; }
+    }
+```
+
+And you have a table like this:
+
+```gherkin
+| Name | Color |
+| XL   | Blue  |
+| L    | Red   |
+```
+
+And you want to map ```Blue``` and ```Red``` to the appropriate instance of ```Color``` class, you'll need to create an instance of ```IValueRetriever``` that can convert the strings into the ```Color``` instance.
+
+You can register your special ```IValueRetriever``` (and/or an instance of ```IValueComparer``` if you want to compare colors) like so:
+
+```c#
+[Binding]
+public static class Hooks1
+{
+    [BeforeTestRun]
+    public static void BeforeScenario()
+    {
+        Service.Instance.RegisterValueRetriever(new ColorValueRetriever());
+        Service.Instance.RegisterValueComparer(new ColorValueComparer());
+    }
+}
+```
+
+Details on implementing these interfaces can be found here.
