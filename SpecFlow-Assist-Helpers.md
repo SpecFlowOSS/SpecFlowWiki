@@ -159,3 +159,5 @@ Matches against properties on your object are case-insensitive and ignore spaces
 
 ##Extensions
 
+Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like ```String```, ```Bool```, ```Enum```, ```Int```, ```Decimal```, ```DateTime```, etc. are all covered. All of the covered types can be found [https://github.com/techtalk/SpecFlow/tree/master/Runtime/Assist/ValueRetrievers](here). But if you want to cover more types, including your own custom types, you can by registering your own instances of ```IValueRetriever``` and ```IValueComparer```.
+
