@@ -68,9 +68,9 @@ The value provided for the order attribute specifies the order, not the priority
 
 If no order is specified, the default order of 1000 is used. It is not recommended to depend on this default value though.
 
-##Tag Filtering
+##Tag Scoping
 
-Most of the hooks support tag filtering. This means that they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[Scoped Bindings]] (from v1.8).
+Most of the hooks support tag scoping. This means that they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[Scoped Bindings]] (from v1.8).
 
 The following example starts Selenium for scenarios marked with the `@web` tag.
 
@@ -82,7 +82,7 @@ public static void BeforeWebScenario()
 }
 ```
 
-For the scenario, scenarioblock or step events, the following tags are considered:
+For the scenario, scenarioblock or step hooks, the following tags are considered:
 
 * tags defined for the feature
 * tags defined for the scenario
