@@ -62,7 +62,7 @@ Coded UI tests include special coded UI attributes that can only be interpreted 
 
 <h1 id="Troubleshooting>Troubleshooting</h1>
 
-## After upgrading to SpecFlow 2 from 1.9, I get the message "Trace listener failed. -> The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details."
+## After upgrading to SpecFlow 2 from 1.9, I get the message "Trace listener failed. -> The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class"
 
 Make sure you have regenerated the `.feature.cs` files after upgrading. If you do not do this, you will receive this exception when accessing ScenarioContext.Current.
 
