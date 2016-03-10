@@ -59,3 +59,13 @@ If you are unsure as to whether your preferred project name meets these guidelin
 
 ##Does SpecFlow support coded UI tests?
 Coded UI tests include special coded UI attributes that can only be interpreted by MS Test. If you are using coded UI tests, you can only execute them using the MS Test test runner. For more details on getting coded UI working with SpecFlow, see [[this blog post|http://blog.majcica.com/2015/05/07/getting-started-with-specflow-and-codedui/]] (thanks to Mario Majčica).
+
+<h1 id="Troubleshooting>Troubleshooting</h1>
+
+## After upgrading to SpecFlow 2 from 1.9, I get the message "Trace listener failed. -> The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class. See http://go.specflow.org/doc-multithreaded for details."
+
+Make sure you have regenerated the `.feature.cs` files after upgrading. If you do not do this, you will receive this exception when accessing ScenarioContext.Current.
+
+To regenerate these files:  
+* Open a feature file in your solution. If you see a popup informing you that the feature files were generated with an earlier version of SpecFlow, click on **Yes** to regenerate these files. Depending on the size of your project, this may take a while.
+* If you are using an earlier version of Visual Studio, you need to force the feature files to be regenerated. Right-click on your project, and select **Regenerate Feature Files** from the menu.
