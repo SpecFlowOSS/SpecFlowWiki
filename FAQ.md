@@ -60,7 +60,7 @@ If you are unsure as to whether your preferred project name meets these guidelin
 ##Does SpecFlow support coded UI tests?
 Coded UI tests include special coded UI attributes that can only be interpreted by MS Test. If you are using coded UI tests, you can only execute them using the MS Test test runner. For more details on getting coded UI working with SpecFlow, see [[this blog post|http://blog.majcica.com/2015/05/07/getting-started-with-specflow-and-codedui/]] (thanks to Mario Majčica).
 
-<h1 id="Troubleshooting>Troubleshooting</h1>
+<h1 id="Troubleshooting">Troubleshooting</h1>
 
 ## After upgrading to SpecFlow 2 from 1.9, I get the message "Trace listener failed. -> The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class"
 
