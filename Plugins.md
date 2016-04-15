@@ -14,7 +14,7 @@ To use a custom plugin it has to be enabled in the [[configuration]] of the Spec
 
 ##Creating plugins##
 
-Creating a plugin is fairly simple. In order to create a SpecFlow plugin you need the following three things.
+Creating a plugin is fairly simple. There are 3 types of plugins supported- Runtime, Generator and Runtime-Generator. Steps for creating any of these three are similar. For example, in order to create a Generator SpecFlow plugin you need the following three things.
 
 1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
 2. A class that implements `IGeneratorPlugin` interface (which is defined in TechTalk.SpecFlow.Generator.Plugins namespace)
