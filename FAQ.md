@@ -22,10 +22,17 @@ SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.c
 For an overview of the differences between SpecFlow and SpecFlow+, see the [[comparison of features|http://www.specflow.org/plus/]].
 
 <h1 id="Support">Support</h1>
-##Where can I find training material online?
-We’ve listed the most important resources [[here|http://www.specflow.org/resources/]]. Many of them are free or inexpensive.
+##How can I learn more about SpecFlow and BDD/Specification-by-Example? Where can I find training material online?
 
-We also run regular training classes, which are listed [[here|http://www.specflow.org/training/]]
+Gaspar Nagy - the creator of SpecFlow - offers a training course that covers the methodology behind SpecFlow, from writing the initial specification to binding tests to your application's code. He also covers many of the more advanced options available in SpecFlow.  You can find out more about Gaspar's schedule on the [[training page|http://www.specflow.org/training/]]. You may also want to visit [[Gaspar's web site|http://gasparnagy.com/]] and sign up for his newsletter.
+
+We’ve listed the most important resources [[here|http://www.specflow.org/resources/]]. Many of them are free or inexpensive. 
+
+Gojko Adzic's books (Bridging the Communication Gap: Specification by Example and Agile Acceptance Testing and Specification by Example: How Successful Teams Deliver the Right Software) are an excellent introduction to the methodology. Gojko uses a lot of real life examples to relate his ideas to real software development and to show the potential pitfalls and benefits of different approaches.
+
+If you are just getting started with SpecFlow, you should definitely follow the [[Getting Started|http://www.specflow.org/getting-started/]] tutorial that guides you through the process of setting up a Visual Studio project with SpecFlow, writing your first tests, binding the tests to your code, and executing your tests. You should get the basic idea of how testing with SpecFlow works and ought to be able to apply the basic concepts you have learnt to your own projects.
+
+As you progress, you will probably start wanting to look into the more advanced options in SpecFlow, such as using tables to supply arguments for your tests, sharing data between steps and more. An overview of some of these concepts can be found on the [[Beyond the Basics|http://www.specflow.org/getting-started/beyond-the-basics/]] page with links to the appropriate sections of the documentation.
 
 ##I have a feature request; how can I submit it?
 We currently have a long list of features awaiting implementation and are therefore limited in our capacity to implement feature requests. However, as SpecFlow is open source, you can implement new features yourself (more information available [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]]).
