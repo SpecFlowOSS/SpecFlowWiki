@@ -9,8 +9,6 @@ To contribute to SpecFlow:
 1. Implement your feature or bugfix, and update the [[changelog|https://github.com/techtalk/SpecFlow/blob/master/changelog.txt]].
 1. Send us a pull request via GitHub and maybe leave a short note on the [[forum|http://groups.google.com/group/specflow]].
 
-_Note:_ We are currently using the `v2` branch for development.
-
 If you are new to Github, a good description of how to create pull requests can be found here: [[http://help.github.com/pull-requests/]]
 
 **Important!** Please use autocrlf when committing to the SpecFlow repository (more details available [[here|http://help.github.com/dealing-with-lineendings/]]).
