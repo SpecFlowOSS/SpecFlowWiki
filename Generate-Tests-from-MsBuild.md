@@ -10,7 +10,7 @@ In order to be able to build your application in any environment independent of 
   ...
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\SpecFlow.1.9.0\tools\TechTalk.SpecFlow.targets"/>
+  <Import Project="..\packages\SpecFlow.2.0.0\tools\TechTalk.SpecFlow.targets"/>
   ...
 </Project>
 ```
@@ -26,12 +26,12 @@ If the feature files are not only edited, but also added, renamed or deleted out
   <!-- include all feature files from the folder "FeatureFiles" -->
   <None Include="FeatureFiles\**\*.feature" /> 
 </ItemGroup>
-<ItemGroup>
-  <!-- include the generated test classes -->
-  <Compile Include="FeatureFiles\**\*.cs">
-    <Visible>false</Visible> <!-- the generated files can be hidden in Visual Studio -->
-  </Compile>
-</ItemGroup>
+<Target Name="AfterUpdateFeatureFilesInProject">
+    <!-- include any files that specflow generated into the compilation of the project -->
+    <ItemGroup>
+        <Compile Include="@(SpecFlowGeneratedFiles)" />
+    </ItemGroup>
+</Target>
 ```
 
 See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow.DynamicallyIncludedFeatureFiles)
