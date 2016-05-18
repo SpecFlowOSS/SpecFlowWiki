@@ -23,7 +23,7 @@ Captures global services for test execution and the step definition, hook and tr
 * IRuntimePlugin.RegisterDependencies - for dependencies from RuntimePlugins
 * (plugins)
 
-##Test Runner Container (parent Container is the Global Container)
+##Test Thread Container (parent Container is the Global Container)
 
 Captures services and state for executing the scenarios on a particular test thread. For parallel test execution, multiple test runner containers are created (one for each thread).
 
