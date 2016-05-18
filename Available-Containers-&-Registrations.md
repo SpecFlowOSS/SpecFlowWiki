@@ -20,8 +20,10 @@ Captures global services for test execution and the step definition, hook and tr
 * IStepTextAnalyzer
 * IRuntimePluginLoader
 * IBindingAssemblyLoader
-* IRuntimePlugin.RegisterDependencies - for dependencies from RuntimePlugins
-* (plugins)
+* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
+ * RegisterGlobalDependencies- Event
+ * CustomizeGlobalDependencies- Event
+
 
 ##Test Thread Container (parent Container is the Global Container)
 
@@ -34,6 +36,9 @@ Captures services and state for executing the scenarios on a particular test thr
 * IStepDefinitionMatchService
 * ITraceListener
 * ITestTracer
+* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
+ * CustomizeTestThreadDependencies- Event
+
 
 ##Scenario Container (parent Container is the Test Runner Container)
 
@@ -41,3 +46,5 @@ Captures the state of a scenario execution. Disposed after the scenario is execu
 
 * (step definition classes)
 * (dependencies of the step definition classes, aka context injection)
+* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
+ * CustomizeScenarioDependencies- Event
