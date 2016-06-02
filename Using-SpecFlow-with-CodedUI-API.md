@@ -1,12 +1,12 @@
 ## Introduction
 
-The Microsoft Coded UI API can be used to create automated tests in Visual Studio, but is not compatible directly with SpecFlow as each Test Class needs to have an attribute [CodedUITest], and SpecFlow doesn't generate this by default.
+The Microsoft Coded UI API can be used to create automated tests in Visual Studio, but is not compatible directly with SpecFlow as each Test Class needs to have an attribute `[CodedUITest]`, and SpecFlow doesn't generate this by default.
 
 Big thanks to Thomy Kay for [pointing me in the right direction](http://groups.google.com/group/specflow/browse_thread/thread/e162fc98c1d7c119/0bf231a65195b375?lnk=gst&q=SpecFlow+with+VS2010+CodedUI+tests+#0bf231a65195b375).
 
 ## Solution
 
-You need to ensure SpecFlow generates this attribute, and ensure that any SpecFlow hooks also ensure the CodedUI API is initialized.
+You need to ensure SpecFlow generates this attribute by creating a custom test generator provider, copying the DLL file into the `tools` directory where the SpecFlow NuGet package is installed, and ensure that any SpecFlow hooks also ensure the CodedUI API is initialized.
 
 ### Getting SpecFlow to generate the [CodedUITest] attribute with VS2010 and MSTest
 
@@ -126,6 +126,85 @@ TechTalk.SpecFlow"/>
 ```
 
 5. Now when you generate a new feature file, it will add the appropriate attributes.
+
+### Getting SpecFlow to generate the [CodedUITest] attribute with Visual Studio 2013 and MSTest
+
+1. Create a new Class Library project in Visual Studio (example: `TechTalk.SpecFlow.CodedUI.MsTest`)
+
+2. Install the `SpecFlow` NuGet package via the Package Manager Console
+
+3. Create a new Class called `SpecFlowCodedUITestGenerator`
+
+  #### For SpecFlow Version 1.9
+
+  1. Right click the Project in the Solution Explorer pane
+  2. Click "Add..." then click "References..."
+  3. Add a reference to the following DLLs:
+    - `<Solution Directory>\packages\SpecFlow.1.9.x\tools\TechTalk.SpecFlow.Generator.dll`
+    - `<Solution Directory>\packages\SpecFlow.1.9.x\tools\TechTalk.SpecFlow.Utils.dll`
+  4. Copy the following code into the  `SpecFlowCodedUITestGenerator` class:
+    
+  ```csharp
+  using System.CodeDom;
+  using TechTalk.SpecFlow.Generator.UnitTestProvider;
+  using TechTalk.SpecFlow.Utils;
+
+  namespace TechTalk.SpecFlow.CodedUI.MsTest
+  {
+      public class SpecFlowCodedUITestGenerator : MsTestGeneratorProvider
+      {
+          public SpecFlowCodedUITestGenerator(CodeDomHelper codeDomHelper) : base(codeDomHelper)
+          {
+          }
+
+          public override void SetTestClass(TechTalk.SpecFlow.Generator.TestClassGenerationContext generationContext, string featureTitle, string featureDescription)
+          {
+              base.SetTestClass(generationContext, featureTitle, featureDescription);
+
+              foreach (CodeAttributeDeclaration customAttribute in generationContext.TestClass.CustomAttributes)
+              {
+                  if (customAttribute.Name == "Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute")
+                  {
+                      generationContext.TestClass.CustomAttributes.Remove(customAttribute);
+                      break;
+                  }
+              }
+
+              generationContext.TestClass.CustomAttributes.Add(new CodeAttributeDeclaration(new CodeTypeReference("Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute")));
+          }
+      }
+  }
+  ```
+
+  5. Right-click the Project in the Solution Explorer pane, and click "Properties"
+
+  6. Go to the "Build Events" tab
+
+  7. In the "Post-build event command line" box, enter the following command:
+
+  ```
+  copy $(TargetPath) $(SolutionDir)packages\SpecFlow.1.9.x\tools\
+  ```
+
+    **Important!** The DLL created by building the `TechTalk.SpecFlow.CodedUI.MsTest` project needs to be copied to the `packages\SpecFlow.1.9.x\tools` directory of the Visual Studio solution that contains your SpecFlow tests in order for this to work.
+
+4. In the "Properties" for the `TechTalk.SpecFlow.CodedUI.MsTest` project, go to the "Application" tab
+5. Choose ".NET Framework 3.5" in the "Target framework" dropdown, which is the version of .NET that SpecFlow uses.
+
+6. Change the `<unitTestProvider>` in App.config to use the new test generator:
+
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <configuration>
+    <specFlow>
+      <unitTestProvider name="MsTest"
+        generatorProvider="TechTalk.SpecFlow.CodedUI.MsTest.SpecFlowCodedUITestGenerator, TechTalk.SpecFlow.CodedUI.MsTest"
+        runtimeProvider="TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider, TechTalk.SpecFlow" />
+    </specFlow>
+  </configuration>
+  ```
+  
+  If Visual Studio prompts you to regenerate the feature files, do so. If not, right-click on the project containing your SpecFlow tests and click "Regenerate Feature Files".
 
 ### Ensuring the SpecFlow hooks can use the CodedUI API
 
