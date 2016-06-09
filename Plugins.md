@@ -16,6 +16,9 @@ To use a custom plugin it has to be enabled in the [[configuration]] of the Spec
 
 Creating a plugin is fairly simple. There are 3 types of plugins supported- Runtime, Generator and Runtime-Generator. Steps for creating any of these three are similar. For example, in order to create a Generator SpecFlow plugin you need the following three things.
 
+Your assembly name needs to follow a convention, that is, it needs to have a suffix ".SpecFlowPlugin".
+
+###Generator Plugin
 1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
 2. A class that implements `IGeneratorPlugin` interface (which is defined in TechTalk.SpecFlow.Generator.Plugins namespace)
 3. An assembly level attribute `GeneratorPlugin` pointing to the class that implements `IGeneratorPlugin`
@@ -24,18 +27,24 @@ Let's analyze all of these steps in detail.
 
 I will advise you start a new class library for each plugin you intend to create. Once you create your class library as a first thing you should add the SpecFlow.CustomPlugin Nuget package to your project.
 Once this is done, you need to define a class that will represent your plugin. For this class in order to be seen as a SpecFlow plugin, it needs to implement the `IGeneratorPlugin` interface.
-By implementing the `IGeneratorPlugin` interface you are obliged to specify the following methods:
+By implementing the `Initialize`- Method on the `IGeneratorPlugin` interface, you get access to the GeneratorPluginEvents and GeneratorPluginParameters.
 
-- *RegisterConfigurationDefaults* – If you are planning to intervene at the SpecFlow configuration, this is the right place to get started.
-- *RegisterCustomizations* – If you are extending any of the components of SpecFlow, you can register your implementation at this stage.
+GeneratorPluginEvents
+- *ConfigurationDefaults* – If you are planning to intervene at the SpecFlow configuration, this is the right place to get started.
+- *CustomizeDependencies* – If you are extending any of the components of SpecFlow, you can register your implementation at this stage.
 - *RegisterDependencies* – In case your plugin is of a complex nature and it has it’s own dependencies, this can be the right place to set your Composition Root.
 
-As an example, if you are writing a plugin that will act as unit test generator provider, you are going to register it in the following way, inside *RegisterCustomizations* method:
+As an example, if you are writing a plugin that will act as unit test generator provider, you are going to register it in the following way, inside the *CustomizeDependencies* event handler:
 
 ```csharp
-public void RegisterCustomizations(ObjectContainer container, SpecFlowProjectConfiguration generatorConfiguration)
+public void Initialize(GeneratorPluginEvents generatorPluginEvents, GeneratorPluginParameters generatorPluginParameters)
 {
-	container.RegisterTypeAs<MyNewGeneratorProvider, IUnitTestGeneratorProvider>();
+        generatorPluginEvents.CustomizeDependencies += CustomizeDependencies;
+}
+
+public void CustomizeDependencies(CustomizeDependenciesEventArgs eventArgs)
+{
+	eventArgs.ObjectContainer.RegisterTypeAs<MyNewGeneratorProvider, IUnitTestGeneratorProvider>();
 }
 ```
 
@@ -44,7 +53,27 @@ In order for your new library to be picked up by SpecFlow plugin loader, you nee
 [assembly: GeneratorPlugin(typeof(MyNewPlugin))]
 ```
 
-Aside of this there is another thing that you need to take care of. Your assembly name needs to follow a convention, that is, it needs to have a suffix ".SpecFlowPlugin".
+###Runtime Plugin
+
+1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
+2. A class that implements `IRuntimePlugin` interface (which is defined in TechTalk.SpecFlow.Plugins namespace)
+3. An assembly level attribute `RuntimePlugin` pointing to the class that implements `IRuntimePlugin`
+
+By implementing the `Initialize`- Method on the `IRuntimePlugin` interface, you get access to the RuntimePluginEvents and RuntimePluginParameters.
+
+RuntimePluginsEvents
+- *RegisterGlobalDependencies* - register new interfaces to the global container, see [[Available-Containers-&-Registrations]]
+- *CustomizeGlobalDependencies* - override registrations in the global container, see [[Available-Containers-&-Registrations]]
+- *ConfigurationDefaults* - adjust configuration values
+- *CustomizeTestThreadDependencies* - override or register new interfaces in the test thread container, see [[Available-Containers-&-Registrations]]
+- *CustomizeScenarioDependencies* - override or register new interfaces in the scenario container, see [[Available-Containers-&-Registrations]]
+
+In order for your new library to be picked up by SpecFlow plugin loader, you need to flag your assembly with the `RuntimePlugin` attribute. This is an example of it, taking in consideration that the class that implements `IRuntimePlugin` interface is called `MyNewPlugin`.
+```csharp
+[assembly: RuntimePlugin(typeof(MyNewPlugin))]
+```
+
+Note: Parameters are not yet implemented (Version 2.1)
 
 ##Configuration details##
 
