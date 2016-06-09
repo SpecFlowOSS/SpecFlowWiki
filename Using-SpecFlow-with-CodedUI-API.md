@@ -127,7 +127,7 @@ TechTalk.SpecFlow"/>
 
 5. Now when you generate a new feature file, it will add the appropriate attributes.
 
-### Getting SpecFlow to generate the [CodedUITest] attribute with Visual Studio 2013 and MSTest
+### Getting SpecFlow to generate the [CodedUITest] attribute with Visual Studio 2013+ and MSTest
 
 1. Create a new Class Library project in Visual Studio (example: `TechTalk.SpecFlow.CodedUI.MsTest`)
 
@@ -135,13 +135,13 @@ TechTalk.SpecFlow"/>
 
 3. Create a new Class called `SpecFlowCodedUITestGenerator`
 
-  #### For SpecFlow Version 1.9
-
   1. Right click the Project in the Solution Explorer pane
   2. Click "Add..." then click "References..."
+
   3. Add a reference to the following DLLs:
-    - `<Solution Directory>\packages\SpecFlow.1.9.x\tools\TechTalk.SpecFlow.Generator.dll`
-    - `<Solution Directory>\packages\SpecFlow.1.9.x\tools\TechTalk.SpecFlow.Utils.dll`
+    - `<Solution Directory>\packages\SpecFlow.X.Y.Z\tools\TechTalk.SpecFlow.Generator.dll`
+    - `<Solution Directory>\packages\SpecFlow.X.Y.Z\tools\TechTalk.SpecFlow.Utils.dll`
+  
   4. Copy the following code into the  `SpecFlowCodedUITestGenerator` class:
     
   ```csharp
@@ -183,14 +183,13 @@ TechTalk.SpecFlow"/>
   7. In the "Post-build event command line" box, enter the following command:
 
   ```
-  copy $(TargetPath) $(SolutionDir)packages\SpecFlow.1.9.x\tools\
+  copy $(TargetPath) $(SolutionDir)packages\SpecFlow.X.Y.Z\tools\
   ```
 
-    **Important!** The DLL created by building the `TechTalk.SpecFlow.CodedUI.MsTest` project needs to be copied to the `packages\SpecFlow.1.9.x\tools` directory of the Visual Studio solution that contains your SpecFlow tests in order for this to work.
+    **Important!** The DLL created by building the `TechTalk.SpecFlow.CodedUI.MsTest` project needs to be copied to the `packages\SpecFlow.X.Y.Z\tools` directory of the Visual Studio solution that contains your SpecFlow tests in order for this to work.
 
 4. In the "Properties" for the `TechTalk.SpecFlow.CodedUI.MsTest` project, go to the "Application" tab
-5. Choose ".NET Framework 3.5" in the "Target framework" dropdown, which is the version of .NET that SpecFlow uses.
-
+5. Choose ".NET Framework 3.5" for SpecFlow 1.9, ".NET Framework 4.5" for SpecFlow 2.0+ in the "Target framework" dropdown
 6. Change the `<unitTestProvider>` in App.config to use the new test generator:
 
   ```xml
