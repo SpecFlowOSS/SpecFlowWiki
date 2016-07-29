@@ -42,7 +42,7 @@ The following example shows all possible configuration options with their defaul
       minTracedDuration="0:0:0.1"
       stepDefinitionSkeletonStyle="RegexAttribute" />
   <stepAssemblies>
-    <!-- <stepAssembly assembly="{name-of-assembly-containing-bindgins}" /> -->
+    <!-- <stepAssembly assembly="{name-of-assembly-containing-bindings}" /> -->
   </stepAssemblies>
   <plugins>
     <!-- <add name="{plugin-name}" /> -->
