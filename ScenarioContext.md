@@ -31,7 +31,7 @@ and the step definition:
 
 ##ScenarioContext.Current
 
-This is a very useful feature of the [[ScenarioContext.Current]] that helps you to store values in a Dictionary between the steps. This helps you to organize your step definitions better that if you would use private variables in the step definition class.
+This is a very useful feature of the [[ScenarioContext.Current]] that helps you to store values in a Dictionary between the steps. This helps you to organize your step definitions better than if you would use private variables in the step definition class.
 
 There are some type safe extension methods that helps you to get values in and out of the dictionary in a safer way. To get that you need to include the namespace TechTalk.SpecFlow.Assist, since they are extension methods on the [[ScenarioContext.Current]].
 
