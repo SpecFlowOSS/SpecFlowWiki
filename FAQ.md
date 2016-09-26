@@ -1,7 +1,7 @@
 <h1 id="General">General</h1>
 ##What is SpecFlow?
 
-SpecFlow allows .NET development teams to define, manage and execute automated acceptance tests as business readable specifications. It is based on [[Gherkin|https://github.com/cucumber/gherkin/wiki]] and part of the [[Cucumber|https://cucumber.io/]] eco system.  
+SpecFlow allows .NET development teams to define, manage and execute automated acceptance tests as business readable specifications. It is based on [[Gherkin|https://github.com/cucumber/gherkin/wiki]] and is part of the [[Cucumber|https://cucumber.io/]] eco system.  
  
 SpecFlow aims to bridge the communication gap between domain experts and developers. Acceptance tests in SpecFlow follow the BDD paradigm of defining specifications with examples, so that they are also understandable to business users. Acceptance tests can then be tested automatically as needed, while their specification serves as a living documentation of the system. 
 
