@@ -33,7 +33,6 @@ SpecFlow is also distributed as a [[binary package|http://go.specflow.org/downlo
 * `TechTalk.SpecFlow.Parser.dll`
 * `TechTalk.SpecFlow.Utils.dll`
 * `Gherkin.dll`
-* `IKVM.*.dll` (5 assemblies)
 * `specflow.exe` (optional)
 * `TechTalk.SpecFlow.Reporting.dll` (optional)
 * `TechTalk.SpecFlow.targets` (optional)
