@@ -48,7 +48,8 @@ public class MyStepDefs
 }
 
 [Binding]
-public class OtherStepDefs{ // another binding class needing the person
+public class OtherStepDefs // another binding class needing the person
+{ 
   private readonly PersonData personData;
   public OtherStepDefs(PersonData personData) // ctor parameter here too
   { 
