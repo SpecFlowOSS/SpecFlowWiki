@@ -18,7 +18,7 @@ The integration packages can also be downloaded and installed separately from th
 
 [[SpecFlow+ Runner|http://www.specflow.org/plus/runner]] provides seamless integration with Visual Studio's Test Explorer and Team Foundation Server (TFS) Build. A short [[introduction video|https://www.youtube.com/watch?v=GBs2Lwqt5kI]] is available on YouTube and you can find links to additional videos on the [[SpecFlow website|http://www.specflow.org/plus/runner]].
 
-## Installin the IDE Integration for Other Environments
+## Installing the IDE Integration for Other Environments
 
 * MonoDevelop: [[MonoDevelop Add-in Repository|http://go.specflow.org/monodevelop-addin]]
 * SharpDevelop: [[Download the addin and install it from SharpDevelop AddIn Manager|http://go.specflow.org/download-sdaddin]]
