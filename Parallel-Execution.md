@@ -14,7 +14,7 @@ If your tests do not depend on any static states (ie. do not store any test-spec
 
 To run SpecFlow tests in parallel without memory isolation, the following requirements must be met:
 
-* You must be using a test runner that supports this feature (currently NUnit v3 (`nunit`), xUnit v2 (`xunit`) and SpecFlow+ Runner v2 (`specrun`) can be used)
+* You must be using a test runner that supports this feature (currently NUnit v3 (`nunit`), xUnit v2 (`xunit`) and SpecFlow+ Runner (`specrun`) can be used)
 * You may not be using the static context properties `ScenarioContext.Current`, `FeatureContext.Current` or `ScenarioStepContext.Current` (see examples below).
  
 ### Execution Behaviour
