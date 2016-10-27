@@ -115,5 +115,7 @@ namespace {namespace}
 }
 ```
 
-For the full list of available sections, parameters and for examples, check the [[default template|https://github.com/techtalk/SpecFlow/blob/master/Runtime/BindingSkeletons/DefaultSkeletonTemplates.sftemplate]].
+For the full list of available sections, parameters and for examples, check the [[default template|https://github.com/techtalk/SpecFlow/blob/master/TechTalk.SpecFlow/BindingSkeletons/DefaultSkeletonTemplates.sftemplate]].
+
+
 
