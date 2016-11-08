@@ -53,7 +53,7 @@ Scenario outlines can be used to define data-driven acceptance tests. They can b
 
 If the [[unit test framework|Unit Test Providers]] supports it, SpecFlow generates row based tests from scenario outlines. Otherwise it generates a parameterized unit test logic method for a scenario outline and an individual unit test method for each example set. 
 
-For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). It is therefore good practice to choose a unique and descriptive parameter as the first column in the example set. As the Gherkin syntax does require all example columns to have matching placeholders in the scenario outline, you can even introduce an arbitrary column in the example sets used to name tests with more readability. 
+For better traceability, the generated unit test method names are derived from the scenario outline title and the first value of the examples (first column of the examples table). It is therefore good practice to choose a unique and descriptive parameter as the first column in the example set. As the Gherkin syntax does not require all example columns to have matching placeholders in the scenario outline, you can even introduce an arbitrary column in the example sets used to name tests with more readability. 
 
 SpecFlow performs the placeholder substitution as a separate phase before matching the step bindings. The implementation and the parameters in the step bindings are thus independent of whether they are executed through a direct scenario or a scenario outline. This allows you to later specify further examples in the acceptance tests without changing the step bindings.
 
