@@ -41,6 +41,7 @@
 * [[Tools]]
     * [[Generate All Tool|Tools]]
     * [[Plugins]]
+        * [[Available Plugins]]
 * [[Reporting]]
     * [[Test Execution Report|Reporting]]
     * [[Step Usage Report|Reporting]]
