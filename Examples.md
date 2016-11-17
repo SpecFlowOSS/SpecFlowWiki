@@ -8,5 +8,5 @@
 ## Public projects using SpecFlow:
 
 * [[http://github.com/sinesignal/ottoman/tree/development/src/SineSignal.Ottoman.AcceptanceSpecs]]
-* [[http://github.com/marcushammarberg/BDDWithSpecFlow]]
+* [[http://github.com/marcusoftnet/BDDWithSpecFlow]]
 * [[http://github.com/ryanlanciaux/Redirect]]
