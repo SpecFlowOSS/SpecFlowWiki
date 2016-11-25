@@ -24,6 +24,7 @@
         * [[FeatureContext]]
         * [[ScenarioContext]]
     * [[F# Support|FSharp Support]]
+    * [[CodedUI|Using SpecFlow with CodedUI API]]
 * [[Unit Test Providers]]
 * Tool Integration
     * [[Visual Studio 2008 Integration]]
