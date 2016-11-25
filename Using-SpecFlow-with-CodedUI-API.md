@@ -2,7 +2,7 @@
 
 The Microsoft Coded UI API can be used to create automated tests in Visual Studio, but is not compatible directly with SpecFlow as each Test Class needs to have an attribute `[CodedUITest]`, and SpecFlow doesn't generate this by default.
 
-Big thanks to Thomy Kay for [pointing me in the right direction](http://groups.google.com/group/specflow/browse_thread/thread/e162fc98c1d7c119/0bf231a65195b375?lnk=gst&q=SpecFlow+with+VS2010+CodedUI+tests+#0bf231a65195b375).
+Big thanks to Thomy Kay for [pointing in the right direction](http://groups.google.com/group/specflow/browse_thread/thread/e162fc98c1d7c119/0bf231a65195b375?lnk=gst&q=SpecFlow+with+VS2010+CodedUI+tests+#0bf231a65195b375).
 
 ## Solution
 
