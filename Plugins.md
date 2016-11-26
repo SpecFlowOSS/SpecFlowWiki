@@ -86,9 +86,9 @@ In order to load your plugin, in your SpecFlow project, you need to reference yo
 	</plugins>
 </specFlow>
 ```
-##Sample IGeneratorPlugin implementations:
+##Sample plugin implementations:
 
-For reference, here are some sample implementations of an IGeneratorPlugin:
+For reference, here are some sample implementations of an IRuntimePlugin and IGeneratorPlugin:
 
 [SpecFlow.FsCheck](https://github.com/gasparnagy/SpecFlow.FsCheck/blob/master/src/SpecFlow.FsCheck.SpecFlowPlugin/FsCheckPlugin.cs)
 
