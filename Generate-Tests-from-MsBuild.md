@@ -10,7 +10,7 @@ In order to be able to build your application in any environment independent of 
   ...
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\SpecFlow.2.1.0\tools\TechTalk.SpecFlow.targets"/>
+  <Import Project="..\packages\SpecFlow.2.1.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.1.0\tools\TechTalk.SpecFlow.targets')" />
   ...
 </Project>
 ```
@@ -18,6 +18,9 @@ In order to be able to build your application in any environment independent of 
 The TechTalk.SpecFlow.targets file can be investigated for further possibilities of calling this command from MsBuild.
 
 See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow)
+
+**Attention:**
+If you are using NuGet package restore, you have to restart Visual Studio and reopen your project, so that Visual Studio can reevaluate the project file and import the TechTalk.SpecFlow.targets.
 
 If the feature files are not only edited, but also added, renamed or deleted outside of Visual Studio, you can include them into the project dynamically. For this, you have to again change the project file directly once an include the following lines:
 
