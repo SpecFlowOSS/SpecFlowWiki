@@ -1,3 +1,5 @@
+**THIS PAGE IS A WORK IN PROGRESS**
+
 The SpecFlow Visual Studio integration provides a number of features to make using SpecFlow easier with Visual Studio.
 
 You can install the integration from [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] or from the online search in Visual Studio under **Tools | Extensions and Updates** (search for "SpecFlow").
