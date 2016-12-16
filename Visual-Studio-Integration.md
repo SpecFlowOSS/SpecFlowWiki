@@ -69,6 +69,7 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 ##Generating Skeleton Step Definitions from Feature Files (with custom templates)
 
 Step definition method declarations (aka _step definition skeletons_) can be generated automatically in Visual Studio. To do so:
+
 1. Open your feature file.
 1. Select "Generate Step Definitions" from the context menu of the feature file. 
 1. A dialog is displayed with a list of the steps in your feature file. Use the check boxes to determine which steps you want to generate skeleton code for.
