@@ -47,6 +47,36 @@ The Visual Studio integration supports executing SpecFlow scenarios from the Vis
 
 **OLD: Some of this features are described in more detail below.**
 
+## Gherking Syntax Highlighting
+Various default styles have been defined for the Gherkin syntax. You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin".
+
+In addition to highlighting keywords, comments, tags etc., unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:
+* Purple: unbound steps
+* Black: bound steps
+* Grey italics: parameters in bound steps
+
+## Intellisense (auto-completion) for Keywords and Steps
+IntelliSense makes SpecFlow easy to use when integrated with Visual Studio, providing quick access to the available steps definitions. Intellisense uses find-as-you-type to restrict the list of suggested entries. Note that all the steps in all "*.feature" files are displayed, filtered by type (Given, When, Then).
+
+_Figure 1: Specflow Integrated with Visual Studio and IntelliSense (click the image to see the full size)_
+[![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)
+
+
+As you can see in Figure 1, the IntelliSense (red rectangle) is displayed in the **Given** step, and suggests the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Because step definition methods have been defined for these steps, the entry in the list contains "-->" to indicate that the step has been bound.
+
+## Outlining (folding) sections of the feature file
+The **Edit | Outlining** menu options work well with Specflow feature files, as do most of the items in **Edit** menu.
+
+_Figure 2: VS2010 Edit menu (click the image to see the full size)_
+[![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)
+
+Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values (see Figure 3). 
+
+_Figure 3: Formatted table (click the image to see the full size)_
+[![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)
+
+
+
 ## Navigating between Bindings and Steps 
 You can navigate between the methods in your bindings and the associated steps in your Gherkin feature files. 
 
@@ -79,34 +109,6 @@ Skeleton step definition methods can be generated automatically in Visual Studio
 The most common parameter usage patterns (quotes, apostrophes, numbers) are detected automatically. SpecFlow generates methods and the regular expressions using these parameters. 
 
 For more information on the available options and custom templates, refer to the [[Step Definition Styles]] page.
-
-## Gherking Syntax Highlighting
-Various default styles have been defined for the Gherkin syntax. You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin".
-
-In addition to highlighting keywords, comments, tags etc., unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:
-* Purple: unbound steps
-* Black: bound steps
-* Grey italics: parameters in bound steps
-
-## Intellisense (auto-completion) for Keywords and Steps
-IntelliSense makes SpecFlow easy to use when integrated with Visual Studio, providing quick access to the available steps definitions. Intellisense uses find-as-you-type to restrict the list of suggested entries. Note that all the steps in all "*.feature" files are displayed, filtered by type (Given, When, Then).
-
-_Figure 1: Specflow Integrated with Visual Studio and IntelliSense (click the image to see the full size)_
-[![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)
-
-
-As you can see in Figure 1, the IntelliSense (red rectangle) is displayed in the **Given** step, and suggests the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Because step definition methods have been defined for these steps, the entry in the list contains "-->" to indicate that the step has been bound.
-
-## Outlining (folding) sections of the feature file
-The **Edit | Outlining** menu options work well with Specflow feature files, as do most of the items in **Edit** menu.
-
-_Figure 2: VS2010 Edit menu (click the image to see the full size)_
-[![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)
-
-Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values (see Figure 3). 
-
-_Figure 3: Formatted table (click the image to see the full size)_
-[![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)
 
 
 **THIS WAS ALREADY COVERED ABOVE **
