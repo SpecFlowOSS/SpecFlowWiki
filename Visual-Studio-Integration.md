@@ -27,7 +27,11 @@ The integration provides the following features:
   * Configurable options
   * Support for ReSharper command shortcuts (when ReSharper is installed): commenting, navigation, test execution
 
-Some of this features are described in more detail below.
+##Generic test runner support (VS 2012 and higher)
+
+From Visual Studio 2012 on, you can exeucte tests using the Visual Studio test runner infrastructure with the SpecFlow IDE. The following test runners are supported: VS2012 (**IS THIS MSTEST?**), ReSharper and SpecRun. You can execute SpecFlow scenarios on all supported unit testing platforms (e.g. NUnit, xUnit, MS-Test), and jump from the test explorer directly to the related feature files.
+
+**OLD: Some of this features are described in more detail below.**
 
 ## Navigating between Bindings to Steps 
 **OLD: Navigation from step definitions to step usages (Alt+Ctrl+Shift+S)**
