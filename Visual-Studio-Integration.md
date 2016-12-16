@@ -71,7 +71,7 @@ Skeleton step definition methods can be generated automatically in Visual Studio
 1. Select "Generate Step Definitions" from the context menu of the feature file. 
 1. A dialog is displayed with a list of the steps in your feature file. Use the check boxes to determine which steps you want to generate skeleton code for.
 1. Enter a name for your class in the **Class name** field.
-1. Choose your desired [[step definition style]] (including formats without regular expressions). Click on **Preview** to preview the output.
+1. Choose your desired [[step definition style|step definition styles]] (including formats without regular expressions). Click on **Preview** to preview the output.
 1. Either  
   * Click on **Generate** to add a new .cs file with your class to your project. This file will contain the skeleton step definitions for your selected steps.  
   * Click on **Copy methods to clipboard** to copy the generated skeleton code to the clipboard. You can then paste it to the file of your choosing. Use this method to extend your bindings if new steps have been added to a feature file that already contains bound steps.
