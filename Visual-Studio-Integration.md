@@ -36,12 +36,14 @@ You can navigate between step definition methods in your bindings and the associ
 
 ###Navigating from a step definition method to steps in Gherkin files
 To navigate from a step definition method to the matching step(s) in your Gherkin feature file(s):  
+
 1. Place your cursor in a step definition method. 
 1. Right-click and select "Go To SpecFlow Step Definition Usages" from the context menu, or simply press Alt+Ctrl+Shift+S (configurable). 
 1. If only one match exists, the feature file is opened. If more than one matching step is defined in your feature files **NOT TESTED**, select the corresponding feature file from the list to switch to it.
 
 ###Navigating from Gherkin step to a binding
 To navigate from a step in a Gherkin feature file to the corresponding step definition method: 
+
 1. Place your curosr in the step in your feature file.
 1. Right-click and select "Go To Step Definition" from the context menu, or use the Alt+Ctrl+Shift+S.
 1. The file containing the binding is opened at the appropriate step definition method.
