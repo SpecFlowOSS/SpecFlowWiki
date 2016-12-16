@@ -50,14 +50,14 @@ The Visual Studio integration supports executing SpecFlow scenarios from the Vis
 ## Navigating between Bindings and Steps 
 You can navigate between the methods in your bindings and the associated steps in your Gherkin feature files. 
 
-###Navigating from a binding to steps in Gherkin files
+###Navigating from a Binding to Steps in Gherkin Files
 To navigate from a step definition method to the matching step(s) in your Gherkin feature file(s):  
 
 1. Place your cursor in a step definition method. 
 1. Right-click and select "Go To SpecFlow Step Definition Usages" from the context menu, or simply press Alt+Ctrl+Shift+S (configurable). 
 1. If only one match exists, the feature file is opened. If more than one matching step is defined in your feature files **NOT TESTED**, select the corresponding feature file from the list to switch to it.
 
-###Navigating from Gherkin step to a binding
+###Navigating from a Gherkin Step to a Binding
 To navigate from a step in a Gherkin feature file to the corresponding step definition method: 
 
 1. Place your curosr in the step in your feature file.
@@ -80,14 +80,13 @@ The most common parameter usage patterns (quotes, apostrophes, numbers) are dete
 
 For more information on the available options and custom templates, refer to the [[Step Definition Styles]] page.
 
-## Highlighting Unbound steps and Parameters
+## Gherking Syntax Highlighting
+Various default styles have been defined for the Gherkin syntax. You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin".
 
-Unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:
+In addition to highlighting keywords, comments, tags etc., unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:
 * Purple: unbound steps
 * Black: bound steps
 * Grey italics: parameters in bound steps
-
-You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin"
 
 ## Intellisense (auto-completion) for Keywords and Steps
 IntelliSense makes SpecFlow easy to use when integrated with Visual Studio, providing quick access to the available steps definitions. Intellisense uses find-as-you-type to restrict the list of suggested entries. Note that all the steps in all "*.feature" files are displayed, filtered by type (Given, When, Then).
