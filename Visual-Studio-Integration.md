@@ -33,7 +33,7 @@ From Visual Studio 2013 on, you can execute tests using the Visual Studio test r
 
 ### Visual Studio Test Window Support
 
-The Visual Studio integration supports executing SpecFlow scenarios from the Visual Studio Test Window **IS THIS THE TEST EXPLORER?**. The basic features work with all unit test providers, although you may need to install additional Visual Studio connectors, depending on the unit test framework. Full integration is provided for [[SpecRun|http://www.specrun.com]], meaning you can run and debug your scenarios as first class citizens:
+The Visual Studio integration supports executing SpecFlow scenarios from the Visual Studio Test Explorer. The basic features work with all unit test providers, although you may need to install additional Visual Studio connectors, depending on the unit test framework. Full integration is provided for [[SpecRun|http://www.specrun.com]], meaning you can run and debug your scenarios as first class citizens:
 
 * Run or debug individual scenarios or scenario outline examples from the feature file editor (choose "Run/Debug SpecFlow Scenarios" from the context menu)
 * Scenarios are displayed in the Test Explorer with the scenario title
