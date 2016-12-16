@@ -89,7 +89,7 @@ Unbound steps and parameters in feature files are highlighted when editing the f
 * Black: bound steps
 * Grey italics: parameters in bound steps
 
-You can of course customise these colors. (**WHERE???**)
+You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin"
 
 ## Intellisense (auto-completion) for Keywords and Steps
 IntelliSense makes SpecFlow easy to use when integrated with Visual Studio, providing quick access to the available steps definitions. Intellisense uses find-as-you-type to restrict the list of suggested entries. Note that all the steps in all "*.feature" files are displayed, filtered by type (Given, When, Then).
