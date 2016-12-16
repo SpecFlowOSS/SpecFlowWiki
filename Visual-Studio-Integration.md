@@ -47,12 +47,10 @@ The Visual Studio integration supports executing SpecFlow scenarios from the Vis
 
 **OLD: Some of this features are described in more detail below.**
 
-## Navigating between Bindings to Steps 
-**OLD: Navigation from step definitions to step usages (Alt+Ctrl+Shift+S)**
+## Navigating between Bindings and Steps 
+You can navigate between the methods in your bindings and the associated steps in your Gherkin feature files. 
 
-You can navigate between step definition methods in your bindings and the associated steps in your Gherkin feature files. 
-
-###Navigating from a step definition method to steps in Gherkin files
+###Navigating from a binding to steps in Gherkin files
 To navigate from a step definition method to the matching step(s) in your Gherkin feature file(s):  
 
 1. Place your cursor in a step definition method. 
@@ -66,18 +64,17 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 1. Right-click and select "Go To Step Definition" from the context menu, or use the Alt+Ctrl+Shift+S.
 1. The file containing the binding is opened at the appropriate step definition method.
 
-##Generating Skeleton Step Definitions from Feature Files (with custom templates)
-
-Step definition method declarations (aka _step definition skeletons_) can be generated automatically in Visual Studio. To do so:
+##Generating Skeleton Bindings from Feature Files
+Skeleton step definition methods can be generated automatically in Visual Studio. To do so:
 
 1. Open your feature file.
 1. Select "Generate Step Definitions" from the context menu of the feature file. 
 1. A dialog is displayed with a list of the steps in your feature file. Use the check boxes to determine which steps you want to generate skeleton code for.
 1. Enter a name for your class in the **Class name** field.
-1. Choose your desired [[step definition style]] (which include regex-less formats). Click on **Preview** to preview the output.
+1. Choose your desired [[step definition style]] (including formats without regular expressions). Click on **Preview** to preview the output.
 1. Either  
   * Click on **Generate** to add a new .cs file with your class to your project. This file will contain the skeleton step definitions for your selected steps.  
-  * Click on **Copy methods to clipboard** to copy the generated skeleton code to the clipboard. You can then paste it to the file of your choosing.
+  * Click on **Copy methods to clipboard** to copy the generated skeleton code to the clipboard. You can then paste it to the file of your choosing. Use this method to extend your bindings if new steps have been added to a feature file that already contains bound steps.
 
 The most common parameter usage patterns (quotes, apostrophes, numbers) are detected automatically. SpecFlow generates methods and the regular expressions using these parameters. 
 
