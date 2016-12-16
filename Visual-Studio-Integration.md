@@ -91,6 +91,8 @@ Tables in SpecFlow are also expanded and formatted automatically as you enter co
 _Figure 3: Formatted table (click the image to see the full size)_
 [![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)
 
+
+**THIS WAS ALREADY COVERED ABOVE **
 ## Navigation from scenarios to step definitions (Alt+Ctrl+Shift+S)
 Another sweet feature is the right-click "Goto Definition" of steps in *.feature file and it will automatically brings you to the C# code steps definition you have (Figure 4). And if the steps definition does not exists it show a message box and ask to copy to clipboard the template steps definition (Figure 5). One thing I notice if the the steps definition is in the partial class and sub-group (like the form1.designer.cs is subgroup of form.aspx) "Goto Definition" does not work
 
