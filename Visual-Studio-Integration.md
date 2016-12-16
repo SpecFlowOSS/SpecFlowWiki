@@ -31,7 +31,7 @@ The integration provides the following features:
 
 From Visual Studio 2013 on, you can execute tests using the Visual Studio test runner infrastructure with the SpecFlow IDE. The following test runners are supported: Visual Studio, ReSharper and SpecRun. You can execute SpecFlow scenarios on all supported unit testing platforms (e.g. NUnit, xUnit, MS-Test), and jump from the test explorer directly to the related feature files.
 
-### Visual Studio Test Window Support
+### Visual Studio Test Explorer Support
 
 The Visual Studio integration supports executing SpecFlow scenarios from the Visual Studio Test Explorer. The basic features work with all unit test providers, although you may need to install additional Visual Studio connectors, depending on the unit test framework. Full integration is provided for [[SpecRun|http://www.specrun.com]], meaning you can run and debug your scenarios as first class citizens:
 
