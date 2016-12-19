@@ -9,5 +9,3 @@ The Visual Studio integration supports executing SpecFlow scenarios from the Vis
   * Jump to the scenario in the feature file
   * View test execution results
 * Specify the processor architecture (x86/x64), .NET platform and many other details for the test execution, including special config file transformations used by your tests.
-
-Refer to [[Visual Studio Integration Features]] for more details on the features supported by the Visual Studio integration.
