@@ -65,7 +65,7 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 _Figure 5: Not existing steps definition (click image for full size)_  
   Click on Yes to copy the skeleton code for your step to the clipboard, so you can paste it in the corresponding code file.
 
-#Skeleton Code Generation
+#Generating Skeleton Code
 ##Generating Skeleton Bindings from Feature Files
 Skeleton step definition methods can be generated automatically in Visual Studio. To do so:
 
@@ -81,6 +81,3 @@ Skeleton step definition methods can be generated automatically in Visual Studio
 The most common parameter usage patterns (quotes, apostrophes, numbers) are detected automatically. SpecFlow generates methods and the regular expressions using these parameters. 
 
 For more information on the available options and custom templates, refer to the [[Step Definition Styles]] page.
-
-
-
