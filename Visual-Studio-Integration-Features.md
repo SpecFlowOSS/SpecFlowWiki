@@ -26,9 +26,11 @@ The IntelliSense suggestions (red rectangle) for the **Given** step include the 
 ###Code Files
 Intellisense is also available for the Gherkin keywords in your code files.
 
-## Outlining (folding) sections of the feature file
-The **Edit | Outlining** menu options work well with Specflow feature files, as do most of the items in **Edit** menu:
+## Outlining and Comments in Feature Files
+Most of the items in the **Edit** menu work well with SpecFlow feature files, for example:
 
+* You can comment and uncomment selected lines ('#' character) with the default shortcut for comments (Ctrl+K Ctrl+C/Ctrl+K Ctrl+U) or from the menu
+* You can use the options in the **Edit | Outlining** menu to expand and contract sections of your feature files  
 [![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)  
 _(click image for full size)_
 
