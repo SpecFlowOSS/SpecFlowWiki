@@ -16,13 +16,10 @@ The integration provides the following features:
   * Navigate from [[steps in scenarios to binding methods and vice versa|Visual-Studio-Integration-Navigation-Features#navigating-between-bindings-and-steps]]
   * Detect bindings from the SpecFlow project, from project references and from assembly references
   * Cached step analysis for faster solution startup
-* Execution
-  * Execute scenarios from the context menu: **Run SpecFlow Scenarios**, **Debug SpecFlow Scenarios**
-  * Debugging
 * Generic Test Runner Support (VS 2013 and Higher)
   * You can execute tests using the following test runners: Visual Studio, ReSharper and SpecRun. You can execute SpecFlow scenarios on all supported unit testing platforms (e.g. NUnit, xUnit, MSTest).
 * [[Visual Studio Test Explorer Support]]  
-  * Run/debug from feature file
+  * Run/debug (including from feature files)
   * Scenario title displayed in Test Explorer
   * Full access to Test Explorer functions
 * Other
