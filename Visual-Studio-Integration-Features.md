@@ -59,19 +59,22 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 
 1. Place your curosr in the step in your feature file.
 1. Right-click and select "Go To Step Definition" from the context menu, or use the Alt+Ctrl+Shift+S.
-1. The file containing the binding is opened at the appropriate step definition method.
+1. The file containing the binding is opened at the appropriate step definition method.  
+  **Note:** If the steps definition does not exists, a message is displayed instead:  
+  [![Not existing steps definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)
+_Figure 5: Not existing steps definition (click image for full size)_  
+  Click on Yes to copy the skeleton code for your step to the clipboard, so you can paste it in the corresponding code file.
 
-**THIS WAS ALREADY COVERED ABOVE **
-## Navigation from scenarios to step definitions (Alt+Ctrl+Shift+S)
-Another sweet feature is the right-click "Goto Definition" of steps in *.feature file and it will automatically brings you to the C# code steps definition you have (Figure 4). And if the steps definition does not exists it show a message box and ask to copy to clipboard the template steps definition (Figure 5). One thing I notice if the the steps definition is in the partial class and sub-group (like the form1.designer.cs is subgroup of form.aspx) "Goto Definition" does not work
+** WHY IS THIS HERE? **
+
+One thing I notice if the the steps definition is in the partial class and sub-group (like the form1.designer.cs is subgroup of form.aspx) "Goto Definition" does not work
 
 
 [![Goto Definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)
 _(click image for full size)_
 
+** END OF WEIRDNESS **
 
-[![Not existing steps definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)
-_Figure 5: Not existing steps definition (click image for full size)_
 
 
 
