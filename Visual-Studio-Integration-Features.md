@@ -13,13 +13,14 @@ In addition to highlighting keywords, comments, tags etc., unbound steps and par
 You can thus tell immediately which steps in a feature file have been bound.
 
 ## Intellisense (auto-completion) for Keywords and Steps
-IntelliSense makes SpecFlow easy to use when integrated with Visual Studio, providing quick access to the available steps definitions. Intellisense uses find-as-you-type to restrict the list of suggested entries. Note that all the steps in all "*.feature" files are displayed, filtered by type (Given, When, Then).
+IntelliSense makes SpecFlow easy to use when integrated with Visual Studio. Intellisense uses find-as-you-type to restrict the list of suggested entries.
 
-_Figure 1: Specflow Integrated with Visual Studio and IntelliSense (click the image to see the full size)_
-[![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)
-
-
-As you can see in Figure 1, the IntelliSense (red rectangle) is displayed in the **Given** step, and suggests the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Because step definition methods have been defined for these steps, the entry in the list contains "-->" to indicate that the step has been bound.
+Intellisense is available in feature files for the following:
+* Gherkin keywords (e.g. `Scenario`, `Given` etc.)
+* Existing steps are listed after a `Given`, `When` or `Then` statement, providing quick access to your current steps definitions. Bound steps are indicated with "-->". Note that **all the steps in all "*.feature" files** are displayed that match the current type (Given, When, Then):  
+[![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)  
+_(click the image to see the full size)_  
+The IntelliSense suggestions (red rectangle) for the **Given** step, include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
 
 ## Outlining (folding) sections of the feature file
 The **Edit | Outlining** menu options work well with Specflow feature files, as do most of the items in **Edit** menu.
