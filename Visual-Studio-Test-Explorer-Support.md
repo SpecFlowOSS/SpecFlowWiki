@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Context-Injection]]. We use the GitHub wiki for authoring the documentation pages._
+
 The Visual Studio integration supports executing SpecFlow scenarios from the Visual Studio Test Explorer. The basic Test Explorer features work with all unit test providers, although you may need to install additional Visual Studio connectors, depending on the unit test framework. Full integration is provided for [[SpecRun|http://www.specrun.com]], meaning you can run and debug your scenarios as first class citizens:
 
 * Right-click in a feature file and select **Run/Debug SpecFlow Scenarios** from the menu to run/debug the scenarios and scenario outlines in the file
