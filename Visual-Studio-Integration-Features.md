@@ -1,3 +1,7 @@
+The Visual Studio integration includes a number of features that make it easier to edit Gherkin files and navigate to and from bindings in Visual Studio.
+
+#Editing
+
 ## Gherking Syntax Highlighting
 Various default styles have been defined for the Gherkin syntax. You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin".
 
@@ -26,7 +30,7 @@ Tables in SpecFlow are also expanded and formatted automatically as you enter co
 _Figure 3: Formatted table (click the image to see the full size)_
 [![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)
 
-
+#Navigating
 
 ## Navigating between Bindings and Steps 
 You can navigate between the methods in your bindings and the associated steps in your Gherkin feature files. 
@@ -45,6 +49,7 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 1. Right-click and select "Go To Step Definition" from the context menu, or use the Alt+Ctrl+Shift+S.
 1. The file containing the binding is opened at the appropriate step definition method.
 
+#Skeleton Code Generation
 ##Generating Skeleton Bindings from Feature Files
 Skeleton step definition methods can be generated automatically in Visual Studio. To do so:
 
