@@ -20,7 +20,7 @@ The integration provides the following features:
   * Execute scenarios from the context menu: **Run SpecFlow Scenarios**, **Debug SpecFlow Scenarios**
   * Debugging
 * Generic Test Runner Support (VS 2013 and Higher)
-  * You can execute tests using the following test runners: Visual Studio, ReSharper and SpecRun. You can execute SpecFlow scenarios on all supported unit testing platforms (e.g. NUnit, xUnit, MS-Test).
+  * You can execute tests using the following test runners: Visual Studio, ReSharper and SpecRun. You can execute SpecFlow scenarios on all supported unit testing platforms (e.g. NUnit, xUnit, MSTest).
 * Other
   * [[Generate skeleton step definition methods|Visual-Studio-Integration-Features#generating-skeleton-code]] from feature files
   * Re-generate feature files (from project node context menu and automatically on configuration change)
