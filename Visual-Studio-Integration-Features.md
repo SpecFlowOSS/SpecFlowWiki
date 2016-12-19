@@ -10,6 +10,8 @@ In addition to highlighting keywords, comments, tags etc., unbound steps and par
 * Black: bound steps
 * Grey italics: parameters in bound steps
 
+You can thus tell immediately which steps in a feature file have been bound.
+
 ## Intellisense (auto-completion) for Keywords and Steps
 IntelliSense makes SpecFlow easy to use when integrated with Visual Studio, providing quick access to the available steps definitions. Intellisense uses find-as-you-type to restrict the list of suggested entries. Note that all the steps in all "*.feature" files are displayed, filtered by type (Given, When, Then).
 
