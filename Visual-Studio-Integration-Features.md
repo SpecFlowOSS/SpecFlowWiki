@@ -21,7 +21,7 @@ Intellisense is available in feature files for the following:
 * Existing steps are listed after a `Given`, `When` or `Then` statement, providing quick access to your current steps definitions. Bound steps are indicated with "-->". Note that **all the steps in all "*.feature" files are displayed that match the current type** (Given, When, Then):  
 [![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)  
 _(click the image to see the full size)_  
-The IntelliSense suggestions (red rectangle) for the **Given** step, include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
+The IntelliSense suggestions (red rectangle) for the **Given** step include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
 
 ###Code Files
 Intellisense is also available for the Gherkin keywords in your code files.
