@@ -14,15 +14,14 @@ The integration provides the following features:
   * Comment/uncomment feature file lines
   * Automatic Gherkin table formatting
 * Navigation
-  * Navigation from scenarios to step definitions: _Go To Step Definition_ (Alt+Ctrl+Shift+S)
-  * Navigation from step definitions to step usages: _Go To SpecFlow Step Definition Usages_ (Alt+Ctrl+Shift+S) 
+  * Navigate from steps in scenarios to binding methods and vice versa
   * Detect bindings from the SpecFlow project, from project references and from assembly references
   * Cached step analysis for faster solution startup
 * Execution
-  * Scenario execution from context menu: _Run SpecFlow Scenarios_, _Debug SpecFlow Scenarios_
+  * Execute scenarios from the context menu: _Run SpecFlow Scenarios_, _Debug SpecFlow Scenarios_
   * Debugging
 * Other
-  * Generate step definition skeletons from feature files: _Generate Step Definitions_
+  * Generate step definition skeletons from feature files
   * Re-generate feature files (from project node context menu and automatically on configuration change)
   * Configurable options
   * Support for ReSharper command shortcuts (when ReSharper is installed): commenting, navigation, test execution
@@ -46,4 +45,3 @@ The Visual Studio integration supports executing SpecFlow scenarios from the Vis
 * Specify the processor architecture (x86/x64), .NET platform and many other details for the test execution, including special config file transformations used by your tests.
 
 Refer to [[Visual Studio Integration Features]] for more details on the features suppurted by the Visual Studio integration.
-
