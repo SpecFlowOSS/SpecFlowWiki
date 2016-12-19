@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Context-Injection]]. We use the GitHub wiki for authoring the documentation pages._
+
 You can navigate between the methods in your bindings and the associated steps in your Gherkin feature files. 
 
 #Navigating from a Binding to Steps in Gherkin Files
