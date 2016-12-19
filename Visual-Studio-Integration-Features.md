@@ -42,7 +42,7 @@ Tables in SpecFlow are also expanded and formatted automatically as you enter co
 [![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)  
 _(click image for full size)_
 
-#Navigating
+#Navigation
 
 ## Navigating between Bindings and Steps 
 You can navigate between the methods in your bindings and the associated steps in your Gherkin feature files. 
