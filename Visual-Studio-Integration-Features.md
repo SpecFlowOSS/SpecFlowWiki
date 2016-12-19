@@ -32,6 +32,8 @@ The **Edit | Outlining** menu options work well with Specflow feature files, as 
 _Figure 2: VS2010 Edit menu (click the image to see the full size)_
 [![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)
 
+
+##Data Tables
 Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values (see Figure 3). 
 
 _Figure 3: Formatted table (click the image to see the full size)_
