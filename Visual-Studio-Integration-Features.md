@@ -65,19 +65,6 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 _Figure 5: Not existing steps definition (click image for full size)_  
   Click on Yes to copy the skeleton code for your step to the clipboard, so you can paste it in the corresponding code file.
 
-** WHY IS THIS HERE? **
-
-One thing I notice if the the steps definition is in the partial class and sub-group (like the form1.designer.cs is subgroup of form.aspx) "Goto Definition" does not work
-
-
-[![Goto Definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)
-_(click image for full size)_
-
-** END OF WEIRDNESS **
-
-
-
-
 #Skeleton Code Generation
 ##Generating Skeleton Bindings from Feature Files
 Skeleton step definition methods can be generated automatically in Visual Studio. To do so:
