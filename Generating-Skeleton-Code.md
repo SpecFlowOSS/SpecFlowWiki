@@ -1,3 +1,5 @@
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Context-Injection]]. We use the GitHub wiki for authoring the documentation pages._
+
 You can automatically create a suitable class with skeletong bindings and methods in Visual Studio. To do so:
 
 1. Open your feature file.
