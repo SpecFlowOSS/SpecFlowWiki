@@ -20,7 +20,7 @@ Intellisense is available in feature files for the following:
 * Gherkin keywords (e.g. `Scenario`, `Given` etc.)
 * Existing steps are listed after a `Given`, `When` or `Then` statement, providing quick access to your current steps definitions. Bound steps are indicated with "-->". Note that **all the steps in all "*.feature" files are displayed that match the current type** (Given, When, Then):  
 [![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)  
-_(click the image for full size)_  
+_(click image for full size)_  
 The IntelliSense suggestions (red rectangle) for the **Given** step include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
 
 ###Code Files
@@ -30,15 +30,15 @@ Intellisense is also available for the Gherkin keywords in your code files.
 The **Edit | Outlining** menu options work well with Specflow feature files, as do most of the items in **Edit** menu:
 
 [![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)  
-_(click the image for full size)_
+_(click image for full size)_
 
 **NEED BETTER SCREENSHOT, maybe showing contracted sections**
 
 ##Data Tables
-Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values (see Figure 3). 
+Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values (see Figure 3):
 
-_Figure 3: Formatted table (click the image for full size)_
-[![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)
+[![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)  
+_(click image for full size)_
 
 #Navigating
 
@@ -59,6 +59,20 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 1. Right-click and select "Go To Step Definition" from the context menu, or use the Alt+Ctrl+Shift+S.
 1. The file containing the binding is opened at the appropriate step definition method.
 
+**THIS WAS ALREADY COVERED ABOVE **
+## Navigation from scenarios to step definitions (Alt+Ctrl+Shift+S)
+Another sweet feature is the right-click "Goto Definition" of steps in *.feature file and it will automatically brings you to the C# code steps definition you have (Figure 4). And if the steps definition does not exists it show a message box and ask to copy to clipboard the template steps definition (Figure 5). One thing I notice if the the steps definition is in the partial class and sub-group (like the form1.designer.cs is subgroup of form.aspx) "Goto Definition" does not work
+
+
+[![Goto Definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)
+_(click image for full size)_
+
+
+[![Not existing steps definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)
+_Figure 5: Not existing steps definition (click image for full size)_
+
+
+
 #Skeleton Code Generation
 ##Generating Skeleton Bindings from Feature Files
 Skeleton step definition methods can be generated automatically in Visual Studio. To do so:
@@ -75,19 +89,6 @@ Skeleton step definition methods can be generated automatically in Visual Studio
 The most common parameter usage patterns (quotes, apostrophes, numbers) are detected automatically. SpecFlow generates methods and the regular expressions using these parameters. 
 
 For more information on the available options and custom templates, refer to the [[Step Definition Styles]] page.
-
-
-**THIS WAS ALREADY COVERED ABOVE **
-## Navigation from scenarios to step definitions (Alt+Ctrl+Shift+S)
-Another sweet feature is the right-click "Goto Definition" of steps in *.feature file and it will automatically brings you to the C# code steps definition you have (Figure 4). And if the steps definition does not exists it show a message box and ask to copy to clipboard the template steps definition (Figure 5). One thing I notice if the the steps definition is in the partial class and sub-group (like the form1.designer.cs is subgroup of form.aspx) "Goto Definition" does not work
-
-
-_Figure 4: Goto Definition (click the image for full size)_
-[![Goto Definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/GotoDefinition.png)
-
-
-_Figure 5: Not existing steps definition (click the image for full size)_
-[![Not existing steps definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)
 
 
 
