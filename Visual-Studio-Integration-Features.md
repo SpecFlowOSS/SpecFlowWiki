@@ -36,7 +36,7 @@ _(click image for full size)_
 
 **NEED BETTER SCREENSHOT, maybe showing contracted sections**
 
-##Data Tables
+##Table Formatting
 Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values (see Figure 3):
 
 [![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)  
