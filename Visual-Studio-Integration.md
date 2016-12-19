@@ -6,15 +6,14 @@ You can install the integration from [[Visual Studio Gallery|http://go.specflow.
 
 The integration provides the following features:
 
-* Editor
-  * Gherkin (feature file) editor with syntax coloring
-  * Intellisense (auto-completion) for keywords and steps
-  * Outlining (folding) sections of the feature file
-  * Highlight unbound steps and step parameters in the editor
-  * Comment/uncomment feature file lines
-  * Automatic Gherkin table formatting
-* Navigation
-  * Navigate from steps in scenarios to binding methods and vice versa
+* [[Editor|Visual-Studio-Integration-Features#editing]]
+  * [[Gherkin syntax highlighting|Visual-Studio-Integration-Features#gherkin-syntax-highlighting]] in feature files, highlight unbound steps and parameters
+  * [[Intellisense|Visual-Studio-Integration-Features#intellisense-auto-completion-for-keywords-and-steps]] (auto-completion) for keywords and steps
+  * [[Outlining|Visual-Studio-Integration-Features#outlining-and-comments-in-feature-files]] (folding) sections of the feature file
+  * [[Comment/uncomment|Visual-Studio-Integration-Features#outlining-and-comments-in-feature-files]] feature file lines
+  * Automatic Gherkin [[table formatting|Visual-Studio-Integration-Features#table-formatting]]
+* [[Navigation|Visual-Studio-Integration-Features#navigation]]
+  * Navigate from [[steps in scenarios to binding methods and vice versa|Visual-Studio-Integration-Features#navigating-between-bindings-and-steps]]
   * Detect bindings from the SpecFlow project, from project references and from assembly references
   * Cached step analysis for faster solution startup
 * Execution
@@ -23,14 +22,10 @@ The integration provides the following features:
 * Generic Test Runner Support (VS 2013 and Higher)
   * You can execute tests using the following test runners: Visual Studio, ReSharper and SpecRun. You can execute SpecFlow scenarios on all supported unit testing platforms (e.g. NUnit, xUnit, MS-Test).
 * Other
-  * Generate step definition skeletons from feature files
+  * [[Generate skeleton step definition methods|Visual-Studio-Integration-Features#generating-skeleton-code]] from feature files
   * Re-generate feature files (from project node context menu and automatically on configuration change)
   * Configurable options
   * Support for ReSharper command shortcuts (when ReSharper is installed): commenting, navigation, test execution
-
-##
-
-
 
 ### Visual Studio Test Explorer Support
 
