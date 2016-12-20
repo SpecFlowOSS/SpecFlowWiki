@@ -14,7 +14,7 @@ The integration provides the following features:
   * [[Outlining|Visual-Studio-Integration-Editing-Features#outlining-and-comments-in-feature-files]] (folding) sections of the feature file
   * [[Comment/uncomment|Visual-Studio-Integration-Editing-Features#outlining-and-comments-in-feature-files]] feature file lines
   * Automatic Gherkin [[table formatting|Visual-Studio-Integration-Editing-Features#table-formatting]]
-* [[Navigation|Visual-Studio-Integration-Navigation-Features#navigation]]
+* [[Navigation|Visual-Studio-Integration-Navigation-Features]]
   * Navigate from [[steps in scenarios to binding methods and vice versa|Visual-Studio-Integration-Navigation-Features#navigating-between-bindings-and-steps]]
   * Detect bindings from the SpecFlow project, from project references and from assembly references
   * Cached step analysis for faster solution startup
