@@ -8,7 +8,7 @@ You can install the integration from [[Visual Studio Gallery|http://go.specflow.
 
 The integration provides the following features:
 
-* [[Editor|Visual-Studio-Integration-Editing-Features#editing]]
+* [[Editor|Visual-Studio-Integration-Editing-Features]]
   * [[Gherkin syntax highlighting|Visual-Studio-Integration-Editing-Features#gherkin-syntax-highlighting]] in feature files, highlight unbound steps and parameters
   * [[Intellisense|Visual-Studio-Integration-Editing-Features#intellisense-auto-completion-for-keywords-and-steps]] (auto-completion) for keywords and steps
   * [[Outlining|Visual-Studio-Integration-Editing-Features#outlining-and-comments-in-feature-files]] (folding) sections of the feature file
