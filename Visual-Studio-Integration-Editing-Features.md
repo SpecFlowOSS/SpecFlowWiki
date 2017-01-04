@@ -34,7 +34,7 @@ Most of the items in the **Edit** menu work well with SpecFlow feature files, fo
 [![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)  
 _(click image for full size)_
 
-**NEED BETTER SCREENSHOT, maybe showing contracted sections**
+**XXX NEED BETTER SCREENSHOT, maybe showing contracted sections XXX**
 
 #Table Formatting
 Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values:
