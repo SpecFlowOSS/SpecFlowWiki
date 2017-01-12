@@ -9,4 +9,3 @@ The Visual Studio integration supports executing SpecFlow scenarios from the Vis
 * Run/debug selected or all scenarios
 * Double-click an entry in the list to switch to the scenario in the feature file
 * View test execution results
-* Specify the processor architecture (x86/x64), .NET platform and many other details for the test execution, including special config file transformations used by your tests. **XXX Is this a feature of the integration or of SpecRun? XXX**
