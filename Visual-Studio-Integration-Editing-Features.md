@@ -31,10 +31,8 @@ Most of the items in the **Edit** menu work well with SpecFlow feature files, fo
 
 * You can comment and uncomment selected lines ('#' character) with the default shortcut for comments (Ctrl+K Ctrl+C/Ctrl+K Ctrl+U) or from the menu
 * You can use the options in the **Edit | Outlining** menu to expand and contract sections of your feature files  
-[![VS2010 Edit menu](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/Outlining.png)  
+[![VS2010 Edit menu](http://specflow.org/media/outlining_editor.png)](http://specflow.org/media/outlining_editor.png)  
 _(click image for full size)_
-
-**XXX NEED BETTER SCREENSHOT, maybe showing contracted sections XXX**
 
 #Table Formatting
 Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values:
