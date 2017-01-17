@@ -28,3 +28,5 @@ The integration provides the following features:
   * Configurable options
   * Support for ReSharper command shortcuts (when ReSharper is installed): commenting, navigation, test execution
 
+# Troubleshooting    
+If you are having trouble with the Visual Studio integration, refer to the [[Troubleshooting page|Troubleshooting-Visual-Studio-Integration]] first.
