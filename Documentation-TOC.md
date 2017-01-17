@@ -32,6 +32,7 @@
         * [[Navigation|Visual-Studio-Integration-Navigation-Features]]
         * [[Test Explorer Support|Visual-Studio-Test-Explorer-Support]]
         * [[Generating Skeleton Code|Generating-Skeleton-Code]]
+        * [[Troubleshooting|Troubleshooting-Visual-Studio-Integration]]
     * [[MonoDevelop Integration]]
     * [[MSBuild Integration|Generate Tests from MsBuild]]
     * [[NuGet Integration]]
