@@ -28,6 +28,10 @@
 * [[Unit Test Providers]]
 * Tool Integration
     * [[Visual Studio Integration]]
+        * [[Editor Features|Visual-Studio-Integration-Editing-Features]]
+        * [[Navigation|Visual-Studio-Integration-Navigation-Features]]
+        * [[Test Explorer Support|Visual-Studio-Test-Explorer-Support]]
+        * [[Generating Skeleton Code|Generating-Skeleton-Code]]
     * [[MonoDevelop Integration]]
     * [[MSBuild Integration|Generate Tests from MsBuild]]
     * [[NuGet Integration]]
