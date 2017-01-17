@@ -5,7 +5,8 @@ The Visual Studio integration includes the following features to make it easier 
 # Gherkin Syntax Highlighting
 Various default styles have been defined for the Gherkin syntax. You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin".
 
-In addition to highlighting keywords, comments, tags etc., unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:
+In addition to highlighting keywords, comments, tags etc., unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:  
+
 * Purple: unbound steps
 * Black: bound steps
 * Grey italics: parameters in bound steps
@@ -16,9 +17,11 @@ You can thus tell immediately which steps in a feature file have been bound.
 IntelliSense makes SpecFlow easy to use when integrated with Visual Studio. IntelliSense uses find-as-you-type to restrict the list of suggested entries.
 
 ##Gherkin Files
-IntelliSense is available in feature files for the following:
+IntelliSense is available in feature files for the following:  
+
 * Gherkin keywords (e.g. `Scenario`, `Given` etc.)
 * Existing steps are listed after a `Given`, `When` or `Then` statement, providing quick access to your current steps definitions. Bound steps are indicated with "-->". Note that **all the steps in all "*.feature" files** that match the current type (Given, When, Then) are displayed:  
+
 [![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)  
 _(click image for full size)_  
 The IntelliSense suggestions (red rectangle) for the **Given** step include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
