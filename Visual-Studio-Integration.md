@@ -8,7 +8,7 @@ The integration provides the following features:
 
 * [[Editor|Visual-Studio-Integration-Editing-Features]]
   * [[Gherkin syntax highlighting|Visual-Studio-Integration-Editing-Features#gherkin-syntax-highlighting]] in feature files, highlight unbound steps and parameters
-  * [[Intellisense|Visual-Studio-Integration-Editing-Features#intellisense-auto-completion-for-keywords-and-steps]] (auto-completion) for keywords and steps
+  * [[IntelliSense|Visual-Studio-Integration-Editing-Features#intellisense-auto-completion-for-keywords-and-steps]] (auto-completion) for keywords and steps
   * [[Outlining|Visual-Studio-Integration-Editing-Features#outlining-and-comments-in-feature-files]] (folding) sections of the feature file
   * [[Comment/uncomment|Visual-Studio-Integration-Editing-Features#outlining-and-comments-in-feature-files]] feature file lines
   * Automatic Gherkin [[table formatting|Visual-Studio-Integration-Editing-Features#table-formatting]]
