@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecFlow-Assist-Helpers]]. We use the GitHub wiki for authoring the documentation pages._
 
-To use these helpers, we need to add the ```TechTalk.SpecFlow.Assist``` namespace to the top of your file.
+To use these helpers, we need to add the `TechTalk.SpecFlow.Assist` namespace to the top of your file.
 
 ```c#
 using TechTalk.SpecFlow.Assist;
@@ -8,7 +8,7 @@ using TechTalk.SpecFlow.Assist;
 
 ##CreateInstance<T>
 
-```CreateInstance<T>``` is an extension method off of ```Table``` that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
+`CreateInstance<T>` is an extension method off of `Table` that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
 
 ```gherkin
 Given I entered the following data into the new account form:
@@ -38,13 +38,13 @@ public void x(Table table)
 }
 ```
 
-The ```CreateInstance<T>``` method will create the Account object and set properties according to what can be read from the table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
+The `CreateInstance<T>` method will create the Account object and set properties according to what can be read from the table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
 
 The headers in this table can be "Field" and "Value," or anything that you want.  What matters is that the first column has the property name and the second column has the value.
 
 ##CreateSet<T>
 
-```CreateSet<T>``` is an extension method off of ```Table``` that will convert the table data to a set of objects.  For example, if you have the following step:
+`CreateSet<T>` is an extension method off of `Table` that will convert the table data to a set of objects.  For example, if you have the following step:
 
 ```gherkin
 Given these products exist
@@ -64,11 +64,11 @@ public void x(Table table)
 }
 ```
 
-The ```CreateSet<T>``` method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
+The `CreateSet<T>` method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
 
 ##CompareToInstance<T>
 
-```CompareToInstance<T>``` makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
+`CompareToInstance<T>` makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
 
 ```c#
 public class Person
@@ -107,7 +107,7 @@ If they do match, no exception will be thrown and SpecFlow will continue to proc
 
 ##CompareToSet<T>
 
-```CompareToSet<T>``` makes it easy to compare the values in a table to a set of objects.  For example, say you have a class like this:
+`CompareToSet<T>` makes it easy to compare the values in a table to a set of objects.  For example, say you have a class like this:
 
 ```c#
 public class Account
@@ -139,7 +139,7 @@ public void x(Table table){
 }
 ```
 
-In this example, ```CompareToSet<T>``` will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
+In this example, `CompareToSet<T>` will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
 
 ##Column naming
 
@@ -159,7 +159,7 @@ Matches against properties on your object are case-insensitive and ignore spaces
 
 ##Extensions
 
-Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like ```String```, ```Bool```, ```Enum```, ```Int```, ```Decimal```, ```DateTime```, etc. are all covered. All of the covered types can be found [here](https://github.com/techtalk/SpecFlow/tree/master/TechTalk.SpecFlow/Assist/ValueRetrievers). But if you want to cover more types, including your own custom types, you can by registering your own instances of ```IValueRetriever``` and ```IValueComparer```.
+Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like `String`, `Bool`, `Enum`, `Int`, `Decimal`, `DateTime`, etc. are all covered. All of the covered types can be found [here](https://github.com/techtalk/SpecFlow/tree/master/TechTalk.SpecFlow/Assist/ValueRetrievers). But if you want to cover more types, including your own custom types, you can by registering your own instances of `IValueRetriever` and `IValueComparer`.
 
 For example, if you have a complex object like this:
 
@@ -179,9 +179,9 @@ And you have a table like this:
 | L    | Red   |
 ```
 
-And you want to map ```Blue``` and ```Red``` to the appropriate instance of ```Color``` class, you'll need to create an instance of ```IValueRetriever``` that can convert the strings into the ```Color``` instance.
+And you want to map `Blue` and `Red` to the appropriate instance of `Color` class, you'll need to create an instance of `IValueRetriever` that can convert the strings into the `Color` instance.
 
-You can register your special ```IValueRetriever``` (and/or an instance of ```IValueComparer``` if you want to compare colors) like so:
+You can register your special `IValueRetriever` (and/or an instance of `IValueComparer` if you want to compare colors) like so:
 
 ```c#
 [Binding]
