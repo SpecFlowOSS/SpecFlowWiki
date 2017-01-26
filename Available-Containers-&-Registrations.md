@@ -46,5 +46,5 @@ Captures the state of a scenario execution. Disposed after the scenario is execu
 
 * (step definition classes)
 * (dependencies of the step definition classes, aka context injection)
-* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
+* [RuntimePlugins] 
  * CustomizeScenarioDependencies- Event
