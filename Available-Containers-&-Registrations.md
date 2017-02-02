@@ -20,6 +20,7 @@ Captures global services for test execution and the step definition, hook and tr
 * IStepTextAnalyzer
 * IRuntimePluginLoader
 * IBindingAssemblyLoader
+* IBindingInstanceResolver
 * [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
  * RegisterGlobalDependencies- Event
  * CustomizeGlobalDependencies- Event
