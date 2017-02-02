@@ -40,11 +40,12 @@ Captures services and state for executing the scenarios on a particular test thr
  * CustomizeTestThreadDependencies- Event
 
 
-##Scenario Container (parent Container is the Test Runner Container)
+##Scenario Container (parent Container is the Test Thread Container)
 
 Captures the state of a scenario execution. Disposed after the scenario is executed.
 
 * (step definition classes)
 * (dependencies of the step definition classes, aka context injection)
+* ScenarioContext (also available from the *Test Thread Container* through `IContextManager`)
 * [RuntimePlugins] 
  * CustomizeScenarioDependencies- Event
