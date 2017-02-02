@@ -26,7 +26,7 @@ For an overview of the differences between SpecFlow and SpecFlow+, see the [[com
 
 Gaspar Nagy - the creator of SpecFlow - offers a training course that covers the methodology behind SpecFlow, from writing the initial specification to binding tests to your application's code. He also covers many of the more advanced options available in SpecFlow.  You can find out more about Gaspar's schedule on the [[training page|http://www.specflow.org/training/]]. You may also want to visit [[Gaspar's web site|http://gasparnagy.com/]] and sign up for his newsletter.
 
-We’ve listed the most important resources [[here|http://www.specflow.org/resources/]]. Many of them are free or inexpensive. 
+We’ve listed the most important resources [[here|http://www.specflow.org/documentation/]]. Many of them are free or inexpensive. 
 
 Gojko Adzic's books (Bridging the Communication Gap: Specification by Example and Agile Acceptance Testing and Specification by Example: How Successful Teams Deliver the Right Software) are an excellent introduction to the methodology. Gojko uses a lot of real life examples to relate his ideas to real software development and to show the potential pitfalls and benefits of different approaches.
 
