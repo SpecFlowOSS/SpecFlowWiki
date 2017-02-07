@@ -10,13 +10,22 @@ See the following sub-sections for how to generate the test execution report dep
 
 ###NUnit Test Execution Report
 
+####NUnit 2
 In order to generate this report you have to execute the acceptance tests with the `nunit-console` runner. This tool generates an XML summary about the test executions. To have the detailed scenario execution traces visible, you also need to capture the test output using the `/out` and the `/labels` options as it can be seen in the following example.
 
 ```
 nunit-console.exe /labels /out=TestResult.txt /xml=TestResult.xml bin\Debug\BookShop.AcceptanceTests.dll
 ```
 
-The two generated files can be used to invoke the SpecFlow report generation. If you use the output file names shown above it is enough to specify the project file path containing the feature files.
+####NUnit 3
+In order to generate this report you have to execute the acceptance tests with the `nunit3-console` runner set to output the results as `nunit2` format. To have the detailed scenario execution traces visible, you also need to capture the test output using the `--out` and the `--labels=All` options as it can be seen in the example below. Important: you'll need the `NUnit.Extension.NUnitV2ResultWriter` package in your project, otherwise you'll receive the message: "Unknown result format: nunit2"
+
+```
+nunit3-console.exe --labels=All --out=TestResult.txt "--result=TestResult.xml;format=nunit2" bin\Debug\BookShop.AcceptanceTests.dll
+```
+
+####SpecFlow Report Generator
+The report generation step is the same for both versions of nunit. The two generated files can be used to invoke the SpecFlow report generation. If you use the output file names shown above it is enough to specify the project file path containing the feature files.
 
 ```
 specflow.exe nunitexecutionreport BookShop.AcceptanceTests.csproj /out:MyResult.html
