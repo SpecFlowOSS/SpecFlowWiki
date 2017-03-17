@@ -2,29 +2,29 @@ SpecFlow provides various options to generate reports related to the acceptance 
 
 Note: The `specflow.exe` command line tool that is used to generate reports can be found in the `packages\Specflow.{version number}\tools` directory, when you installed SpecFlow through NuGet.
 
-##Test Execution Report
+## Test Execution Report
 
 This report provides a formatted HTML report of a test execution. The report contains a summary about the executed tests and the result and also a detailed report for the individual scenario executions. 
 
 See the following sub-sections for how to generate the test execution report depending on the unit test provider used.
 
-###NUnit Test Execution Report
+### NUnit Test Execution Report
 
-####NUnit 2
+#### NUnit 2
 In order to generate this report you have to execute the acceptance tests with the `nunit-console` runner. This tool generates an XML summary about the test executions. To have the detailed scenario execution traces visible, you also need to capture the test output using the `/out` and the `/labels` options as it can be seen in the following example.
 
 ```
 nunit-console.exe /labels /out=TestResult.txt /xml=TestResult.xml bin\Debug\BookShop.AcceptanceTests.dll
 ```
 
-####NUnit 3
+#### NUnit 3
 In order to generate this report you have to execute the acceptance tests with the `nunit3-console` runner set to output the results as `nunit2` format. To have the detailed scenario execution traces visible, you also need to capture the test output using the `--out` and the `--labels=All` options as it can be seen in the example below. Important: you'll need the `NUnit.Extension.NUnitV2ResultWriter` package in your project, otherwise you'll receive the message: "Unknown result format: nunit2"
 
 ```
 nunit3-console.exe --labels=All --out=TestResult.txt "--result=TestResult.xml;format=nunit2" bin\Debug\BookShop.AcceptanceTests.dll
 ```
 
-####SpecFlow Report Generator
+#### SpecFlow Report Generator
 The report generation step is the same for both versions of nunit. The two generated files can be used to invoke the SpecFlow report generation. If you use the output file names shown above it is enough to specify the project file path containing the feature files.
 
 ```
@@ -72,7 +72,7 @@ The following table contains the possible arguments for this command.
 
 
 
-###MsTest Test Execution Report
+### MsTest Test Execution Report
 
 ```
 specflow.exe mstestexecutionreport BookShop.AcceptanceTests.csproj /testResult:result.trx /out:MyResult.html
@@ -111,7 +111,7 @@ The following table contains the possible arguments for this command.
     </tr>
 </table>
 
-##Step Definition Report
+## Step Definition Report
 
 This report shows the usage and binding status of the steps for the entire project. You can use this report to find both unused code in the automation layer and scenario steps that have no definition yet.
 
