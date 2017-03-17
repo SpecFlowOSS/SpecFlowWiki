@@ -123,17 +123,6 @@ This report shows the usage and binding status of the steps for the entire proje
 specflow.exe stepdefinitionreport BookShop.AcceptanceTests.csproj
 ```
 
-_Important for .NET 4.0 projects_: Because specflow.exe is compiled for .NET 3.5, it cannot load .NET 4.0 assemblies by default. To generate this report for .NET 4.0 projects, you have to force specflow.exe to use the .NET 4.0 runtime by using the config file. Just copy the config below and create a `specflow.exe.config` file and put it next to your specflow.exe and you will be able to create the step definition report.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<configuration> 
-    <startup> 
-         <supportedRuntime version="v4.0.30319" /> 
-    </startup> 
-</configuration> 
-```
-
 The following table contains the possible arguments for this command.
 
 <table>
