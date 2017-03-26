@@ -6,7 +6,7 @@ SpecFlow can generate MsTest specific test class attributes from tags specified 
 
 Tag:
 ```
-@MsTest:Owner:John
+@owner:John
 ```
 
 Output:
@@ -18,7 +18,7 @@ Output:
 
 Tag:
 ```
-@MsTest:WorkItem:123
+@workItem:123
 ```
 
 Output:
