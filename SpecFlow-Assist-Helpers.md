@@ -196,4 +196,7 @@ public static class Hooks1
 }
 ```
 
-Details on implementing these interfaces can be found here.
+Examples on implementing these interfaces can be found as follows:
+
+* [IValueRetriever|https://github.com/techtalk/SpecFlow/tree/v2/Runtime/Assist/ValueRetrievers]
+* [IValueComparer|https://github.com/techtalk/SpecFlow/tree/v2/Runtime/Assist/ValueComparers]
