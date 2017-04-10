@@ -12,7 +12,7 @@ The following conversions can be performed by SpecFlow (in the following precede
 * step argument transformation
 * standard conversion
 
-##Standard Conversion
+## Standard Conversion
 
 A standard conversion is performed by SpecFlow in the following cases:
 
@@ -20,7 +20,7 @@ A standard conversion is performed by SpecFlow in the following cases:
 * the parameter type is an `enum` type and the (string) argument is an enum value
 * the parameter type is `Guid` and the argument contains a full GUID string or a GUID string prefix. In the later case the value will be filled with trailing zeroes.
 
-##Step Argument Transformation
+## Step Argument Transformation
 
 The step argument transformations can be used to apply a custom conversion step for the arguments of the step definitions. The step argument transformation is a method that provides a conversion from text (specified by a regular expression) or from a `Table` instance to an arbitrary .NET type. 
 
