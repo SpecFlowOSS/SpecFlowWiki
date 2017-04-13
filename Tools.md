@@ -2,7 +2,7 @@ Besides the execution of the acceptance criteria of the application, SpecFlow su
  
 One part of the available tools are to provide different reports. The page [[Reporting]] discusses these options.
 
-##Generate All
+## Generate All
 
 The `generateall` command can be used to re-generate all outdated unit test classes based on the feature file. This tool can be useful when upgrading to a newer SpecFlow version or when the feature files are modified outside of Visual Studio.
 
