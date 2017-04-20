@@ -26,5 +26,5 @@ If you used one of the [[helper NuGet packages|NuGet Integration]] to install Sp
 
 ### 4. Add your first feature file
 
-Your project is now ready to use SpecFlow. You can add your first [[feature files|Using Gherkin Language In SpecFlow]] in Visual Studio be selecting *Add | New Item* and develop your applications according to the [[Specification by Example|http://www.specificationbyexample.com]] ([[Behavior Driven Development (BDD)|http://behaviour-driven.org/]] or [[Acceptance Test Driven Development (ATDD)|http://en.wikipedia.org/wiki/Test-driven_development]]) paradigms. 
+Your project is now ready to use SpecFlow. You can add your first [[feature files|Using Gherkin Language In SpecFlow]] in Visual Studio be selecting *Add | New Item* and develop your applications according to the [[Specification by Example|http://www.specificationbyexample.com]] ([[Behavior Driven Development (BDD)|http://behaviour-driven.org/]] or [[Acceptance Test Driven Development (ATDD)|https://en.wikipedia.org/wiki/Acceptance_test-driven_development]]) paradigms. 
 
