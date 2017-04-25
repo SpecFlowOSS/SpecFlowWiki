@@ -4,17 +4,18 @@ We recommend installing the IDE Integration component for your development envir
 
 _Note:_ Although installing the IDE integration makes it much easier to use SpecFlow, you can also use SpecFlow **without the IDE integration**. For more details refer to the [[MsBuild Integration|Generate Tests from MsBuild]] page. 
 
-## Installing the IDE Integration for Visual Studio 2010, 2012, 2013 and 2015
+## Installing the IDE Integration for Visual Studio 2010 - 2017
 
-_Note:_ **Visual Studio 2015** integration is available! See the [[Visual Studio 2015 Integration]] page for details.
+_Note:_ **Visual Studio 2017** integration is available!.
 
-For Visual Studio 2013, 2012 and 2010, the easiest way to install the IDE integration is to select **Tools | Extensions and Updates** from the menu (or **Tools | Extension Manager** in VS2010) and search for "SpecFlow" in the online gallery. 
+The easiest way to install the IDE integration is to select **Tools | Extensions and Updates** from the menu (or **Tools | Extension Manager** in VS2010) and search for "SpecFlow" in the online gallery. 
 
 The integration packages can also be downloaded and installed separately from the Visual Studio Gallery:  
 
 * [[VS2010 and VS2012 integration|http://go.specflow.org/vsgallery]]
 * [[VS2013 integration|http://go.specflow.org/vsgallery2013]]
 * [[VS2015 integration|http://go.specflow.org/vsgallery2015]].
+* [[VS2017 integration|http://go.specflow.org/vsgallery2017]].
 
 [[SpecFlow+ Runner|http://www.specflow.org/plus/runner]] provides seamless integration with Visual Studio's Test Explorer and Team Foundation Server (TFS) Build. A short [[introduction video|https://www.youtube.com/watch?v=GBs2Lwqt5kI]] is available on YouTube and you can find links to additional videos on the [[SpecFlow website|http://www.specflow.org/plus/runner]].
 
