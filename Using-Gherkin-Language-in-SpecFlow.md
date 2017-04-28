@@ -6,17 +6,17 @@ The Gherkin language is maintained as a separate project on GitHub: [[https://gi
 
 This page focuses on how SpecFlow handles the different Gherkin language elements. 
 
-##Features
+## Features
 The feature element provides a header for the feature file. The feature element includes the name and a high level description of corresponding feature in your application. For more details, see [[https://github.com/cucumber/cucumber/wiki/Feature-Introduction]].
 
 SpecFlow generates a unit test class for the feature element, with the class name derived from the name of the feature.
 
-##Scenarios
+## Scenarios
 A feature file may contain multiple scenarios used to describe the feature's acceptance tests. Scenarios have a name and can consist of multiple scenario steps. For more details, see [[https://github.com/cucumber/cucumber/wiki/Feature-Introduction]].
 
 SpecFlow generates a unit test method for each scenario, with the method name derived from the name of the scenario.
 
-##Scenario Steps
+## Scenario Steps
 Scenarios can contain multiple scenario steps. There are three types of steps that define either the preconditions, actions or verification steps that make up the acceptance test (these three types are also referred to as arrange, act and assert). The different types of steps begin with either the `Given`, `When` or `Then` keywords respectively (in English feature files), and subsequent steps of the same type can be linked using the `And` and `But` keywords. There may be other alternative keywords for specifying steps.
 
 The Gherkin syntax allows any combination of these three types of steps, but a scenario usually has distinct blocks of `Given`, `When` and `Then` statements.
@@ -29,12 +29,12 @@ SpecFlow generates a call inside the unit test method for each scenario step. Th
 
 The scenario steps are primary way to execute any custom code to automate the application. You can read more about the different bindings in the [[Bindings]] page.
 
-##Table and multi-line text arguments
+## Table and multi-line text arguments
 You can include tables and multi-line arguments in scenario steps. These are used by the [[step definitions|step bindings]] and are either passed as additional `Table` or `string` arguments.
 
 For more details, see [[https://cucumber.io/docs/reference#step-arguments]]
 
-##Tags
+## Tags
 Tags are markers that can be assigned to features and scenarios. Assigning a tag to a feature is equivalent to assigning the tag to all scenarios in the feature file. For more details, see [[https://github.com/cucumber/cucumber/wiki/Tags]].
 
 If supported by the [[unit test framework|Unit Test Providers]], SpecFlow generates categories from the tags. The generated category name is the same as the tag's name, but without the leading `@`. You can filter and group the tests to be executed using these unit test categories. For example, you can tag crucial tests with `@important`, and then execute these tests more frequently.
@@ -43,7 +43,7 @@ If your unit test framework does not support categories, you can still use tags 
 
 SpecFlow treats the `@ignore` tag as a special tag. SpecFlow generates an [[ignored unit test|Test-result#ignored-tests]] method from scenarios with this tag.
 
-##Background
+## Background
 The background language element allows specifying a common precondition for all scenarios in a feature file. The background part of the file can contain one or more scenario steps that are executed before any other steps of the scenarios. See more details at [[https://github.com/cucumber/cucumber/wiki/Background]]
 
 SpecFlow generates a method from the background elements that is invoked from all unit tests generated for the scenarios.
@@ -59,7 +59,7 @@ SpecFlow performs the placeholder substitution as a separate phase before matchi
 
 **Hint:** In certain cases, when generating method names using the regular expression method, SpecFlow is unable to generate the correct parameter signatures for unit test logic methods without a little help. Placing single quotation marks (`'`) around placeholders (eg. `'<placeholder>'`)improves SpecFlow's ability to parse the scenario outline and generate more accurate regular expressions and test method signatures.
 
-##Comments
+## Comments
 You can add comment lines to the feature files at any place by starting the line with `#`. Be careful however, as comments in your specification can be a sign that acceptance criteria have been specified wrongly. 
 
 Comment lines are ignored by SpecFlow.
