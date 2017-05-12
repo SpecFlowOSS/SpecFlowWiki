@@ -1,36 +1,38 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Scoped-bindings]]. We use the GitHub wiki for authoring the documentation pages._
 
-Bindings (step definitions, hooks) are global for the entire SpecFlow project. This means that a step definition that is bound to a very generic step text, like When I save the changes becomes challenging to implement. The general solution for this problem is to phrase the scenarios in a way that the steps are phrased in a way that the usage context can be extracted from them (e.g. When I save the book details).
+Bindings (step definitions, hooks) are global for the entire SpecFlow project. This means that step definitions bound to a very generic step text (e.g. "When I save the changes") become challenging to implement. The general solution for this problem is to phrase the scenario steps in a way that the context is clear (e.g. "When I save the **book details**").
 
-In some cases however, it is necessary to restrict the appliance of a step definition or hook based on certain conditions. This feature of SpecFlow can be used for this purpose.
+In some cases however, it is necessary to restrict when step definitions or hooks are executed based on certain conditions. SpecFlow's scoped bindings can be used for this purpose.
 
-*Be careful!* Coupling your step definitions to the features is an anti-pattern. [Read more about it on the Cucumber Wiki](https://github.com/cucumber/cucumber/wiki/Feature-Coupled-Step-Definitions-%28Antipattern%29)
+You can restrict the execution of scoped bindings by:
 
-The scoped bindings can restrict the execution for
-
-* feature (by feature title)
-* scenario (by scenario title)
 * tag
+* feature (using the feature title)
+* scenario (using the scenario title)
 
-The scope can be defined with the `[Scope]` attribute. (Prior to v1.8, scopes has to be specified with the `[StepScope]` attribute.)
+*Be careful!* Coupling your step definitions to features and scenarios is an anti-pattern. [Read more about it on the Cucumber Wiki](https://github.com/cucumber/cucumber/wiki/Feature-Coupled-Step-Definitions-%28Antipattern%29)
+
+Use the `[Scope]` attribute to define the scope. (Note that prior to v1.8, scopes needed to be specified using the `[StepScope]` attribute.)
 
     [Scope(Tag = "mytag", Feature = "feature title", Scenario = "scenario title")] 
 
 ## Scoping Rules:
 
-The scope can be defined on method or on class level.
+Scope can be defined at the method or class level.
 
-If multiple criteria (e.g. tag and feature) is specified in the same attribute, these are combined with AND.
+If multiple criteria (e.g. both tag and feature) are specified in the same `[Scope]` attribute, they are combined with AND, i.e. all criteria need to match.
 
-If `[Scope]` attribute is placed on the same method or class, these are combined with OR.
+If multiple `[Scope]` attributes are defined for the same method or class, the attributes are combined with OR, i.e. at least one of the `[Scope]` attributes needs to match.
 
-If a step matches for a step definition without scope and also to a scoped step definition, the scoped step definition will be used (no ambiguity).
+If a step can be matched to both a step definition without a `[Scope]` attribute as well as a step definition with a `[Scope]` attribute, the step definition with the `[Scope]` attribute is used (no ambiguity).
 
-If a step matches for two different scoped step definitions, the one with the most restriction is used.
-Multiple scoped step definition with the maximal restriction causes an ambiguous step binding error.
-Examples
+If a step matches several scoped step definitions, the one with the most restrictions is used. For example, if the first step definition contains `[Scope(Tag = "myTag")]` and the second contains `[Scope(Tag = "myTag", Feature = "myFeature")]` the second step definition (the more specific one) is used if it matches the step.
 
-The following example shows the different step definition for the same step depending on whether UI automation or controller automation has to be done.
+If you have multiple scoped step definition with the same number of restrictions that match the step, you will get an ambiguous step binding error. For example, if you have a step definition containing `[Scope(Tag = "myTag", Scenario = "myScenario")]` and another containing `[Scope(Tag = "myTag2", Scenario = "myScenario")]`, you will receive an ambiguous step binding error if the myScenario has **both** the "myTag1" and "myTag2" tags.
+
+## Scope Example
+
+The following example defines a different scope for the same step depending on whether UI automation ("web" tag) or controller automation ("controller" tag) is required:
 
     [When(@"I perform a simple search on '(.*)'", Scope(Tag = "controller"))]
     public void WhenIPerformASimpleSearchOn(string searchTerm)
@@ -46,7 +48,10 @@ The following example shows the different step definition for the same step depe
         selenium.Type("searchTerm", title);
         selenium.Click("searchButton");
     }
-The following example shows a way to "ignore" executing the scenarios marked with `@manual` (the SpecFlow tracing will still display the steps, so the manual scenarios can be checked based on the report).
+
+## Scoping Tips & Tricks
+
+The following example shows a way to "ignore" executing the scenarios marked with `@manual`. However SpecFlow's tracing will still display the steps, so you can work through the manual scenarios by following the steps in the report.
 
     [Binding, Scope(Tag = "manual")]
     public class ManualSteps
