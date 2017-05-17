@@ -24,7 +24,7 @@ For an overview of the differences between SpecFlow and SpecFlow+, see the [[com
 <h1 id="Support">Support</h1>
 ##How can I learn more about SpecFlow and BDD/Specification-by-Example? Where can I find training material online?
 
-Gaspar Nagy - the creator of SpecFlow - offers a training course that covers the methodology behind SpecFlow, from writing the initial specification to binding tests to your application's code. He also covers many of the more advanced options available in SpecFlow.  You can find out more about Gaspar's schedule on the [[training page|http://www.specflow.org/training/]]. You may also want to visit [[Gaspar's web site|http://gasparnagy.com/]] and sign up for his newsletter.
+Gaspar Nagy - the creator of SpecFlow - offers a training course that covers the methodology behind SpecFlow, from writing the initial specification to binding tests to your application's code. He also covers many of the more advanced options available in SpecFlow.  You can find out more about Gaspar's schedule on the [[training page|http://www.specflow.org/training/]]. You may also want to visit [[Gaspar's web site|http://gasparnagy.com/]] and sign up for his [[newsletter|http://bddaddict.com]].
 
 We’ve listed the most important resources [[here|http://www.specflow.org/docs/]]. Many of them are free or inexpensive. 
 
@@ -51,7 +51,7 @@ If time is of the essence, TechTalk can offer paid support and deliver fixes for
 Details on how you can contribute to SpecFlow's development can be found [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]].
 
 ##Who are the developers behind SpecFlow?
-SpecFlow was originally created by Gáspár Nagy and used internally by [[TechTalk|http://www.techtalk.at]] in various software development projects. Since then developers from around the world have contributed to the open source project; an overview can be found [[here|https://github.com/techtalk/SpecFlow/graphs/contributors]].
+SpecFlow was originally created by [[Gáspár Nagy|http://gasparnagy.com/]] and used internally by [[TechTalk|http://www.techtalk.at]] in various software development projects. Since then developers from around the world have contributed to the open source project; an overview can be found [[here|https://github.com/techtalk/SpecFlow/graphs/contributors]].
 
 ##Can I use the SpecFlow name for my own projects based on SpecFlow? 
 We are always happy to see projects that extend SpecFlow’s feature set, and SpecFlow is open source to specifically encourage such contributions from the community. We have however reserved the rights to the name “SpecFlow” as well as the official SpecFlow logo. We need to retain control over this aspect of the project, as we share responsibility for supporting and maintaining SpecFlow, along with all other contributors in the community. 
