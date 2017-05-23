@@ -70,33 +70,4 @@ If no order is specified, the default order of 1000 is used. It is not recommend
 
 ## Tag Scoping
 
-Most of the hooks support tag scoping. This means that they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[Scoped Bindings]] (from v1.8).
-
-The following example starts Selenium for scenarios marked with the `@web` tag.
-
-```c#
-[BeforeScenario("web")]
-public static void BeforeWebScenario()
-{
-    StartSelenium();
-}
-```
-
-For the scenario, scenarioblock or step hooks, the following tags are considered:
-
-* tags defined for the feature
-* tags defined for the scenario
-* tags defined for the scenario outline
-* tags defined for the scenario outline example set (`Examples:`)
-
-You can define more complex filters using the [[ScenarioContext]] class. The following example starts selenium if the scenario is tagged with `@web` _and_ `@automated`.
-
-
-```c#
-[BeforeScenario("web")]
-public static void BeforeWebScenario()
-{
-    if(ScenarioContext.Current.ScenarioInfo.Tags.Contains("automated"))
-        StartSelenium();
-}
-```
+Most hooks support tag scoping, which means they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[scoped bindings]].
