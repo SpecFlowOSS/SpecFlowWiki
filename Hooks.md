@@ -4,7 +4,7 @@ The hooks (event bindings) can be used to perform additional automation logic on
 
 Hooks are global, but can be restricted to run only for features or scenarios with a specific tag (see below). The execution order of hooks for the same event is undefined.
 
-##Supported Hook Attributes
+## Supported Hook Attributes
 
 <table>
     <tr>
@@ -46,7 +46,7 @@ The method it is applied to must be static.</td>
 
 You can annotate a single method with multiple attributes.
 
-##Hook Execution Order
+## Hook Execution Order
 
 By default the hooks of the same type (e.g. two `[BeforeScenario]` hook) are executed in an unpredictable order. If you need to ensure a specific execution order, you can specify the `Order` property for the hook attributes.
 
@@ -68,7 +68,7 @@ The value provided for the order attribute specifies the order, not the priority
 
 If no order is specified, the default order of 1000 is used. It is not recommended to depend on this default value though.
 
-##Tag Scoping
+## Tag Scoping
 
 Most of the hooks support tag scoping. This means that they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[Scoped Bindings]] (from v1.8).
 
