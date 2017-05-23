@@ -10,9 +10,16 @@ You can restrict the execution of scoped bindings by:
 * feature (using the feature title)
 * scenario (using the scenario title)
 
+The following tags are taken into account for scenario, scenarioblock or step hooks:
+
+* tags defined for the feature
+* tags defined for the scenario
+* tags defined for the scenario outline
+* tags defined for the scenario outline example set (`Examples:`)
+
 *Be careful!* Coupling your step definitions to features and scenarios is an anti-pattern. [Read more about it on the Cucumber Wiki](https://github.com/cucumber/cucumber/wiki/Feature-Coupled-Step-Definitions-%28Antipattern%29)
 
-Use the `[Scope]` attribute to define the scope. (Note that prior to v1.8, scopes needed to be specified using the `[StepScope]` attribute.)
+Use the `[Scope]` attribute to define the scope:
 
     [Scope(Tag = "mytag", Feature = "feature title", Scenario = "scenario title")] 
 
@@ -30,7 +37,20 @@ If a step matches several scoped step definitions, the one with the most restric
 
 If you have multiple scoped step definition with the same number of restrictions that match the step, you will get an ambiguous step binding error. For example, if you have a step definition containing `[Scope(Tag = "myTag", Scenario = "myScenario")]` and another containing `[Scope(Tag = "myTag2", Scenario = "myScenario")]`, you will receive an ambiguous step binding error if the myScenario has **both** the "myTag1" and "myTag2" tags.
 
-## Scope Example
+## Scope Examples
+
+### Scoped BeforeScenario Hook
+The following example starts Selenium for scenarios marked with the `@web` tag.
+
+```c#
+[BeforeScenario("web")]
+public static void BeforeWebScenario()
+{
+    StartSelenium();
+}
+```
+
+### Different Steps for Different Tags
 
 The following example defines a different scope for the same step depending on whether UI automation ("web" tag) or controller automation ("controller" tag) is required:
 
@@ -71,3 +91,16 @@ The following example shows a way to "ignore" executing the scenarios marked wit
         {
         }
     }
+
+## Beyond Scope
+You can define more complex filters using the [[ScenarioContext]] class. The following example starts selenium if the scenario is tagged with `@web` _and_ `@automated`.
+
+
+```c#
+[BeforeScenario("web")]
+public static void BeforeWebScenario()
+{
+    if(ScenarioContext.Current.ScenarioInfo.Tags.Contains("automated"))
+        StartSelenium();
+}
+```
