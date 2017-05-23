@@ -1,8 +1,17 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Hooks]]. We use the GitHub wiki for authoring the documentation pages._
 
-The hooks (event bindings) can be used to perform additional automation logic on specific events, such as before executing a scenario.
+Hooks (event bindings) can be used to perform additional automation logic at specific times, such as before executing a scenario. In order to use hooks, you need to add the `Binding` attribute to your class:
 
-Hooks are global, but can be restricted to run only for features or scenarios with a specific tag (see below). The execution order of hooks for the same event is undefined.
+```
+[Binding]
+public class MyClass
+{
+    ...
+}
+
+```
+
+Hooks are global, but can be restricted to run only for features or scenarios with a specific tag by defining a [[scoped binding|scoped-bindings]]. The execution order of hooks for the same event is undefined.
 
 ## Supported Hook Attributes
 
