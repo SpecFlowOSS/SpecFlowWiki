@@ -8,7 +8,6 @@ public class MyClass
 {
     ...
 }
-
 ```
 
 Hooks are global, but can be restricted to run only for features or scenarios with a specific tag by defining a [[scoped binding|scoped-bindings]]. The execution order of hooks for the same event is undefined.
