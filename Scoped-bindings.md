@@ -54,6 +54,7 @@ public static void BeforeWebScenario()
 
 The following example defines a different scope for the same step depending on whether UI automation ("web" tag) or controller automation ("controller" tag) is required:
 
+```c#
     [When(@"I perform a simple search on '(.*)'", Scope(Tag = "controller"))]
     public void WhenIPerformASimpleSearchOn(string searchTerm)
     {
@@ -68,11 +69,13 @@ The following example defines a different scope for the same step depending on w
         selenium.Type("searchTerm", title);
         selenium.Click("searchButton");
     }
+```
 
 ## Scoping Tips & Tricks
 
 The following example shows a way to "ignore" executing the scenarios marked with `@manual`. However SpecFlow's tracing will still display the steps, so you can work through the manual scenarios by following the steps in the report.
 
+```c#
     [Binding, Scope(Tag = "manual")]
     public class ManualSteps
     {
@@ -91,6 +94,7 @@ The following example shows a way to "ignore" executing the scenarios marked wit
         {
         }
     }
+```
 
 ## Beyond Scope
 You can define more complex filters using the [[ScenarioContext]] class. The following example starts selenium if the scenario is tagged with `@web` _and_ `@automated`.
