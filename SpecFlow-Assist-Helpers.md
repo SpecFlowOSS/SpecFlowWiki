@@ -105,7 +105,7 @@ If FirstName does not match "John", LastName does not match "Galt", or YearsOld 
 
 If they do match, no exception will be thrown and SpecFlow will continue to process your scenario.
 
-##CompareToSet<T>
+## CompareToSet<T>
 
 `CompareToSet<T>` makes it easy to compare the values in a table to a set of objects.  For example, say you have a class like this:
 
