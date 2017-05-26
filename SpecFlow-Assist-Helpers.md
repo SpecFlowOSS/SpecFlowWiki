@@ -6,7 +6,7 @@ To use these helpers, we need to add the `TechTalk.SpecFlow.Assist` namespace to
 using TechTalk.SpecFlow.Assist;
 ```
 
-##CreateInstance<T>
+## CreateInstance<T>
 
 `CreateInstance<T>` is an extension method off of `Table` that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
 
@@ -42,7 +42,7 @@ The `CreateInstance<T>` method will create the Account object and set properties
 
 The headers in this table can be "Field" and "Value," or anything that you want.  What matters is that the first column has the property name and the second column has the value.
 
-##CreateSet<T>
+## CreateSet<T>
 
 `CreateSet<T>` is an extension method off of `Table` that will convert the table data to a set of objects.  For example, if you have the following step:
 
@@ -66,7 +66,7 @@ public void x(Table table)
 
 The `CreateSet<T>` method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
 
-##CompareToInstance<T>
+## CompareToInstance<T>
 
 `CompareToInstance<T>` makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
 
@@ -141,7 +141,7 @@ public void x(Table table){
 
 In this example, `CompareToSet<T>` will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
 
-##Column naming
+## Column naming
 
 The SpecFlow Assist helpers use the values found in your table to determine what properties to set on your object.  However, the names on the column do not have to be an exact match.  For example, this table:
 
@@ -157,7 +157,7 @@ The SpecFlow Assist helpers use the values found in your table to determine what
 
 Matches against properties on your object are case-insensitive and ignore spaces.  This allows you to make your tables more readable to others.
 
-##Extensions
+## Extensions
 
 Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like `String`, `Bool`, `Enum`, `Int`, `Decimal`, `DateTime`, etc. are all covered. All of the covered types can be found [here](https://github.com/techtalk/SpecFlow/tree/master/TechTalk.SpecFlow/Assist/ValueRetrievers). But if you want to cover more types, including your own custom types, you can by registering your own instances of `IValueRetriever` and `IValueComparer`.
 
