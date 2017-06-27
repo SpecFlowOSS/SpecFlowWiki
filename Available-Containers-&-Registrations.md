@@ -26,7 +26,7 @@ Captures global services for test execution and the step definition, hook and tr
  * CustomizeGlobalDependencies- Event
 
 
-##Test Thread Container (parent Container is the Global Container)
+## Test Thread Container (parent Container is the Global Container)
 
 Captures services and state for executing the scenarios on a particular test thread. For parallel test execution, multiple test runner containers are created (one for each thread).
 
@@ -41,7 +41,7 @@ Captures services and state for executing the scenarios on a particular test thr
  * CustomizeTestThreadDependencies- Event
 
 
-##Scenario Container (parent Container is the Test Thread Container)
+## Scenario Container (parent Container is the Test Thread Container)
 
 Captures the state of a scenario execution. Disposed after the scenario is executed.
 
