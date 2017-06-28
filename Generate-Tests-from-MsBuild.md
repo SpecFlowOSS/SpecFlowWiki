@@ -10,7 +10,7 @@ In order to be able to build your application in any environment independent of 
   ...
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\SpecFlow.2.1.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.1.0\tools\TechTalk.SpecFlow.targets')" />
+  <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
   ...
 </Project>
 ```
