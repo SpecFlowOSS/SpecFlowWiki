@@ -117,7 +117,11 @@ The following lists all supported providers with their name and generator provid
  </tr>
  <tr>
   <td>nunit</td>
-  <td>NUnitTestGeneratorProvider</td>
+  <td>NUnit3TestGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>nunit.2</td>
+  <td>NUnit2TestGeneratorProvider</td>
  </tr>
  <tr>
   <td>mbunit</td>
