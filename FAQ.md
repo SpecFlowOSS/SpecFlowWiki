@@ -1,5 +1,6 @@
 <h1 id="General">General</h1>
-##What is SpecFlow?
+
+## What is SpecFlow?
 
 SpecFlow allows .NET development teams to define, manage and execute automated acceptance tests as business readable specifications. It is based on [[Gherkin|https://github.com/cucumber/gherkin/wiki]] and is part of the [[Cucumber|https://cucumber.io/]] eco system.  
  
@@ -9,10 +10,7 @@ SpecFlow integrates with Visual Studio, but can be also used from the command li
 
 [[SpecFlow+|http://www.specflow.org/plus/]] adds additional functionality to SpecFlow, such as a stand-alone IDE for Gherkin specifications, advanced reporting and much more.
 
-##How do I install SpecFlow?
-To install SpecFlow and SpecFlow+, you first need to [[install the SpecFlow Visual Studio integration|Install-IDE-Integration]]. Once you have done this, you can then add SpecFlow to each of your projects using NuGet.  For more details, see the [[Getting Started|http://www.specflow.org/plus/runner/getting-started/]] article.
-
-##What is the difference between SpecFlow and SpecFlow+?
+## What is the difference between SpecFlow and SpecFlow+?
 SpecFlow is open source and free of charge. It covers all your basic needs for managing and testing specifications by example. 
 
 SpecFlow+ is a series of extensions that introduce additional features, such as a stand-alone IDE for Gherkin specifications, advanced reporting, specify and execute Gherkin in Excel, execute tests in multiple threads, and define complex filters to determine which tests to run.  
@@ -21,8 +19,32 @@ SpecFlow+ requires a license to be [[purchased|https://www.swreg.org/cgi-bin/s.c
 
 For an overview of the differences between SpecFlow and SpecFlow+, see the [[comparison of features|http://www.specflow.org/plus/]].
 
+## How do I install SpecFlow?
+To install SpecFlow and SpecFlow+, you first need to [[install the SpecFlow Visual Studio integration|Install-IDE-Integration]]. Once you have done this, you can then add SpecFlow to each of your projects using NuGet.  For more details, see the [[Getting Started|http://www.specflow.org/plus/runner/getting-started/]] article.
+
 <h1 id="Support">Support</h1>
-##How can I learn more about SpecFlow and BDD/Specification-by-Example? Where can I find training material online?
+SpecFlow is an open source project. Anyone can download and edit the source code, and SpecFlow relies on contributions from its users to fix bugs and add new features. 
+
+## I have found an issue with SpecFlow. How can I get support? 
+
+If you encounter problems using SpecFlow or have any questions, one of the best places to turn for help is the [[SpecFlow Google Group|https://groups.google.com/forum/#%21forum/specflow]]. Posts to this group are regularly read by contributors to the SpecFlow project. SpecFlow is also popular on [[Stack Overflow|http://stackoverflow.com/questions/tagged/specflow]], so you might find the answer to your question there as well.
+
+If you have found a bug, please first search the [[SpecFlow issues on GitHub|https://github.com/techtalk/SpecFlow/issues]] to check that this is not already a known issue. If you cannot find a matching issue on GitHub, please submit a GitHub issue including as much information and context as possible, and ideally a code sample that allows the issue to be reproduced. The easier you make it for contributors to diagnose and fix your issue, the more likely you are to see results.
+
+Please include the following information when submitting a bug report:  
+
+* Your SpecFlow version
+* The test runner and version number you are using, as well as information on how you are executing the tests (e.g. include your command line)
+* Your Visual Studio version
+* Your .NET framework version
+* A link to a project that reproduces the issue, if possible
+
+Once you have submitted an issue relating to a bug, a contributor needs to take on the issue and provide a pull request containing a fix. Depending on the nature of your issue, how well it is described and how easy it is to reproduce, a fix may be delivered quickly or take a long time. You are actively encouraged to contribute and doing so can significantly reduce the time needed to fix issues that impact on your work with SpecFlow. Because SpecFlow relies on contributions from the community, there are no guarantees that a particular issue will be fixed within a specific time frame. If you urgently need a fix, the quickest way is to provide one yourself!
+
+If time is of the essence, TechTalk can offer paid support and deliver fixes for a fee invoiced either by effort or per incident. Details on the associated costs are available [[here|http://www.specflow.org/professional-support/]].
+
+
+## How can I learn more about SpecFlow and BDD/Specification-by-Example? Where can I find training material online?
 
 Gaspar Nagy - the creator of SpecFlow - offers a training course that covers the methodology behind SpecFlow, from writing the initial specification to binding tests to your application's code. He also covers many of the more advanced options available in SpecFlow.  You can find out more about Gaspar's schedule on the [[training page|http://www.specflow.org/training/]]. You may also want to visit [[Gaspar's web site|http://gasparnagy.com/]] and sign up for his [[newsletter|http://bddaddict.com]].
 
@@ -34,26 +56,21 @@ If you are just getting started with SpecFlow, you should definitely follow the 
 
 As you progress, you will probably start wanting to look into the more advanced options in SpecFlow, such as using tables to supply arguments for your tests, sharing data between steps and more. An overview of some of these concepts can be found on the [[Beyond the Basics|http://www.specflow.org/getting-started/beyond-the-basics/]] page with links to the appropriate sections of the documentation.
 
-##I have a feature request; how can I submit it?
+## I have a feature request; how can I submit it?
+
 We currently have a long list of features awaiting implementation and are therefore limited in our capacity to implement feature requests. However, as SpecFlow is open source, you can implement new features yourself (more information available [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]]).
 
 If you require a specific feature but are unable to develop it yourself, you can also sponsor the feature for the benefit of the community or pay outright for development services provided by [[TechTalk|http://www.techtalk.at]].
 
-##I have found an issue with SpecFlow. How can I get support? 
-SpecFlow is an open source project, and you can get free support from the SpecFlow community by submitting an issue on [[GitHub|https://github.com/techtalk/SpecFlow/issues]]. When submitting an issue, please provide as much information and context as possible, and ideally a code sample that allows the issue to be reproduced. The easier you make it for contributors to diagnose and fix your issue, the more likely you are to see results. 
-
-Once you have submitted an issue relating to a bug, a contributor needs to take on the issue and provide a pull request containing a fix. Depending on the nature of your issue, how well it is described and how easy it is to reproduce, a fix may be delivered quickly or take a long time. 
-
-If time is of the essence, TechTalk can offer paid support and deliver fixes for a fee invoiced either by effort or per incident. Details on the associated costs are available [[here|http://www.specflow.org/professional-support/]].
-
 <h1 id="Support">Development</h1>
-##How can I contribute to SpecFlow's development?
+
+## How can I contribute to SpecFlow's development?
 Details on how you can contribute to SpecFlow's development can be found [[here|https://github.com/techtalk/SpecFlow/wiki/Contributing]].
 
-##Who are the developers behind SpecFlow?
+## Who are the developers behind SpecFlow?
 SpecFlow was originally created by [[Gáspár Nagy|http://gasparnagy.com/]] and used internally by [[TechTalk|http://www.techtalk.at]] in various software development projects. Since then developers from around the world have contributed to the open source project; an overview can be found [[here|https://github.com/techtalk/SpecFlow/graphs/contributors]].
 
-##Can I use the SpecFlow name for my own projects based on SpecFlow? 
+## Can I use the SpecFlow name for my own projects based on SpecFlow? 
 We are always happy to see projects that extend SpecFlow’s feature set, and SpecFlow is open source to specifically encourage such contributions from the community. We have however reserved the rights to the name “SpecFlow” as well as the official SpecFlow logo. We need to retain control over this aspect of the project, as we share responsibility for supporting and maintaining SpecFlow, along with all other contributors in the community. 
 
 When naming your project, one of our primary concerns is therefore that the name of your project avoids any confusion concerning project ownership and avoids creating the impression that your project is officially supported by us. Of course this is benefits you as well - we surely both want to ensure that feedback concerning your project is directed to the right place, and prevent users from submitting support issues to the SpecFlow community that concern third-party projects.
@@ -64,7 +81,7 @@ If you are unsure as to whether your preferred project name meets these guidelin
 
 <h1 id="Features">Features</h1>
 
-##Does SpecFlow support coded UI tests?
+## Does SpecFlow support coded UI tests?
 Coded UI tests include special coded UI attributes that can only be interpreted by MS Test. If you are using coded UI tests, you can only execute them using the MS Test test runner. For more details on getting coded UI working with SpecFlow, see [[this blog post|http://blog.majcica.com/2015/05/07/getting-started-with-specflow-and-codedui/]] (thanks to Mario Majčica).
 
 <h1 id="Troubleshooting">Troubleshooting</h1>
