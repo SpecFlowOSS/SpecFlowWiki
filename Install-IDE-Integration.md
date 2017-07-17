@@ -6,7 +6,7 @@ _Note:_ Although installing the IDE integration makes it much easier to use Spec
 
 ## Installing the IDE Integration for Visual Studio 2010 - 2017
 
-_Note:_ **Visual Studio 2017** integration is available!.
+_Note:_ **Visual Studio 2017** integration is available!
 
 The easiest way to install the IDE integration is to select **Tools | Extensions and Updates** from the menu (or **Tools | Extension Manager** in VS2010) and search for "SpecFlow" in the online gallery. 
 
