@@ -10,14 +10,14 @@ public class MyClass
 }
 ```
 
-Hooks are global, but can be restricted to run only for features or scenarios with a specific tag by defining a [[scoped binding|scoped-bindings]]. The execution order of hooks for the same event is undefined.
+Hooks are global, but can be restricted to run only for features or scenarios by defining a [[scoped binding|scoped-bindings]] which can be filtered with [tags](https://github.com/techtalk/SpecFlow/wiki/Scoped-bindings#different-steps-for-different-tags). The execution order of hooks for the same event is undefined.
 
 ## Supported Hook Attributes
 
 <table>
     <tr>
         <th>Attribute</th>
-        <th>Tag filtering</th>
+        <th>Tag filtering*</th>
         <th>Description</th>
     </tr>
     <tr>
@@ -51,6 +51,8 @@ The method it is applied to must be static.</td>
         <td>Automation logic that has to run before/after executing each scenario step</td>
     </tr>
 </table>
+
+\* Tag filtering: Indicates if the attribute hook can be scoped. E.g. `BeforeTestRun` is executed outside of the scenario scope, so at this point no scenarios and its possible tags are loaded. 
 
 You can annotate a single method with multiple attributes.
 
