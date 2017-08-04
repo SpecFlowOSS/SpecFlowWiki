@@ -6,24 +6,29 @@ You can invoke the “generate all” command from MsBuild. This allows you to u
 
 When adding a feature file, Visual Studio automatically enters "SpecFlowSingleFileGenerator" as the **Custom Tool** in the file's properties. You need to remove the custom tool in all your feature files:
 
-[[http://www.specflow.org/screenshots/CustomTool.png]]
+<img src=http://www.specflow.org/screenshots/CustomTool.png>
+
 
 ## Editing Your Project
 
 You need to add the following line to the end of the project file containing the feature files (e.g. with notepad):
-  ```xml
-  <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
-  ```
-  **Example:**
-  ```xml
-  ...
-  </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
-  ...
+
+```xml
+<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
+```
+
+**Example:**
+
+```xml
+...
+</ItemGroup>
+<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
+...
 </Project>
-  ```
-  The [[SpecFlow NuGet package|NuGet Integration]] contains all necessary files to support MsBuild generation in the `tools` folder. In order to be able to build your application in any environment, we recommend storing the SpecFlow tools together with your sources and using a relative path. 
+```
+
+The [[SpecFlow NuGet package|NuGet Integration]] contains all necessary files to support MsBuild generation in the `tools` folder. In order to be able to build your application in any environment, we recommend storing the SpecFlow tools together with your sources and using a relative path. 
 
 <!--
 REMOVED DUE TO  NOT CONTAINING ANY PERTINENT INFO. IF YOU KNOW WHAT THESE "FURTHER POSSIBILITIES" ARE, PLEASE ADD THEM HERE.
