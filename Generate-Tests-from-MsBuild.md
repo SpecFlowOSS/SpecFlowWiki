@@ -1,6 +1,16 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Generate-Tests-from-MsBuild]]. We use the GitHub wiki for authoring the documentation pages._
 
-You can invoke the “generate all” command from MsBuild. This allows you to update the unit test files before compiling the solution, which can be useful if feature files are regularly modified outside of Visual Studio. To do so, you need to add the following line to the end of the project file containing the feature files (e.g. with notepad):
+You can invoke the “generate all” command from MsBuild. This allows you to update the unit test files before compiling the solution, which can be useful if feature files are regularly modified outside of Visual Studio. 
+
+## Feature File Settings
+
+When adding a feature file, Visual Studio automatically enters "SpecFlowSingleFileGenerator" as the **Custom Tool** in the file's properties. You need to remove the custom tool in all your feature files:
+
+[[http://www.specflow.org/screenshots/CustomTool.png]]
+
+## Editing Your Project
+
+You need to add the following line to the end of the project file containing the feature files (e.g. with notepad):
   ```xml
   <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
   ```
@@ -25,6 +35,7 @@ See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/Bowl
 
 **WARNING:** If you are using NuGet package restore, restart Visual Studio and reopen your project. This is necessary so that Visual Studio can re-evaluate the project file and import the TechTalk.SpecFlow.targets.
 
+## Including Feature Files Dynamically
 If you are also adding, renaming or deleting feature files outside of Visual Studio, you can include these files in your project dynamically. To do so, add the following lines to your project file in a text editor:
 
 ```xml
@@ -41,6 +52,8 @@ If you are also adding, renaming or deleting feature files outside of Visual Stu
 ```
 
 An example can be found at: [[here|https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow.DynamicallyIncludedFeatureFiles)
+
+## Processing the Generated Files
 
 You can also further process the generated files. The `TechTalk.SpecFlow.targets` file defines two targets (`BeforeUpdateFeatureFilesInProject` and `AfterUpdateFeatureFilesInProject`) that can be overridden. Furthermore it outputs the list of generated files for the MsBuild item `@(SpecFlowGeneratedFiles)`.
 
