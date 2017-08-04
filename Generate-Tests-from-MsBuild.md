@@ -85,7 +85,7 @@ If you are also adding, renaming or deleting feature files outside of Visual Stu
 </Target>
 ```
 
-An example can be found at: [[here|https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow.DynamicallyIncludedFeatureFiles)
+An example can be found [[here|https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow.DynamicallyIncludedFeatureFiles)
 
 ## Processing the Generated Files
 
