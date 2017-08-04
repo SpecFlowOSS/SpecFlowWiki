@@ -30,15 +30,44 @@ You need to add the following line to the end of the project file containing the
 
 The [[SpecFlow NuGet package|NuGet Integration]] contains all necessary files to support MsBuild generation in the `tools` folder. In order to be able to build your application in any environment, we recommend storing the SpecFlow tools together with your sources and using a relative path. 
 
-<!--
-REMOVED DUE TO  NOT CONTAINING ANY PERTINENT INFO. IF YOU KNOW WHAT THESE "FURTHER POSSIBILITIES" ARE, PLEASE ADD THEM HERE.
-The TechTalk.SpecFlow.targets file can be investigated for further possibilities of calling this command from MsBuild.
-
-
-See example at: [[https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow)
--->
-
 **WARNING:** If you are using NuGet package restore, restart Visual Studio and reopen your project. This is necessary so that Visual Studio can re-evaluate the project file and import the TechTalk.SpecFlow.targets.
+
+## Additional Options
+The `TechTalk.SpecFlow.targets` file defines a number of default options in the following section:
+
+```xml
+<PropertyGroup>
+    <ShowTrace Condition="'$(ShowTrace)'==''">false</ShowTrace>
+    
+    <OverwriteReadOnlyFiles Condition="'$(OverwriteReadOnlyFiles)'==''">false</OverwriteReadOnlyFiles>
+    <ForceGeneration Condition="'$(ForceGeneration)'==''">false</ForceGeneration>
+    <VerboseOutput Condition="'$(VerboseOutput)'==''">false</VerboseOutput>
+</PropertyGroup>
+```
+* `ShowTrace`: If set to true, trace information is output.
+* `OverwriteReadOnlyFiles`: Overwrites any read-only files in the target directory. This can be useful if your feature files are read-only and part of your repository.
+* `ForceGeneration`: Forces the code-behind files to be regenerated, even if the content has not changed.
+* `VerboseOutput`: Toggles verbose output for troubleshooting.
+
+If you want to change these options, add the corresponding element to your project file **before** the `<Import>` element you added earlier.
+
+**Example:**
+
+```xml
+<PropertyGroup>
+  <ShowTrace>true</ShowTrace>
+  <VerboseOutput>true</VerboseOutput>
+</PropertyGroup>
+...
+</ItemGroup>
+<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
+...
+</Project>
+```
+
+You can find an example [[here|https://github.com/techtalk/SpecFlow-Examples/tree/master/BowlingKata/BowlingKata-GenateTestsFromMsBuild]] (project Bowling.SpecFlow)
+
 
 ## Including Feature Files Dynamically
 If you are also adding, renaming or deleting feature files outside of Visual Studio, you can include these files in your project dynamically. To do so, add the following lines to your project file in a text editor:
