@@ -5,4 +5,4 @@ When you want to perform web testing on multiple browsers and operating systems,
 
 Follow Kenneth Truyers [[blog|https://www.kenneth-truyers.net/2015/01/03/running-specflow-acceptance-tests-in-parallel-on-browserstack/]] for further information  
 
-Code sample - https://github.com/browserstack/specflow-browserstack
+Code sample - [[https://github.com/browserstack/specflow-browserstack|https://github.com/browserstack/specflow-browserstack]]
