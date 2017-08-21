@@ -24,7 +24,7 @@ The Visual Studio Test Adapter cache may also get corrupted, causing tests to no
 2. Navigate to your `%TEMP%\VisualStudioTestExplorerExtensions\` folder and delete any sub-folders related to SpecFlow/SpecRun.
 3. Reopen your solution and ensure that it builds.
 
-### Unable to find plugin in the plugin search path: SpecRun` when saving / generating feature files##
+### Unable to find plugin in the plugin search path: SpecRun` when saving / generating feature files
 
 SpecFlow searches for plugins in the NuGet packages folder. This is detected relative to the reference to `TechTalk.SpecFlow.dll`. If this DLL is not loaded from the NuGet folder, the plugins will not be found. 
 
@@ -47,6 +47,6 @@ It seems that VS2015 handles solution-level NuGet packages differently (those re
 
 To fix this issue, either re-install the SpecFlow+ Runner NuGet packages, or add the dependency on the `SpecRun.Runner` package (`<package id="SpecRun.Runner" version="1.2.0" />`) to the packages.config file of your SpecFlow projects. You might need to restart Visual Studio to see your tests.
 
-### VS2015: Tests turn grayish-green in the Test Explorer window after completing the execution of tests with SpecFlow+ Runner###
+### VS2015: Tests turn grayish-green in the Test Explorer window after completing the execution of tests with SpecFlow+ Runner
 
 This is a known cosmetic issue and will be addressed later.
