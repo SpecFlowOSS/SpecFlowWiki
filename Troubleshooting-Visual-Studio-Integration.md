@@ -41,7 +41,7 @@ The `SpecRun.Runner` NuGet package that contains the Visual Studio Test Explorer
    
 To fix this, open the NuGet console or the NuGet references dialog and click on the restore packages button. You may need to restart Visual Studio after restoring the packages.
 
-### VS2015: Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner###
+### VS2015: Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner
 
 It seems that VS2015 handles solution-level NuGet packages differently (those registered in the `.nuget\packages.config` file of the solution). As a result, solution-level NuGet packages must be listed in the projects that use them, otherwise Test Explorer cannot recognise the test runner.
 
