@@ -1,8 +1,8 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Configuration]]. We use the GitHub wiki for authoring the documentation pages._
 
-SpecFlow's behaviour can be configured extensively through a .NET configuration file called “App.config” (the standard configuration file convention for .NET) added to your project. SpecFlow processes the configuration file in acceptance test projects (the projects that contain the feature files).
+SpecFlow's behaviour can be configured extensively using the standard .NET configuration file, `App.config`, which is automatically added to your project. SpecFlow processes this configuration file in test projects containing feature files.
 
-Unlike other runtime-only tools, SpecFlow also processes the configuration file when generating the unit tests from feature files (which usually happens when you save the feature file). This means that once you have changed the configuration file, you may need to force the unit test to be regenerated if the configuration change affects the generated tests. The [[Visual Studio integration|Visual Studio 2010 Integration]] can detect changes to the configuration file and offers to regenerate the unit tests. You can also force unit tests to be regenerated in Visual Studio using the context menu of the project node in the solution explorer.
+Unlike other runtime-only tools, SpecFlow also processes the configuration file when generating the unit tests from feature files (which usually happens when you save the feature file). This means that once you have changed the configuration file, you may need to force the unit test to be regenerated if the configuration change affects the generated tests. The [[Visual Studio integration]] can detect changes to the configuration file and will prompt you to regenerate the tests. To force the unit tests to be regenerated, right-click on your project in Visual Studio's Solution Explorer and select **Regenerate Feature Files** from the menu.
 
 ## Default Configuration
 
@@ -50,7 +50,9 @@ The following example shows all possible configuration options with their defaul
 </specFlow>
 ```
 ### Configuration Elements
+
 #### `<language>`
+
 Use this section to define the default language for feature files and other language-related settings. For more details on language settings, see [[Feature Language]].
 
 <table>
