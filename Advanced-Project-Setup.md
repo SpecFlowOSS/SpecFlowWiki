@@ -14,7 +14,7 @@ SpecFlow projects require `TechTalk.SpecFlow.dll` (or one of the platform-specif
 
 The SpecFlow IDE integration tries to locate the generator component in your project structure in order to use the generator version matching the SpecFlow runtime in your project.
 
-If you installed SpecFlow with the NuGet package or have retained the original structure of the binary package, the generator will be located (based on the reference for the `TechTalk.SpecFlow.dll` assembly) without requiring any configuration. Otherwise, you need to take into account the following rules used to locate the generator (in order of priority, highest priority first):
+If you installed SpecFlow with the NuGet package or have retained the original structure of the binary package, the generator will be located without requiring any configuration, based on the reference to the `TechTalk.SpecFlow.dll` assembly. Otherwise, you need to take into account the following rules used to locate the generator (in order of priority, highest priority first):
  
 1. The generator path configured in app.config (`<generator path="..\lib\SpecFlow"/>`, see [[Configuration]])
 2. The same path as the generator assembly (`TechTalk.SpecFlow.Generator.dll`) referenced from the SpecFlow project
@@ -22,7 +22,7 @@ If you installed SpecFlow with the NuGet package or have retained the original s
 4. In the `tools` or `..\tools` directories relative to the runtime
 5. The generator obtained through NuGet (`..\..\tools`, relative to the runtime)
 
-If SpecFlow cannot find the generator or it is older than v1.6.0, the installed SpecFlow generator is used. If you use any custom plugins (e.g. unit test generator), they must be located in the same folder as the generator.
+If SpecFlow cannot find the generator, or it is older than v1.6.0, the installed SpecFlow generator is used. If you use any custom plugins (e.g. unit test generator), they must be located in the same folder as the generator.
 
 ## Required Assemblies
 
