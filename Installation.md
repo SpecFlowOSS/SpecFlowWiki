@@ -1,14 +1,12 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Installation]]. We use the GitHub wiki for authoring the documentation pages._
 
-_Note:_ If you are new to SpecFlow, we recommend checking out the [[quick introduction guide|http://go.specflow.org/getting-started]] first. The quick introduction takes you through the process of installing SpecFlow and setting up your first project and tests in Visual Studio. 
+_Note:_ If you are new to SpecFlow, we recommend checking out the [[Getting Started guide|http://go.specflow.org/getting-started]] first. The quick introduction takes you through the process of installing SpecFlow and setting up your first project and tests in Visual Studio. 
 
 SpecFlow consists of three components:
 
-* The **IDE Integration** that provides a customized editor and test generation functions within your development environment.
-
+* The **IDE Integration** that provides a customized editor and test generation functions within Visual Studio.
 * The **generator** that can turn Gherkin specifications into executable test classes.
-
-* The **runtime** required for executing the generated tests. There are different runtime assemblies compiled for the different target platforms (.NET, Silverlight, Windows Phone).
+* The **runtime** required for executing the generated tests. There are different runtime assemblies compiled for different target platforms (.NET, Silverlight, Windows Phone).
 
 In order to install everything you need, you first have to install the IDE integration and setup your project to work with SpecFlow. 
 
