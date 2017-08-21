@@ -2,7 +2,7 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 The SpecFlow tests are usually placed into one or more separate project in your solution: these are referred to as "SpecFlow projects". 
 
-The [[quick introduction guide|http://go.specflow.org/getting-started]] on our website provides a basic introduction to SpecFlow, including installing SpecFlow and setting up your first project. This page covers the available options in greater depth.
+The [[Getting Started guide|http://go.specflow.org/getting-started]] provides a basic introduction to SpecFlow, including installing SpecFlow and setting up your first project. This page covers the available options in greater depth.
 
 ## Step-by-Step Guide to Setting Up SpecFlow Projects Using NuGet
 
@@ -27,4 +27,3 @@ If you used one of the [[helper NuGet packages|NuGet Integration]] to install Sp
 ### 4. Add your first feature file
 
 Your project is now ready to use SpecFlow. You can add your first [[feature files|Using Gherkin Language In SpecFlow]] in Visual Studio be selecting *Add | New Item* and develop your applications according to the [[Specification by Example|http://www.specificationbyexample.com]] ([[Behavior Driven Development (BDD)|http://behaviour-driven.org/]] or [[Acceptance Test Driven Development (ATDD)|https://en.wikipedia.org/wiki/Acceptance_test-driven_development]]) paradigms. 
-
