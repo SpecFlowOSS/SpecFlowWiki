@@ -35,7 +35,7 @@ A common problem is that the NuGet folder is not yet ready (e.g. not restored) w
 3. Delete the `bin\Debug` folder from your project(s).
 4. Reopen your solution in Visual Studio.
 
-### Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner, even after after restoring the NuGet package###
+### Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner, even after after restoring the NuGet package
 
 The `SpecRun.Runner` NuGet package that contains the Visual Studio Test Explorer adapter is a solution-level package (registered in the `.nuget\packages.config` file of the solution). In some situations, NuGet package restore on build does not restore solution-level packages. 
    
