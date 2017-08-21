@@ -4,7 +4,7 @@ _Note:_ If you are new to SpecFlow, we recommend checking out the [[Getting Star
 
 SpecFlow consists of three components:
 
-* The **IDE Integration** that provides a customized editor and test generation functions within Visual Studio.
+* The **IDE Integration** that provides a customized editor and test generation functions within your IDE.
 * The **generator** that can turn Gherkin specifications into executable test classes.
 * The **runtime** required for executing the generated tests. There are different runtime assemblies compiled for different target platforms (.NET, Silverlight, Windows Phone).
 
