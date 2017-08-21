@@ -44,7 +44,7 @@ If your unit test framework does not support categories, you can still use tags 
 SpecFlow treats the `@ignore` tag as a special tag. SpecFlow generates an [[ignored unit test|Test-result#ignored-tests]] method from scenarios with this tag.
 
 ## Background
-The background language element allows specifying a common precondition for all scenarios in a feature file. The background part of the file can contain one or more scenario steps that are executed before any other steps of the scenarios. More details can be found [[here|https://github.com/cucumber/cucumber/wiki/Background]]
+The background language element allows specifying a common precondition for all scenarios in a feature file. The background part of the file can contain one or more scenario steps that are executed before any other steps of the scenarios. More details can be found [[here|https://github.com/cucumber/cucumber/wiki/Background]].
 
 SpecFlow generates a method from the background elements that is invoked from all unit tests generated for the scenarios.
 
