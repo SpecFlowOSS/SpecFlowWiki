@@ -7,7 +7,7 @@ The Gherkin language is maintained as a separate project on GitHub: [[https://gi
 This page focuses on how SpecFlow handles the different Gherkin language elements. 
 
 ## Features
-The feature element provides a header for the feature file. The feature element includes the name and a high level description of corresponding feature in your application. For more details, see [[https://github.com/cucumber/cucumber/wiki/Feature-Introduction]].
+The feature element provides a header for the feature file. The feature element includes the name and a high level description of the corresponding feature in your application. For more details, see [[https://github.com/cucumber/cucumber/wiki/Feature-Introduction]].
 
 SpecFlow generates a unit test class for the feature element, with the class name derived from the name of the feature.
 
