@@ -10,7 +10,7 @@ If there are no external dependencies or they can be cloned for parallel executi
 
 ## Parallel Execution Without Memory Isolation
 
-If your tests do not depend on any static states (ie. do not store any test-specific information in static fields), you can run the tests in parallel without AppDomain isolation. Executing tests this way has a smaller initialization footprint and lower memory requirements.
+If your tests do not depend on any static states (i.e. do not store any test-specific information in static fields), you can run the tests in parallel without AppDomain isolation. Executing tests this way has a smaller initialization footprint and lower memory requirements.
 
 To run SpecFlow tests in parallel without memory isolation, the following requirements must be met:
 
