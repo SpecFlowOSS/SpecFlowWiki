@@ -92,8 +92,4 @@ For reference, here are some sample implementations of an IRuntimePlugin and IGe
 
 [SpecFlow.FsCheck](https://github.com/gasparnagy/SpecFlow.FsCheck/blob/master/src/SpecFlow.FsCheck.SpecFlowPlugin/FsCheckPlugin.cs)
 
-
-[SpecFlow.Autofac]
-(https://github.com/phatcher/SpecFlow.Unity/blob/master/code/SpecFlow.Unity.SpecFlowPlugin/UnityPlugin.cs)
-
-
+[SpecFlow.Autofac](https://github.com/phatcher/SpecFlow.Unity/blob/master/code/SpecFlow.Unity.SpecFlowPlugin/UnityPlugin.cs)
