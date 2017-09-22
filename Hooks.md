@@ -15,7 +15,7 @@ Hooks are global, but can be restricted to run only for features or scenarios by
 ## SpecFlow+ Runner Restrictions
 When running tests in multiple threads with SpecFlow+ Runner, Before and After hooks such as BeforeTestRun and AfterTestRun are executed once for each thread. This is a limitation of the current architecture.
 
-If you need to execute specific steps once per test run, you can do this using [[deployment transformations|http://specflow.org/plus/documentation/SpecFlowPlus-Runner-Profiles/#DeploymentTransformation]]. An example can be found [[here|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/CustomDeploymentSteps]].
+If you need to execute specific steps once per test run, rather than once per thread, you can do this using [[deployment transformations|http://specflow.org/plus/documentation/SpecFlowPlus-Runner-Profiles/#DeploymentTransformation]]. An example can be found [[here|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/CustomDeploymentSteps]].
 
 ## Supported Hook Attributes
 
