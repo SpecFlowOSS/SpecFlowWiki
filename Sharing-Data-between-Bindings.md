@@ -1,8 +1,8 @@
-_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Sharing-Data-between-Bindings]]. We use the GitHub wiki for authoring the documentation pages._
+****************_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Sharing-Data-between-Bindings]]. We use the GitHub wiki for authoring the documentation pages._
 
 In many cases the different bindings have to exchange data during execution. SpecFlow provides several ways of sharing data between bindings.
 
-##Instance Fields
+## Instance Fields
 
 If the binding is an instance method, SpecFlow creates a new instance of the containing class for every scenario execution. Following the [[entity-based step organization rule|https://github.com/cucumber/cucumber/wiki/Step-Organisation]], defining instance fields in the binding classes is an efficient way of sharing data between different steps of the same scenario that are related to the same entity. 
 
@@ -30,7 +30,7 @@ public class SearchSteps
 }
 ```
 
-##Context Injection
+## Context Injection
 
 SpecFlow supports a very simple dependency framework that is able to instantiate and inject class instances for the scenarios. With this feature you can group the shared state to context-classes, and inject them into every binding class that is interested in that shared state.
 
@@ -71,7 +71,7 @@ public class BookSteps
 }
 ```
 
-##ScenarioContext and FeatureContext
+## ScenarioContext and FeatureContext
 
 SpecFlow provides two context instances. 
 
@@ -79,7 +79,7 @@ The [[ScenarioContext]] is created for each individual scenario execution and it
 
 The [[FeatureContext]] is created when the first scenario is executed from a feature and disposed when the execution of the feature's scenarios ends. In the rare case, when you need to preserve state in the context of a feature, the `FeatureContext.Current` instance can be used as a property bag. See [[FeatureContext]] for more details and examples. 
 
-##Static Fields
+## Static Fields
 
 Generally, using static fields can cause synchronization and maintenance issues and makes the unit testability hard. As the SpecFlow tests are executed synchronously and people usually don't write unit tests for the tests itself, these arguments are just partly valid for binding codes. 
 
