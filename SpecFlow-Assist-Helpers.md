@@ -42,6 +42,20 @@ The `CreateInstance<T>` method will create the Account object and set properties
 
 The headers in this table can be "Field" and "Value," or anything that you want.  What matters is that the first column has the property name and the second column has the value.
 
+Alternatively you can use ValueTuples and destructuring like so:
+
+``` c#
+[Given(@"Given I entered the following data into the new account form:")]
+public void x(Table table)
+{
+    var account = table.CreateInstance<Account>();
+    var account = table.CreateInstance<(string name, DateTime birthDate, int heightInInches, decimal bankAccountBalance)>();
+    // account.name will equal "John Galt", heightInInches will equal 72, etc.
+}
+```
+
+Important to note is that in the case of tuples _**you need to have the same number of parameters and types, parameter names won't matter**_ as ValueTuples don't hold parameter names at runtime using reflection.
+
 ## CreateSet<T>
 
 `CreateSet<T>` is an extension method off of `Table` that will convert the table data to a set of objects.  For example, if you have the following step:
