@@ -55,6 +55,7 @@ public void x(Table table)
 ```
 
 Important to note is that in the case of tuples _**you need to have the same number of parameters and types, parameter names won't matter**_ as ValueTuples don't hold parameter names at runtime using reflection.
+This feature is supported after version 2.2.1.
 
 ## CreateSet<T>
 
