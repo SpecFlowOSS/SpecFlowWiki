@@ -13,7 +13,7 @@ If you are new to Github, a good description of how to create pull requests can 
 
 **Important!** Please use autocrlf when committing to the SpecFlow repository (more details available [[here|http://help.github.com/dealing-with-lineendings/]]).
 
-###Useful information for contributors
+### Useful information for contributors
 
 * [[Building SpecFlow]]
 * CI build server: [[https://ci.appveyor.com/project/SpecFlow/specflow]]
