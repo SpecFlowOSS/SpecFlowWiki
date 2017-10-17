@@ -10,7 +10,7 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 ## Configuration
 
-In order to use bindings from an external binding assembly, you have to list it (with the assembly name) in the app.config of the SpecFlow project. The SpecFlow project is always included implicitly. See more details on the configuration in the [[<stepAssemblies> section of the configuration guide|Configuration]]
+In order to use bindings from an external binding assembly, you have to list it (with the assembly name) in the app.config of the SpecFlow project. The SpecFlow project is always included implicitly. See more details on the configuration in the `<stepAssemblies>` section of [[the configuration guide|Configuration]].
 
 ```xml
 <specFlow>
