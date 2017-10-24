@@ -21,7 +21,7 @@ Captures global services for test execution and the step definition, hook and tr
 * IRuntimePluginLoader
 * IBindingAssemblyLoader
 * IBindingInstanceResolver
-* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
+* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/TechTalk.SpecFlow/Plugins/IRuntimePlugin.cs)
  * RegisterGlobalDependencies- Event
  * CustomizeGlobalDependencies- Event
 
@@ -37,7 +37,7 @@ Captures services and state for executing the scenarios on a particular test thr
 * IStepDefinitionMatchService
 * ITraceListener
 * ITestTracer
-* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/Runtime/Plugins/IRuntimePlugin.cs)
+* [RuntimePlugins](https://github.com/techtalk/SpecFlow/blob/master/TechTalk.SpecFlow/Plugins/IRuntimePlugin.cs)
  * CustomizeTestThreadDependencies- Event
 
 
