@@ -54,7 +54,8 @@ public void x(Table table)
 }
 ```
 
-Important to note is that in the case of tuples _**you need to have the same number of parameters and types, parameter names won't matter**_ as ValueTuples don't hold parameter names at runtime using reflection.
+Important to note is that in the case of tuples _**you need to have the same number of parameters and types, parameter names won't matter**_ as ValueTuples don't hold parameter names at runtime using reflection. **Also scenarios with more than 7 properties are not supported yet, you'll get an exception if you try to map more.**
+
 This feature is supported after version 2.2.1.
 
 ## CreateSet<T>
