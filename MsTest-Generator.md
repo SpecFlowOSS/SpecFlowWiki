@@ -63,6 +63,8 @@ Output:
 ## Using Context Injection
 
 ```
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 public class MyStepDefs
 {
     private readonly TestContext _testContext;
