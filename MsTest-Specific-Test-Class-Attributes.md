@@ -28,6 +28,8 @@ Output:
 
 ## DeploymentItem
 
+### Example 1 : Copy a file to the same directory as the deployed test assemblies
+
 Tag:
 ```
 @MsTest:DeploymentItem:test.txt
@@ -36,4 +38,16 @@ Tag:
 Output:
 ```
 [Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute("test.txt")]
+```
+
+### Example 2 : Copy a file to a sub-directory relative to the deployment directory
+
+Tag:
+```
+@MsTest:DeploymentItem:Resources\DeploymentItemTestFile.txt:Data
+```
+
+Output:
+```
+[Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute("Resources\\DeploymentItemTestFile.txt", "Data")]
 ```
