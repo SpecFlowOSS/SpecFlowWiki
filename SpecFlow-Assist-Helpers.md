@@ -44,7 +44,7 @@ The headers in this table can be "Field" and "Value," or anything that you want.
 
 Alternatively you can use ValueTuples and destructuring like so:
 
-``` c#
+```c#
 [Given(@"Given I entered the following data into the new account form:")]
 public void x(Table table)
 {
