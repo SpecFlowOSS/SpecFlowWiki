@@ -173,6 +173,28 @@ The SpecFlow Assist helpers use the values found in your table to determine what
 
 Matches against properties on your object are case-insensitive and ignore spaces.  This allows you to make your tables more readable to others.
 
+## Aliasing
+(Note: Available with version 2.3 and later)
+
+If you have properties on your objects that are known by different terms within the business domain, these can be Aliased on your model by applying the attribute `TableAliases`.  This attribute takes a collection of aliases, as regular expressions, that can be used to refer to the property in question.
+
+For example, if you have an object representing an Employee, then you may wish to alias the `Surname` property like so:
+
+```c#
+    public class Employee
+    {
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
+
+        [TableAliases("Last[]?Name", "Family[]?Name"]
+        public string Surname { get; set; }
+    }
+```
+
+Test writers can then refer to this property as Surname, Last Name, Lastname, Family Name or FamilyName and it will be mapped to the correct column.
+
+The `TableAliases` Attribute can be applied to a field, or a property as a single attribute with multiple regular expressions, or as multiple attributes, depending on the user's preferences.
+
 ## Extensions
 
 Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like `String`, `Bool`, `Enum`, `Int`, `Decimal`, `DateTime`, etc. are all covered. All of the covered types can be found [here](https://github.com/techtalk/SpecFlow/tree/master/TechTalk.SpecFlow/Assist/ValueRetrievers). But if you want to cover more types, including your own custom types, you can by registering your own instances of `IValueRetriever` and `IValueComparer`.
