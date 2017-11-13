@@ -186,7 +186,7 @@ For example, if you have an object representing an Employee, then you may wish t
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
 
-        [TableAliases("Last[]?Name", "Family[]?Name"]
+        [TableAliases("Last[]?Name", "Family[]?Name")]
         public string Surname { get; set; }
     }
 ```
