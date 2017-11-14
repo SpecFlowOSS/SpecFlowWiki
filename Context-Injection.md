@@ -102,7 +102,7 @@ public class BookSteps
 }
 ```
 
-##Advanced options
+## Advanced options
 
 The container used by SpecFlow can be customized, e.g. you can include object instances created already or modify the resolution rules. 
 
