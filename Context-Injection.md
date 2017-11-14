@@ -18,7 +18,7 @@ Rules:
 
 The container used by SpecFlow can be customized, e.g. you can include object instances created already or modify the resolution rules. See the _Advanced options_ section below for details.
 
-##Examples
+## Examples
 
 In the first example we define a POCO for holding the data of a person and use it in a _given_ and a _then_ step that are placed in different binding classes.
 
