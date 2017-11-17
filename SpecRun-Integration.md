@@ -6,7 +6,7 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 SpecFlow+ Runner is provided as a Nuget package ([[SpecRun.SpecFlow|http://www.nuget.org/packages/SpecRun.SpecFlow]]). Detailed setup instructions can be found [[here|https://specflow.org/plus/documentation/SpecFlow--Runner-Installation/]]. 
 
-##Visual Studio Test Window Support
+## Visual Studio Test Window Support
 
 SpecFlow+ Runner allows you to run and debug your scenarios as first class citizens:
 
@@ -20,7 +20,7 @@ SpecFlow+ Runner allows you to run and debug your scenarios as first class citiz
   * View test execution results
 * You can specify [[processor architecture (x86/x64), .NET platform and many other details for the test execution|https://specflow.org/plus/documentation/Environment/]], including special [[config file transformations|https://specflow.org/plus/documentation/DeploymentTransformation/]] used for the test execution only. 
 
-##Team Foundation Server Support
+## Team Foundation Server Support
 
 The SpecRun NuGet package contains all necessary integration components for Team Foundation Server Build, and you do not need to make any additional configuration or build process template modifications for TFS Build to execute your scenarios. You can also:
 
@@ -30,7 +30,7 @@ The SpecRun NuGet package contains all necessary integration components for Team
 
 More information on using SpecFlow+ Runner with build servers can be found [[here|https://specflow.org/plus/documentation/SpecFlowPlus-and-Build-Servers/]].
 
-##Test Execution Features
+## Test Execution Features
 
 [[SpecRun|http://www.specrun.com]] is a smarter integration test runner for SpecFlow: 
 
