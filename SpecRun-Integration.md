@@ -1,37 +1,34 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecRun-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
-[[SpecRun|http://www.specrun.com]] is a test execution framework specialized for SpecFlow that provides enhanced integration to the Visual Studio testing infrastructure and to the Team Foundation Server (TFS) Build. Find out more on the [[SpecRun website|http://www.specrun.com]].
+[[SpecFlow+ Runner (formerly "SpecRun")|http://specflow.org/plus/runner/]] is a dedicated test execution framework for SpecFlow. SpecFlow+ Runner integrates more tightly with Visual Studio's testing infrastructure and Team Foundation Server (TFS) Build. The documentation for SpecFlow+ can be found [[here|http://specflow.org/plus/documentation/]].
 
-##Installation
+## Installation
 
-The SpecRun integration is very easy: just add the `[[SpecRun.SpecFlow|http://www.nuget.org/packages/SpecRun.SpecFlow]]` NuGet package to your SpecFlow project and you are ready to run. 
+SpecFlow+ Runner is provided as a Nuget package ([[SpecRun.SpecFlow|http://www.nuget.org/packages/SpecRun.SpecFlow]]). Detailed setup instructions can be found [[here|https://specflow.org/plus/documentation/SpecFlow--Runner-Installation/]]. 
 
 ##Visual Studio Test Window Support
 
-With [[SpecRun|http://www.specrun.com]], you can run and debug your scenarios as first class citizens:
+SpecFlow+ Runner allows you to run and debug your scenarios as first class citizens:
 
-* You can run or debug individual scenarios or scenario outline examples from the feature file editor (choose "Run/Debug SpecFlow Scenarios" from the context menu)
-* The scenarios are displayed int the test window with the scenario title
-* From the test window, you can 
-  * group the scenarios by tags (choose "Traits" grouping) and features (choose "Class")
-  * filter scenarios by different criteria
-  * run or debug selected or all scenarios
-  * jump to the scenario in the feature file
-  * view test execution results
-* You can specify processor architecture (x86/x64), .NET platform and many other details for the test execution, including special config file transformation used for the test execution only. (See the short [[introduction video|http://go.specflow.org/specrun-testenv]].)
-
-See the short [[introduction video|http://go.specflow.org/specrun-vs2013]] about Visual Studio integration.
+* Run/debug individual scenarios or scenario outline examples from the feature file editor (choose "Run/Debug SpecFlow Scenarios" from the context menu)
+* View scenarios in the Visual Studio Test Explorer window with the scenario title
+* Use the Test Explorer to:
+  * Group scenarios by tags (choose "Traits" grouping) and features (choose "Class")
+  * Filter scenarios by different criteria
+  * Run/debug selected/all scenarios
+  * Jump to the corresponding scenario in the feature file
+  * View test execution results
+* You can specify [[processor architecture (x86/x64), .NET platform and many other details for the test execution|https://specflow.org/plus/documentation/Environment/]], including special [[config file transformations|https://specflow.org/plus/documentation/DeploymentTransformation/]] used for the test execution only. 
 
 ##Team Foundation Server Support
 
-The SpecRun NuGet package contains all necessary integration components for Team Foundation Server Build, and you don't need to do any additional configuration or build process template modification to let TFS build execute your scenarios, and even more:
+The SpecRun NuGet package contains all necessary integration components for Team Foundation Server Build, and you do not need to make any additional configuration or build process template modifications for TFS Build to execute your scenarios. You can also:
 
 * Display scenario titles in the execution result
 * Generate detailed and customizable HTML report
-* Allows filtering scenarios in the TFS build definition
-* The integration also works with the hosted Team Foundation Service ([[http://tfs.visualstudio.com/]])
+* Filter scenarios in the TFS build definition
 
-See the short [[introduction video|http://go.specflow.org/specrun-tfs]] on this topic.
+More information on using SpecFlow+ Runner with build servers can be found [[here|https://specflow.org/plus/documentation/SpecFlowPlus-and-Build-Servers/]].
 
 ##Test Execution Features
 
