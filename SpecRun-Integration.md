@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecRun-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
-[[SpecFlow+ Runner (formerly "SpecRun")|http://specflow.org/plus/runner/]] is a dedicated test execution framework for SpecFlow. SpecFlow+ Runner integrates more tightly with Visual Studio's testing infrastructure and Team Foundation Server (TFS) Build. The documentation for SpecFlow+ can be found [[here|http://specflow.org/plus/documentation/]].
+[[SpecFlow+ Runner|http://specflow.org/plus/runner/]] (formerly "SpecRun") is a dedicated test execution framework for SpecFlow. SpecFlow+ Runner integrates more tightly with Visual Studio's testing infrastructure and Team Foundation Server (TFS) Build. The documentation for SpecFlow+ can be found [[here|http://specflow.org/plus/documentation/]].
 
 ## Installation
 
