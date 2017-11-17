@@ -118,6 +118,10 @@ The following lists all supported providers with their name and generator provid
   <th>Runtime Provider</th>
  </tr>
  <tr>
+  <td>specrun</td>
+  <td>SpecRunTestGeneratorProvider, see [[the SpecFlow+ documentation|https://specflow.org/plus/documentation/]]</td>
+ </tr>
+ <tr>
   <td>nunit</td>
   <td>NUnit3TestGeneratorProvider</td>
  </tr>
@@ -134,36 +138,20 @@ The following lists all supported providers with their name and generator provid
   <td>MbUnit3TestGeneratorProvider</td>
  </tr>
  <tr>
-  <td>xunit</td>
+  <td>xunit.1</td>
   <td>XUnitGeneratorProvider</td>
+ </tr>
+ <tr>
+  <td>xunit</td>
+  <td>XUnit2GeneratorProvider</td>
  </tr>
  <tr>
   <td>mstest.2008</td>
   <td>MsTestGeneratorProvider</td>
  </tr>
  <tr>
-  <td>mstest.2010</td>
-  <td>MsTest2010GeneratorProvider</td>
- </tr>
- <tr>
   <td>mstest</td>
   <td>MsTest2010GeneratorProvider</td>
- </tr>
- <tr>
-  <td>mstest.silverlight</td>
-  <td>MsTestSilverlightGeneratorProvider</td>
- </tr>
- <tr>
-  <td>mstest.silverlight3</td>
-  <td>MsTestSilverlightGeneratorProvider</td>
- </tr>
- <tr>
-  <td>mstest.silverlight4</td>
-  <td>MsTestSilverlightGeneratorProvider</td>
- </tr>
- <tr>
-  <td>mstest.windowsphone7</td>
-  <td>MsTestSilverlightGeneratorProvider</td>
  </tr>
 </table>
 </td>
