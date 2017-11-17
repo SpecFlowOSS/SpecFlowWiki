@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/SpecFlow-Assist-Helpers]]. We use the GitHub wiki for authoring the documentation pages._
 
-To use these helpers, you need to add the `TechTalk.SpecFlow.Assist` namespace to the top of your file.
+To use these helpers, you need to add the `TechTalk.SpecFlow.Assist` namespace to the top of your file:
 
 ```c#
 using TechTalk.SpecFlow.Assist;
@@ -8,7 +8,7 @@ using TechTalk.SpecFlow.Assist;
 
 ## CreateInstance<T>
 
-`CreateInstance<T>` is an extension method off of `Table` that will convert the table data to an object.  For example, if you list data in a table that lists the values of your object like this:
+`CreateInstance<T>` is an extension method of `Table` that will convert the table data to an object. For example, if you list data in a table that lists the values of your object like this:
 
 ```gherkin
 Given I entered the following data into the new account form:
@@ -19,7 +19,7 @@ Given I entered the following data into the new account form:
 | BankAccountBalance | 1234.56    |
 ```
 
-or in a horizontal table like this:
+... or in a horizontal table like this:
 
 ```gherkin
 Given I entered the following data into the new account form:
@@ -27,7 +27,7 @@ Given I entered the following data into the new account form:
 | John Galt | 2/2/1902  | 72             | 1234.56            |
 ```
 
-You can convert the data in the table to an instance of an object like so:
+... you can convert the data in the table to an instance of an object like this:
 
 ```c#
 [Given(@"Given I entered the following data into the new account form:")]
@@ -38,11 +38,11 @@ public void x(Table table)
 }
 ```
 
-The `CreateInstance<T>` method will create the Account object and set properties according to what can be read from the table.  It also will use the appropriate casting or conversion to turn your string into the appropriate type.
+The `CreateInstance<T>` method will create the Account object and set properties according to what can be read from the table. It also uses the appropriate casting or conversion to turn your string into the appropriate type.
 
-The headers in this table can be "Field" and "Value," or anything that you want.  What matters is that the first column has the property name and the second column has the value.
+The headers in this table can be anything you want, e.g. "Field" and "Value". What matters is that the first column contains the property name and the second column the value.
 
-Alternatively you can use ValueTuples and destructuring like so:
+Alternatively you can use ValueTuples and destructuring:
 
 ```c#
 [Given(@"Given I entered the following data into the new account form:")]
@@ -53,14 +53,14 @@ public void x(Table table)
     // account.name will equal "John Galt", heightInInches will equal 72, etc.
 }
 ```
+This feature is supported from version 2.2.1.
 
-Important to note is that in the case of tuples _**you need to have the same number of parameters and types, parameter names won't matter**_ as ValueTuples don't hold parameter names at runtime using reflection. **Also scenarios with more than 7 properties are not supported yet, you'll get an exception if you try to map more.**
-
-This feature is supported after version 2.2.1.
+**Important:** In the case of tuples, _**you need to have the same number of parameters and types; parameter names do not matter**_, as ValueTuples do not hold parameter names at runtime using reflection.
+**Scenarios with more than 7 properties are not currently supported, and you will receive an exception if you try to map more properties.** 
 
 ## CreateSet<T>
 
-`CreateSet<T>` is an extension method off of `Table` that will convert the table data to a set of objects.  For example, if you have the following step:
+`CreateSet<T>` is an extension method of `Table` that converts table data into a set of objects. For example, assume you have the following step:
 
 ```gherkin
 Given these products exist
@@ -69,7 +69,7 @@ Given these products exist
 | BOOK2            | The Fountainhead | 20.15 |
 ```
 
-You can convert the data in the table to a set of objects like so:
+You can convert the data in the table to a set of objects like this:
 
 ```c#
 [Given(@"Given these products exist")]
@@ -80,11 +80,11 @@ public void x(Table table)
 }
 ```
 
-The `CreateSet<T>` method will return an IEnumerable<T> based on the data that matches in the table.  It will fill the values for each object, doing the appropriate conversions from string to the related property.
+The `CreateSet<T>` method returns an `IEnumerable<T>` based on the matching data in the table. It contains the values for each object, making appropriate type conversions from string to the related property.
 
 ## CompareToInstance<T>
 
-`CompareToInstance<T>` makes it easy to compare the properties of an object against a table. For example, say you have a class like this:
+`CompareToInstance<T>` makes it easy to compare the properties of an object against a table. For example, you have a class like this:
 
 ```c#
 public class Person
@@ -95,7 +95,7 @@ public class Person
 }
 ```
 
-and you want to compare it to a table in a step like this:
+You want to compare it to a table in a step like this:
 
 ```gherkin
 Then the person should have the following values
@@ -117,13 +117,13 @@ public void x(Table table){
 }
 ```
 
-If FirstName does not match "John", LastName does not match "Galt", or YearsOld does not match 54, a descriptive error showing the differences will be thrown.
+If FirstName is not "John", LastName is not "Galt", or YearsOld is not 54, a descriptive error showing the differences is thrown.
 
-If they do match, no exception will be thrown and SpecFlow will continue to process your scenario.
+If the values match, no exception is thrown, and SpecFlow continues to process your scenario.
 
 ## CompareToSet<T>
 
-`CompareToSet<T>` makes it easy to compare the values in a table to a set of objects.  For example, say you have a class like this:
+`CompareToSet<T>` makes it easy to compare the values in a table to a set of objects. For example, you have a class like this:
 
 ```c#
 public class Account
@@ -135,7 +135,7 @@ public class Account
 }
 ```
 
-And you want to test that your system returns a specific set of accounts, like so:
+You want to test that your system returns a specific set of accounts, like this:
 
 ```gherkin
 Then I get back the following accounts
@@ -144,7 +144,7 @@ Then I get back the following accounts
 | 2      | Howard    | Roark    |
 ```
 
-You can test you results with one call to CompareToSet<T>, like so:
+You can test you results with one call to CompareToSet<T>:
 
 ```c#
 [Then("I get back the following accounts")]
@@ -155,30 +155,29 @@ public void x(Table table){
 }
 ```
 
-In this example, `CompareToSet<T>` will test that two accounts were returned, and it will test only the properties that you define in the table.  **It does not test the order of the objects, only that one was found that matches.**  If it cannot find a record that matches the properties in your table, the exception that is thrown will return the row number(s) that did not match.
+In this example, `CompareToSet<T>` checks that two accounts are returned, and only tests the properties you defined in the table. **It does not test the order of the objects, only that one was found that matches.**  If no record matching the properties in your table is found, an exception is thrown that includes the row number(s) that do not match up.
 
 ## Column naming
 
-The SpecFlow Assist helpers use the values found in your table to determine what properties to set on your object.  However, the names on the column do not have to be an exact match.  For example, this table:
+The SpecFlow Assist helpers use the values in your table to determine what properties to set in your object. However, the names of the columns do not need to match exactly - whitespace and casing is ignored. For example, the following two tables are treated as identical:
 
 ```gherkin
 | FirstName | LastName | DateOfBirth | HappinessRating |
 ```
 
-... will be evaluated the same as this table:
-
 ```gherkin
 | First name | Last name | Date of birth | HAPPINESS rating |
 ```
 
-Matches against properties on your object are case-insensitive and ignore spaces.  This allows you to make your tables more readable to others.
+This allows you to make your tables more readable to others.
 
 ## Aliasing
-(Note: Available with version 2.3 and later)
 
-If you have properties on your objects that are known by different terms within the business domain, these can be Aliased on your model by applying the attribute `TableAliases`.  This attribute takes a collection of aliases, as regular expressions, that can be used to refer to the property in question.
+*(Note: Available with version 2.3 and later)*
 
-For example, if you have an object representing an Employee, then you may wish to alias the `Surname` property like so:
+If you have properties in your objects that are known by different terms within the business domain, these can be Aliased in your model by applying the attribute `TableAliases`. This attribute takes a collection of aliases as regular expressions that can be used to refer to the property in question.
+
+For example, if you have an object representing an Employee, you might want to alias the `Surname` property:
 
 ```c#
     public class Employee
@@ -191,15 +190,15 @@ For example, if you have an object representing an Employee, then you may wish t
     }
 ```
 
-Test writers can then refer to this property as Surname, Last Name, Lastname, Family Name or FamilyName and it will be mapped to the correct column.
+Test writers can then refer to this property as Surname, Last Name, Lastname, Family Name or FamilyName, and it will still be mapped to the correct column.
 
-The `TableAliases` Attribute can be applied to a field, or a property as a single attribute with multiple regular expressions, or as multiple attributes, depending on the user's preferences.
+The `TableAliases` attribute can be applied to a field, a property as a single attribute with multiple regular expressions, or as multiple attributes, depending on your preference.
 
 ## Extensions
 
-Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types.  Types like `String`, `Bool`, `Enum`, `Int`, `Decimal`, `DateTime`, etc. are all covered. All of the covered types can be found [here](https://github.com/techtalk/SpecFlow/tree/master/TechTalk.SpecFlow/Assist/ValueRetrievers). But if you want to cover more types, including your own custom types, you can by registering your own instances of `IValueRetriever` and `IValueComparer`.
+Out-of-the-box, the SpecFlow table helpers knows how to handle most C# base types. Types like `String`, `Bool`, `Enum`, `Int`, `Decimal`, `DateTime`, etc. are all covered. The covered types can be found [here](https://github.com/techtalk/SpecFlow/tree/master/TechTalk.SpecFlow/Assist/ValueRetrievers). If you want to cover more types, including your own custom types, you can do so by registering your own instances of `IValueRetriever` and `IValueComparer`.
 
-For example, if you have a complex object like this:
+For example, you have a complex object like this:
 
 ```c#
     public class Shirt
@@ -209,7 +208,7 @@ For example, if you have a complex object like this:
     }
 ```
 
-And you have a table like this:
+You have a table like this:
 
 ```gherkin
 | Name | Color |
@@ -217,9 +216,9 @@ And you have a table like this:
 | L    | Red   |
 ```
 
-And you want to map `Blue` and `Red` to the appropriate instance of `Color` class, you'll need to create an instance of `IValueRetriever` that can convert the strings into the `Color` instance.
+If you want to map `Blue` and `Red` to the appropriate instance of the `Color` class, you need to create an instance of `IValueRetriever` that can convert the strings to the `Color` instance.
 
-You can register your special `IValueRetriever` (and/or an instance of `IValueComparer` if you want to compare colors) like so:
+You can register your special `IValueRetriever` (and/or an instance of `IValueComparer` if you want to compare colors) like this:
 
 ```c#
 [Binding]
