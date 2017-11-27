@@ -55,9 +55,9 @@
 * Platform Support
     * [[.NET Support]]
     * [[Mono Support]]
-    * [[Silverlight Support]]
+<!--    * [[Silverlight Support]]
         * [[Testing Silverlight Asynchronous Code]]
-    * [[Windows Phone 7 Support]]
+    * [[Windows Phone 7 Support]] -->
 * Cloud Services
     * [[Running SpecFlow tests on BrowserStack]]
 * [[FAQ]]
