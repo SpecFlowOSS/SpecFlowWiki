@@ -2,7 +2,7 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 The Visual Studio integration includes the following features to make it easier to edit feature files and identify which steps have already been bound.
 
-# Gherkin Syntax Highlighting
+## Gherkin Syntax Highlighting
 Various default styles have been defined for the Gherkin syntax. You can customise these colours in Visual Studio's settings (**Tools | Options | Environment | Fonts and Colors**). The names of the corresponding **Display items** in the list begin with "Gherkin".
 
 In addition to highlighting keywords, comments, tags etc., unbound steps and parameters in feature files are highlighted when editing the file in Visual Studio. The following syntax highlighting is used by default:  
@@ -13,10 +13,10 @@ In addition to highlighting keywords, comments, tags etc., unbound steps and par
 
 You can thus tell immediately which steps in a feature file have been bound.
 
-# IntelliSense (auto-completion) for Keywords and Steps
+## IntelliSense (auto-completion) for Keywords and Steps
 IntelliSense makes SpecFlow easy to use when integrated with Visual Studio. IntelliSense uses find-as-you-type to restrict the list of suggested entries.
 
-##Gherkin Files
+### Gherkin Files
 IntelliSense is available in feature files for the following:  
 
 * Gherkin keywords (e.g. `Scenario`, `Given` etc.)
@@ -26,10 +26,10 @@ IntelliSense is available in feature files for the following:
 _(click image for full size)_  
 The IntelliSense suggestions (red rectangle) for the **Given** step include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
 
-##Code Files
+### Code Files
 IntelliSense is also available for the Gherkin keywords in your code files.
 
-# Outlining and Comments in Feature Files
+## Outlining and Comments in Feature Files
 Most of the items in the **Edit** menu work well with SpecFlow feature files, for example:
 
 * You can comment and uncomment selected lines ('#' character) with the default shortcut for comments (Ctrl+K Ctrl+C/Ctrl+K Ctrl+U) or from the menu
@@ -37,7 +37,7 @@ Most of the items in the **Edit** menu work well with SpecFlow feature files, fo
 [![VS2010 Edit menu](http://specflow.org/media/outlining_editor.png)](http://specflow.org/media/outlining_editor.png)  
 _(click image for full size)_
 
-#Table Formatting
+## Table Formatting
 Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values:
 
 [![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)  
