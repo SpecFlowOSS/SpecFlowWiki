@@ -16,6 +16,6 @@ To navigate from a step in a Gherkin feature file to the corresponding step defi
 1. Right-click and select **Go To Step Definition** from the menu (Alt+Ctrl+Shift+S).
 1. The file containing the binding is opened at the appropriate step definition method.  
   **Note:** If the steps definition does not exists, a message is displayed instead:  
-  [![Not existing steps definition](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/NotExistingDefinition.png)
+  [![Not existing steps definition](http://specflow.org/screenshots/NotExistingDefinition.png)](http://specflow.org/screenshots/NotExistingDefinition.png)
 _(click image for full size)_  
   Click on **Yes** to copy the skeleton code for your step to the clipboard, so you can paste it in the corresponding code file.
