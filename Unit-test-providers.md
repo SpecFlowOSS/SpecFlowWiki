@@ -44,20 +44,6 @@ The following table contains the built-in unit test providers.
         <td>MsTest provider for .NET 4.0. Supports test categories. Specialized [[NuGet package|NuGet Integration]] available for easy setup: SpecFlow.MsTest.</td>
     </tr>
     <tr>
-        <td>MsTest.Silverlight <br/> MsTest.Silverlight3 <br/> MsTest.Silverlight4</td>
-        <td>-</td>
-        <td>+</td>
-        <td>+</td>
-        <td>Silverlight Unit Test Framework [[http://code.msdn.microsoft.com/silverlightut]]. See [[Silverlight Support]].</td>
-    </tr>
-    <tr>
-        <td>MsTest.WindowsPhone7</td>
-        <td>-</td>
-        <td>+</td>
-        <td>+</td>
-        <td>See [[Windows Phone 7 Support]].</td>
-    </tr>
-    <tr>
         <td>xUnit</td>
         <td>+</td>
         <td>-</td>
