@@ -22,7 +22,7 @@ IntelliSense is available in feature files for the following:
 * Gherkin keywords (e.g. `Scenario`, `Given` etc.)
 * Existing steps are listed after a `Given`, `When` or `Then` statement, providing quick access to your current steps definitions. Bound steps are indicated with "-->". Note that **all the steps in all "*.feature" files** that match the current type (Given, When, Then) are displayed:  
 
-[![Specflow Integrated with Visual Studio and IntelliSense](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png) ](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/IntilliSense.png)  
+[![Specflow Integrated with Visual Studio and IntelliSense](http://specflow.org/screenshots/IntelliSense.png) ](http://specflow.org/screenshots/IntelliSense.png)  
 _(click image for full size)_  
 The IntelliSense suggestions (red rectangle) for the **Given** step include the two existing Given steps in "GetProducts.feature" and "AddProducts.feature". Step definition methods have been defined for these steps; the entries in the list contain "-->" to indicate that the step has been bound.
 
@@ -40,5 +40,5 @@ _(click image for full size)_
 ## Table Formatting
 Tables in SpecFlow are also expanded and formatted automatically as you enter column names and values:
 
-[![Formatted table](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)](http://i734.photobucket.com/albums/ww347/rommelmanalo/Specflow/FormattedTable.png)  
+[![Formatted table](http://specflow.org/screenshots/FormattedTable.png)](http://specflow.org/screenshots/FormattedTable.png)  
 _(click image for full size)_
