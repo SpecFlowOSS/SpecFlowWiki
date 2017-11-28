@@ -159,12 +159,12 @@ The following lists all supported providers with their name and generator provid
     <tr>
         <td>generatorProvider</td>
         <td>class name</td>
-        <td>Obsolete; will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
+        <td>Legacy option, unsupported from v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
     <tr>
         <td>runtimeProvider</td>
         <td>class name</td>
-        <td>Obsolete; will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
+        <td>Legacy option, unsupported from v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
 </table>
 
@@ -225,7 +225,7 @@ Use this section to specify various test execution options.
     <tr>
         <td>detectAmbiguousMatches</td>
         <td>true|false</td>
-        <td>Obsolete, will be removed in v2.0.<br/>
+        <td>Legacy option, unsupported from v2.0.<br/>
             <b>Default:</b> true</td>
     </tr>
     <tr>
@@ -285,7 +285,7 @@ Use this section to determine the SpecFlow trace output.
     <tr>
         <td>Listener</td>
         <td>class name</td>
-        <td>Obsolete, will be removed in v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
+        <td>Legacy option, unsupported from v2.0. Use [[<code>&lt;plugins&gt;</code>|Plugins]] instead.</td>
     </tr>
 </table>
 
