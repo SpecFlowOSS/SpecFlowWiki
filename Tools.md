@@ -20,7 +20,7 @@ The following arguments are available.
     </tr>
     <tr>
         <td>projectFile</td>
-        <td>**required**</td>
+        <td><b>required</b></td>
         <td>The path to the project file containing the feature files.</td>
     </tr>
     <tr>
