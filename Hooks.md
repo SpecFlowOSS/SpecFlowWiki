@@ -83,6 +83,8 @@ The value provided for the order attribute specifies the order, not the priority
 
 If no order is specified, the default order of 1000 is used. It is not recommended to depend on this default value though.
 
+**Note:** If an After hook throws an unhandled exception, subsequent hooks of the same type are not executed. If you want to ensure that all hooks of the same types are executed, you need to handle your exceptions manually.
+
 ## Tag Scoping
 
 Most hooks support tag scoping, which means they are executed only if the feature or the scenario has *at least one* of the tags specified in the tag filter (tags are combined with OR). You can specify the tag in the attribute or using [[scoped bindings]].
