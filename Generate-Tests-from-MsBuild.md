@@ -31,6 +31,17 @@ When adding a feature file, Visual Studio automatically enters "SpecFlowSingleFi
 
 <img src=http://www.specflow.org/screenshots/CustomTool.png>
 
+If you remove the code generator, or are also adding, renaming or deleting feature files outside of Visual Studio, you can include these files in your project dynamically. To do so, add the following lines to your project file (.csproj) in a text editor:
+
+```xml
+<Target Name="AfterUpdateFeatureFilesInProject">
+    <!-- include any files that specflow generated into the compilation of the project -->
+    <ItemGroup>
+        <Compile Include="@(SpecFlowGeneratedFiles)" />
+    </ItemGroup>
+</Target>
+```
+
 ## Define Additional Options (optional)
 The `TechTalk.SpecFlow.targets` file defines a number of default options in the following section:
 
