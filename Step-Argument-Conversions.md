@@ -1,36 +1,35 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Step-Argument-Conversions]]. We use the GitHub wiki for authoring the documentation pages._
 
-The [[step bindings]] can define parameters for better reusability. The arguments to execute the step bindings are calculated from the step text (with the regular expression groups) or the additional multi-line text or table arguments. These original arguments are provided as strings or `TechTalk.SpecFlow.Table` instances.
+[[Step bindings]] can use parameters to make them reusable for similar steps. The parameters are taken from either the step's text or from the values in additional examples. These arguments are provided as either strings or `TechTalk.SpecFlow.Table` instances.
 
-To avoid cumbersome conversions in the step binding methods, SpecFlow can do automatic conversion from the original argument to the parameter type of the method. 
-
-All conversions are performed with the culture of the feature file, unless the [[&lt;bindingCulture&gt; element|Configuration]] is used in the configuration. See [[Feature Language]] for details.
-
-The following conversions can be performed by SpecFlow (in the following precedence):
+To avoid cumbersome conversions in the step binding methods, SpecFlow can perform an automatic conversion from the arguments to the parameter type in the binding method. All conversions are performed using the culture of the feature file, unless the [[&lt;bindingCulture&gt; element|Configuration]] is defined in your `app.config` file (see [[Feature Language]]). The following conversions can be performed by SpecFlow (in the following precedence):
 
 * no conversion, if the argument is an instance of the parameter type (e.g. the parameter type is `object` or `string`)
 * step argument transformation
 * standard conversion
 
+<!-- why is this not the order of the bulleted list above? -->
+
 ## Standard Conversion
 
 A standard conversion is performed by SpecFlow in the following cases:
 
-* the argument can be converted to the parameter type with `Convert.ChangeType()`
-* the parameter type is an `enum` type and the (string) argument is an enum value
-* the parameter type is `Guid` and the argument contains a full GUID string or a GUID string prefix. In the later case the value will be filled with trailing zeroes.
+* The argument can be converted to the parameter type using `Convert.ChangeType()`
+* The parameter type is an `enum` type and the (string) argument is an enum value
+* The parameter type is `Guid` and the argument contains a full GUID string or a GUID string prefix. In the latter case, the value is filled with trailing zeroes.
 
 ## Step Argument Transformation
 
-The step argument transformations can be used to apply a custom conversion step for the arguments of the step definitions. The step argument transformation is a method that provides a conversion from text (specified by a regular expression) or from a `Table` instance to an arbitrary .NET type. 
+Step argument transformations can be used to apply a custom conversion step to the arguments in step definitions. The step argument transformation is a method that converts from text (specified by a regular expression) or a `Table` instance to an arbitrary .NET type.
 
-A step argument transformation is selected for converting an argument when
+A step argument transformation is used to convert an argument if:
 
-* the return type of the transformation is the same as the parameter type
-* the regular expression (if specified) is matching to the original (string) argument
-* if there are multiple matching transformation available, a warning is provided in the trace and the first transformation is used
+* The return type of the transformation is the same as the parameter type
+* The regular expression (if specified) matches the original (string) argument
 
-The following example defines a transformation to a `DateTime` structure from relative day specifications, like `in 3 days`.
+**Note:** If multiple matching transformation are available, a warning is output in the trace and the first transformation is used.
+
+The following example transforms a relative period of time (`in 3 days`) into a `DateTime` structure.
 
 ```c#
 [Binding]
@@ -44,7 +43,7 @@ public class Transforms
 }
 ```
 
-The following example defines a transformation from any string input (no regex provided) to an `XmlDocument`.
+The following example transforms any string input (no regex provided) into an `XmlDocument`.
 
 ```c#
 [Binding]
@@ -60,7 +59,7 @@ public class Transforms
 }
 ```
 
-The following example defines a transformation from a table argument to a list of `Book` entities (using the [[SpecFlow Assist Helpers]]). 
+The following example transforms a table argument into a list of `Book` entities (using the [[SpecFlow Assist Helpers]]). 
 
 ```c#
 [Binding]
