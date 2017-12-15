@@ -5,18 +5,28 @@ SpecFlow's `generateall` function can also be used with MSBuild, allowing you to
 To be able to use this function, you need to update your project file. There are also a number of other options you can configure.
 
 ## Edit Your Project File
-In order to use the `generateall` function with MSBuild, you need to update your project file. Add the following line to the end of the Visual Studio project file of the project containing the feature files (e.g. with notepad):
+In order to use the `generateall` function with MSBuild, you need to update your project file. Add the following lines to the end of the Visual Studio project file of the project containing the feature files (e.g. with notepad):
 
 ```xml
+<PropertyGroup>
+    <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
+</PropertyGroup>
+<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks"  Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks')" />
 <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
 ```
 
 **Example:**
 
+(**Note** the example assumes the project is referencing the SpecFlow 2.2.0 NuGet package. The user should replace "..\packages\SpecFlow.2.2.0\tools" with a path relative form the project file that points to the version specific SpecFlow tools folder used by the project. It is important that the <PropertyGroup> element comes before the <Import> elements.) 
+
 ```xml
 ...
 </ItemGroup>
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<PropertyGroup>
+    <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
+</PropertyGroup>
+<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks"  Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks')" />
 <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
 ...
 </Project>
@@ -48,13 +58,14 @@ The `TechTalk.SpecFlow.targets` file defines a number of default options in the 
 ```xml
 <PropertyGroup>
     <ShowTrace Condition="'$(ShowTrace)'==''">false</ShowTrace>
-    
+    <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
     <OverwriteReadOnlyFiles Condition="'$(OverwriteReadOnlyFiles)'==''">false</OverwriteReadOnlyFiles>
     <ForceGeneration Condition="'$(ForceGeneration)'==''">false</ForceGeneration>
     <VerboseOutput Condition="'$(VerboseOutput)'==''">false</VerboseOutput>
 </PropertyGroup>
 ```
 * `ShowTrace`: Set this to true to output trace information.
+* `SpecFlowTasksPath`: Path to specflow.exe.
 * `OverwriteReadOnlyFiles`: Set this to true to overwrite any read-only files in the target directory. This can be useful if your feature files are read-only and part of your repository.
 * `ForceGeneration`: Set this to true to forces the code-behind files to be regenerated, even if the content of the feature has not changed. 
 * `VerboseOutput`: Set to true to enable verbose output for troubleshooting.
@@ -66,11 +77,13 @@ To change these options, add the corresponding element to your project file **be
 ```xml
 <PropertyGroup>
   <ShowTrace>true</ShowTrace>
+  <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
   <VerboseOutput>true</VerboseOutput>
 </PropertyGroup>
 ...
 </ItemGroup>
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks"  Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks')" />
 <Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
 ...
 </Project>
