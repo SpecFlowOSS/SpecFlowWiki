@@ -120,10 +120,10 @@ This report shows the usage and binding status of the steps for the entire proje
 * Steps without a special backgrounds are steps that exist both in feature files and the automation layer.  Ideally, all your steps are like this.
 
 ```
-specflow.exe stepdefinitionreport BookShop.AcceptanceTests.csproj
+specflow.exe stepdefinitionreport BookShop.AcceptanceTests.csproj /BinFolder:bin/debug
 ```
 
-The following table contains the possible arguments for this command.
+The following table contains the possible arguments for this command. 
 
 <table>
     <tr>
