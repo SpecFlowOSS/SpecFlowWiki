@@ -153,6 +153,10 @@ The following lists all supported providers with their name and generator provid
   <td>mstest</td>
   <td>MsTest2010GeneratorProvider</td>
  </tr>
+ <tr>
+  <td>mstest.v2</td>
+  <td>MsTestV2GeneratorProvider</td>
+ </tr>
 </table>
 </td>
     </tr>
