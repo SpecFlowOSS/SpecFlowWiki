@@ -8,7 +8,7 @@ To enable tracing, select **Tools | Options | SpecFlow** from the menu in Visual
 
 ### Steps are not recognised even though there are matching step definitions
   
-The SpecFlow Visual Studio integration caches the binding status of step definitions. If the cache is corrupted, steps may be unrecognised. To delete the cache:
+The SpecFlow Visual Studio integration caches the binding status of step definitions. If the cache is corrupted, steps may be unrecognised and the highlighting of your steps may be wrong (e.g. bound steps showing as being unbound). To delete the cache:
 
 1. Close all Visual Studio instances.
 2. Navigate to your `%TEMP%` folder and delete any files that are prefixed with `specflow-stepmap-`, e.g. `specflow-stepmap-SpecFlowProject-607539109-73a67da9-ef3b-45fd-9a24-6ee0135b5f5c.cache`.
