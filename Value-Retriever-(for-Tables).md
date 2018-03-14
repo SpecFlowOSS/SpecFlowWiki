@@ -4,8 +4,8 @@ SpecFlow can turn properties in a table like this:
 
 ```gherkin
 Given I have the following people
-| First Name | Last Name | Age | IsAdmin |
-| John       | Galt      | 40  | true    |
+| First Name | Last Name | Age | IsAdmin | 
+| John       | Guppy     | 40  | true    |
 ```
 
 Into an object like this:
@@ -52,4 +52,33 @@ Often you might have a more complicated POCO type, one that is not comprised sol
         public string Name { get; set; }
     }
 ```
+ 
+Simple example how to process the human readable color 'red' to the Hex value
 
+```gherkin
+| First Name | ShirtColor | 
+| Scott      | Red        |
+```
+The table will be processed, and the following code can be used to capture the table translation and customize it
+```c#
+public class ShirtColorValueRetriever : IValueRetriever
+    {
+        public bool CanRetrieve(KeyValuePair<string, string> keyValuePair, Type targetType, Type propertyType)
+        {
+           if(!keyValuePair.Key.Equals("Shirtcolor"))
+           {
+               return false;
+           }
+           bool value;
+           if (Color.TryParse(keyValuePair.Value, out value))
+           {
+              return true;
+           }  
+        }
+
+        public object Retrieve(KeyValuePair<string, string> keyValuePair, Type targetType, Type propertyType)
+        {
+            return Color.Parse(keyValuePair.Value).HexCode;
+        }
+    }
+```
