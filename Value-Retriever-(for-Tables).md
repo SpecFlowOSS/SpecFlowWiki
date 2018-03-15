@@ -53,13 +53,13 @@ Often you might have a more complicated POCO type, one that is not comprised sol
     }
 ```
  
-Simple example how to process the human readable color 'red' to the Hex value
+Simple example how to process the human readable color 'red' to the Hex value:
 
 ```gherkin
 | First Name | ShirtColor | 
 | Scott      | Red        |
 ```
-The table will be processed, and the following code can be used to capture the table translation and customize it
+The table will be processed, and the following code can be used to capture the table translation and customize it:
 ```c#
 public class ShirtColorValueRetriever : IValueRetriever
     {
