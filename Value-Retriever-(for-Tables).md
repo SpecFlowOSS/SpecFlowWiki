@@ -65,10 +65,11 @@ public class ShirtColorValueRetriever : IValueRetriever
     {
         public bool CanRetrieve(KeyValuePair<string, string> keyValuePair, Type targetType, Type propertyType)
         {
-           if(!keyValuePair.Key.Equals("Shirtcolor"))
+           if (!keyValuePair.Key.Equals("Shirtcolor"))
            {
                return false;
            }
+
            bool value;
            if (Color.TryParse(keyValuePair.Value, out value))
            {
