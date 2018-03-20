@@ -65,7 +65,7 @@ public class ShirtColorValueRetriever : IValueRetriever
     {
         public bool CanRetrieve(KeyValuePair<string, string> keyValuePair, Type targetType, Type propertyType)
         {
-           if (!keyValuePair.Key.Equals("Shirtcolor"))
+           if (!keyValuePair.Key.Equals("ShirtColor"))
            {
                return false;
            }
