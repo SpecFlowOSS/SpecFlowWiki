@@ -28,11 +28,11 @@ Use the `[Scope]` attribute to define the scope:
 Scope can be defined at the method or class level.
 
 If multiple criteria (e.g. both tag and feature) are specified in the same `[Scope]` attribute, they are combined with AND, i.e. all criteria need to match.
-_Example AND tag scopes:_ `[Scope(Tag = "thisTag"), Scope(Tag = "AndThisTag")]`
+_Example AND tag scope decoration:_ `[Scope(Tag = "thisTag"), Scope(Tag = "AndThisTag")]`
 
 If multiple `[Scope]` attributes are defined for the same method or class, the attributes are combined with OR, i.e. at least one of the `[Scope]` attributes needs to match.
 
-_Example OR tag scopes:_ `[Scope(Tag = "thisTag")] [Scope(Tag = "OrThisTag")]`
+_Example OR tag scope decoration:_ `[Scope(Tag = "thisTag")] [Scope(Tag = "OrThisTag")]`
 
 If a step can be matched to both a step definition without a `[Scope]` attribute as well as a step definition with a `[Scope]` attribute, the step definition with the `[Scope]` attribute is used (no ambiguity).
 
