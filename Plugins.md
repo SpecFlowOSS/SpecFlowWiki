@@ -62,11 +62,11 @@ In order for your new library to be picked up by SpecFlow plugin loader, you nee
 By implementing the `Initialize`- Method on the `IRuntimePlugin` interface, you get access to the RuntimePluginEvents and RuntimePluginParameters.
 
 RuntimePluginsEvents
-- *RegisterGlobalDependencies* - register new interfaces to the global container, see [[Available-Containers-&-Registrations]]
-- *CustomizeGlobalDependencies* - override registrations in the global container, see [[Available-Containers-&-Registrations]]
+- *RegisterGlobalDependencies* - register new interfaces to the global container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
+- *CustomizeGlobalDependencies* - override registrations in the global container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
 - *ConfigurationDefaults* - adjust configuration values
-- *CustomizeTestThreadDependencies* - override or register new interfaces in the test thread container, see [[Available-Containers-&-Registrations]]
-- *CustomizeScenarioDependencies* - override or register new interfaces in the scenario container, see [[Available-Containers-&-Registrations]]
+- *CustomizeTestThreadDependencies* - override or register new interfaces in the test thread container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
+- *CustomizeScenarioDependencies* - override or register new interfaces in the scenario container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
 
 In order for your new library to be picked up by SpecFlow plugin loader, you need to flag your assembly with the `RuntimePlugin` attribute. This is an example of it, taking in consideration that the class that implements `IRuntimePlugin` interface is called `MyNewPlugin`.
 ```csharp
