@@ -1,4 +1,4 @@
-##Introduction##
+## Introduction##
 
 SpecFlow is providing an improved plugin infrastructure for customization. You can implement SpecFlow plugins that can change the behavior of the built-in generator and runtime components. A typical plugin can for example provide support for a new unit testing framework.
 
@@ -12,13 +12,13 @@ To use a custom plugin it has to be enabled in the [[configuration]] of the Spec
 </specFlow>
 ```
 
-##Creating plugins##
+## Creating plugins##
 
 Creating a plugin is fairly simple. There are 3 types of plugins supported- Runtime, Generator and Runtime-Generator. Steps for creating any of these three are similar. For example, in order to create a Generator SpecFlow plugin you need the following three things.
 
 Your assembly name needs to follow a convention, that is, it needs to have a suffix ".SpecFlowPlugin".
 
-###Generator Plugin
+### Generator Plugin
 1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
 2. A class that implements `IGeneratorPlugin` interface (which is defined in TechTalk.SpecFlow.Generator.Plugins namespace)
 3. An assembly level attribute `GeneratorPlugin` pointing to the class that implements `IGeneratorPlugin`
@@ -53,7 +53,7 @@ In order for your new library to be picked up by SpecFlow plugin loader, you nee
 [assembly: GeneratorPlugin(typeof(MyNewPlugin))]
 ```
 
-###Runtime Plugin
+### Runtime Plugin
 
 1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
 2. A class that implements `IRuntimePlugin` interface (which is defined in TechTalk.SpecFlow.Plugins namespace)
@@ -75,7 +75,7 @@ In order for your new library to be picked up by SpecFlow plugin loader, you nee
 
 Note: Parameters are not yet implemented (Version 2.1)
 
-##Configuration details##
+## Configuration details##
 
 In order to load your plugin, in your SpecFlow project, you need to reference your plugin in the app.config file without the ".SpecFlowPlugin" suffix. It is also handy to know that the path attribute considers that project root as a path root. The following example is used to load a plugin assembly called "MyNewPlugin.SpecFlowPlugin.dll" that is located in a folder called "Binaries" that is at the same level of the current project.
 
@@ -86,7 +86,7 @@ In order to load your plugin, in your SpecFlow project, you need to reference yo
 	</plugins>
 </specFlow>
 ```
-##Sample plugin implementations:
+## Sample plugin implementations:
 
 For reference, here are some sample implementations of an IRuntimePlugin and IGeneratorPlugin:
 
