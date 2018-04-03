@@ -1,8 +1,10 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Setup-SpecFlow-Projects]]. We use the GitHub wiki for authoring the documentation pages._
 
-The SpecFlow tests are usually placed into one or more separate project in your solution: these are referred to as "SpecFlow projects". 
-
 The [[Getting Started guide|http://go.specflow.org/getting-started]] provides a basic introduction to SpecFlow, including installing SpecFlow and setting up your first project. This page covers the available options in greater depth.
+
+## Solution Structure
+SpecFlow tests are usually placed in one or more separate project in the solution. These are referred to as the "SpecFlow projects". 
+
 
 ## Step-by-Step Guide to Setting Up SpecFlow Projects Using NuGet
 
