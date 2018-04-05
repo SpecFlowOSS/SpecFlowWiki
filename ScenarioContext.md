@@ -1,4 +1,4 @@
-_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/ScenarioContext]]. We use the GitHub wiki for authoring the documentation pages.._
+_Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/ScenarioContext]]. We use the GitHub wiki for authoring the documentation pages._
 
 Most of us have at least seen the ScenarioContext from the the code that SpecFlow generates when a missing step definition is found: ScenarioContext.Current.Pending();
 
