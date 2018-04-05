@@ -14,11 +14,36 @@ To use a custom plugin it has to be enabled in the [[configuration]] of the Spec
 
 ## Creating plugins
 
-Creating a plugin is fairly simple. There are 3 types of plugins supported- Runtime, Generator and Runtime-Generator. Steps for creating any of these three are similar. For example, in order to create a Generator SpecFlow plugin you need the following three things.
+Creating a plugin is fairly simple. There are 3 types of plugins supported:
+* Runtime
+* Generator
+* Runtime- Generator
 
-Your assembly name needs to follow a convention, that is, it needs to have a suffix ".SpecFlowPlugin".
+If you configure a plugin, SpecFlow assumes it is a Runtime- Generator- Plugin. If your plugin is either for Runtime or Generator, you have to configure this.
+
+Example for a Runtime plugin:
+```xml
+<specFlow>
+  <plugins>
+    <add name="MyPlugin" type="Runtime"/>
+  </plugins>
+</specFlow>
+```
+
+Example for a Generator plugin:
+```xml
+<specFlow>
+  <plugins>
+    <add name="MyPlugin" type="Generator"/>
+  </plugins>
+</specFlow>
+```
+
+Steps for creating any of these three are similar. 
+For all of them, you have to name the assembly after a convention. It needs to have the suffix ".SpecFlowPlugin".
 
 ### Generator Plugin
+Needed steps for creating a Generator Plugin
 1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
 2. A class that implements `IGeneratorPlugin` interface (which is defined in TechTalk.SpecFlow.Generator.Plugins namespace)
 3. An assembly level attribute `GeneratorPlugin` pointing to the class that implements `IGeneratorPlugin`
@@ -54,7 +79,7 @@ In order for your new library to be picked up by SpecFlow plugin loader, you nee
 ```
 
 ### Runtime Plugin
-
+Needed steps for creating a Runtime Plugin
 1. A SpecFlow.CustomPlugin Nuget package added to the library that will contain the plugin.
 2. A class that implements `IRuntimePlugin` interface (which is defined in TechTalk.SpecFlow.Plugins namespace)
 3. An assembly level attribute `RuntimePlugin` pointing to the class that implements `IRuntimePlugin`
