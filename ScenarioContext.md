@@ -29,13 +29,13 @@ and the step definition:
         }
 
 
-##ScenarioContext.Current
+## ScenarioContext.Current
 
 This is a very useful feature of the [[ScenarioContext.Current]] that helps you to store values in a Dictionary between the steps. This helps you to organize your step definitions better than if you would use private variables in the step definition class.
 
 There are some type safe extension methods that helps you to get values in and out of the dictionary in a safer way. To get that you need to include the namespace TechTalk.SpecFlow.Assist, since they are extension methods on the [[ScenarioContext.Current]].
 
-##ScenarioContext.ScenarioInfo
+## ScenarioContext.ScenarioInfo
 
 You can also get hold of some information about the scenario you’re executing right now. For example the title and the tags of it:
 
@@ -123,7 +123,7 @@ This is another example, that might be more useful:
 Here I am using MvcContrib to capture the screen of the failing test, and naming the screen shot after the title of the Scenario. So by combining the use of hooks and the knowledge of ScenarioContext when can do some interesting stuff, don’t you think?
 
 
-##ScenarioContext.Current.CurrentScenarioBlock
+## ScenarioContext.Current.CurrentScenarioBlock
 
 You can also get hold of the “type” of step your on (Given, When or Then) which is pretty cool and, for example, can be used to execute additional setup/cleanup code right before or after Given, When or Then block.
 
@@ -147,11 +147,11 @@ and the step definition:
             stepType.Should().Equal(expectedStepType);
         }
 
-##ScenarioContext.Current.StepContext
+## ScenarioContext.Current.StepContext
 
 Sometimes you need to access the currently executed step, e.g. to improve tracing. Use the `ScenarioContext.Current.StepContext` property for this purpose.
 
-##Injecting ScenarioContext
+## Injecting ScenarioContext
 
 Using the static `ScenarioContext.Current` accessor may result in test automation code that is hard to follow, and does not work with [[parallel execution]]. In such cases, you can let SpecFlow inject the current scenario context into your binding class using the [[context injection]] mechanism by declaring a `ScenarioContext` parameter in the constructor, e.g.:
 
