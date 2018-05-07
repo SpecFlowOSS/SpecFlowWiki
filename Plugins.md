@@ -91,6 +91,7 @@ RuntimePluginsEvents
 - *CustomizeGlobalDependencies* - override registrations in the global container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
 - *ConfigurationDefaults* - adjust configuration values
 - *CustomizeTestThreadDependencies* - override or register new interfaces in the test thread container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
+- *CustomizeFeatureDependencies* - override or register new interfaces in the feature container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
 - *CustomizeScenarioDependencies* - override or register new interfaces in the scenario container, see <a href="https://github.com/techtalk/SpecFlow/wiki/Available-Containers-&-Registrations">Available-Containers-&-Registrations</a>
 
 In order for your new library to be picked up by SpecFlow plugin loader, you need to flag your assembly with the `RuntimePlugin` attribute. This is an example of it, taking in consideration that the class that implements `IRuntimePlugin` interface is called `MyNewPlugin`.
