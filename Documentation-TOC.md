@@ -17,6 +17,7 @@
         * [[Calling Steps from Step Definitions]]
     * [[Hooks]]
     * [[Scoped Bindings]]
+    * [[Asynchronous Bindings]]
     * [[Step Argument Conversions]]
         * [[SpecFlow Assist Helpers]]
     * [[Sharing Data between Bindings]]
