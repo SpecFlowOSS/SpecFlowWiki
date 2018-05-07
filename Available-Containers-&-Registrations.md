@@ -41,6 +41,17 @@ Captures services and state for executing the scenarios on a particular test thr
  * CustomizeTestThreadDependencies- Event
 
 
+## Feature Container (parent Container is the Test Thread Container)
+
+Captures the state of a feature execution. Disposed after the feature is executed.
+
+* (step definition classes)
+* (dependencies of the step definition classes, aka context injection)
+* FeatureContext (also available from the *Test Thread Container* through `IContextManager`)
+* [RuntimePlugins] 
+ * CustomizeFeatureDependencies- Event
+
+
 ## Scenario Container (parent Container is the Test Thread Container)
 
 Captures the state of a scenario execution. Disposed after the scenario is executed.
