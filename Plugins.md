@@ -1,8 +1,8 @@
 ## Introduction
 
-SpecFlow is providing an improved plugin infrastructure for customization. You can implement SpecFlow plugins that can change the behavior of the built-in generator and runtime components. A typical plugin can for example provide support for a new unit testing framework.
+SpecFlow provides a plugin infrastructure, allowing customization. You can develop SpecFlow plugins that change the behavior of the built-in generator and runtime components. For example, a plugin could provide support for a new unit testing framework.
 
-To use a custom plugin it has to be enabled in the [[configuration]] of the SpecFlow project:
+To use a custom plugin it has to be enabled in the [[configuration]] of your SpecFlow project:
 
 ```xml
 <specFlow>
@@ -17,9 +17,9 @@ To use a custom plugin it has to be enabled in the [[configuration]] of the Spec
 Creating a plugin is fairly simple. There are 3 types of plugins supported:
 * Runtime
 * Generator
-* Runtime- Generator
+* Runtime Generator
 
-If you configure a plugin, SpecFlow assumes it is a Runtime- Generator- Plugin. If your plugin is either for Runtime or Generator, you have to configure this.
+By default, SpecFlow assumes plugins are Runtime Generator plugins. If your plugin is either a Runtime or Generator plugin, you need to add this information to the configuration.
 
 Example for a Runtime plugin:
 ```xml
@@ -39,8 +39,7 @@ Example for a Generator plugin:
 </specFlow>
 ```
 
-Steps for creating any of these three are similar. 
-For all of them, you have to name the assembly after a convention. It needs to have the suffix ".SpecFlowPlugin".
+The steps required to create plugins of all types are similar. All plugins require the suffix ".SpecFlowPlugin".
 
 ### Generator Plugin
 Needed steps for creating a Generator Plugin
