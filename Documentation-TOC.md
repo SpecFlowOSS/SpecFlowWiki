@@ -61,4 +61,5 @@
     * [[Windows Phone 7 Support]] -->
 * Cloud Services
     * [[Running SpecFlow tests on BrowserStack]]
+* [[Contributing]]
 * [[FAQ]]
