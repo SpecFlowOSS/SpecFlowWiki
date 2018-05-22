@@ -86,6 +86,25 @@ Coded UI tests include special coded UI attributes that can only be interpreted 
 
 <h1 id="Troubleshooting">Troubleshooting</h1>
 
+## When trying to run my tests in Visual Studio, I receive a Missing [assembly:GeneratorPlugin] attribute error. How can I solve this?
+
+Sample output:
+```
+Missing [assembly:GeneratorPlugin] attribute in SpecFlow.Plus.Excel.SpecFlowPlugin.dll
+#error TechTalk.SpecFlow.Generator
+#error Server stack trace:
+#error at TechTalk.SpecFlow.Generator.Plugins.GeneratorPluginLoader.LoadPlugin(PluginDescriptor pluginDescriptor)
+...
+```
+
+If you are receiving this error, try setting the **Generation Mode** in SpecFlow to "OutOfProcess". To do so: 
+
+1. Select **Tools | Options** from the menu in Visual Studio. 
+1. Select SpecFlow from the list on the left.
+1. Locate the **Generation Mode** setting and set it to "OutOfProcess".
+
+[[https://user-images.githubusercontent.com/859801/40348773-e01595ce-5da4-11e8-9ebf-88b06d8b8b85.png]]
+
 ## After upgrading to SpecFlow 2 from 1.9, I get the message "Trace listener failed. -> The ScenarioContext.Current static accessor cannot be used in multi-threaded execution. Try injecting the scenario context to the binding class"
 
 Make sure you have regenerated the `.feature.cs` files after upgrading. If you do not do this, you will receive this exception when accessing `ScenarioContext.Current`.
