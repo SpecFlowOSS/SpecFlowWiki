@@ -9,7 +9,7 @@ Looking for complex feature-level setup or for a "Feature Background"? Have look
 <br/>
 To make bindings to domain objects easier have a look at:
 * [[SpecFlowAssist|http://github.com/darrencauthon/SpecFlowAssist]], here is a [[screencast|http://www.youtube.com/watch?v=Dsk0EE43Tg4]] 
-* [[Steckbrett.SpecsSupport|http://bitbucket.org/rstuven/steckbrett.specssupport/src]], here is a [[blog post|http://ricardo-stuven.blogspot.com/2010/05/specflow-automapper-autopoco.html]]
+* [[Steckbrett.SpecsSupport|http://bitbucket.org/rstuven/steckbrett.specssupport/src]], here is a [[blog post|https://web.archive.org/web/20120924033433/http://ricardo-stuven.blogspot.com/2010/05/specflow-automapper-autopoco.html]]
 
 <br/>
 Here is a set of macros for ReSharper:
