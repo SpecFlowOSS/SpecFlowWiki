@@ -72,3 +72,12 @@ public class Transforms
     }
 }
 ```
+
+```
+  [Give(@"Show messenger""(.*)""")]
+        public void GiveShowMessenger()
+        {
+            string chave = nfe.Tab();
+            Assert.IsNotNull(chave);
+        }
+```
