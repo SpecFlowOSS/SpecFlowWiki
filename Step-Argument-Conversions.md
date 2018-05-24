@@ -73,11 +73,15 @@ public class Transforms
 }
 ```
 
-```
+```c#
+[Binding]
+public class Transforms
+{
   [Give(@"Show messenger""(.*)""")]
-        public void GiveShowMessenger()
-        {
-            string chave = nfe.Tab();
-            Assert.IsNotNull(chave);
-        }
+  public void GiveShowMessenger()
+  {
+    string chave = nfe.Tab();
+    Assert.IsNotNull(chave);
+  }
+}
 ```
