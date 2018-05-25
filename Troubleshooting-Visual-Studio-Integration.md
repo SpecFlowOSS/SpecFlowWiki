@@ -21,7 +21,7 @@ You may receive a more specific error message if you enable tracing (see above).
 The Visual Studio Test Adapter cache may also get corrupted, causing tests to not be displayed. If this happens, try clearing your cache as follows:
 
 1. Close all Visual Studio instances
-2. Navigate to your `%TEMP%\VisualStudioTestExplorerExtensions\` folder and delete any sub-folders related to SpecFlow/SpecRun.
+2. Navigate to your `%TEMP%\VisualStudioTestExplorerExtensions\` folder and delete any sub-folders related to SpecFlow/SpecRun, i.e. that have "SpecFlow" or "SpecRun" in their name.
 3. Reopen your solution and ensure that it builds.
 
 ### Unable to find plugin in the plugin search path: SpecRun` when saving / generating feature files
