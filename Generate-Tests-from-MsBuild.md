@@ -1,47 +1,16 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Generate-Tests-from-MsBuild]]. We use the GitHub wiki for authoring the documentation pages._
 
-SpecFlow's `generateall` function can also be used with MSBuild, allowing you to re-generate the class files before compiling the solution. This can be particularly useful if feature files are regularly modified outside of Visual Studio. More information on the `generateall` function can be found [[here|Tools]].
+## General
 
-To be able to use this function, you need to update your project file. There are also a number of other options you can configure.
+To get your code- behind- files generated at compile time, you need to simply add the [SpecFlow.Tools.MsBuild.Generation nuget package](https://www.nuget.org/packages/SpecFlow.Tools.MsBuild.Generation/) to your project.
 
-## Edit Your Project File
-In order to use the `generateall` function with MSBuild, you need to update your project file. Add the following lines to the end of the Visual Studio project file of the project containing the feature files (e.g. with notepad):
-
-```xml
-<PropertyGroup>
-    <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
-</PropertyGroup>
-<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks"  Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks')" />
-<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
-```
-
-**Example:**
-
-(**Note** the example assumes the project is referencing the SpecFlow 2.2.0 NuGet package. The user should replace "..\packages\SpecFlow.2.2.0\tools" with a path relative form the project file that points to the version specific SpecFlow tools folder used by the project. It is important that the <PropertyGroup> element comes before the <Import> elements.) 
-
-```xml
-...
-</ItemGroup>
-<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-<PropertyGroup>
-    <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
-</PropertyGroup>
-<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks"  Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.tasks')" />
-<Import Project="..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.0\tools\TechTalk.SpecFlow.targets')" />
-...
-</Project>
-```
-
-The [[SpecFlow NuGet package|NuGet Integration]] contains all files required by MsBuild to generate the tests in the `tools` folder. In order to be able to build your application in any environment, we recommend storing the contents of this directory together with your sources and to use a relative path.
-
-
-## Change the Feature File Settings (optional)
+## Removing the custom tool and include the generated files (optional)
 
 When adding a feature file, Visual Studio automatically enters "SpecFlowSingleFileGenerator" as the **Custom Tool** in the file's properties. This ensures that the class files are re-generated whenever the feature file is saved. You can remove the custom tool to prevent this from occurring, as any class files that are not up-to-date will be generated during the build process anyway:
 
 <img src=http://www.specflow.org/screenshots/CustomTool.png>
 
-If you remove the code generator, or are also adding, renaming or deleting feature files outside of Visual Studio, you can include these files in your project dynamically. To do so, add the following lines to your project file (.csproj) in a text editor:
+If you remove the code generator you have to include the generated files in your project dynamically. To do so, add the following lines to your project file (.csproj) in a text editor:
 
 ```xml
 <Target Name="AfterUpdateFeatureFilesInProject">
@@ -58,14 +27,12 @@ The `TechTalk.SpecFlow.targets` file defines a number of default options in the 
 ```xml
 <PropertyGroup>
     <ShowTrace Condition="'$(ShowTrace)'==''">false</ShowTrace>
-    <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
     <OverwriteReadOnlyFiles Condition="'$(OverwriteReadOnlyFiles)'==''">false</OverwriteReadOnlyFiles>
     <ForceGeneration Condition="'$(ForceGeneration)'==''">false</ForceGeneration>
     <VerboseOutput Condition="'$(VerboseOutput)'==''">false</VerboseOutput>
 </PropertyGroup>
 ```
 * `ShowTrace`: Set this to true to output trace information.
-* `SpecFlowTasksPath`: Path to specflow.exe.
 * `OverwriteReadOnlyFiles`: Set this to true to overwrite any read-only files in the target directory. This can be useful if your feature files are read-only and part of your repository.
 * `ForceGeneration`: Set this to true to forces the code-behind files to be regenerated, even if the content of the feature has not changed. 
 * `VerboseOutput`: Set to true to enable verbose output for troubleshooting.
@@ -77,7 +44,6 @@ To change these options, add the corresponding element to your project file **be
 ```xml
 <PropertyGroup>
   <ShowTrace>true</ShowTrace>
-  <SpecFlowTasksPath>..\packages\SpecFlow.2.2.0\tools\specflow.exe</SpecFlowTasksPath>
   <VerboseOutput>true</VerboseOutput>
 </PropertyGroup>
 ...
