@@ -225,7 +225,7 @@ You can register your special `IValueRetriever` (and/or an instance of `IValueCo
 public static class Hooks1
 {
     [BeforeTestRun]
-    public static void BeforeScenario()
+    public static void BeforeTestRun()
     {
         Service.Instance.RegisterValueRetriever(new ColorValueRetriever());
         Service.Instance.RegisterValueComparer(new ColorValueComparer());
