@@ -16,7 +16,7 @@ If you remove the code generator you have to include the generated files in your
 <Target Name="AfterUpdateFeatureFilesInProject">
     <!-- include any files that specflow generated into the compilation of the project -->
     <ItemGroup>
-        <Compile Include="@(SpecFlowGeneratedFiles)" />
+        <Compile Include="**\*.feature.cs" />
     </ItemGroup>
 </Target>
 ```
