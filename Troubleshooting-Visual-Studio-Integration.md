@@ -16,7 +16,8 @@ The SpecFlow Visual Studio integration caches the binding status of step definit
 
 You may receive a more specific error message if you enable tracing (see above).
 
-### Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner
+### Tests are not displayed in the Test Explorer window when using SpecFlow+ Runner 
+**Note:** As of Visual Studio 2017 15.7 the temporary files are no longer used. The following only applies to earlier versions of Visual Studio.
 
 The Visual Studio Test Adapter cache may also get corrupted, causing tests to not be displayed. If this happens, try clearing your cache as follows:
 
