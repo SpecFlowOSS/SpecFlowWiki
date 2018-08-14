@@ -10,7 +10,7 @@ When adding a feature file, Visual Studio automatically enters "SpecFlowSingleFi
 
 <img src=http://www.specflow.org/screenshots/CustomTool.png>
 
-If you remove the code generator you have to include the generated files in your project dynamically. To do so, add the following lines to your project file (.csproj) in a text editor:
+If you remove the code generator you have to include the generated files in your project dynamically. To do so, add the following lines **at the end** of your project file (.csproj) in a text editor:
 
 ```xml
 <Target Name="AfterUpdateFeatureFilesInProject">
