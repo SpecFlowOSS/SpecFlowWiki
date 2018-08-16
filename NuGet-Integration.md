@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/NuGet-Integration]]. We use the GitHub wiki for authoring the documentation pages._
 
-SpecFlow is also available as a [[NuGet|http://www.nuget.org/]] package: `[[SpecFlow|http://www.nuget.org/packages/SpecFlow]]`. This is the easiest way to setup your project for SpecFlow. (See other options in [[
+SpecFlow is available as a [[NuGet|http://www.nuget.org/]] package: `[[SpecFlow|http://www.nuget.org/packages/SpecFlow]]`. This is the easiest way to setup your project for SpecFlow. (See other options in [[
 Setup SpecFlow Projects]].)
 
 Note: The NuGet package contains only the generator and the runtime components of SpecFlow, so you still need to install the IDE integration, e.g. from [[Visual Studio Gallery|http://go.specflow.org/vsgallery]] (see details at [[Installation]]). 
