@@ -12,7 +12,7 @@ In order to install everything you need, you first have to install the IDE integ
 
 ## Installing the IDE Integration
 
-The process of installing the IDE Integration packages depends on your IDE. For Visual Studio 2010 and above, the easiest way is to search for “SpecFlow” in the online search in the extension manager (**Tools | Extensions and Updates**). For other IDE integrations and for the direct download links, see the [[Install IDE Integration]] page.
+The process of installing the IDE Integration packages depends on your IDE. If you are using Visual Studio, the easiest way is to search for “SpecFlow” in the online search in the extension manager (**Tools | Extensions and Updates**). For other IDE integrations and for the direct download links, see the [[Install IDE Integration]] page.
 
 ## Project Setup
 
