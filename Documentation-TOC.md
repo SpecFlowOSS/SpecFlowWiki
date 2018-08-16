@@ -34,12 +34,7 @@
         * [[Test Explorer Support|Visual-Studio-Test-Explorer-Support]]
         * [[Generating Skeleton Code|Generating-Skeleton-Code]]
         * [[Troubleshooting|Troubleshooting-Visual-Studio-Integration]]
-    * [[MonoDevelop Integration]]
     * [[MSBuild Integration|Generate Tests from MsBuild]]
-    * [[NuGet Integration]]
-    * [[SpecRun Integration]]
-    * [[SpecLog Integration]]
-    * [[SharpDevelop Integration]]
 * [[Tools]]
     * [[Generate All Tool|Tools]]
     * [[Plugins]]
@@ -49,8 +44,6 @@
     * [[Step Usage Report|Reporting]]
     * [[Pickle your features to get human readable documentation]]
 * Build Server Integration
-    * [[TFS 2010 Integration]]
-    * [[TFS 2012 Integration]]
     * [[Team Foundation Service Integration]]
     * [[TeamCity Integration]]
 * Platform Support
