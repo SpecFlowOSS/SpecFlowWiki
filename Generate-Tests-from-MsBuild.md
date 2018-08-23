@@ -4,6 +4,8 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 To generate your code-behind files at compile time, simply add the [SpecFlow.Tools.MsBuild.Generation nuget package](https://www.nuget.org/packages/SpecFlow.Tools.MsBuild.Generation/) to your project.
 
+You will need VS2017/MSBuild 15 to use this packages.
+
 ## Removing the custom tool and include the generated files (optional)
 
 When adding a feature file, Visual Studio automatically enters "SpecFlowSingleFileGenerator" as the **Custom Tool** in the file's properties. This ensures that the class files are re-generated whenever the feature file is saved. You can remove the custom tool to prevent this from occurring, as any class files that are not up-to-date will be generated during the build process anyway:
