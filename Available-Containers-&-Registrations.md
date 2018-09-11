@@ -1,6 +1,6 @@
 ## Global Container
 
-Captures global services for test execution and the step definition, hook and transformation discovery result (ie what step definitions you have).
+Captures global services for test execution and the step definition, hook and transformation discovery result (i.e. what step definitions you have).
 
 * IRuntimeConfigurationProvider
 * ITestRunnerManager
@@ -28,7 +28,7 @@ Captures global services for test execution and the step definition, hook and tr
 
 ## Test Thread Container (parent Container is the Global Container)
 
-Captures services and state for executing the scenarios on a particular test thread. For parallel test execution, multiple test runner containers are created (one for each thread).
+Captures services and state for executing the scenarios on a particular test thread. For parallel test execution, multiple test runner containers are created, one for each thread.
 
 * ITestRunner
 * IContextManager
@@ -43,7 +43,7 @@ Captures services and state for executing the scenarios on a particular test thr
 
 ## Feature Container (parent Container is the Test Thread Container)
 
-Captures the state of a feature execution. Disposed after the feature is executed.
+Captures a feature's execution state. Disposed after the feature is executed.
 
 * (step definition classes)
 * (dependencies of the step definition classes, aka context injection)
