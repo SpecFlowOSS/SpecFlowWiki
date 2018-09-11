@@ -1,4 +1,4 @@
-Note: This description is valid for SpecFlow 1.8 and has to be rewritten for SpecFlow 1.9. 
+**WARNING!** This page is valid for SpecFlow 1.8 and is only preserved for reference. 
 
 If you want to contribute on the VS2010 integration development, here are some useful trick how you can work and test the integration and have the official SpecFlow release installed at the same time.
 
