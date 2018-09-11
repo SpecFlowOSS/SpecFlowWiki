@@ -1,3 +1,9 @@
+## Enable Extension  
+
+If Visual Studio displays the error message `Cannot find custom tool 'SpecFlowSingleFileGenerator' on this system.` when right-clicking on a feature file and selecting `Run Custom Tool`, make sure the SpecFlow extension is enabled.
+
+To enable the extension in Visual Studio, select **Tools > Extensions and Updates...**, select the "SpecFlow for Visual Studio" extension, then select **Enable**.
+
 ## Enable Tracing
 
 You can enable traces for SpecFlow. Once the tracing is enabled, a new `SpecFlow` pane is added to the output window showing diagnostic messages. 
