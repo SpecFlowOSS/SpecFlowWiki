@@ -1,8 +1,3 @@
-VisualStudio 2008 highlighting: "Cuke4Vs":http://github.com/henritersteeg/cuke4vs
-
-<br/>
-VisualStudio 2010 syntax highlighting: SpecFlow v1.3.3 or later have built-in editor integration for VS2010
-
 <br/>
 Looking for complex feature-level setup or for a "Feature Background"? Have look at Gaspars solution in "this thread on Google Group":http://groups.google.com/group/specflow/browse_thread/thread/e9bce097d2d83852/ccbe19fd3a0216d6?lnk=gst&q=scenario+setup#ccbe19fd3a0216d6
 
@@ -15,7 +10,3 @@ To make bindings to domain objects easier have a look at:
 Here is a set of macros for ReSharper:
 * [[http://github.com/MarkBorcherding/AgentBdd]]
 
-<br/>
-How to use SpecFlow with VisualStudio Express:
-* [[Complete guide to SpecFlow & NUnit in Visual Studio 2010 Express | http://watirmelon.com/2011/02/18/c-sharp-atdd-on-a-shoestring/]]
-* [[Using SpecFlow and NUnit on Visual Studio 2010 express | http://learntdd.wordpress.com/2010/06/10/using-specflow-and-nunit-on-visual-studio-2010-express/]]
