@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Using-Gherkin-Language-in-SpecFlow]]. We use the GitHub wiki for authoring the documentation pages._
 
-The feature files used by SpecFlow to store acceptance criteria for features (use cases, user stories) in your application are defined using the Gherkin syntax. The Gherkin language defines the structure and a basic syntax for describing tests. The Gherkin format was introduced by [[Cucumber|http://cukes.info/]] and is also used by other tools. 
+The feature files used by SpecFlow to specify acceptance criteria for features (use cases, user stories) in your application are defined using the Gherkin syntax. The Gherkin language defines the structure and a basic syntax for describing tests. The Gherkin format was introduced by [[Cucumber|http://cukes.info/]] and is also used by other tools. 
 
 The Gherkin language is maintained as a separate project [[on GitHub|https://github.com/cucumber/gherkin]]. A detailed description of the language can be found [[here|https://github.com/cucumber/cucumber/wiki/Gherkin]].
 
