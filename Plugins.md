@@ -39,7 +39,7 @@ Example for a Generator plugin:
 </specFlow>
 ```
 
-The steps required to create plugins of all types are similar. All plugins require the suffix ".SpecFlowPlugin".
+The steps required to create plugins of all types are similar. **All plugins require the suffix ".SpecFlowPlugin".**
 
 ### Generator Plugin
 Needed steps for creating a Generator Plugin
