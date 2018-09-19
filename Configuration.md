@@ -34,8 +34,10 @@ The following example shows all possible configuration options with their defaul
       generateAsyncTests="false"
       path="{not-specified}" />
   <runtime 
-      stopAtFirstError="false"
-      missingOrPendingStepsOutcome="Inconclusive" />
+      detectAmbiguousMatches="false"
+      missingOrPendingStepsOutcome="Inconclusive"
+      obsoleteBehavior="Pending"
+      stopAtFirstError="false" />
   <trace 
       traceSuccessfulSteps="true"
       traceTimings="false"
@@ -243,6 +245,12 @@ Use this section to specify various test execution options.
         <td>Inconclusive|<br/>Ignore|<br/>Error</td>
         <td>Determines how SpecFlow behaves if a step binding is not implemented or pending. See [[Missing, Pending or Improperly Configured Bindings|Test Result]].<br/>
             <b>Default:</b> Inconclusive</td>
+    </tr>
+    <tr>
+        <td>obsoleteBehavior</td>
+        <td>None|Warn|<br/>Pending|Error</td>
+        <td>Determines how SpecFlow behaves if a step binding is marked with [Obsolete] attribute.<br/>
+            <b>Default:</b> Warn</td>
     </tr>
     <tr>
         <td>stopAtFirstError</td>
