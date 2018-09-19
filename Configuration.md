@@ -227,16 +227,16 @@ Use this section to specify various test execution options.
         <th>Description</th>
     </tr>
     <tr>
+        <td>dependencies</td>
+        <td>custom dependencies</td>
+        <td>Specifies custom dependencies for the SpecFlow runtime. See [[Plugins]] for details.<br/>
+            <b>Default:</b> not specified</td>
+    </tr>
+    <tr>
         <td>detectAmbiguousMatches</td>
         <td>true|false</td>
         <td>Legacy option, unsupported from v2.0.<br/>
             <b>Default:</b> true</td>
-    </tr>
-    <tr>
-        <td>stopAtFirstError</td>
-        <td>true|false</td>
-        <td>Determines whether the execution should stop when encountering the first error, or whether it should attempt to try and match subsequent steps (in order to detect missing steps).<br/>
-            <b>Default:</b> false</td>
     </tr>
     <tr>
         <td>missingOrPendingStepsOutcome</td>
@@ -245,10 +245,10 @@ Use this section to specify various test execution options.
             <b>Default:</b> Inconclusive</td>
     </tr>
     <tr>
-        <td>dependencies</td>
-        <td>custom dependencies</td>
-        <td>Specifies custom dependencies for the SpecFlow runtime. See [[Plugins]] for details.<br/>
-            <b>Default:</b> not specified</td>
+        <td>stopAtFirstError</td>
+        <td>true|false</td>
+        <td>Determines whether the execution should stop when encountering the first error, or whether it should attempt to try and match subsequent steps (in order to detect missing steps).<br/>
+            <b>Default:</b> false</td>
     </tr>
 </table>
 
