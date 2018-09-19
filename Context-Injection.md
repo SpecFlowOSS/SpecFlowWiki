@@ -129,3 +129,74 @@ public class WebDriverSupport
   }
 }
 ```
+
+## Custom Dependency Injection Frameworks
+
+As mentioned the default SpecFlow container is `IObjectContainer` which is recommended for most scenarios, however you may have situations where you need slightly more control over the DI config, or make use of existing DI configuration within the project you are testing, i.e pulling in service layers for assisting with assertions in `Then` stages.
+
+### Consuming existing plugins
+- [SpecFlow.Autofac](https://github.com/gasparnagy/SpecFlow.Autofac)
+- [SpecFlow.Unity](https://github.com/phatcher/SpecFlow.Unity)
+- [SpecFlow.Ninject](https://github.com/MattMcKinney/SpecFlow.Ninject) (currently not on nuget)
+
+To make use of these plugins you need to add a reference and add in your specflow configuration section:
+
+```xml
+<specFlow>
+  <plugins>
+    <add name="SpecFlow.Autofac" type="Runtime" />
+  </plugins>
+  <!-- Anything else -->
+</specFlow>
+```
+This will tell SpecFlow to load the runtime plugin and will allow you to create an entry point to make use of this functionality like [shown in the autofac example](https://github.com/gasparnagy/SpecFlow.Autofac/blob/master/sample/MyCalculator/MyCalculator.Specs/Support/TestDependencies.cs). Once setup your dependencies will be injected into steps and bindings like they were with the `IObjectContainer`, but behind the scenes it will be pulling those dependencies from the DI container you have added.
+
+> One thing to note here is that each plugin has its own conventions for loading the entry point, this is often a static class with a static method containing an attribute that is marked by the specific plugin, check with each plugins example to see what their example usage looks like
+
+You can load all your dependencies within this handler section or if you wish you are able to inject the relevant IoC container into your binding sections like so:
+
+```csharp
+[Binding]
+public class WebDriverPageHooks
+{
+    private readonly IKernel _kernel;
+
+    // Inject in our container (using Ninject here)
+    public WebDriverPageHooks(IKernel kernel)
+    { _kernel = kernel; }
+    
+    private IWebDriver SetupWebDriver()
+    {
+        var options = new ChromeOptions();
+        options.AddArgument("--start-maximized");
+        options.AddArgument("--disable-notifications");
+        return new ChromeDriver(options);
+    }
+
+    [BeforeScenario]
+    public void BeforeScenario()
+    {
+        var webdriver = SetupWebDriver();        
+        _kernel.Bind<IWebDriver>().ToConstant(webdriver);
+    }
+
+    [AfterScenario]
+    public void AfterScenario()
+    {
+        var webDriver = _kernel.Get<IWebDriver>();
+        
+        // Output any screenshots or log dumps etc
+        
+        webDriver.Close();
+        webDriver.Dispose();
+    }
+}
+```
+
+This allows you the option to either load types up front or create types within your binding sections so you are able to dispose of them in a defined way.
+
+### Creating your own
+
+It is best to look at the autofac example and the [plugins documentation](https://specflow.org/documentation/Plugins/) and follow its conventions.
+
+> Just remember to adhere to the plugin documentation and have your assembly end in `.SpecFlowPlugin` i.e `SpecFlow.AutoFac.SpecFlowPlugin`, your internal namespaces can be anything you want but the assembly name is important or SpecFlow will be unable to find it.
