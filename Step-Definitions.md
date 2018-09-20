@@ -1,8 +1,8 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Step-Definitions]]. We use the GitHub wiki for authoring the documentation pages._
 
-The bindings ([[step definitions]], [[hooks]], etc.) provide the connection between the free-text specification and the application interfaces (see [[Bindings]]). For better reusability, the step definitions can be parametrized. This means that it is not necessary to define a new step definition for each step that just differs in a small portion.  E.g. the steps `When I perform a simple search on 'Domain'` and `When I perform a simple search on 'Communication'` can be automated with a single step definition. 
+The bindings ([[step definitions]], [[hooks]], etc.) provide the connection between your feature files and application interfaces (see [[Bindings]]). For better reusability, the step definitions can include parameters. This means that it is not necessary to define a new step definition for each step that just differs slightly. For example, the steps `When I perform a simple search on 'Domain'` and `When I perform a simple search on 'Communication'` can be automated with a single step definition, with 'Domain' and 'Communication' as parameters. 
 
-The following example shows a simple step definition that matches to the step `When I perform a simple search on 'Domain'` mentioned earlier. 
+The following example shows a simple step definition that matches to the step `When I perform a simple search on 'Domain'`:
 
 ```c#
 [When(@"I perform a simple search on '(.*)'")]
@@ -13,7 +13,7 @@ public void WhenIPerformASimpleSearchOn(string searchTerm)
 }
 ```
 
-Here the method is annotated with the `[When]` attribute, providing the regular expression to be used to match the step text. The match groups (`(.*)`) of the regular expression define the parameters for the method.
+Here the method is annotated with the `[When]` attribute, and includes the regular expression used to match the step's text. This regular expression (`(.*)`) define parameters for the method.
 
 Although the step definitions are usually invoked by the SpecFlow runtime, you can also call steps from other step definitions. Check the [[Calling Steps from Step Definitions]] page for details.
 
@@ -22,7 +22,7 @@ Although the step definitions are usually invoked by the SpecFlow runtime, you c
 * `[Given(regex)]` or `[Given]` - `TechTalk.SpecFlow.GivenAttribute`
 * `[When(regex)]` or `[When]` - `TechTalk.SpecFlow.WhenAttribute`
 * `[Then(regex)]` or `[Then]` - `TechTalk.SpecFlow.ThenAttribute`
-* `[StepDefinition(regex)]` or `[StepDefinition]` - `TechTalk.SpecFlow.StepDefinitionAttribute`, matches for given, when or then attributes (from v1.8)
+* `[StepDefinition(regex)]` or `[StepDefinition]` - `TechTalk.SpecFlow.StepDefinitionAttribute`, matches for given, when or then attributes
 
 You can annotate a single method with multiple attributes in order to support different phrasings in the feature file for the same automation logic.
 
