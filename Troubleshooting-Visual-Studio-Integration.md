@@ -6,7 +6,7 @@ To enable the extension in Visual Studio, select **Tools > Extensions and Update
 
 ## Enable Tracing
 
-You can enable traces for SpecFlow. Once the tracing is enabled, a new `SpecFlow` pane is added to the output window showing diagnostic messages. 
+You can enable traces for SpecFlow. Once tracing is enabled, a new `SpecFlow` pane is added to the output window showing diagnostic messages. 
 
 To enable tracing, select **Tools | Options | SpecFlow** from the menu in Visual Studio and set **Enable Tracing** to 'True'. 
 
