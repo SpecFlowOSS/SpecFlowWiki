@@ -75,13 +75,16 @@ let [<Given>] ``I have entered (.*) into the calculator``(number:int) =
 
 ## Generating Step Definition Skeletons
 
-The step definition method declarations (aka _step definition skeletons_) can be generated from Visual Studio. Select "Generate Step Definitions" from the context menu of the feature file and the appearing dialog will guide you how to create a new binding class with the step definitions for the selected unbound steps. The most common parameter usage patterns (quotes, apostrophes, numbers) are detected so SpecFlow generates the methods and the annotation with the these parameters.
+The step definition method declarations (aka _step definition skeletons_) can be generated from Visual Studio: 
 
-The same skeleton generator engine is used by the SpecFlow runtime (when you execute a scenario with unbound steps) and also in the "Go To Definition" command. In these places you cannot select a step definition style, so a default style is used (see below).
+1. Right-click in your feature file, and select **Generate Step Definitions** from the context menu.
+1. A dialog is displayed that guides you through the process of creating a new binding class with step definitions for the selected unbound steps. The most common parameter usage patterns (quotes, apostrophes, numbers) are detected so SpecFlow generates the methods and the annotation with the these parameters. 
+
+The same skeleton generator engine is used by the SpecFlow runtime (when you execute a scenario with unbound steps) and by the "Go To Definition" command. You cannot select a step definition style here, so a default style is used (see below).
 
 ### Specifying default style
 
-The default step definition style is taken from the [[configuration]] (or uses the "Regular expressions in attributes" if not specified. The following example changes the default style to underscored method names (available options: `RegexAttribute`, `MethodNameUnderscores`, `MethodNamePascalCase`, `MethodNameRegex`)
+The default step definition style is taken from the [[configuration]] or uses the "Regular expressions in attributes" if not specified. The following example changes the default style to underscored method names (available options: `RegexAttribute`, `MethodNameUnderscores`, `MethodNamePascalCase`, `MethodNameRegex`)
 
 ```xml
 <specFlow>
@@ -91,9 +94,9 @@ The default step definition style is taken from the [[configuration]] (or uses t
 
 ## Customizing Step Definition Skeleton Templates
 
-If you want to include a custom using statement or a base class declaration to the generated step definition skeletons, you can also customize the templates. Just place a text file called `SkeletonTemplates.sftemplate` into the SpecFlow folder inside your local app data (e.g. `C:\Users\me\AppData\Local\SpecFlow\SkeletonTemplates.sftemplate`) to override the necessary templates.
+If you want to include a custom using statement or a base class declaration in your generated step definition skeletons, you can customize the templates. To do so, add a text file called `SkeletonTemplates.sftemplate` to the SpecFlow folder inside your local app data (e.g. `C:\Users\me\AppData\Local\SpecFlow\SkeletonTemplates.sftemplate`). This will override the templates.
 
-The template file contains sections, one for each template. In the custom template file you can override one or more sections. For all other sections, the default template will be used. The sections are separated with the `>>>` line prefix followed by the identifier of the section. The templates can refer to different parameters with the `{param}` syntax.
+Template files contain sections, one for each template. You can override one of more of these sections in your custom template files. For all other sections, the default template is used. The sections are separated with the `>>>` line prefix followed by the identifier of the section. You can refer to different parameters with the `{param}` syntax.
 
 The following example overrides the class generation skeleton for C# and specifies a custom comment in the file header:
 
@@ -116,6 +119,3 @@ namespace {namespace}
 ```
 
 For the full list of available sections, parameters and for examples, check the [[default template|https://github.com/techtalk/SpecFlow/blob/master/TechTalk.SpecFlow/BindingSkeletons/DefaultSkeletonTemplates.sftemplate]].
-
-
-
