@@ -1,15 +1,15 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/FeatureContext]]. We use the GitHub wiki for authoring the documentation pages._
 
-There is a FeatureContext as well as the more commonly used [[ScenarioContext]]. The difference of course is that the FeatureContext exists during the execution of the complete feature while the ScenarioContext only exists during a scenario.
+There is a FeatureContext as well as the more commonly used [[ScenarioContext]]. FeatureContext exists during the execution of the entire feature, whereas the ScenarioContext only exists for the duration of a scenario.
 
 ## FeatureContext.Current
 
-FeatureContext also have a Current property which holds a Dictionary. But it works in exactly the same way as the [[ScenarioContext.Current]] so I won’t go into details of it. It’s actually implemented with the same class SpecFlowContext so it IS the same behavior.
+`FeatureContext` also has a `Current` property which accesses a Dictionary. Otherwise `FeatureContext` works exactly the same way as [[ScenarioContext.Current]].
 
 
 ## FeatureContext.FeatureInfo
 
-The FeatureInfo is a bit more elaborative than the ScenarioInfo, but it works in the same manner:
+`FeatureInfo` provides more information than `ScenarioInfo`, but it works the same:
 
 In the .feature file:
 
@@ -58,4 +58,4 @@ and in the step definition:
         }
 
 
-Also I should mention here that FeatureContext exposes a Binding Culture property that simply points to the culture the feature is written in (en-US in our example).
+FeatureContext exposes a Binding Culture property that simply points to the culture the feature is written in (en-US in our example).
