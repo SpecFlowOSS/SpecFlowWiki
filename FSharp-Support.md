@@ -21,6 +21,6 @@ Note: You need to create a C# or VB project for hosting the feature files and co
 
 ## IDE Support
 
-SpecFlow provides item templates for creating new F# step definitions or hooks in Visual Studio 2010 and 2012.
+SpecFlow provides item templates for creating new F# step definitions or hooks in Visual Studio.
 
 Note: The navigation and the binding analysis features of the SpecFlow editor provide only limited support for F# projects.
