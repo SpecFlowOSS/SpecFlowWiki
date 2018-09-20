@@ -10,7 +10,7 @@ This page contains information about the **different styles**, the **step defini
 
 ### Regular expressions in attributes
 
-This is the classic way of specifying the step definitions. The step definition method has to be annotated with one or more step definitions attribute, with regular expressions.
+This is the classic way of specifying the step definitions. The step definition method has to be annotated with one or more step definition attributes with regular expressions.
 
 ```c#
 [Given(@"I have entered (.*) into the calculator")]
