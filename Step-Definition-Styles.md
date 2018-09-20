@@ -40,16 +40,16 @@ public void Given_I_have_entered_NUMBER_into_the_calculator(int number)
 
 Matching rules:
 * The match is case-insensitive.
-* Underscore character is matching to one or more non-word character (eg. whitespace, punctuation): `\W+`.
-* For accented characters in the step the method name should also contain the accented character (no substitution). 
+* Underscore character is matched to one or more non-word character (eg. whitespace, punctuation): `\W+`.
+* If the step contains accented characters, the method name should also contain the accented characters (no substitution). 
 * The step keyword (e.g. `Given`) can be omitted: `[Given] public void I_have_entered_NUMBER_...`.
-* The step keyword can be specified in the local Gherkin language (or English). The language can be specified in the [[app config|Configuration]] as feature language or binding culture. E.g. the following step definition is a valid "Given" step with German language settings: `[When] public void Wenn_ich_addieren_drücke()`
+* The step keyword can be specified in the local Gherkin language, or English. The default language can be specified in the [[app config|Configuration]] as the feature language or binding culture. The following step definition is threfore a valid "Given" step with German language settings: `[When] public void Wenn_ich_addieren_drücke()`
 
-See detailed examples in our specs: [[StepDefinitionsWithoutRegex.feature|https://github.com/techtalk/SpecFlow/blob/master/Tests/TechTalk.SpecFlow.Specs/Features/StepDefinitionsWithoutRegex.feature]].
+More detailed examples can be found in our specs: [[StepDefinitionsWithoutRegex.feature|https://github.com/techtalk/SpecFlow/blob/master/Tests/TechTalk.SpecFlow.Specs/Features/StepDefinitionsWithoutRegex.feature]].
 
-### Method name - pascal-case
+### Method name - Pascal-case
 
-Similarly to the underscored naming style, you can also specify the step definitions with pascal-case method names. 
+Similarly to the underscored naming style, you can also specify the step definitions with Pascal-case method names. 
 
 ```c#
 [Given]
