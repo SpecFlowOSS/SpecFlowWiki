@@ -2,12 +2,12 @@ _Editor note: We recommend reading this documentation entry at [[http://www.spec
 
 There is a FeatureContext as well as the more commonly used [[ScenarioContext]]. The difference of course is that the FeatureContext exists during the execution of the complete feature while the ScenarioContext only exists during a scenario.
 
-##FeatureContext.Current
+## FeatureContext.Current
 
 FeatureContext also have a Current property which holds a Dictionary. But it works in exactly the same way as the [[ScenarioContext.Current]] so I won’t go into details of it. It’s actually implemented with the same class SpecFlowContext so it IS the same behavior.
 
 
-##FeatureContext.FeatureInfo
+## FeatureContext.FeatureInfo
 
 The FeatureInfo is a bit more elaborative than the ScenarioInfo, but it works in the same manner:
 
