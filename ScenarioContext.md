@@ -1,12 +1,12 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/ScenarioContext]]. We use the GitHub wiki for authoring the documentation pages._
 
-Most of us have at least seen the ScenarioContext from the the code that SpecFlow generates when a missing step definition is found: ScenarioContext.Current.Pending();
+You may have at least seen the ScenarioContext from the the code that SpecFlow generates when a missing step definition is found: `ScenarioContext.Current.Pending();`
 
-But there is some other interesting stuff you can do with and get from that object. I’ve tried to write scenarios that show that off. You can find the code here.
+`ScenarioContext` provides access to a number of functions, which are demonstrated using the following scenarios.
 
 ## ScenarioContext.Pending
 
-Well – this method is known to most of us, as I said. This is default behavior for a missing step definition, but you can also use it directly if (why?) you want to. Like this:
+This is default behavior for a missing step definition, but you can also use it directly if (**why?**) you want to:
 
 in the .feature:
 
@@ -31,13 +31,13 @@ and the step definition:
 
 ## ScenarioContext.Current
 
-This is a very useful feature of the [[ScenarioContext.Current]] that helps you to store values in a Dictionary between the steps. This helps you to organize your step definitions better than if you would use private variables in the step definition class.
+[[ScenarioContext.Current]] helps you store values in a dictionary between steps. This helps you to organize your step definitions better than using private variables in step definition classes.
 
-There are some type safe extension methods that helps you to get values in and out of the dictionary in a safer way. To get that you need to include the namespace TechTalk.SpecFlow.Assist, since they are extension methods on the [[ScenarioContext.Current]].
+There are some type-safe extension methods that help you to manage the contents of the dictionary in a safer way. To do so, you need to include the namespace TechTalk.SpecFlow.Assist, since these methods are extension methods of [[ScenarioContext.Current]].
 
 ## ScenarioContext.ScenarioInfo
 
-You can also get hold of some information about the scenario you’re executing right now. For example the title and the tags of it:
+`ScenarioContext.ScenarioInfo` allows  you to access information about the scenario currently being executed, such as its title and tags:
 
 In the .feature file:
 
@@ -78,9 +78,9 @@ and in the step definition:
             }
         }
 
-More interesting maybe is the ability to check if an error has occurred. That’s done with the ScenarioContext.Current.TestError property, which simply is the exception that has occurred.
+Another use is to check if an error has occurred, which is possible with the `ScenarioContext.Current.TestError` property, which simply returns the exception.
 
-You can use that to do some interesting “error handling” as I told you above. Here is an un-interesting version:
+You can use this information for “error handling”. Here is an uninteresting example:
 
 in the .feature file:
 
@@ -120,12 +120,12 @@ This is another example, that might be more useful:
             }
         }
 
-Here I am using MvcContrib to capture the screen of the failing test, and naming the screen shot after the title of the Scenario. So by combining the use of hooks and the knowledge of ScenarioContext when can do some interesting stuff, don’t you think?
+In this case, MvcContrib is used to capture a screenhot of the failing test and name the screen shot after the title of the scenario.
 
 
 ## ScenarioContext.Current.CurrentScenarioBlock
 
-You can also get hold of the “type” of step your on (Given, When or Then) which is pretty cool and, for example, can be used to execute additional setup/cleanup code right before or after Given, When or Then block.
+Use `ScenarioContext.Current.CurrentScenarioBlock` to query the “type” of step (Given, When or Then). This can be used to execute additional setup/cleanup code right before or after Given, When or Then blocks.
 
 in the .feature file:
 
