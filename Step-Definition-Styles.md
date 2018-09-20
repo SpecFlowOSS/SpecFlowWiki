@@ -22,8 +22,8 @@ public void GivenIHaveEnteredNumberIntoTheCalculator(int number)
 
 Regular expression matching rules:
 
-* The regular expressions are always matching to the entire step text even if you not use the `^` and `$` markers.
-* The match groups (`(…)`) of the regular expression define the arguments for the method based on the order (the match result of the first group becomes the first argument, etc.).
+* Regular expressions are always matched to the entire step, even if you do not use the `^` and `$` markers.
+* The capturing groups (`(…)`) in the regular expression define the arguments for the method in order (the result of the first group becomes the first argument etc.).
 * You can use non-capturing groups `(?:regex)` in order to use groups without a method argument.
 
 ### Method name - underscores
