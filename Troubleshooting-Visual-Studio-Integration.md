@@ -53,7 +53,3 @@ To fix this, open the NuGet console or the NuGet references dialog and click on 
 It seems that VS2015 handles solution-level NuGet packages differently (those registered in the `.nuget\packages.config` file of the solution). As a result, solution-level NuGet packages must be listed in the projects that use them, otherwise Test Explorer cannot recognise the test runner.
 
 To fix this issue, either re-install the SpecFlow+ Runner NuGet packages, or add the dependency on the `SpecRun.Runner` package (`<package id="SpecRun.Runner" version="1.2.0" />`) to the packages.config file of your SpecFlow projects. You might need to restart Visual Studio to see your tests.
-
-### VS2015: Tests turn grayish-green in the Test Explorer window after completing the execution of tests with SpecFlow+ Runner
-
-This is a known cosmetic issue and will be addressed later.
