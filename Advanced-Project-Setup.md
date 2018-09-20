@@ -1,6 +1,9 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Advanced-Project-Setup]]. We use the GitHub wiki for authoring the documentation pages._
 
-The [[Setup SpecFlow Projects]] page describes the recommended setup process. **This page covers the advanced project setup options if you are unable to use the NuGet packages.** To set up a project manually (i.e. without [[NuGet packages|NuGet Integration]]), [[download the binary package|http://go.specflow.org/download-bin]] that contains all the necessary files and copy all SpecFlow assemblies to your project's folder structure for better upgrade and tool support. 
+**ATTENTION!**
+**This page covers the advanced project setup options if you are unable to use the NuGet packages.** The [[Setup SpecFlow Projects]] page describes the recommended setup process. 
+
+To set up a project manually (i.e. without [[NuGet packages|NuGet Integration]]), [[download the binary package|http://go.specflow.org/download-bin]] that contains all the necessary files and copy all SpecFlow assemblies to your project's folder structure for better upgrade and tool support. 
 
 ## Solution Structure
 SpecFlow tests are usually placed in one or more separate project in the solution. These are referred to as the "SpecFlow projects". 
