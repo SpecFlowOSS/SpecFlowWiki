@@ -1,6 +1,6 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/Unit-test-providers]]. We use the GitHub wiki for authoring the documentation pages._
 
-SpecFlow supports several unit test framework to execute the acceptance tests. You can use one of the built-in unit test providers or create a custom provider. Use the [[&lt;unitTestProvider&gt;|Configuration]] configuration element in your `app.config` file to specify which unit test provide you want to use.
+SpecFlow supports several unit test framework to execute the acceptance tests. You can use one of the built-in unit test providers or create a custom provider. Use the [[&lt;unitTestProvider&gt;|Configuration]] configuration element in your `app.config` file to specify which unit test provider you want to use.
 
 The following table contains the built-in unit test providers.
 
