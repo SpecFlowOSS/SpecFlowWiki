@@ -1,10 +1,10 @@
 _Editor note: We recommend reading this documentation entry at [[http://www.specflow.org/documentation/FeatureContext]]. We use the GitHub wiki for authoring the documentation pages._
 
-There is a FeatureContext as well as the more commonly used [[ScenarioContext]]. FeatureContext exists during the execution of the entire feature, whereas the ScenarioContext only exists for the duration of a scenario.
+SpecFlow provides access to the current test context using both `FeatureContext` and the more commonly used [[ScenarioContext]]. `FeatureContext` persists for the duration of the execution of an entire feature, whereas `ScenarioContext` only persists for the duration of a scenario.
 
 ## FeatureContext.Current
 
-`FeatureContext` also has a `Current` property which accesses a Dictionary. Otherwise `FeatureContext` works exactly the same way as [[ScenarioContext.Current]].
+`FeatureContext.Current` accesses a Dictionary, but otherwise works the same way as [[ScenarioContext.Current]].
 
 
 ## FeatureContext.FeatureInfo
