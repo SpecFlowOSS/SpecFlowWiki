@@ -58,4 +58,4 @@ and in the step definition:
         }
 
 
-FeatureContext exposes a Binding Culture property that simply points to the culture the feature is written in (en-US in our example).
+`FeatureContext` exposes a Binding Culture property that simply points to the culture the feature is written in (en-US in our example).
