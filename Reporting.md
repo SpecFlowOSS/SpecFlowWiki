@@ -1,6 +1,6 @@
 SpecFlow provides various options to generate reports related to the acceptance tests.
 
-Note: The `specflow.exe` command line tool that is used to generate reports can be found in the `packages\Specflow.{version number}\tools` directory, when you installed SpecFlow through NuGet.
+Note: The `specflow.exe` command line tool that is used to generate reports can be found in the `packages\Specflow.{version number}\tools` directory, when you installed SpecFlow through NuGet. Start the tool with no parameters or use the `--help` option to display an overview of the available options.
 
 ## Test Execution Report
 
