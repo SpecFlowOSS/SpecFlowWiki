@@ -127,12 +127,7 @@ The following table contains the possible arguments for this command.
         <td>Custom XSLT file to use, defaults to built-in stylesheet if not provided. Optional.<br/>
             Default: not specified</td>
     </tr>
-    <tr>
-        <td>-o, --OutputFile</td>
-        <td>HTML file</td>
-        <td>Generated Output File. Optional.<br/>
-            Default: TestResult.html</td>
-    </tr>
+
 </table>
 
 ## Step Definition Report
