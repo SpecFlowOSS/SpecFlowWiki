@@ -111,6 +111,12 @@ The following table contains the possible arguments for this command.
             Default: TestResult.trx</td>
     </tr>
     <tr>
+        <td>-n, --ProjectName</td>
+        <td>Project name</td>
+        <td>Project name which can be passed explicitly instead of implicitly getting it from --ProjectFile. Optional.<br/>
+            Default: not specified</td>
+    </tr>
+    <tr>
         <td>-o, --OutputFile</td>
         <td>HTML file</td>
         <td>Generated Output File. Optional.<br/>
